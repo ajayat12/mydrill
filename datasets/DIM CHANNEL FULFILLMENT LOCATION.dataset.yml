@@ -1,9 +1,6 @@
 unique_name: DIM CHANNEL FULFILLMENT LOCATION.dataset
 object_type: dataset
 label: DIM CHANNEL FULFILLMENT LOCATION
-connection_id: lpc2683f-gbq-pr-mydrill-data.connection
-table: DIM_CHANNEL_FULFILLMENT_LOCATION
-
 columns:
   - name: ADDR_LINE1_TXT
     data_type: string
@@ -81,3 +78,5 @@ columns:
     data_type: string
   - name: STR_NM
     data_type: string
+connection_id: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+table: DIM_CHANNEL_FULFILLMENT_LOCATION

@@ -1,9 +1,6 @@
 unique_name: Channel Summary.dataset
 object_type: dataset
 label: Channel Summary
-connection_id: lpc2683f-gbq-pr-mydrill-data.connection
-table: DIM_CHANNEL_SUMMARY
-
 columns:
   - name: DELIVERY_v_PICKUP
     data_type: string
@@ -45,3 +42,5 @@ columns:
     data_type: long
   - name: summary_key
     data_type: long
+connection_id: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+table: CHANNEL_SUMMARY
