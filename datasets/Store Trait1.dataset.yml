@@ -1,9 +1,6 @@
 unique_name: Store Trait1.dataset
 object_type: dataset
 label: Store Trait1
-connection_id: lpc2683f-gbq-pr-mydrill-data.connection
-table: DIM_STORE_TRAIT
-
 columns:
   - name: LAST_UPD_TS
     data_type: datetime
@@ -29,3 +26,5 @@ columns:
     data_type: long
   - name: TRT_TXMY_NM
     data_type: string
+connection_id: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+table: DIM_STORE_TRAIT
