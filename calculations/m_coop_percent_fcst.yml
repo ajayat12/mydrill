@@ -1,0 +1,8 @@
+unique_name: m_coop_percent_fcst
+object_type: metric_calc
+label: COOP % Fcst
+expression: |-
+  IIF([MEASURES].[m_sales_amount_fcst]+0.00=0.00,NULL,
+  [Measures].[m_coop_amount_fcst]/[Measures].[m_sales_amount_fcst])
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

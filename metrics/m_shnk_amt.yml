@@ -1,0 +1,9 @@
+unique_name: m_shnk_amt
+object_type: metric
+label: SHNK AMT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: PI_SHNK.dataset
+column: TY_SHNK_AMT

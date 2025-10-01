@@ -1,0 +1,9 @@
+unique_name: m_rebate_amount_fcst_base
+object_type: metric
+label: Rebate $ Fcst_base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: GHQC_STR_FCST_W.dataset
+column: TY_FPURCH_REBT_AMT

@@ -1,0 +1,5 @@
+unique_name: m_total_oh_units_v_ly_company
+object_type: metric_calc
+label: Total OH Units v LY (Company)
+expression: "([Measures].[m_total_oh_units_company] - [Measures].[m_total_oh_units_ly_company])"
+format: "#,##0;(#,##0);0;;"

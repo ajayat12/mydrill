@@ -1,0 +1,6 @@
+unique_name: m_rtv_units_v_ly
+object_type: metric_calc
+label: RTV Units v LY
+expression: "IIF(ISEMPTY([MEASURES].[m_rtv_units]) OR ISEMPTY([MEASURES].[m_rtv_units_ly]),NULL\
+  \ ,[MEASURES].[m_rtv_units]-[MEASURES].[m_rtv_units_ly])"
+format: "#,##0;(#,##0);0;;"

@@ -1,0 +1,148 @@
+unique_name: m_tot_economic_cost_amount
+object_type: metric_calc
+label: Tot Economic Cost $
+expression: "CASE WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INVOICE COST\" THEN [Measures].[m_total_invoice_cost_amount] \n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"VOLUME REBATE\" THEN [Measures].[m_total_volume_rebate_amount]\
+  \ \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CO-OP\
+  \ ADVERTISING\" THEN [Measures].[m_total_coop_advertising_amount]\n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CERTIFIED VENDOR DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_total_certified_vendor_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DEFECTIVE\
+  \ ALLOWANCE DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_defective_allow_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_freight_unbundling_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"MET DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_total_met_discount_amount_corporate]\n     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"MISC TRADE DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_total_misc_trade_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"SPECIAL\
+  \ TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_special_term_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"OFFSHORE\
+  \ DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_offshore_discount_amount_mkt/dc]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"RDC DISCOUNT\
+  \ (MKT/DC)\" THEN [Measures].[m_total_rdc_discount_amount_mkt/dc]\n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\"\
+  \ THEN [Measures].[m_total_supply_chain_discount_amount_mkt/dc]\n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"TF DISCOUNT (MKT/DC)\" THEN\
+  \ [Measures].[m_total_tf_discount_amount_mkt/dc]\n     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_misc_trade_discount_amount_mkt/dc]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_freight_unbundling_discount_amount_mkt/dc]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"PURCHASE\
+  \ DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_purchase_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC EXPENSE\"\
+  \ THEN [Measures].[m_total_dc_expense_amount]\n     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"DC SHRINK\" THEN 0.0\n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_total_freight_expense_amount]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"INTERNATIONAL\
+  \ FREIGHT EXPENSE\" THEN [Measures].[m_total_international_freight_expense_amount]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"IMPORT\
+  \ G&A EXPENSE\" THEN [Measures].[m_total_import_g&a_expense_amount]\n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"MET EXPENSE\" THEN [Measures].[m_total_met_expense_amount]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"UNSELLABLE\
+  \ MERCHANDISE EXPENSE\" THEN [Measures].[m_total_unsellable_merchandise_expense_amount]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"MISC\
+  \ CHARGES\" THEN [Measures].[m_total_misc_charges_amount]\n     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"MISC CREDITS\" THEN [Measures].[m_total_misc_credits_amount]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"SHRINK\
+  \ COST\" THEN [Measures].[m_total_shrink_cost_amount]\n     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"DEFERRED INTEREST EXPENSE\" THEN [Measures].[m_total_deferred_interest_expense_amount]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY\
+  \ EXPENSE\" THEN [Measures].[m_total_duty_expense_amount]\n     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_ibx_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DELIVER\
+  \ FROM STORE EXPENSE\" THEN [Measures].[m_total_deliver_from_store_expense_amount]\
+  \   \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  TINT COST\" THEN [Measures].[m_total_tint_cost_amount]   \n     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"GRILL COST\" THEN [Measures].[m_total_grill_cost_amount]\
+  \ \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"VENDOR\
+  \ DIRECT DELIVERY EXPENSE\" THEN [Measures].[m_total_vendor_direct_delivery_expense_amount]\
+  \   \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  HOME DEPOT DIRECT DELIVERY EXPENSE\" THEN [Measures].[m_total_home_depot_direct_delivery_expense_amount]\
+  \   \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  DC FIXED EXPENSE\" THEN [Measures].[m_total_dc_fixed_expense_amount]   \n     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC VARIABLE EXPENSE\"\
+  \ THEN [Measures].[m_total_dc_variable_expense_amount]      \n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"ECONOMIC COST ADJUSTMENT\"\
+  \ THEN [Measures].[m_total_adjusted_economic_cost_amount]   \n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"INVOICE COST\" THEN [Measures].[m_total_invoice_cost_amount]\
+  \ \n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"VOLUME\
+  \ REBATE\" THEN [Measures].[m_total_volume_rebate_amount] \n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"CO-OP ADVERTISING\" THEN [Measures].[m_total_coop_advertising_amount]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"CERTIFIED\
+  \ VENDOR DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_certified_vendor_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DEFECTIVE\
+  \ ALLOWANCE DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_defective_allow_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_freight_unbundling_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"MET DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_total_met_discount_amount_corporate]\n     WHEN\
+  \ [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"MISC TRADE DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_total_misc_trade_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"SPECIAL\
+  \ TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_special_term_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"OFFSHORE\
+  \ DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_offshore_discount_amount_mkt/dc]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"RDC DISCOUNT\
+  \ (MKT/DC)\" THEN [Measures].[m_total_rdc_discount_amount_mkt/dc]\n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\"\
+  \ THEN [Measures].[m_total_supply_chain_discount_amount_mkt/dc]\n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"TF DISCOUNT (MKT/DC)\" THEN\
+  \ [Measures].[m_total_tf_discount_amount_mkt/dc]\n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_misc_trade_discount_amount_mkt/dc]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_total_freight_unbundling_discount_amount_mkt/dc]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"PURCHASE\
+  \ DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_purchase_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DC EXPENSE\"\
+  \ THEN [Measures].[m_total_dc_expense_amount]\n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"DC SHRINK\" THEN 0.0\n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"FREIGHT EXPENSE\" THEN [Measures].[m_total_freight_expense_amount]\n     WHEN\
+  \ [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"INTERNATIONAL FREIGHT\
+  \ EXPENSE\" THEN [Measures].[m_total_international_freight_expense_amount]\n   \
+  \  WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"IMPORT G&A\
+  \ EXPENSE\" THEN [Measures].[m_total_import_g&a_expense_amount]\n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"MET EXPENSE\" THEN [Measures].[m_total_met_expense_amount]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"UNSELLABLE\
+  \ MERCHANDISE EXPENSE\" THEN [Measures].[m_total_unsellable_merchandise_expense_amount]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"MISC CHARGES\"\
+  \ THEN [Measures].[m_total_misc_charges_amount]\n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"MISC CREDITS\" THEN [Measures].[m_total_misc_credits_amount]\n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"SHRINK COST\" THEN [Measures].[m_total_shrink_cost_amount]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DEFERRED\
+  \ INTEREST EXPENSE\" THEN [Measures].[m_total_deferred_interest_expense_amount]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DUTY EXPENSE\"\
+  \ THEN [Measures].[m_total_duty_expense_amount]\n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"IBX DISCOUNT (CORPORATE)\" THEN [Measures].[m_total_ibx_discount_amount_corporate]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DELIVER\
+  \ FROM STORE EXPENSE\" THEN [Measures].[m_total_deliver_from_store_expense_amount]\n\
+  \     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"TINT COST\"\
+  \ THEN [Measures].[m_total_tint_cost_amount]   \n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"GRILL COST\" THEN [Measures].[m_total_grill_cost_amount] \n     WHEN [Economic\
+  \ Cost].[d_ech_cost_component].CurrentMember.name =\"VENDOR DIRECT DELIVERY EXPENSE\"\
+  \ THEN [Measures].[m_total_vendor_direct_delivery_expense_amount]   \n     WHEN\
+  \ [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"HOME DEPOT DIRECT\
+  \ DELIVERY EXPENSE\" THEN [Measures].[m_total_home_depot_direct_delivery_expense_amount]\
+  \   \n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DC\
+  \ FIXED EXPENSE\" THEN [Measures].[m_total_dc_fixed_expense_amount]   \n     WHEN\
+  \ [Economic Cost].[d_ech_cost_component].CurrentMember.name =\"DC VARIABLE EXPENSE\"\
+  \ THEN [Measures].[m_total_dc_variable_expense_amount]  \n     WHEN [Economic Cost].[d_ech_cost_component].CurrentMember.name\
+  \ =\"ECONOMIC COST ADJUSTMENT\" THEN [Measures].[m_total_adjusted_economic_cost_amount]\
+  \    \n     WHEN [Economic Cost].[d_ech_cost].CurrentMember.name = \"INVOICE COST\"\
+  \ then [Measures].[m_total_invoice_cost_amount] \n     WHEN [Economic Cost].[d_ech_cost].CurrentMember.name\
+  \ = \"NET COST\" then [Measures].[m_total_net_cost_amount] \n     WHEN [Economic\
+  \ Cost].[d_ech_cost].CurrentMember.name = \"NET NET COST\" then [Measures].[m_total_net_net_cost_amount]\
+  \ \n     WHEN [Economic Cost].[d_ech_cost].CurrentMember.name = \"LANDED COST\"\
+  \ then [Measures].[m_total_landed_cost_amount] \n     WHEN [Economic Cost].[d_ech_cost].CurrentMember.name\
+  \ = \"PRODUCT COST\" then [Measures].[m_total_product_cost_amount] \n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET COST\" THEN [Measures].[m_total_net_cost_amount]\
+  \  \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  NET NET COST\" THEN [Measures].[m_total_net_net_cost_amount]  \n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"LANDED COST\" THEN [Measures].[m_total_landed_cost_amount]\
+  \  \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  PRODUCT COST\" THEN [Measures].[m_total_product_cost_amount] \n     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"ECONOMIC COST\" THEN [Measures].[m_total_economic_cost_amount_final]\
+  \  \n     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  All\" THEN [Measures].[m_total_economic_cost_amount_final]  \n     ELSE null\nEND"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

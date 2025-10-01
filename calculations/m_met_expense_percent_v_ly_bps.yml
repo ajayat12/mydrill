@@ -1,0 +1,5 @@
+unique_name: m_met_expense_percent_v_ly_bps
+object_type: metric_calc
+label: MET Expense % v LY (BPS)
+expression: "([Measures].[m_met_expense_percent]-[Measures].[m_met_expense_percent_ly])*10000"
+format: "#,##;(#,##);0;;"

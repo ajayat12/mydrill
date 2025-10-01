@@ -1,0 +1,5 @@
+unique_name: m_avg_str_units_wos_8_weeks
+object_type: metric_calc
+label: Avg Str Units WOS (8 Weeks)
+expression: "IIF([MEASURES].[m_avg_sales_units_8_weeks]+0.00=0.00,NULL,[MEASURES].[m_avg_str_oh_units_8_weeks]/[MEASURES].[m_avg_sales_units_8_weeks])"
+format: "#,##0.00;(#,##0.00);#,##0.00;;"

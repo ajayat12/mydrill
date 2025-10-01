@@ -1,0 +1,15 @@
+unique_name: XREF_STYLE.dataset
+object_type: dataset
+label: XREF_STYLE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: XREF_STYLE
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STYLE
+    data_type: string

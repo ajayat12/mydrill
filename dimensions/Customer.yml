@@ -1,0 +1,590 @@
+unique_name: Customer
+object_type: dimension
+label: Customer
+type: standard
+
+hierarchies:
+
+  - unique_name: Customer Hierarchy
+    label: Customer Hierarchy
+
+    levels:
+
+      - unique_name: h_ch_customer_key
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_ch_customer_assignment_type
+            label: Customer Assignment Type
+            folder: Classification
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - CUST_ASSIGN_TYPE
+            name_column: CUST_ASSIGN_TYPE
+            sort_column: CUST_ASSIGN_TYPE
+
+          - unique_name: d_ch_customer_id
+            label: Customer ID
+            folder: Customer Detail
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - CUSTOMER_KEY
+            name_column: CUSTOMER_KEY
+            sort_column: CUSTOMER_KEY
+
+          - unique_name: d_ch_customer_type
+            label: Customer Type
+            is_hidden: true
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - CUST_TYPE
+            name_column: CUST_TYPE
+            sort_column: CUST_TYPE
+
+          - unique_name: d_ch_locality
+            label: Locality
+            folder: Customer Location
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - LOCALITY
+            name_column: LOCALITY
+            sort_column: LOCALITY
+
+          - unique_name: d_ch_ma_director
+            label: MA Director
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MGD_ACCT_DIR
+            name_column: MGD_ACCT_DIR
+            sort_column: MGD_ACCT_DIR
+
+          - unique_name: d_ch_ma_managed_flag
+            label: MA Managed Flag
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PAR_FLG
+            name_column: PAR_FLG
+            sort_column: PAR_FLG
+
+          - unique_name: d_ch_ma_sales_area
+            label: 'MA Sales Area '
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MGD_ACCT_SLS_AREA
+            name_column: MGD_ACCT_SLS_AREA
+            sort_column: MGD_ACCT_SLS_AREA
+
+          - unique_name: d_ch_ma_sales_manager_name
+            label: MA Sales Manager Name
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PAR_PSM_NM
+            name_column: PAR_PSM_NM
+            sort_column: PAR_PSM_NM
+
+          - unique_name: d_ch_ma_sales_market
+            label: MA Sales Market
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MGD_ACCT_SLS_MKT
+            name_column: MGD_ACCT_SLS_MKT
+            sort_column: MGD_ACCT_SLS_MKT
+
+          - unique_name: d_ch_ma_sales_rep
+            label: MA Sales Rep
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PAR_NM
+            name_column: PAR_NM
+            sort_column: PAR_NM
+
+          - unique_name: d_ch_ma_sales_rep_ldap
+            label: MA Sales Rep LDAP
+            is_hidden: true
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PAR_USER_ID
+            name_column: PAR_USER_ID
+            sort_column: PAR_USER_ID
+
+          - unique_name: d_ch_ma_sales_submarket
+            label: MA Sales Submarket
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MGD_ACCT_SLS_SUB_MKT
+            name_column: MGD_ACCT_SLS_SUB_MKT
+            sort_column: MGD_ACCT_SLS_SUB_MKT
+
+          - unique_name: d_ch_ma_source_type
+            label: MA Source Type
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PAR_TYPE
+            name_column: PAR_TYPE
+            sort_column: PAR_TYPE
+
+          - unique_name: d_ch_ma_sr_director
+            label: MA Sr Director
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MGD_ACCT_SR_DIR
+            name_column: MGD_ACCT_SR_DIR
+            sort_column: MGD_ACCT_SR_DIR
+
+          - unique_name: d_ch_military_program_flag
+            label: Military Program Flag
+            folder: Classification
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MILITARY_PGM_FLG
+            name_column: MILITARY_PGM_FLG
+            sort_column: MILITARY_PGM_FLG
+
+          - unique_name: d_ch_national_agreement_type
+            label: National Agreement Type
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - NA_TYPE
+            name_column: NA_TYPE
+            sort_column: NA_TYPE
+
+          - unique_name: d_ch_national_program_flag
+            label: National Program Flag
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - NA_FLAG
+            name_column: NA_FLAG
+            sort_column: NA_FLAG
+
+          - unique_name: d_ch_pasa_managed_flag
+            label: PASA Managed Flag
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PASA_FLG
+            name_column: PASA_FLG
+            sort_column: PASA_FLG
+
+          - unique_name: d_ch_pasa_sales_rep_ldap
+            label: PASA Sales Rep LDAP
+            is_hidden: true
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PASA_USER_ID
+            name_column: PASA_USER_ID
+            sort_column: PASA_USER_ID
+
+          - unique_name: d_ch_pasa_sales_rep
+            label: PASA Sales Rep
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PASA_NM
+            name_column: PASA_NM
+            sort_column: PASA_NM
+
+          - unique_name: d_ch_pasa_store_number
+            label: PASA Store Number
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PASA_STR_NBR
+            name_column: PASA_STR_NBR
+            sort_column: PASA_STR_NBR
+
+          - unique_name: d_ch_primary_market
+            label: Primary Market
+            folder: Customer Location
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PRIMARY_MKT
+            name_column: PRIMARY_MKT
+            sort_column: PRIMARY_MKT
+
+          - unique_name: d_ch_pro_company_name
+            label: Pro Company Name
+            folder: Customer Detail
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - CUST_CO_NAME
+            name_column: CUST_CO_NAME
+            sort_column: CUST_CO_NAME
+
+          - unique_name: d_ch_pro_customer_id
+            label: Pro Customer ID
+            folder: Customer Detail
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - CUST_ID
+            name_column: CUST_ID
+            sort_column: CUST_ID
+
+          - unique_name: d_ch_pro_xtra_tier
+            label: Pro Xtra Tier
+            folder: Pro Xtra Attributes
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PX_CURR_YR_TIER
+            name_column: PX_CURR_YR_TIER
+            sort_column: PX_CURR_YR_TIER
+
+          - unique_name: d_ch_svoc_id
+            label: SVOC ID
+            folder: Customer Detail
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - SVOC_ID
+            name_column: SVOC_ID
+            sort_column: SVOC_ID
+
+          - unique_name: d_ch_top_market
+            label: Top Market
+            folder: Customer Location
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - MARKET_1
+            name_column: MARKET_1
+            sort_column: MARKET_1
+
+          - unique_name: d_ch_trade_description
+            label: Trade Description
+            folder: Classification
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - TRADE_DESC
+            name_column: TRADE_DESC
+            sort_column: TRADE_DESC
+
+          - unique_name: d_ch_trade_group
+            label: Trade Group
+            folder: Classification
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - TRADE_DESC_RPT
+            name_column: TRADE_DESC_RPT
+            sort_column: TRADE_DESC_RPT
+
+          - unique_name: d_ch_virtual_account_flag
+            label: Virtual Account Flag
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - VAR_FLG
+            name_column: VAR_FLG
+            sort_column: VAR_FLG
+
+          - unique_name: d_ds_home_market
+            label: Home Market
+            folder: Customer Location
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - HOME_MKT_NM
+            name_column: HOME_MKT_NM
+            sort_column: HOME_MKT_NM
+
+          - unique_name: d_ds_national_program
+            label: National Program
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - NA_PGM
+            name_column: NA_PGM
+            sort_column: NA_PGM
+
+          - unique_name: d_ds_virtual_account_rep
+            label: Virtual Account Rep
+            folder: Account Management
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - VAR_NM
+            name_column: VAR_NM
+            sort_column: VAR_NM
+
+          - unique_name: d_hi_pro_xtra_customer_flag
+            label: Pro Xtra Customer Flag
+            folder: Pro Xtra Attributes
+            dataset: DIM_CUSTOMER.dataset
+            key_columns:
+              - PRO_XTRA_FLG
+            name_column: PRO_XTRA_FLG
+            sort_column: PRO_XTRA_FLG
+
+  - unique_name: h_Customer ID
+    label: Customer ID
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_ci_customer_id_old
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_ci_customer_id_old
+            label: Customer ID old
+            is_hidden: true
+            dataset: Sales.dataset
+            key_columns:
+              - CUST_HH_ID
+            name_column: CUST_HH_ID
+            sort_column: CUST_HH_ID
+
+  - unique_name: h_Pro Customer ID
+    label: Pro Customer ID
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_pci_pro_customer_id_old
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_pci_pro_customer_id_old
+            label: Pro Customer ID old
+            is_hidden: true
+            dataset: Sales.dataset
+            key_columns:
+              - CUST_ID
+            name_column: CUST_ID
+            sort_column: CUST_ID
+
+  - unique_name: h_Household ID
+    label: Household ID
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_hi_household_id
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_hi_household_id
+            label: Household ID
+            folder: Customer Detail
+            dataset: Sales.dataset
+            name_column: HH_ID
+            sort_column: HH_ID
+
+  - unique_name: h_Pro Xtra Auth Flag
+    label: Pro Xtra Auth Flag
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_pxaf_pro_xtra_auth_flag
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_pxaf_pro_xtra_auth_flag
+            label: Pro Xtra Auth Flag
+            is_hidden: true
+            dataset: PX_AUTH_FLAG.dataset
+            name_column: PX_AUTH_FLAG
+            sort_column: PX_AUTH_FLAG
+
+  - unique_name: h_Pro Xtra Loyalty Flag
+    label: Pro Xtra Loyalty Flag
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_pxlf_pro_xtra_loyalty_flag
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_pxlf_pro_xtra_loyalty_flag
+            label: Pro Xtra Loyalty Flag
+            folder: Pro Xtra Attributes
+            dataset: PX_LOYALTY_FLAG.dataset
+            name_column: PX_LOYALTY_FLAG
+            sort_column: PX_LOYALTY_FLAG
+
+  - unique_name: h_Spend Level
+    label: Spend Level
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_sl_spend_level
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_sl_spend_level
+            label: Spend Level
+            folder: Classification
+            dataset: DIM_SPEND_LEVEL.dataset
+            name_column: SPEND_LEVEL
+            sort_column: SPEND_LEVEL
+
+      - unique_name: h_sl_spend_level_detail
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_sl_spend_level_detail
+            label: Spend Level Detail
+            folder: Classification
+            dataset: DIM_SPEND_LEVEL.dataset
+            name_column: SPEND_LEVEL_DTL
+            sort_column: SPEND_LEVEL_DTL
+
+  - unique_name: h_Household Segment
+    label: Household Segment
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_hs_household_segment
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_hs_household_segment
+            label: Household Segment
+            folder: Customer Detail
+            dataset: Customer_segmentation.dataset
+            name_column: SEGMENTATION
+            sort_column: SEGMENTATION
+
+  - unique_name: h_Pro Xtra Trans Flag
+    label: Pro Xtra Trans Flag
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_pxtf_pro_xtra_trans_flag
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_pxtf_pro_xtra_trans_flag
+            label: Pro Xtra Trans Flag
+            folder: Pro Xtra Attributes
+            dataset: PRO_XTRA_FLAG.dataset
+            name_column: PRO_XTRA_FLAG
+            sort_column: PRO_XTRA_FLAG
+
+  - unique_name: h_While MA Managed Flag
+    label: While MA Managed Flag
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_wmmf_while_ma_managed_flag
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_wmmf_while_ma_managed_flag
+            label: While MA Managed Flag
+            folder: Activity
+            dataset: WHILE_MA_MANAGED_FLAG.dataset
+            name_column: WHILE_MA_MANAGED_FLAG
+            sort_column: WHILE_MA_MANAGED_FLAG
+
+level_attributes:
+
+  - unique_name: h_ch_customer_key
+    label: Customer Key
+    is_unique_key: true
+    dataset: DIM_CUSTOMER.dataset
+    key_columns:
+      - CUST_HH_ID_KEY
+    name_column: CUST_HH_ID_KEY
+
+  - unique_name: h_ci_customer_id_old
+    label: Customer ID old
+    dataset: Sales.dataset
+    key_columns:
+      - CUST_HH_ID
+    name_column: CUST_HH_ID
+
+  - unique_name: h_hi_household_id
+    label: Household ID
+    dataset: Sales.dataset
+    key_columns:
+      - HH_ID
+    name_column: HH_ID
+
+  - unique_name: h_hs_household_segment
+    label: Household Segment
+    is_unique_key: true
+    dataset: Customer_segmentation.dataset
+    key_columns:
+      - SEGMENTATION
+    name_column: SEGMENTATION
+
+  - unique_name: h_pci_pro_customer_id_old
+    label: Pro Customer ID old
+    dataset: Sales.dataset
+    key_columns:
+      - CUST_ID
+    name_column: CUST_ID
+
+  - unique_name: h_pxaf_pro_xtra_auth_flag
+    label: Pro Xtra Auth Flag
+    is_unique_key: true
+    dataset: PX_AUTH_FLAG.dataset
+    key_columns:
+      - PX_AUTH_FLAG
+    name_column: PX_AUTH_FLAG
+
+  - unique_name: h_pxlf_pro_xtra_loyalty_flag
+    label: Pro Xtra Loyalty Flag
+    is_unique_key: true
+    dataset: PX_LOYALTY_FLAG.dataset
+    key_columns:
+      - PX_LOYALTY_FLAG
+    name_column: PX_LOYALTY_FLAG
+
+  - unique_name: h_pxtf_pro_xtra_trans_flag
+    label: Pro Xtra Trans Flag
+    is_unique_key: true
+    dataset: PRO_XTRA_FLAG.dataset
+    key_columns:
+      - PRO_XTRA_FLAG
+    name_column: PRO_XTRA_FLAG
+
+  - unique_name: h_sl_spend_level_detail
+    label: Spend Level Detail
+    is_unique_key: true
+    dataset: DIM_SPEND_LEVEL.dataset
+    key_columns:
+      - SPEND_LEVEL_DTL
+    name_column: SPEND_LEVEL_DTL
+
+  - unique_name: h_sl_spend_level
+    label: Spend Level
+    dataset: DIM_SPEND_LEVEL.dataset
+    key_columns:
+      - SPEND_LEVEL
+    name_column: SPEND_LEVEL
+
+  - unique_name: h_wmmf_while_ma_managed_flag
+    label: While MA Managed Flag
+    is_unique_key: true
+    dataset: WHILE_MA_MANAGED_FLAG.dataset
+    key_columns:
+      - WHILE_MA_MANAGED_FLAG
+    name_column: WHILE_MA_MANAGED_FLAG
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,8 @@
+unique_name: m_captured_rt_sales_ly
+object_type: metric_calc
+label: CAPTURED_RT_SALES LY
+expression: |+
+  CASE WHEN [Time].[Time Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Time].[d_th_day_name].CurrentMember.Name = "Day Name" THEN [Measures].[m_captured_rt_sales_d_ly] ELSE [Measures].[m_captured_rt_sales_w_ly] END
+
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true

@@ -1,0 +1,5 @@
+unique_name: m_rtv_rate_percent_v_ly_bps
+object_type: metric_calc
+label: RTV Rate % v LY (BPS)
+expression: "IIF((IsEmpty([MEASURES].[m_rtv_rate_percent]) OR IsEmpty([MEASURES].[m_rtv_rate_percent_ly])),NULL,([Measures].[m_rtv_rate_percent]-[Measures].[m_rtv_rate_percent_ly])*10000)"
+format: "#,##0;(#,##0);#,##0;;"

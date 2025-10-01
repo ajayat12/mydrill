@@ -1,0 +1,13 @@
+unique_name: DIM_IDM_ACCOUNT.dataset
+object_type: dataset
+label: DIM_IDM_ACCOUNT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_IDM_ACCOUNT
+
+columns:
+  - name: IDM_VNDR_ACCT_NM
+    data_type: string
+  - name: IDM_VNDR_KEY
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime

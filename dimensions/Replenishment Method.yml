@@ -1,0 +1,68 @@
+unique_name: Replenishment Method
+object_type: dimension
+label: Replenishment Method
+type: standard
+
+hierarchies:
+
+  - unique_name: Replenishment Method Hierarchy
+    label: Replenishment Method Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_rmh_replenishment_method
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_rmh_replenishment_method
+            label: Replenishment Method
+            dataset: DIM_REPLENISHMENT_METHOD.dataset
+            key_columns:
+              - RMETH_CD
+            name_column: RMETH_DESC
+            sort_column: RMETH_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_rmh_replenishment_method_name
+            label: Replenishment Method Name
+            dataset: DIM_REPLENISHMENT_METHOD.dataset
+            key_columns:
+              - S_RMETH_DESC
+            name_column: S_RMETH_DESC
+            sort_column: S_RMETH_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_rmh_replenishment_method_nbr
+            label: Replenishment Method Nbr
+            dataset: DIM_REPLENISHMENT_METHOD.dataset
+            key_columns:
+              - RMETH_CD
+            name_column: RMETH_CD
+            sort_column: RMETH_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_rmh_replenishment_method
+    label: Replenishment Method
+    is_unique_key: true
+    dataset: DIM_REPLENISHMENT_METHOD.dataset
+    key_columns:
+      - RMETH_CD
+    name_column: RMETH_DESC
+    sort_column: RMETH_CD
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

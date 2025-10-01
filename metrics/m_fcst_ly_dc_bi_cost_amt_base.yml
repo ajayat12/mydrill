@@ -1,0 +1,13 @@
+unique_name: m_fcst_ly_dc_bi_cost_amt_base
+object_type: metric
+label: FCST LY DC BI COST AMT_base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - MONTHLY_FCST.dataset_Time_Transformations
+dataset: MONTHLY_FCST.dataset
+column: LY_FCST_ACT_DC_BI_COST_AMT

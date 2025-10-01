@@ -1,0 +1,5 @@
+unique_name: m_certified_vendor_discount_percent_ly_corporate
+object_type: metric_calc
+label: Certified Vendor Discount % LY (Corporate)
+expression: "IIF([Measures].[m_invoice_cost_amount_ly] + 0.00 = 0.00 , null, ([Measures].[m_certified_vendor_discount_amount_ly_corporate]/[Measures].[m_invoice_cost_amount_ly]))"
+format: 0.00%;(0.00%);0.00%;;

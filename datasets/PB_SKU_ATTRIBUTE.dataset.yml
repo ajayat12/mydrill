@@ -1,0 +1,9 @@
+unique_name: PB_SKU_ATTRIBUTE.dataset
+object_type: dataset
+label: PB_SKU_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: PB_SKU
+
+columns:
+  - name: Private_Brand_Flag
+    data_type: string

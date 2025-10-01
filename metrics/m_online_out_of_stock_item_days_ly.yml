@@ -1,0 +1,8 @@
+unique_name: m_online_out_of_stock_item_days_ly
+object_type: metric
+label: Online Out Of Stock Item Days LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_DLY_ONLN_OOS_IND_CNT

@@ -1,0 +1,13 @@
+unique_name: m_ty_scd_sub_disc_amt_mv_ghq
+object_type: metric
+label: TY SCD SUB DISC AMT MV GHQ
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - GHQ_SKU_MV_DSVC_LNDCOST.dataset_Time_Transformations
+dataset: GHQ_SKU_MV_DSVC_LNDCOST.dataset
+column: TY_SCD_SUB_DISC_AMT_MV

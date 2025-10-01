@@ -1,0 +1,13 @@
+unique_name: DIM_SUPPLY_CHAIN.dataset
+object_type: dataset
+label: DIM_SUPPLY_CHAIN
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_SUPPLY_CHAIN
+
+columns:
+  - name: ITEM_SHP_FR_DIM_ID
+    data_type: long
+  - name: ITEM_SHP_FR_VAL
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime

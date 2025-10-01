@@ -1,0 +1,10 @@
+unique_name: PX_AUTH_FLAG.dataset
+object_type: dataset
+label: PX_AUTH_FLAG
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_PX_AUTH_FLAG
+immutable: true
+
+columns:
+  - name: PX_AUTH_FLAG
+    data_type: string

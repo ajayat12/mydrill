@@ -1,0 +1,8 @@
+unique_name: m_total_purchase_discount_amount_ly_corporate
+object_type: metric
+label: Total Purchase Discount $ LY (Corporate)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_PURCH_DISC_AMT_LY

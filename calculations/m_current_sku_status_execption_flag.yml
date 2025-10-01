@@ -1,0 +1,9 @@
+unique_name: m_current_sku_status_execption_flag
+object_type: metric_calc
+label: Current SKU Status Exception Flag
+expression: "CASE WHEN ([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ OR \n\t\t\t[Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or \n\t\t\
+  \t[Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8\
+  \ ) THEN \n\t\t\tCASE WHEN ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =6) THEN\n\t\t\t[Measures].[m_exception_flag]\n\t\t\t  else null \n\tend\nelse\
+  \ null \nend\n\t\t\t"

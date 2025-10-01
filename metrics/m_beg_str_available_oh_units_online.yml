@@ -1,0 +1,12 @@
+unique_name: m_beg_str_available_oh_units_online
+object_type: metric
+label: Beg Str Available OH Units (Online)
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - DFDRILL_SKU_DTL_DLY.dataset_Time_Transformations
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_BOD_AVAIL_OH_QTY

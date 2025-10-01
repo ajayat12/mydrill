@@ -1,0 +1,9 @@
+unique_name: m_cogs_calc
+object_type: metric
+label: COGS Calc
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: TY_COGS_AMT_CALC

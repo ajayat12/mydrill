@@ -1,0 +1,5 @@
+unique_name: m_end_str_inv_retail_amount_v_ly_percent_wkly
+object_type: metric_calc
+label: End Str Inv Retail $ v LY (%) (Wkly)
+expression: "IIF([Measures].[m_end_str_inv_retail_amount_ly_wkly] + 0.00 = 0.00,NULL,([Measures].[m_end_str_inv_retail_amount_v_ly_wkly])/[Measures].[m_end_str_inv_retail_amount_ly_wkly])"
+format: 0.00%;(0.00%);0.00%;;

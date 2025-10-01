@@ -1,0 +1,35 @@
+unique_name: STR_SKU_BKINV_M.dataset
+object_type: dataset
+label: STR_SKU_BKINV_M
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: STR_SKU_BKINV_M
+
+columns:
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_BI_COST_AMT
+    data_type: double
+  - name: LY_BI_RETL_AMT
+    data_type: double
+  - name: LY_EI_COST_AMT
+    data_type: double
+  - name: LY_EI_RETL_AMT
+    data_type: double
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_BI_COST_AMT
+    data_type: double
+  - name: TY_BI_RETL_AMT
+    data_type: double
+  - name: TY_EI_COST_AMT
+    data_type: double
+  - name: TY_EI_RETL_AMT
+    data_type: double

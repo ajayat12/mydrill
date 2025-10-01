@@ -1,0 +1,5 @@
+unique_name: m_rdc_discount_percent_v_ly_mkt/dc
+object_type: metric_calc
+label: RDC Discount % v LY (Mkt/DC)
+expression: "([Measures].[m_rdc_discount_percent_mkt/dc]-[Measures].[m_rdc_discount_percent_ly_mkt/dc])"
+format: 0.00%;(0.00%);0.00%;;

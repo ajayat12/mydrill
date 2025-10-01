@@ -1,0 +1,8 @@
+unique_name: m_rtv_retail_amount
+object_type: metric
+label: RTV Retail $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: CRTV SKU EVNT.dataset
+column: TY_RETL_AMT

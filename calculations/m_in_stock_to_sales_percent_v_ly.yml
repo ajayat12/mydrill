@@ -1,0 +1,6 @@
+unique_name: m_in_stock_to_sales_percent_v_ly
+object_type: metric_calc
+label: In Stock to Sales % v LY
+expression: "IIF(IsEmpty([MEASURES].[m_in_stock_to_sales_percent]) OR IsEmpty([MEASURES].[m_in_stock_to_sales_percent_ly])\
+  \ ,NULL,[MEASURES].[m_in_stock_to_sales_percent]-[MEASURES].[m_in_stock_to_sales_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

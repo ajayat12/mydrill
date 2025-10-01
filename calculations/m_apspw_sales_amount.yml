@@ -1,0 +1,7 @@
+unique_name: m_apspw_sales_amount
+object_type: metric_calc
+label: APSPW Sales $
+expression: |
+  iif([Measures].[m_store_weeks]+0.00 = 0.00, null,
+  [Measures].[m_sales_amount]/[Measures].[m_store_weeks])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

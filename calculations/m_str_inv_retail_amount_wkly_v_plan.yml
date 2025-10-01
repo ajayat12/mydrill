@@ -1,0 +1,6 @@
+unique_name: m_str_inv_retail_amount_wkly_v_plan
+object_type: metric_calc
+label: Str Inv Retail $ (Wkly) v Plan
+expression: "IIF(IsEmpty([Measures].[m_end_str_inv_retail_amount_wkly]) OR IsEmpty([Measures].[m_end_str_inv_retail_amount_plan]),NULL,([Measures].[m_end_str_inv_retail_amount_wkly]\
+  \ -[Measures].[m_end_str_inv_retail_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

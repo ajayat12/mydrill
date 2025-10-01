@@ -1,0 +1,8 @@
+unique_name: m_exception_flag
+object_type: metric
+label: Exception Flag
+calculation_method: maximum
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: CURR_SKU_STATUS.dataset
+column: EXCE_FLAG_DESC

@@ -1,0 +1,6 @@
+unique_name: m_coop_percent_v_fcst_bps
+object_type: metric_calc
+label: COOP % v Fcst (BPS)
+expression: "IIF(IsEmpty([MEASURES].[m_coop_percent]) OR IsEmpty([MEASURES].[m_coop_percent_fcst]),NULL,([MEASURES].[m_coop_percent]-[MEASURES].[m_coop_percent_fcst])*10000)"
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true

@@ -1,0 +1,5 @@
+unique_name: m_shrink_percent_v_last_inv_pi
+object_type: metric_calc
+label: Shrink % v Last Inv (PI)
+expression: "[MEASURES].[m_shrink_percent_pi]-[MEASURES].[m_shrink_percent_lly_pi]"
+format: 0.00%;(0.00%);0.00%;;

@@ -1,0 +1,5 @@
+unique_name: m_total_mkdn_amount_fcst
+object_type: metric_calc
+label: Total MKDN $ Fcst
+expression: "([MEASURES].[m_buyer_mkdn_amount_fcst]+[MEASURES].[m_buyer_mkup_amount_fcst]+[MEASURES].[m_str_mkdn_amount_fcst])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,9 @@
+unique_name: m_r8w_net_sls_qty_ice
+object_type: metric
+label: R8W NET SLS QTY_ICE
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: ICE_AGING_FACT.dataset
+column: R8W_NET_SLS_QTY

@@ -1,0 +1,9 @@
+unique_name: m_ext_oh_retl_amt_days_ice
+object_type: metric
+label: EXT OH RETL AMT DAYS_ICE
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: ICE_AGING_FACT.dataset
+column: EXT_OH_RETL_AMT_DAYS

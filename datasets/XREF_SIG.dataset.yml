@@ -1,0 +1,15 @@
+unique_name: XREF_SIG.dataset
+object_type: dataset
+label: XREF_SIG
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: XREF_SIG
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: SIG
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

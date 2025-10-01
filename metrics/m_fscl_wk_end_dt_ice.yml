@@ -1,0 +1,9 @@
+unique_name: m_fscl_wk_end_dt_ice
+object_type: metric
+label: FSCL_WK_END_DT_ICE
+calculation_method: maximum
+format: mm/dd/yyyy
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: ICE_AGING_FACT.dataset
+column: fscl_wk_end_dt

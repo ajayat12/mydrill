@@ -1,0 +1,9 @@
+unique_name: m_supply_chain_str_rcpts_cost_amount_wkly_ly
+object_type: metric
+label: Supply Chain Str Rcpts Cost $ wkly LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_LOC_MVRCT_W.dataset
+column: LY_SUPPLYCHN_COST_AMT

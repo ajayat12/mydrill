@@ -1,0 +1,6 @@
+unique_name: m_import_g&a_expense_amount_v_ly
+object_type: metric_calc
+label: Import G&A Expense $ v LY
+expression: "IIF(IsEmpty([Measures].[m_import_g&a_expense_amount]) OR IsEmpty([Measures].[m_import_g&a_expense_amount_ly])\
+  \ , null, ([Measures].[m_import_g&a_expense_amount]-[Measures].[m_import_g&a_expense_amount_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

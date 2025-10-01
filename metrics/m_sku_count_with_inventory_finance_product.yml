@@ -1,0 +1,8 @@
+unique_name: m_sku_count_with_inventory_finance_product
+object_type: metric
+label: SKU Count With Inventory (Finance Product)
+calculation_method: count distinct
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: STR_INV_DLY_D.dataset
+column: TY_SKU_COUNT

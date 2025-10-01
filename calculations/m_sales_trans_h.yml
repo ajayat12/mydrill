@@ -1,0 +1,98 @@
+unique_name: m_sales_trans_h
+object_type: metric_calc
+label: Sales Trans_h
+expression: "CASE WHEN ([Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=5\
+  \ or [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=5 or\
+  \ [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ ) THEN \n\tCASE WHEN [Channel Sales Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ and [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_sc_sls_txn_cnt]\n\t\t WHEN [Channel Sales Experience].[Channel\
+  \ - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1 THEN [Measures].[m_ty_cse_sc_sls_txn_cnt]\n\
+  \t     WHEN [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_sc_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_sc_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_sc_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_sc_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_sc_sls_txn_cnt] \n\tEND\n\tWHEN ([Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=4\
+  \ or [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=4 or\
+  \ [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=4\
+  \ ) THEN \n\tCASE WHEN [Channel Sales Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ and [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_class_sls_txn_cnt]\n\t\t WHEN [Channel Sales\
+  \ Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ THEN [Measures].[m_ty_cse_class_sls_txn_cnt]\n\t     WHEN [Channel Fulfillment\
+  \ Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_class_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_class_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_class_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_class_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_class_sls_txn_cnt] \n\tEND\n\tWHEN ([Product].[Merchandising\
+  \ Product Hierarchy].CurrentMember.LEVEL_NUMBER=3 or [Product].[Merchandising xtended\
+  \ Product Hierarchy].CurrentMember.LEVEL_NUMBER=3 ) THEN \n\tCASE WHEN [Channel\
+  \ Sales Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ and [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_sub_dept_sls_txn_cnt]\n\t\t WHEN [Channel Sales\
+  \ Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ THEN [Measures].[m_ty_cse_sub_dept_sls_txn_cnt]\n\t     WHEN [Channel Fulfillment\
+  \ Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_sub_dept_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_sub_dept_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_sub_dept_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_sub_dept_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_sub_dept_sls_txn_cnt] \n\tEND\n\tWHEN ([Product].[Product\
+  \ Hierarchy].CurrentMember.LEVEL_NUMBER=3 ) THEN \n\tCASE WHEN [Channel Sales Experience].[Channel\
+  \ - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1 and [Channel Fulfillment\
+  \ Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_dept_sls_txn_cnt]\n\t\t WHEN [Channel Sales\
+  \ Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ THEN [Measures].[m_ty_cse_dept_sls_txn_cnt]\n\t     WHEN [Channel Fulfillment\
+  \ Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_dept_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_dept_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_dept_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_dept_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_dept_sls_txn_cnt] \n\tEND\n\tWHEN ([Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=2\
+  \ ) THEN \n\tCASE WHEN [Channel Sales Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ and [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_core_sls_txn_cnt]\n\t\t WHEN [Channel Sales\
+  \ Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ THEN [Measures].[m_ty_cse_core_sls_txn_cnt]\n\t     WHEN [Channel Fulfillment\
+  \ Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_core_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_core_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_core_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_core_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_core_sls_txn_cnt] \n\tEND\n\tWHEN ([Product].[Merchandising\
+  \ Product Hierarchy].CurrentMember.LEVEL_NUMBER=2 or [Product].[Merchandising xtended\
+  \ Product Hierarchy].CurrentMember.LEVEL_NUMBER=2 ) THEN \n\tCASE WHEN [Channel\
+  \ Sales Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ and [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_svp_sls_txn_cnt]\n\t\t WHEN [Channel Sales Experience].[Channel\
+  \ - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1 THEN [Measures].[m_ty_cse_svp_sls_txn_cnt]\n\
+  \t     WHEN [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_svp_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_svp_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_svp_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_svp_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_svp_sls_txn_cnt] \n\tEND\n\tWHEN ([Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER<2\
+  \ or [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER<2 or\
+  \ [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER<2\
+  \ ) THEN \n\tCASE WHEN [Channel Sales Experience].[Channel - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1\
+  \ and [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ >0 THEN [Measures].[m_ty_cse_cfel_all_sls_txn_cnt]\n\t\t WHEN [Channel Sales Experience].[Channel\
+  \ - Sales Experience Hierarchy].CurrentMember.LEVEL_NUMBER=1 THEN [Measures].[m_ty_cse_all_sls_txn_cnt]\n\
+  \t     WHEN [Channel Fulfillment Experience].[Channel - Fulfillment Experience Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_cfel_all_sls_txn_cnt]\n\t\t WHEN [Channel Summary].[Summary\
+  \ Channel Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_sfc_all_sls_txn_cnt]\n\
+  \t\t WHEN [Interconnected Location].[Interconnected Merchandising Location Hierarchy].CurrentMember.LEVEL_NUMBER>0\
+  \ THEN [Measures].[m_ty_icr_all_sls_txn_cnt]\n\t\t WHEN [Interconnected Location].[Interconnected\
+  \ Operational Location Hierarchy].CurrentMember.LEVEL_NUMBER>0 THEN [Measures].[m_ty_icr_all_sls_txn_cnt]\n\
+  \tELSE [Measures].[m_ty_all_sls_txn_cnt]\n\tEND\nELSE null\nEND"
+format: "#,##0;(#,##0);;;"
+is_hidden: true

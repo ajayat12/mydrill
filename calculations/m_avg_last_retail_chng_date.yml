@@ -1,0 +1,6 @@
+unique_name: m_avg_last_retail_chng_date
+object_type: metric_calc
+label: Avg Last Retail Chng (Date)
+expression: now()
+format: mm/dd/yyyy
+is_hidden: true

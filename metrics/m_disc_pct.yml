@@ -1,0 +1,9 @@
+unique_name: m_disc_pct
+object_type: metric
+label: DISC PCT
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: REBATE.dataset
+column: DISC_PCT

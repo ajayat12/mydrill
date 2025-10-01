@@ -1,0 +1,7 @@
+unique_name: m_raw_imu_percent_ly
+object_type: metric_calc
+label: Raw IMU % LY
+expression: |
+  IIF([Measures].[m_raw_str_rcpts_retail_amount_ly] +0.00 = 0.00, null , [Measures].[m_raw_imu_amount_ly]/[Measures].[m_raw_str_rcpts_retail_amount_ly])
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

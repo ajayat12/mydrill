@@ -1,0 +1,47 @@
+unique_name: UNIT_COVERAGE.dataset
+object_type: dataset
+label: UNIT_COVERAGE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: UNIT_COVERAGE
+
+columns:
+  - name: DISC_TYP_CD
+    data_type: long
+  - name: DSVC_TYP_CD
+    data_type: long
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: GEO_HQ_NBR
+    data_type: string
+  - name: ISSI_DISC
+    data_type: double
+  - name: ISSI_EXP
+    data_type: double
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_D_COST_AMT
+    data_type: double
+  - name: LY_D_RETL_AMT
+    data_type: double
+  - name: LY_Q_COST_AMT
+    data_type: double
+  - name: LY_Q_RETL_AMT
+    data_type: double
+  - name: RECV_DEPT_NBR
+    data_type: long
+  - name: RECV_MVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_D_COST_AMT
+    data_type: double
+  - name: TY_D_RETL_AMT
+    data_type: double
+  - name: TY_Q_COST_AMT
+    data_type: double
+  - name: TY_Q_RETL_AMT
+    data_type: double

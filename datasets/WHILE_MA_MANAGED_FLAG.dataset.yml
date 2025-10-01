@@ -1,0 +1,10 @@
+unique_name: WHILE_MA_MANAGED_FLAG.dataset
+object_type: dataset
+label: WHILE_MA_MANAGED_FLAG
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_WHILE_MA_MANAGED_FLAG
+immutable: true
+
+columns:
+  - name: WHILE_MA_MANAGED_FLAG
+    data_type: string

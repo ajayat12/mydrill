@@ -1,0 +1,5 @@
+unique_name: m_cust_comp_trans_base_1_year
+object_type: metric_calc
+label: Cust Comp Trans Base (1 Year)
+expression: "IIF([Measures].[m_cust_comp_trans_base_1_year_h]=0,null,[Measures].[m_cust_comp_trans_base_1_year_h])"
+format: "#,##0;(#,##0);;;"

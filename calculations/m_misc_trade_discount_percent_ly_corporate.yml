@@ -1,0 +1,5 @@
+unique_name: m_misc_trade_discount_percent_ly_corporate
+object_type: metric_calc
+label: Misc Trade Discount % LY (Corporate)
+expression: "IIF([Measures].[m_invoice_cost_amount_ly] + 0.00 = 0.00 , null, ([Measures].[m_misc_trade_discount_amount_ly_corporate]/[Measures].[m_invoice_cost_amount_ly]))"
+format: 0.00%;(0.00%);0.00%;;

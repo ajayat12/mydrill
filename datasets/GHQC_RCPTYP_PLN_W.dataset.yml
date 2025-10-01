@@ -1,0 +1,33 @@
+unique_name: GHQC_RCPTYP_PLN_W.dataset
+object_type: dataset
+label: GHQC_RCPTYP_PLN_W
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: GHQC_RCPTYP_PLN_W
+
+columns:
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: GEO_HQ_NBR
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RECPT_TYP_CD
+    data_type: string
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_PLN_BASE_NRCTC_AMT
+    data_type: double
+  - name: TY_PLN_BASE_NRCTR_AMT
+    data_type: double
+  - name: TY_PLN_COOP_AMT
+    data_type: double
+  - name: TY_PLN_DCEX_AMT
+    data_type: double
+  - name: TY_PLN_NRCTC_AMT
+    data_type: double
+  - name: TY_PLN_NRCTR_AMT
+    data_type: double
+  - name: TY_PLN_REBT_AMT
+    data_type: double

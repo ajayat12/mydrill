@@ -1,0 +1,8 @@
+unique_name: m_rebate_amount_plan
+object_type: metric
+label: Rebate $ Plan
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: GHQC_RCPTYP_PLN_W.dataset
+column: TY_PLN_REBT_AMT

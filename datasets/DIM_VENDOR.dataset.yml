@@ -1,0 +1,39 @@
+unique_name: DIM_VENDOR.dataset
+object_type: dataset
+label: DIM_VENDOR
+connection_id: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+table: DIM_VENDOR
+
+columns:
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: IMP_FLG
+    data_type: string
+  - name: IMP_FLG_DESC
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MVNDR_DEPT
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: MVNDR_NM_NBR
+    data_type: string
+  - name: MVNDR_STAT_CD
+    data_type: long
+  - name: MVNDR_TYP_CD
+    data_type: string
+  - name: NEW_STR_PAY_TRM_TYP_DESC
+    data_type: string
+  - name: PAY_TRM_TYP_DESC
+    data_type: string
+  - name: PVNDR_NBR
+    data_type: long
+  - name: PVNDR_NM
+    data_type: string
+  - name: PVNDR_NM_NBR
+    data_type: string

@@ -1,0 +1,8 @@
+unique_name: m_first_imu_amount_ly
+object_type: metric_calc
+label: First IMU $ LY
+expression: "/*IIF(IsEmpty([Measures].[m_first_str_rcpts_retail_amount_ly]) OR IsEmpty([Measures].[m_first_str_rcpts_cost_amount_ly]),NULL,[Measures].[m_first_str_rcpts_retail_amount_ly]\
+  \ - [Measures].[m_first_str_rcpts_cost_amount_ly])*/                           \
+  \    [Measures].[m_first_str_rcpts_retail_amount_ly] - [Measures].[m_first_str_rcpts_cost_amount_ly]\
+  \                      \n"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

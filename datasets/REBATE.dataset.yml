@@ -1,0 +1,53 @@
+unique_name: REBATE.dataset
+object_type: dataset
+label: REBATE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: REBATE
+
+columns:
+  - name: ACT_CMMT_AMT
+    data_type: double
+  - name: ANN_CMMT_AMT
+    data_type: double
+  - name: ANN_EX_RECPT_AMT
+    data_type: double
+  - name: BUS_TYP_IND
+    data_type: string
+  - name: CNCAT_CNTRC_TXT
+    data_type: string
+  - name: CNTRC_DESC
+    data_type: string
+  - name: CURR_TIER_DESC
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DISC_PCT
+    data_type: double
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: FSCL_YR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MVNDR_NBR
+    data_type: long
+  - name: REBT_CNTRC_NBR
+    data_type: string
+  - name: REBT_CNTRC_NBR_ID
+    data_type: string
+  - name: REBT_MAX_TIER_AMT
+    data_type: double
+  - name: REBT_MIN_TIER_AMT
+    data_type: double
+  - name: REBT_TIER_DESC
+    data_type: string
+  - name: REBT_TIER_NBR
+    data_type: long
+  - name: TRGT_CMMT_AMT
+    data_type: double
+  - name: TRGT_FCST_AMT
+    data_type: double
+  - name: TRGT_PURCH_AMT
+    data_type: double
+  - name: TRNSFM_DT
+    data_type: date

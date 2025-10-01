@@ -1,0 +1,5 @@
+unique_name: m_shrink_amount_v_plan
+object_type: metric_calc
+label: Shrink $ v Plan
+expression: "IIF(IsEmpty([Measures].[m_shrink_amount]) OR IsEmpty([Measures].[m_shrink_amount_plan]),NULL,([Measures].[m_shrink_amount]-[Measures].[m_shrink_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

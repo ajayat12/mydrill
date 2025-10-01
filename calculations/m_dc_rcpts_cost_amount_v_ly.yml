@@ -1,0 +1,5 @@
+unique_name: m_dc_rcpts_cost_amount_v_ly
+object_type: metric_calc
+label: DC Rcpts Cost $ v LY
+expression: "[Measures].[m_dc_rcpts_cost_amount] - [Measures].[m_dc_rcpts_cost_amount_ly]"
+format: "$#,##0.00;($#,##0.00);$0.00;$0.00;"

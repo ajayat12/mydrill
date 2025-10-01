@@ -1,0 +1,6 @@
+unique_name: m_gm_amount_v_fcst
+object_type: metric_calc
+label: GM $ v Fcst
+expression: "IIF(IsEmpty([Measures].[m_gm_amount]) OR IsEmpty([Measures].[m_gm_amount_fcst]),NULL,([MEASURES].[m_gm_amount]\
+  \ - [MEASURES].[m_gm_amount_fcst]) )"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_deferred_interest_amount_plan
+object_type: metric_calc
+label: Deferred Interest $ Plan
+expression: "([Measures].[m_ty_pln_defr_intrs_amt_sw])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

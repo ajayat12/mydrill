@@ -1,0 +1,5 @@
+unique_name: m_high_extended_retail_amount_52_weeks
+object_type: metric_calc
+label: High Extended Retail $ (52 Weeks)
+expression: "[Measures].[m_high_retl_amt_ice]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

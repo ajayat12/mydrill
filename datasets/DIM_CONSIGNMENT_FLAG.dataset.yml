@@ -1,0 +1,11 @@
+unique_name: DIM_CONSIGNMENT_FLAG.dataset
+object_type: dataset
+label: DIM_CONSIGNMENT_FLAG
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_CONSIGNMENT_FLAG
+
+columns:
+  - name: CNSGMT_FLG
+    data_type: string
+  - name: CNSGMT_FLG_DESC
+    data_type: string

@@ -1,0 +1,6 @@
+unique_name: m_sales_units_v_ly
+object_type: metric_calc
+label: Sales Units v LY
+expression: "IIF(ISEMPTY([Measures].[m_sales_units]) OR ISEMPTY([Measures].[m_sales_units_ly]),NULL,([Measures].[m_sales_units]\
+  \ -[Measures].[m_sales_units_ly]))"
+format: "#,##0;(#,##0);0;;"

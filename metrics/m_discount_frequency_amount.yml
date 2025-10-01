@@ -1,0 +1,9 @@
+unique_name: m_discount_frequency_amount
+object_type: metric
+label: Discount Frequency $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: UNIT_COVERAGE.dataset
+column: TY_Q_COST_AMT

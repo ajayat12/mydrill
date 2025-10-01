@@ -1,0 +1,5 @@
+unique_name: m_dc_inv_retail_change_amount_v_ly_percent
+object_type: metric_calc
+label: DC Inv Retail Change $ v LY (%)
+expression: "IIF([MEASURES].[m_dc_inv_retail_change_amount_ly]+ 0.00=0.00,NULL,([Measures].[m_dc_inv_retail_change_amount_v_ly])/([MEASURES].[m_dc_inv_retail_change_amount_ly]))"
+format: 0.00%;(0.00%);0.00%;;

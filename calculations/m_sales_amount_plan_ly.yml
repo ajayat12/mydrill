@@ -1,0 +1,5 @@
+unique_name: m_sales_amount_plan_ly
+object_type: metric_calc
+label: Sales $ Plan LY
+expression: "[Measures].[m_sales_amount_plan_ly_dly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,9 @@
+unique_name: m_r60d_cust_buybl_ord_cnt_ly
+object_type: metric
+label: R60D CUST BUYBL ORD CNT LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_R60D_CUST_BUYBL_ORD_CNT

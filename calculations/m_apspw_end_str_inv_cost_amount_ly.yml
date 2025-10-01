@@ -1,0 +1,7 @@
+unique_name: m_apspw_end_str_inv_cost_amount_ly
+object_type: metric_calc
+label: APSPW End Str Inv Cost $ LY
+expression: |-
+  iif([Measures].[m_store_weeks_ly]+0.00=0.00,null,
+  [Measures].[m_end_str_inv_cost_amount_ly]/[Measures].[m_store_weeks_ly])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

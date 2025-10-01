@@ -1,0 +1,6 @@
+unique_name: m_avg_unit_retail_v_ly_percent
+object_type: metric_calc
+label: Avg Unit Retail v LY (%)
+expression: "IIF([MEASURES].[m_avg_unit_retail_ly]+ 0.00 = 0.00, NULL,[MEASURES].[m_avg_unit_retail_v_ly]\
+  \ / [MEASURES].[m_avg_unit_retail_ly])"
+format: 0.00%;(0.00%);0.00%;;

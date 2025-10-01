@@ -1,0 +1,6 @@
+unique_name: m_avg_unit_retail
+object_type: metric_calc
+label: Avg Unit Retail
+expression: "IIF([MEASURES].[m_sales_units]+ 0.00 = 0.00, NULL,[MEASURES].[m_sales_amount]\
+  \ / [MEASURES].[m_sales_units])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,6 @@
+unique_name: m_imu_percent_v_plan_bps
+object_type: metric_calc
+label: IMU % v Plan (BPS)
+expression: "IIF(IsEmpty([Measures].[m_imu_percent]) OR IsEmpty([Measures].[m_imu_percent_plan]),\
+  \ null , ([Measures].[m_imu_percent] - [Measures].[m_imu_percent_plan])*10000)"
+format: "#,##;(#,##);0;;"

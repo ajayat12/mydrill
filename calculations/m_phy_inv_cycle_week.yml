@@ -1,0 +1,5 @@
+unique_name: m_phy_inv_cycle_week
+object_type: metric_calc
+label: Phy Inv Cycle Week
+expression: "[Measures].[m_phy_inv_wk_nbr]"
+format: "#,##0;(#,##0);#,##0;;"

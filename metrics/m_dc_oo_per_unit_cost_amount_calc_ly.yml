@@ -1,0 +1,13 @@
+unique_name: m_dc_oo_per_unit_cost_amount_calc_ly
+object_type: metric
+label: DC OO Per Unit Cost $ calc LY
+calculation_method: sum
+format: "$#,##0.00;($ #,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations
+dataset: DFDRILL_BRCH_DLY.dataset
+column: LY_DFC_REPL_COST_AMT

@@ -1,0 +1,5 @@
+unique_name: m_misc_trade_discount_amount_ly_mkt/dc
+object_type: metric_calc
+label: Misc Trade Discount $ LY (Mkt/DC)
+expression: "IIF([Measures].[m_total_sales_qty_ly]+0.00 = 0.00, null,[Measures].[m_total_misc_trade_discount_amount_ly_mkt/dc]/[Measures].[m_total_sales_qty_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

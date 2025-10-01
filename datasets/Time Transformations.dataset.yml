@@ -1,0 +1,23 @@
+unique_name: Time Transformations.dataset
+object_type: dataset
+label: Time Transformations
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: TIME_TRANSFORMATION
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: S_TRNSFM_TYP_DESC
+    data_type: string
+  - name: SORTING_ID
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TRNSFM_TYP_SORT_ID
+    data_type: long

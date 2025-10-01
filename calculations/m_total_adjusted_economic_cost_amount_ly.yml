@@ -1,0 +1,6 @@
+unique_name: m_total_adjusted_economic_cost_amount_ly
+object_type: metric_calc
+label: Total Adjusted Economic Cost $ LY
+expression: "[Measures].[m_total_economic_cost_amount_ly_final]-[Measures].[m_total_economic_cost_amount_ly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

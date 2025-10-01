@@ -1,0 +1,5 @@
+unique_name: m_coop_amount_v_plan
+object_type: metric_calc
+label: COOP $ v Plan
+expression: "IIF(IsEmpty([Measures].[m_coop_amount]) OR IsEmpty([Measures].[m_coop_amount_plan]),\
+  \ null,([Measures].[m_coop_amount]-[Measures].[m_coop_amount_plan]))"

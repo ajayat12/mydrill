@@ -1,0 +1,9 @@
+unique_name: m_ann_cmmt_amt
+object_type: metric
+label: ANN CMMT AMT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: REBATE.dataset
+column: ANN_CMMT_AMT

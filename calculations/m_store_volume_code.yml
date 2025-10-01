@@ -1,0 +1,16 @@
+unique_name: m_store_volume_code
+object_type: metric_calc
+label: Store Volume Code
+expression: "CASE WHEN [Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER=7\
+  \ OR \n[Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER=7 THEN\
+  \ \nCASE WHEN [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ or \n[Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Product].[Merchandising\
+  \ xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8  THEN \n[Measures].[m_str_vol_lvl_cd]\
+  \ \nWHEN [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=5\
+  \ or \n[Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=5 or \n[Product].[Merchandising\
+  \ xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 THEN \n[Measures].[m_strsc_vol_lvl_cd]\
+  \ \nWHEN [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=4\
+  \ or \n[Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=4 or \n[Product].[Merchandising\
+  \ xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=4 THEN \n[Measures].[m_strc_vol_lvl_cd]\
+  \ \nWHEN [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=3 THEN [Measures].[m_strd_vol_lvl_cd]\
+  \ \nELSE null END ELSE null END"

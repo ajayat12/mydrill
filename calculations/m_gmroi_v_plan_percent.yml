@@ -1,0 +1,5 @@
+unique_name: m_gmroi_v_plan_percent
+object_type: metric_calc
+label: GMROI v Plan (%)
+expression: "IIF([Measures].[m_gmroi_plan]+0.00=0.00,NULL,([Measures].[m_gmroi]-[Measures].[m_gmroi_plan])/[Measures].[m_gmroi_plan])"
+format: 0.00%;(0.00%);0.00%;;

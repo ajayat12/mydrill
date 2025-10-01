@@ -1,0 +1,6 @@
+unique_name: m_non_comp_amount_v_ly_1_year
+object_type: metric_calc
+label: Non Comp $ v LY (1 Year)
+expression: "IIF(IsEmpty([Measures].[m_non_comp_amount_1_year]) OR IsEmpty([Measures].[m_non_comp_amount_base_1_year]),\
+  \ null, ([Measures].[m_non_comp_amount_1_year]-[Measures].[m_non_comp_amount_base_1_year]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

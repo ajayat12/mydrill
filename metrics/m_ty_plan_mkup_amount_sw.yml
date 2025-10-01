@@ -1,0 +1,9 @@
+unique_name: m_ty_plan_mkup_amount_sw
+object_type: metric
+label: TY Plan MKUP $ SW
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: WEEKLY_PLAN.dataset
+column: TY_PLN_PCMKUP_AMT

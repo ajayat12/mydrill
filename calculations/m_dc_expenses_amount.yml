@@ -1,0 +1,6 @@
+unique_name: m_dc_expenses_amount
+object_type: metric_calc
+label: DC Expenses $
+expression: "[Measures].[m_dc_expense_amount_dly] + [Measures].[m_dc_expense_amount_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

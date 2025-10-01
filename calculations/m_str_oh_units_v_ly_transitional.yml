@@ -1,0 +1,5 @@
+unique_name: m_str_oh_units_v_ly_transitional
+object_type: metric_calc
+label: Str OH Units v LY (Transitional)
+expression: "IIF(ISEMPTY([Measures].[m_str_oh_units_transitional]) OR ISEMPTY([Measures].[m_str_oh_units_ly_transitional]),NULL,[Measures].[m_str_oh_units_transitional]-[Measures].[m_str_oh_units_ly_transitional])"
+format: "#,##0;(#,##0);0;;"

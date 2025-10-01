@@ -1,0 +1,74 @@
+unique_name: Markup and Markdown
+object_type: dimension
+label: Markup and Markdown
+type: standard
+
+hierarchies:
+
+  - unique_name: Markup and Markdown Hierarchy
+    label: Markup and Markdown Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_mamh_markdown_type
+
+        aliases:
+
+          - unique_name: d_th_markdown_type
+            label: Markdown Type
+            folder: More Fields
+            dataset: MARKUP_MARKDOWNS.dataset
+            name_column: MKUP_MKDN_TYP_DESC
+
+      - unique_name: h_mamh_markdown_reason
+
+        secondary_attributes:
+
+          - unique_name: d_mamh_markdown_reason_code
+            label: Markdown Reason Code
+            folder: More Fields
+            dataset: MARKUP_MARKDOWNS.dataset
+            key_columns:
+              - MKUP_MKDN_RSN_CD
+            name_column: MKUP_MKDN_RSN_CD
+            sort_column: MKUP_MKDN_RSN_CD
+
+          - unique_name: d_mamh_markdown_reason_name
+            label: Markdown Reason Name
+            folder: More Fields
+            dataset: MARKUP_MARKDOWNS.dataset
+            key_columns:
+              - MKUP_MKDN_RSN_DESC
+            name_column: MKUP_MKDN_RSN_DESC
+            sort_column: MKUP_MKDN_RSN_DESC
+
+          - unique_name: d_sch_markdown_reason
+            label: Markdown Reason
+            dataset: MARKUP_MARKDOWNS.dataset
+            key_columns:
+              - MKUP_MKDN_RSN_CD
+            name_column: RSN_DESC
+            sort_column: RSN_DESC
+
+level_attributes:
+
+  - unique_name: h_mamh_markdown_reason
+    label: Markdown Reason
+    is_unique_key: true
+    dataset: MARKUP_MARKDOWNS.dataset
+    key_columns:
+      - MKUP_MKDN_RSN_CD
+    name_column: RSN_DESC
+    sort_column: MKUP_MKDN_RSN_CD
+
+  - unique_name: h_mamh_markdown_type
+    label: Markdown Type
+    dataset: MARKUP_MARKDOWNS.dataset
+    key_columns:
+      - MKUP_MKDN_TYP_CD
+    name_column: MKUP_MKDN_TYP_DESC
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

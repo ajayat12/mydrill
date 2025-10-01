@@ -1,0 +1,8 @@
+unique_name: m_rebate_ad_co_op_flat_amount_company
+object_type: metric
+label: Rebate/Ad/Co-op Flat $ (Company)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: repeat
+dataset: REBATE.dataset
+column: ANN_CMMT_AMT

@@ -1,0 +1,6 @@
+unique_name: m_base_imu_percent_comapny
+object_type: metric_calc
+label: Base IMU % (Comapny)
+expression: "IIF([Measures].[m_base_str_rcpts_retail_amount_company] + 0.00 = 0.00,\
+  \ null, ([Measures].[m_base_str_rcpts_retail_amount_company] - [Measures].[m_base_str_rcpts_cost_amount_company])/[Measures].[m_base_str_rcpts_retail_amount_company])"
+is_hidden: true

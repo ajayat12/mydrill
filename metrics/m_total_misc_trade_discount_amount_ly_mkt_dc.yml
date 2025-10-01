@@ -1,0 +1,8 @@
+unique_name: m_total_misc_trade_discount_amount_ly_mkt/dc
+object_type: metric
+label: Total Misc Trade Discount $ LY (Mkt/DC)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_MTD_SUB_DISC_AMT_LY

@@ -1,0 +1,5 @@
+unique_name: m_str_oh_units_ice_aging
+object_type: metric_calc
+label: Str OH Units (ICE Aging)
+expression: "([Measures].[m_ice_oh_qty])"
+format: "#,##0;(#,##0);#,##0;;"

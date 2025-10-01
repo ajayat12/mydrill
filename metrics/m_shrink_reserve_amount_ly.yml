@@ -1,0 +1,8 @@
+unique_name: m_shrink_reserve_amount_ly
+object_type: metric
+label: Shrink Reserve $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRC_INV_STATS.dataset
+column: LY_SHNK_RSRV_AMT

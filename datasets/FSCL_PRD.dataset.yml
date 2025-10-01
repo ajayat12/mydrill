@@ -1,0 +1,31 @@
+unique_name: FSCL_PRD.dataset
+object_type: dataset
+label: FSCL_PRD
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: FSCL_PRD
+
+columns:
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: FSCL_YR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_WK_53_FLG
+    data_type: long
+  - name: PRD_CNT
+    data_type: long
+  - name: PRD_CNT_LY
+    data_type: long
+  - name: PRD_WK_CNT
+    data_type: long
+  - name: PRD_WK_CNT_LY
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_WK_53_FLG
+    data_type: long
+  - name: YR_WK_CNT
+    data_type: long
+  - name: YR_WK_CNT_LY
+    data_type: long

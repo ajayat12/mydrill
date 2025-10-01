@@ -1,0 +1,5 @@
+unique_name: m_dc_available_oh_units_v_ly_percent
+object_type: metric_calc
+label: DC Available OH Units v LY (%)
+expression: "IIF([Measures].[m_dc_available_oh_units_ly]+0.00=0.00,NULL,([Measures].[m_dc_available_oh_units_v_ly]/[Measures].[m_dc_available_oh_units_ly]))"
+format: 0.00%;(0.00%);0.00%;;

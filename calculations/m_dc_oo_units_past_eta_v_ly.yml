@@ -1,0 +1,5 @@
+unique_name: m_dc_oo_units_past_eta_v_ly
+object_type: metric_calc
+label: DC OO Units (Past ETA) v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_oo_units_past_eta]) OR ISEmpty([Measures].[m_dc_oo_units_past_eta_ly]),NULL,[Measures].[m_dc_oo_units_past_eta]-[Measures].[m_dc_oo_units_past_eta_ly])"
+format: "#,##0;(#,##0);#,##0;;"

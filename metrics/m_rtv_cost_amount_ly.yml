@@ -1,0 +1,8 @@
+unique_name: m_rtv_cost_amount_ly
+object_type: metric
+label: RTV Cost $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: CRTV SKU EVNT.dataset
+column: LY_COST_AMT

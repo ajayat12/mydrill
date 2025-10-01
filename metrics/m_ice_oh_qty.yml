@@ -1,0 +1,9 @@
+unique_name: m_ice_oh_qty
+object_type: metric
+label: ICE OH QTY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: ICE_AGING_FACT.dataset
+column: oh_qty

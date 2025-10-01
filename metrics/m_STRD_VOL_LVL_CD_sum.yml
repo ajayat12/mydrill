@@ -1,0 +1,8 @@
+unique_name: m_STRD_VOL_LVL_CD_sum
+object_type: metric
+label: Str Vol Dept
+calculation_method: sum
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STR_VOL_FLG.dataset
+column: Str Vol M

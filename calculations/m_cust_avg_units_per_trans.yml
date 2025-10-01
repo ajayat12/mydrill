@@ -1,0 +1,6 @@
+unique_name: m_cust_avg_units_per_trans
+object_type: metric_calc
+label: Cust Avg Units per Trans
+expression: "IIF([MEASURES].[m_cust_sales_trans]+ 0.00 = 0.00,NULL,([MEASURES].[m_Sales_Units]\
+  \ / [MEASURES].[m_cust_sales_trans]))"
+format: "#,###,###,##0.00;(#,###,###,##0.00)"

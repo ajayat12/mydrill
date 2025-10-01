@@ -1,0 +1,6 @@
+unique_name: m_shipping_revenue_comp_percent_bps_2_year
+object_type: metric_calc
+label: Shipping Revenue Comp % BPS (2 Year)
+expression: "IIF([Measures].[m_shipping_revenue_comp_percent_2_year]+ 0.00 = 0.00,\
+  \ Null,([MEASURES].[m_shipping_revenue_comp_percent_2_year]*10000))"
+format: "#,##0;(#,##0);0;;"

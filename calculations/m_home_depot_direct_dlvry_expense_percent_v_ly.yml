@@ -1,0 +1,6 @@
+unique_name: m_home_depot_direct_dlvry_expense_percent_v_ly
+object_type: metric_calc
+label: Home Depot Direct Dlvry Expense % v LY
+expression: "IIF(IsEmpty([MEASURES].[m_home_depot_direct_dlvry_expense_percent]) OR\
+  \ IsEmpty([MEASURES].[m_home_depot_direct_dlvry_expense_percent_ly]),NULL,[MEASURES].[m_home_depot_direct_dlvry_expense_percent]-[MEASURES].[m_home_depot_direct_dlvry_expense_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

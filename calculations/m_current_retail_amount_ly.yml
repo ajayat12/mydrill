@@ -1,0 +1,10 @@
+unique_name: m_current_retail_amount_ly
+object_type: metric_calc
+label: Current Retail $ LY
+expression: "CASE WHEN ([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Product].[Merchandising\
+  \ xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8 ) THEN \n    CASE WHEN\
+  \ ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER =7)  OR \n\t([Location].[Operation\
+  \ Location Hierarchy].CurrentMember.LEVEL_NUMBER =7) THEN\t\n[Measures].[m_current_retail_amount_ly_base]\n\
+  \ else null \n\tend\nelse null \nend"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

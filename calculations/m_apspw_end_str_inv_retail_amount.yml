@@ -1,0 +1,7 @@
+unique_name: m_apspw_end_str_inv_retail_amount
+object_type: metric_calc
+label: APSPW End Str Inv Retail $
+expression: |-
+  iif([Measures].[m_store_weeks]+0.00=0.00,null,
+  [Measures].[m_end_str_inv_retail_amount]/[Measures].[m_store_weeks])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

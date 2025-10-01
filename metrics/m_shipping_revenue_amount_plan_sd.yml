@@ -1,0 +1,9 @@
+unique_name: m_shipping_revenue_amount_plan_sd
+object_type: metric
+label: Shipping Revenue $ Plan SD
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: WEEKLY_DAILY_SLS_PLAN.dataset
+column: TY_PLN_SHPG_RVNU_AMT

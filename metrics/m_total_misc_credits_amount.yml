@@ -1,0 +1,8 @@
+unique_name: m_total_misc_credits_amount
+object_type: metric
+label: Total Misc Credits $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_MISS_CR_AMT

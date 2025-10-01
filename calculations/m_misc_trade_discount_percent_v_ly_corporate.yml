@@ -1,0 +1,5 @@
+unique_name: m_misc_trade_discount_percent_v_ly_corporate
+object_type: metric_calc
+label: Misc Trade Discount % v LY (Corporate)
+expression: "([Measures].[m_misc_trade_discount_percent_corporate]-[Measures].[m_misc_trade_discount_percent_ly_corporate])"
+format: 0.00%;(0.00%);0.00%;;

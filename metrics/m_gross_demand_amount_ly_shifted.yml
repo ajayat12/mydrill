@@ -1,0 +1,8 @@
+unique_name: m_gross_demand_amount_ly_shifted
+object_type: metric
+label: Gross Demand $ LY (shifted)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: DEMD_SLS.dataset
+column: LY_SHFT_GROSS_DEMAND_SALES

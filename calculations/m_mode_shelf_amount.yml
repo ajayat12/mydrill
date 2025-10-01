@@ -1,0 +1,24 @@
+unique_name: m_mode_shelf_amount
+object_type: metric_calc
+label: Mode Shelf $
+expression: "CASE WHEN ([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Product].[Merchandising\
+  \ xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8 ) THEN \n    CASE WHEN\
+  \ ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER > 0 and [Location].[Location\
+  \ Hierarchy].CurrentMember.LEVEL_NUMBER < 4)  OR ([Location].[Operation Location\
+  \ Hierarchy].CurrentMember.LEVEL_NUMBER > 0 and [Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ < 4) THEN\n        CASE WHEN [Vendor].[Merch Vendor by Dept Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =2 THEN \n            CASE WHEN ([DC Service Type].[d_dsth_dc_service_type].CurrentMember.Level.name='d_dsth_dc_service_type'\
+  \ OR [DC Service Type].[d_dsth_dc_service_type_name].CurrentMember.Level.name='d_dsth_dc_service_type_name')\
+  \ THEN \n               [Measures].[m_ty_ad_retl_amt_ghq]\n            ELSE \n \
+  \               [Measures].[m_ty_ad_retl_amt_mv_ghq]  \n            END\n      \
+  \  ELSE\n                [Measures].[m_ty_ad_retl_amt_sku_ghq]    \n        END\
+  \  \n        WHEN ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER =\
+  \ 6 ) THEN\n        CASE WHEN [Vendor].[Merch Vendor by Dept Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =2 THEN \n            CASE WHEN ([DC Service Type].[d_dsth_dc_service_type].CurrentMember.Name='d_dsth_dc_service_type'\
+  \ OR [DC Service Type].[d_dsth_dc_service_type_name].CurrentMember.Name='d_dsth_dc_service_type_name')\
+  \ THEN \n                [Measures].[m_ty_ad_retl_amt_mkt]\n            ELSE \n\
+  \                [Measures].[m_ty_ad_retl_amt_mv_mkt]\n            END\n       \
+  \ ELSE\n                [Measures].[m_ty_ad_retl_amt_sku_mkt]    \n        END\n\
+  \    ELSE NULL            \n    END  \nELSE  NULL\nEND"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

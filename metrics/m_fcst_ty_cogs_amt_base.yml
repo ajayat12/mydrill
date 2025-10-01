@@ -1,0 +1,9 @@
+unique_name: m_fcst_ty_cogs_amt_base
+object_type: metric
+label: FCST TY COGS AMT_base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: MONTHLY_FCST.dataset
+column: TY_FCST_ACT_COGS_AMT

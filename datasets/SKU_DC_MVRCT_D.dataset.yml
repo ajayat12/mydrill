@@ -1,0 +1,59 @@
+unique_name: SKU_DC_MVRCT_D.dataset
+object_type: dataset
+label: SKU_DC_MVRCT_D
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SKU_DC_MVRCT_D
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: DC_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DSVC_TYP_CD
+    data_type: long
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_COST_AMT
+    data_type: double
+  - name: LY_GROSS_COST_AMT
+    data_type: double
+  - name: LY_RCVD_UNT_CNT
+    data_type: long
+  - name: LY_RETL_AMT
+    data_type: double
+  - name: LY_RETL_AMT_NO_TSFR
+    data_type: double
+  - name: LY_RETL_AMT_TSFR
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PRO_CHNL
+    data_type: long
+  - name: RECPT_TYP_CD
+    data_type: string
+  - name: RECV_MVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STORE_CHNL
+    data_type: long
+  - name: TY_COST_AMT
+    data_type: double
+  - name: TY_GROSS_COST_AMT
+    data_type: double
+  - name: TY_RCVD_UNT_CNT
+    data_type: long
+  - name: TY_RETL_AMT
+    data_type: double
+  - name: TY_RETL_AMT_NO_TSFR
+    data_type: double
+  - name: TY_RETL_AMT_TSFR
+    data_type: double

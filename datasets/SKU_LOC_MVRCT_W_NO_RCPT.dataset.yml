@@ -1,0 +1,95 @@
+unique_name: SKU_LOC_MVRCT_W_NO_RCPT.dataset
+object_type: dataset
+label: SKU_LOC_MVRCT_W_NO_RCPT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SKU_LOC_MVRCT_W_NO_RCPT
+
+columns:
+  - name: DSVC_TYP_CD
+    data_type: long
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LOC_NBR
+    data_type: string
+  - name: LY_BASE_COST_AMT
+    data_type: double
+  - name: LY_BASE_RETL_AMT
+    data_type: double
+  - name: LY_FIRST_COST_AMT
+    data_type: double
+  - name: LY_FIRST_RETL_AMT
+    data_type: double
+  - name: LY_GROSS_COST_AMT
+    data_type: double
+  - name: LY_GROSS_RETL_AMT
+    data_type: double
+  - name: LY_INTL_EXPENSE
+    data_type: double
+  - name: LY_RAW_COST_AMT
+    data_type: double
+  - name: LY_RAW_RETL_AMT
+    data_type: double
+  - name: LY_SC_DISCOUNT
+    data_type: double
+  - name: LY_SUPPLYCHN_COST_AMT
+    data_type: double
+  - name: LY_SUPPLYCHN_RETL_AMT
+    data_type: double
+  - name: MB_ID
+    data_type: long
+  - name: MVNDR_DEPT_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PRO_CHNL
+    data_type: long
+  - name: RECV_MVNDR_DEPT_NBR
+    data_type: long
+  - name: RECV_MVNDR_NBR
+    data_type: long
+  - name: REPL_ID
+    data_type: long
+  - name: RMETH_CD
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STAT_CD
+    data_type: long
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: STORE_CHNL
+    data_type: long
+  - name: STRATEGY
+    data_type: string
+  - name: STRATEGY_TYP
+    data_type: string
+  - name: TY_BASE_COST_AMT
+    data_type: double
+  - name: TY_BASE_RETL_AMT
+    data_type: double
+  - name: TY_FIRST_COST_AMT
+    data_type: double
+  - name: TY_FIRST_RETL_AMT
+    data_type: double
+  - name: TY_GROSS_COST_AMT
+    data_type: double
+  - name: TY_GROSS_RETL_AMT
+    data_type: double
+  - name: TY_INTL_EXPENSE
+    data_type: double
+  - name: TY_RAW_COST_AMT
+    data_type: double
+  - name: TY_RAW_RETL_AMT
+    data_type: double
+  - name: TY_SC_DISCOUNT
+    data_type: double
+  - name: TY_SUPPLYCHN_COST_AMT
+    data_type: double
+  - name: TY_SUPPLYCHN_RETL_AMT
+    data_type: double

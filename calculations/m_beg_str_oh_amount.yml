@@ -1,0 +1,5 @@
+unique_name: m_beg_str_oh_amount
+object_type: metric_calc
+label: Beg Str OH $
+expression: "([Measures].[m_beg_str_oh_amount_dly]) /*+ [Measures].[m_beg_str_oh_amount_wkly])*/"
+format: "$#,##0.00;($#,##0.00);$0.00;"

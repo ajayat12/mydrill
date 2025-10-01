@@ -1,0 +1,11 @@
+unique_name: m_shelf_retail_amount
+object_type: metric_calc
+label: Shelf Retail $
+expression: "CASE WHEN ([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ OR \n\t\t\t[Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or \n\t\t\
+  \t[Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8\
+  \ ) THEN \n    CASE WHEN ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =7)  OR \n\t([Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =7) THEN\t\n[Measures].[m_shelf_retail_day_amount]\n  else null \n\tend\nelse\
+  \ null \nend\n"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

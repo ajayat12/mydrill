@@ -1,0 +1,44 @@
+unique_name: XREF Category Sku Attribute
+object_type: dimension
+label: XREF Category Sku Attribute
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF Category Sku Attribute Hierarchy
+    label: XREF Category Sku Attribute Hierarchy
+
+    levels:
+
+      - unique_name: XREF Category Sku Attribute Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF Category Sku Attribute Level
+    label: XREF Category Sku Attribute Level
+    dataset: XREF_CATEGORY_SKU_ATTRIBUTE.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFCategorySkuAttribute_SKUAttribute
+    from:
+      hierarchy: XREF Category Sku Attribute Hierarchy
+      level: XREF Category Sku Attribute Level
+      dataset: XREF_CATEGORY_SKU_ATTRIBUTE.dataset
+      join_columns:
+        - ATTRIBUTE_NAME
+        - ATTRIBUTE_VALUE
+    to:
+      dimension: SKU Attribute
+      level: h_csah_category_sku_attribute
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

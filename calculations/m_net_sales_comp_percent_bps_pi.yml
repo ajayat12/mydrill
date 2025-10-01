@@ -1,0 +1,5 @@
+unique_name: m_net_sales_comp_percent_bps_pi
+object_type: metric_calc
+label: Net Sales Comp % (BPS) (PI)
+expression: "[MEASURES].[m_net_sales_comp_percent_pi]*10000"
+format: "#,##0;(#,##0);#,##0;;"

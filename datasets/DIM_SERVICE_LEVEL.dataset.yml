@@ -1,0 +1,17 @@
+unique_name: DIM_SERVICE_LEVEL.dataset
+object_type: dataset
+label: DIM_SERVICE_LEVEL
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_SERVICE_LEVEL
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: PRI_ITEM_DIM
+    data_type: string
+  - name: PRI_ITEM_DIM_ID
+    data_type: long
+  - name: PRI_ITEM_KEY
+    data_type: long
+  - name: R13W_PRITEM_WK_DIM_ID
+    data_type: long

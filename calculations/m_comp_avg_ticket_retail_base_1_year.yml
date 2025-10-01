@@ -1,0 +1,6 @@
+unique_name: m_comp_avg_ticket_retail_base_1_year
+object_type: metric_calc
+label: Comp Avg Ticket Retail Base (1 Year)
+expression: |
+  IIF([MEASURES].[m_comp_trans_base_1_year] + 0.00 = 0.00,NULL,[MEASURES].[m_comp_amount_base_1_year] /[MEASURES].[m_comp_trans_base_1_year])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

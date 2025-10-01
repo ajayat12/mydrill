@@ -1,0 +1,29 @@
+unique_name: DIM_POG_ASSORTMENT.dataset
+object_type: dataset
+label: DIM_POG_ASSORTMENT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_POG_ASSORTMENT
+
+columns:
+  - name: BAY_CNT
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LIVE_WEEK
+    data_type: string
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: POG_CTGRY_CD
+    data_type: long
+  - name: POG_CTGRY_NM
+    data_type: string
+  - name: POG_NAME
+    data_type: string
+  - name: POG_SUB_CTGRY
+    data_type: long
+  - name: POG_SUB_CTGRY_NM
+    data_type: string
+  - name: S_POG_CTGRY_NM
+    data_type: string
+  - name: S_POG_SUB_CTGRY_NM
+    data_type: string

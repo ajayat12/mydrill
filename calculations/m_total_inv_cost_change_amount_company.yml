@@ -1,0 +1,6 @@
+unique_name: m_total_inv_cost_change_amount_company
+object_type: metric_calc
+label: Total Inv Cost Change $ (Company)
+expression: "IIF(IsEmpty([MEASURES].[m_dc_inv_cost_change_amount]) OR IsEmpty([MEASURES].[m_str_inv_cost_change_amount]),NULL,([Measures].[m_dc_inv_cost_change_amount]+[Measures].[m_str_inv_cost_change_amount]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

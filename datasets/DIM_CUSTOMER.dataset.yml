@@ -1,0 +1,99 @@
+unique_name: DIM_CUSTOMER.dataset
+object_type: dataset
+label: DIM_CUSTOMER
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_CUSTOMER
+
+columns:
+  - name: APP_USAGE_FLG
+    data_type: string
+  - name: BODFS_FLG
+    data_type: string
+  - name: BOPIS_FLG
+    data_type: string
+  - name: BOSS_FLG
+    data_type: string
+  - name: CUST_ASSIGN_TYPE
+    data_type: string
+  - name: CUST_CO_NAME
+    data_type: string
+  - name: CUST_HH_ID_KEY
+    data_type: long
+  - name: CUST_ID
+    data_type: long
+  - name: CUST_TYPE
+    data_type: string
+  - name: CUSTOMER_KEY
+    data_type: string
+  - name: DFS_FLG
+    data_type: string
+  - name: DTC_FLG
+    data_type: string
+  - name: FDC_FLAG
+    data_type: string
+  - name: GM_RATE_LEVEL
+    data_type: string
+  - name: HOME_MKT_NM
+    data_type: string
+  - name: INSTORE_FLG
+    data_type: string
+  - name: LOCALITY
+    data_type: string
+  - name: MARKET_1
+    data_type: string
+  - name: MGD_ACCT_DIR
+    data_type: string
+  - name: MGD_ACCT_SLS_AREA
+    data_type: string
+  - name: MGD_ACCT_SLS_MKT
+    data_type: string
+  - name: MGD_ACCT_SLS_SUB_MKT
+    data_type: string
+  - name: MGD_ACCT_SR_DIR
+    data_type: string
+  - name: MILITARY_PGM_FLG
+    data_type: string
+  - name: NA_FLAG
+    data_type: string
+  - name: NA_PGM
+    data_type: string
+  - name: NA_TYPE
+    data_type: string
+  - name: OLMA_FLG
+    data_type: string
+  - name: PAR_FLG
+    data_type: string
+  - name: PAR_NM
+    data_type: string
+  - name: PAR_PSM_NM
+    data_type: string
+  - name: PAR_TYPE
+    data_type: string
+  - name: PAR_USER_ID
+    data_type: string
+  - name: PASA_FLG
+    data_type: string
+  - name: PASA_NM
+    data_type: string
+  - name: PASA_STR_NBR
+    data_type: string
+  - name: PASA_USER_ID
+    data_type: string
+  - name: PRIMARY_MKT
+    data_type: string
+  - name: PRO_XTRA_FLG
+    data_type: string
+  - name: PX_CURR_YR_TIER
+    data_type: string
+  - name: R12_MILITARY_DISC_FLG
+    data_type: string
+  - name: SVOC_ID
+    data_type: string
+  - name: TRADE_DESC
+    data_type: string
+  - name: TRADE_DESC_RPT
+    data_type: string
+  - name: VAR_FLG
+    data_type: string
+  - name: VAR_NM
+    data_type: string

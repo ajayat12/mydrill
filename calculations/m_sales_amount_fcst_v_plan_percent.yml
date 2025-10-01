@@ -1,0 +1,5 @@
+unique_name: m_sales_amount_fcst_v_plan_percent
+object_type: metric_calc
+label: Sales $ Fcst v Plan (%)
+expression: "IIF([MEASURES].[m_sales_amount_plan]+0.00=0.00, NULL,([MEASURES].[m_sales_amount_fcst_v_plan])/[MEASURES].[m_sales_amount_plan])"
+format: 0.00%;(0.00%);0.00%;;

@@ -1,0 +1,6 @@
+unique_name: m_str_rcpts_cost_percent_v_plan_bps
+object_type: metric_calc
+label: Str Rcpts Cost % v Plan (BPS)
+expression: "IIF(IsEmpty([Measures].[m_str_rcpts_cost_percent]) OR IsEmpty([Measures].[m_str_rcpts_cost_percent_plan]),\
+  \ null, ([Measures].[m_str_rcpts_cost_percent]-[Measures].[m_str_rcpts_cost_percent_plan])*10000)"
+format: "#,##;(#,##);0;;"

@@ -1,0 +1,13 @@
+unique_name: FACT_MAPPING.dataset
+object_type: dataset
+label: FACT_MAPPING
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: FACT_MAPPING
+
+columns:
+  - name: GROUP_NM
+    data_type: string
+  - name: ID
+    data_type: long
+  - name: SECUIRTY
+    data_type: string

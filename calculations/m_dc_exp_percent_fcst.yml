@@ -1,0 +1,6 @@
+unique_name: m_dc_exp_percent_fcst
+object_type: metric_calc
+label: DC Exp % Fcst
+expression: "IIF([MEASURES].[m_sales_amount_fcst]+0.00=0.00,NULL, ([MEASURES].[m_dc_exp_amount_fcst])/[MEASURES].[m_sales_amount_fcst])"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

@@ -1,0 +1,6 @@
+unique_name: m_avg_units_per_trans_v_ly
+object_type: metric_calc
+label: Avg Units per Trans v LY
+expression: |
+  IIF(ISEMPTY([MEASURES].[m_avg_units_per_trans]) OR ISEMPTY([MEASURES].[m_avg_units_per_trans_ly]),NULL,([MEASURES].[m_avg_units_per_trans]-[MEASURES].[m_avg_units_per_trans_ly]))
+format: "#,###,###,##0.00;(#,###,###,##0.00)"

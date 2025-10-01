@@ -1,0 +1,5 @@
+unique_name: m_return_amount_rate_percent
+object_type: metric_calc
+label: Return $ Rate %
+expression: "IIF([MEASURES].[m_sales_amount_before_returns] + 0.00 = 0.00 , NULL ,ABS([MEASURES].[m_return_amount]/[MEASURES].[m_sales_amount_before_returns]))"
+format: 0.00%;(0.00%);0.00%;;

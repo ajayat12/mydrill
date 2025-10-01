@@ -1,0 +1,50 @@
+unique_name: Receipt Type
+object_type: dimension
+label: Receipt Type
+type: standard
+
+hierarchies:
+
+  - unique_name: Receipt Type Hierarchy
+    label: Receipt Type Hierarchy
+
+    levels:
+
+      - unique_name: h_rth_receipt_type_level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_rth_receipt_type_description
+            label: Receipt Type Description
+            dataset: DIM_RECEIPT_TYPE.dataset
+            key_columns:
+              - RECPT_TYP_CD
+            name_column: RECPT_TYP_DESC
+            sort_column: RECPT_TYP_DESC
+
+          - unique_name: d_rth_receipt_type
+            label: Receipt Type
+            is_hidden: true
+            dataset: DIM_RECEIPT_TYPE.dataset
+            key_columns:
+              - RECPT_TYP_CD
+            name_column: RECPT_TYP_CD
+            sort_column: RECPT_TYP_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_rth_receipt_type_level
+    label: Receipt Type Level
+    dataset: DIM_RECEIPT_TYPE.dataset
+    key_columns:
+      - RECPT_TYP_CD
+    name_column: RECPT_TYP_CD
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

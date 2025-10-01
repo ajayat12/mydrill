@@ -1,0 +1,5 @@
+unique_name: m_imu_percent_v_fcst_bps
+object_type: metric_calc
+label: IMU % v Fcst (BPS)
+expression: "([Measures].[m_imu_percent_v_fcst])*10000\n\t\t\t\t\t\t\t\t\t\t"
+format: "#,##0;(#,##0);#,##0;;"

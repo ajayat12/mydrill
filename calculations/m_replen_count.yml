@@ -1,0 +1,6 @@
+unique_name: m_replen_count
+object_type: metric_calc
+label: Replen Count
+expression: |
+  CASE WHEN [Time].[Time Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Time].[d_th_day_name].CurrentMember.Name = "Day Name" THEN [Measures].[m_replen_count_dly] ELSE [Measures].[m_replen_count_wkly] END
+format: "#,##0;(#,##0);0;;"

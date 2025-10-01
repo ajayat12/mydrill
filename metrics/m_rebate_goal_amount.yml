@@ -1,0 +1,8 @@
+unique_name: m_rebate_goal_amount
+object_type: metric
+label: Rebate Goal $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: repeat
+dataset: REBATE.dataset
+column: TRGT_PURCH_AMT

@@ -1,0 +1,5 @@
+unique_name: m_cogs_amount_v_plan
+object_type: metric_calc
+label: COGS $ v Plan
+expression: "IIF(IsEmpty([Measures].[m_cogs_amount]) OR IsEmpty([Measures].[m_cogs_amount_plan]),NULL,[Measures].[m_cogs_amount]-[Measures].[m_cogs_amount_plan])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

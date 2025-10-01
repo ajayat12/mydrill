@@ -1,0 +1,5 @@
+unique_name: m_special_term_discount_percent_v_ly_corporate
+object_type: metric_calc
+label: Special Term Discount % v LY (Corporate)
+expression: "([Measures].[m_special_term_discount_percent_corporate]-[Measures].[m_special_term_discount_percent_ly_corporate])"
+format: 0.00%;(0.00%);0.00%;;

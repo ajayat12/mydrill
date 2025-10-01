@@ -1,0 +1,5 @@
+unique_name: m_str_mkdn_percent_v_fcst_bps
+object_type: metric_calc
+label: Str MKDN % v Fcst (BPS)
+expression: "([MEASURES].[m_str_mkdn_percent_v_fcst])*10000"
+format: "#,##0;(#,##0);#,##0;;"

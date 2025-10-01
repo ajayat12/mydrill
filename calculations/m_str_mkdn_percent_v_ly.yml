@@ -1,0 +1,5 @@
+unique_name: m_str_mkdn_percent_v_ly
+object_type: metric_calc
+label: Str MKDN % v LY
+expression: "IIF(ISEMPTY([Measures].[m_str_mkdn_percent]) or  ISEMPTY([Measures].[m_str_mkdn_percent_ly]),NULL,[Measures].[m_str_mkdn_percent]-[Measures].[m_str_mkdn_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

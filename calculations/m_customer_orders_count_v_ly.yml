@@ -1,0 +1,5 @@
+unique_name: m_customer_orders_count_v_ly
+object_type: metric_calc
+label: Customer Orders Count v LY
+expression: "IIF(IsEmpty([Measures].[m_customer_orders_count]) OR ISEmpty([Measures].[m_customer_orders_count_ly]),NULL,[Measures].[m_customer_orders_count]-[Measures].[m_customer_orders_count_ly])"
+format: "#,##0;(#,##0);#,##0;;"

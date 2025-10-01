@@ -1,0 +1,8 @@
+unique_name: m_deliver_from_store_exp_amount_plan_base
+object_type: metric
+label: Deliver From Store Exp $ Plan Base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: MONTHLY_PLAN.dataset
+column: ty_dlvry_frt_exp_amt

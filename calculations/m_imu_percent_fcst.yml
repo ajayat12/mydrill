@@ -1,0 +1,5 @@
+unique_name: m_imu_percent_fcst
+object_type: metric_calc
+label: IMU % Fcst
+expression: "IIF([Measures].[m_str_rcpts_retail_amount_fcst]+0.00=0.00,null,([Measures].[m_imu_amount_fcst]/[Measures].[m_str_rcpts_retail_amount_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

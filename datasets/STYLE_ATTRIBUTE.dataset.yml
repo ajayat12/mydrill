@@ -1,0 +1,9 @@
+unique_name: STYLE_ATTRIBUTE.dataset
+object_type: dataset
+label: STYLE_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: STYLE
+
+columns:
+  - name: STYLE
+    data_type: string

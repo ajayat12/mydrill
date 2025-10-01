@@ -1,0 +1,6 @@
+unique_name: m_rolling_sales_amount_8_weeks_ice_aging
+object_type: metric_calc
+label: Rolling Sales $ (8 Weeks) (ICE Aging)
+expression: "[Measures].[m_r8w_ty_sls_ice]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

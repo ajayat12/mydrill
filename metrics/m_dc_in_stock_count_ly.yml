@@ -1,0 +1,8 @@
+unique_name: m_dc_in_stock_count_ly
+object_type: metric
+label: DC In Stock Count LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_BRCH_DLY.dataset
+column: LY_DFC_IN_STOCK_COUNT

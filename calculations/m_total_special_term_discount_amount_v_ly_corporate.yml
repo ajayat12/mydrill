@@ -1,0 +1,7 @@
+unique_name: m_total_special_term_discount_amount_v_ly_corporate
+object_type: metric_calc
+label: Total Special Term Discount $ v LY (Corporate)
+expression: "IIF(IsEmpty([Measures].[m_total_special_term_discount_amount_corporate])\
+  \ OR IsEmpty([Measures].[m_total_special_term_discount_amount_ly_corporate]) , null,\
+  \ ([Measures].[m_total_special_term_discount_amount_corporate]-[Measures].[m_total_special_term_discount_amount_ly_corporate]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_dc_sales_amount_fcst_4_weeks_v_ly_percent
+object_type: metric_calc
+label: DC Sales $ Fcst (4 Weeks) v LY (%)
+expression: "IIF([Measures].[m_dc_sales_amount_fcst_4_weeks_ly]+0.00=0.00,NULL,([Measures].[m_dc_sales_amount_fcst_4_weeks_v_ly]/[Measures].[m_dc_sales_amount_fcst_4_weeks_ly]))"
+format: 0.00%;(0.00%);0.00%;;

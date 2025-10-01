@@ -1,0 +1,6 @@
+unique_name: m_net_shrink_comp_amount_v_last_inv_pi
+object_type: metric_calc
+label: Net Shrink Comp $ v Last Inv (PI)
+expression: "IIF(IsEmpty([MEASURES].[m_net_shrink_amount_pi]) OR IsEmpty([MEASURES].[m_net_shrink_comp_amount_lly_pi]),NULL\
+  \ ,[MEASURES].[m_net_shrink_amount_pi]-[MEASURES].[m_net_shrink_comp_amount_lly_pi])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

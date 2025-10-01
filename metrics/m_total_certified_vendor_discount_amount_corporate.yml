@@ -1,0 +1,8 @@
+unique_name: m_total_certified_vendor_discount_amount_corporate
+object_type: metric
+label: Total Certified Vendor Discount $ (Corporate)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_CERT_VNDR_CORP_DISC_AMT

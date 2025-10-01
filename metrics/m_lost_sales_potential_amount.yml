@@ -1,0 +1,8 @@
+unique_name: m_lost_sales_potential_amount
+object_type: metric
+label: Lost Sales Potential $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_LOST_SLS_AMT

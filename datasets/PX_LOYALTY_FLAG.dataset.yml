@@ -1,0 +1,10 @@
+unique_name: PX_LOYALTY_FLAG.dataset
+object_type: dataset
+label: PX_LOYALTY_FLAG
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_PX_LOYALTY_FLAG
+immutable: true
+
+columns:
+  - name: PX_LOYALTY_FLAG
+    data_type: string

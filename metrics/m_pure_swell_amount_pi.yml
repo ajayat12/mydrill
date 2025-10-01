@@ -1,0 +1,8 @@
+unique_name: m_pure_swell_amount_pi
+object_type: metric
+label: Pure Swell $ (PI)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: PI_SHNK.dataset
+column: TY_PURE_SWELL_AMT

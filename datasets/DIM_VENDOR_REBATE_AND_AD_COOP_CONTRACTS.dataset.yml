@@ -1,0 +1,29 @@
+unique_name: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+object_type: dataset
+label: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS
+
+columns:
+  - name: BUS_TYP_IND
+    data_type: string
+  - name: CNCAT_CNTRC_TXT
+    data_type: string
+  - name: CNTRC_DESC
+    data_type: string
+  - name: CURR_TIER
+    data_type: string
+  - name: CURR_TIER_DESC
+    data_type: string
+  - name: EXCPT_IND
+    data_type: long
+  - name: EXCPT_IND_DESC
+    data_type: string
+  - name: REBT_CNTRC_NBR
+    data_type: string
+  - name: REBT_CNTRC_NBR_ID
+    data_type: string
+  - name: REBT_TIER_DESC
+    data_type: string
+  - name: REBT_TIER_NBR
+    data_type: long

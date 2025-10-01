@@ -1,0 +1,5 @@
+unique_name: m_turns_v_plan
+object_type: metric_calc
+label: Turns v Plan
+expression: "IIF(IsEmpty([Measures].[m_turns]) OR IsEmpty([Measures].[m_turns_plan]),NULL,[Measures].[m_turns]-[Measures].[m_turns_plan])"
+format: "#,##0.00;(#,##0.00);#,##0.00;;"

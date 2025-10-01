@@ -1,0 +1,5 @@
+unique_name: m_imu_amount_v_fcst
+object_type: metric_calc
+label: IMU $ v Fcst
+expression: "IIF(IsEmpty([Measures].[m_imu_amount]) OR IsEmpty([Measures].[m_imu_amount_fcst]),NULL,[Measures].[m_imu_amount]-[Measures].[m_imu_amount_fcst])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

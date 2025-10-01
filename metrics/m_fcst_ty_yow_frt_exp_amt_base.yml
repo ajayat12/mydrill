@@ -1,0 +1,9 @@
+unique_name: m_fcst_ty_yow_frt_exp_amt_base
+object_type: metric
+label: FCST TY YOW FRT EXP AMT_base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: MONTHLY_FCST.dataset
+column: TY_FCST_ACT_YOW_FRT_EXP_AMT

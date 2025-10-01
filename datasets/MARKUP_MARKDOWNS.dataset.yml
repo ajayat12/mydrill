@@ -1,0 +1,29 @@
+unique_name: MARKUP_MARKDOWNS.dataset
+object_type: dataset
+label: MARKUP_MARKDOWNS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_MARKUP_MARKDOWNS
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MKUP_MKDN_RSN_CD
+    data_type: long
+  - name: MKUP_MKDN_RSN_DESC
+    data_type: string
+  - name: MKUP_MKDN_TYP
+    data_type: string
+  - name: MKUP_MKDN_TYP_CD
+    data_type: string
+  - name: MKUP_MKDN_TYP_DESC
+    data_type: string
+  - name: MKUPMKDN_TYP_CD_SORTING_ID
+    data_type: long
+  - name: RSN_DESC
+    data_type: string
+  - name: SHRT_MUMD_RSN
+    data_type: string
+  - name: SHRT_MUMD_RSN_DESC
+    data_type: string
+  - name: SHRT_MUMD_TYP_DESC
+    data_type: string

@@ -1,0 +1,5 @@
+unique_name: m_beg_str_oh_units_v_ly_percent
+object_type: metric_calc
+label: Beg Str OH Units v LY (%)
+expression: "iif([Measures].[m_beg_str_oh_units_ly]+ 0.00 = 0.00,null,([Measures].[m_beg_str_oh_units_v_ly])/[Measures].[m_beg_str_oh_units_ly])"
+format: 0.00%;(0.00%);0.00%;;

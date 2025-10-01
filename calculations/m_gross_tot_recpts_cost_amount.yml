@@ -1,0 +1,6 @@
+unique_name: m_gross_tot_recpts_cost_amount
+object_type: metric_calc
+label: Gross Tot Recpts Cost $
+expression: "[Measures].[m_gross_str_rcpts_cost_amount]+[Measures].[m_gross_dc_recpts_cost_amount]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

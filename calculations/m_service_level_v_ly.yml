@@ -1,0 +1,5 @@
+unique_name: m_service_level_v_ly
+object_type: metric_calc
+label: Service Level v LY
+expression: "IIF(IsEmpty([Measures].[m_service_level]) OR ISEmpty([Measures].[m_service_level_ly]),NULL,[Measures].[m_service_level]-[Measures].[m_service_level_ly])"
+format: 0.00%;(0.00%);0.00%;;

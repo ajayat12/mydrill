@@ -1,0 +1,5 @@
+unique_name: m_offshore_discount_amount_mkt/dc
+object_type: metric_calc
+label: OffShore Discount $ (Mkt/DC)
+expression: "IIF([Measures].[m_total_sales_qty]+0.00 = 0.00, null,[Measures].[m_total_offshore_discount_amount_mkt/dc]/[Measures].[m_total_sales_qty])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_shrink_percent_v_fcst
+object_type: metric_calc
+label: Shrink % v Fcst
+expression: "IIF((IsEmpty([Measures].[m_shrink_percent]) OR IsEmpty([Measures].[m_shrink_percent_fcst])),NULL,([Measures].[m_shrink_percent]-[Measures].[m_shrink_percent_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

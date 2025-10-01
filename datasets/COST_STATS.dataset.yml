@@ -1,0 +1,53 @@
+unique_name: COST_STATS.dataset
+object_type: dataset
+label: COST_STATS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: COST_STATS
+
+columns:
+  - name: cal_dt
+    data_type: date
+  - name: dept_nbr
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: loc_nbr
+    data_type: string
+  - name: LY_ADJ1_AMT
+    data_type: double
+  - name: LY_DFIN_AMT
+    data_type: double
+  - name: ly_dtl_ext_cost_amt
+    data_type: double
+  - name: LY_HDDL_AMT
+    data_type: double
+  - name: ly_ship_rev
+    data_type: double
+  - name: LY_VDDL_AMT
+    data_type: double
+  - name: mvndr_nbr
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PRO_CHNL
+    data_type: long
+  - name: recpt_typ_cd
+    data_type: string
+  - name: sku_crt_dt
+    data_type: date
+  - name: sku_nbr
+    data_type: long
+  - name: STORE_CHNL
+    data_type: long
+  - name: TY_ADJ1_AMT
+    data_type: double
+  - name: TY_DFIN_AMT
+    data_type: double
+  - name: ty_dtl_ext_cost_amt
+    data_type: double
+  - name: TY_HDDL_AMT
+    data_type: double
+  - name: ty_ship_rev
+    data_type: double
+  - name: TY_VDDL_AMT
+    data_type: double

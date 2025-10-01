@@ -1,0 +1,8 @@
+unique_name: m_gross_demand_amount
+object_type: metric
+label: Gross Demand $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: DEMD_SLS.dataset
+column: TY_GROSS_DEMAND_SALES

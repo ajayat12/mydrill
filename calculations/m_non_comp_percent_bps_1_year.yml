@@ -1,0 +1,5 @@
+unique_name: m_non_comp_percent_bps_1_year
+object_type: metric_calc
+label: Non Comp % BPS (1 Year)
+expression: "IIF([Measures].[m_non_comp_amount_base_1_year] + 0.00 = 0.00, null,([Measures].[m_non_comp_amount_v_ly_1_year]/[Measures].[m_non_comp_amount_base_1_year])*10000)"
+format: "#,##0;(#,##0);0;;"

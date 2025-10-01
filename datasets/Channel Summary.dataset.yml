@@ -1,0 +1,47 @@
+unique_name: Channel Summary.dataset
+object_type: dataset
+label: Channel Summary
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_CHANNEL_SUMMARY
+
+columns:
+  - name: DELIVERY_v_PICKUP
+    data_type: string
+  - name: DELIVERY_v_PICKUP_KEY
+    data_type: long
+  - name: FUL_CHNL_HIER_KEY
+    data_type: long
+  - name: FULFIL_CHNL
+    data_type: string
+  - name: FULFIL_CHNL_KEY
+    data_type: long
+  - name: House_v_VDF
+    data_type: string
+  - name: House_v_VDF_KEY
+    data_type: long
+  - name: NETWRK_STR_FULFIL
+    data_type: string
+  - name: NETWRK_STR_FULFIL_KEY
+    data_type: long
+  - name: Online_Ind
+    data_type: string
+  - name: Online_Ind_KEY
+    data_type: long
+  - name: SLS_CHNL
+    data_type: string
+  - name: SLS_CHNL_KEY
+    data_type: long
+  - name: SUB_FUL_CHNL_HIER_KEY
+    data_type: long
+  - name: SUB_FULFIL_CHNL
+    data_type: string
+  - name: SUB_FULFIL_CHNL_KEY
+    data_type: long
+  - name: SUB_SUB_FUL_CHNL_HIER_KEY
+    data_type: long
+  - name: SUB_SUB_FULFIL_CHNL
+    data_type: string
+  - name: SUB_SUB_FULFIL_CHNL_KEY
+    data_type: long
+  - name: summary_key
+    data_type: long

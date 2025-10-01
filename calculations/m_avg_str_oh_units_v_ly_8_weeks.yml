@@ -1,0 +1,5 @@
+unique_name: m_avg_str_oh_units_v_ly_8_weeks
+object_type: metric_calc
+label: Avg Str OH Units v LY (8 Weeks)
+expression: "[MEASURES].[m_avg_str_oh_units_8_weeks]-[MEASURES].[m_avg_str_oh_units_ly_8_weeks]"
+format: "#,##0;(#,##0);#,##0;;"

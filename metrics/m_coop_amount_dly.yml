@@ -1,0 +1,9 @@
+unique_name: m_coop_amount_dly
+object_type: metric
+label: COOP $ Dly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_LOC_MVRCT_D.dataset
+column: TY_COOP_COST_AMT

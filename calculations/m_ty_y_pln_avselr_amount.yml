@@ -1,0 +1,7 @@
+unique_name: m_ty_y_pln_avselr_amount
+object_type: metric_calc
+label: TY Y PLN AVSELR $
+expression: "IIF([Measures].[m_ty_y_pln_avselr_amount_base]+ 0.00> -1 and [Measures].[m_ty_y_pln_avselr_amount_base]\
+  \ < 1,null, [Measures].[m_ty_y_pln_avselr_amount_base])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

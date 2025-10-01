@@ -1,0 +1,8 @@
+unique_name: m_days_non_buyable
+object_type: metric
+label: Days Non Buyable
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_DAYS_NOT_BUYABLE

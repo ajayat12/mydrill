@@ -1,0 +1,13 @@
+unique_name: m_beg_str_oh_amount_dly
+object_type: metric
+label: Beg Str OH $ Dly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - STR_INV_DLY_D.dataset_Time_Transformations
+dataset: STR_INV_DLY_D.dataset
+column: TY_BGN_STR_OH_RETL_AMT

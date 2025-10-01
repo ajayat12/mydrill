@@ -1,0 +1,5 @@
+unique_name: m_gmroi_v_fcst_bps
+object_type: metric_calc
+label: GMROI v Fcst (BPS)
+expression: "[Measures].[m_gmroi_v_fcst]"
+format: "#,##0;(#,##0);#,##0;;"

@@ -1,0 +1,9 @@
+unique_name: SIG_ATTRIBUTE.dataset
+object_type: dataset
+label: SIG_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SIG
+
+columns:
+  - name: SIG
+    data_type: string

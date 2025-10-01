@@ -1,0 +1,6 @@
+unique_name: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+label: lpc2683f-gbq-pr-mydrill-data_mydrill2_data
+object_type: connection
+as_connection: lpc2683f-gbq-pr-mydrill-data
+database: atscale-customer-01
+schema: mydrill2_data

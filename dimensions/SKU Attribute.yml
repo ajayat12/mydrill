@@ -1,0 +1,435 @@
+unique_name: SKU Attribute
+object_type: dimension
+label: SKU Attribute
+type: standard
+
+hierarchies:
+
+  - unique_name: Category Sku Attribute Hierarchy
+    label: Category Sku Attribute Hierarchy
+    filter_empty: "yes"
+    folder: Category Attributes
+
+    levels:
+
+      - unique_name: h_csah_category_sku_attribute
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_csah_category_attribute_group
+            label: Category Attribute Group
+            folder: Category Attributes
+            dataset: CATEGORY_SKU_ATTRIBUTE.dataset
+            key_columns:
+              - ATTRIBUTE_GROUP
+            name_column: ATTRIBUTE_GROUP
+            sort_column: ATTRIBUTE_GROUP
+
+          - unique_name: d_csah_category_attribute_name
+            label: Category Attribute Name
+            folder: Category Attributes
+            dataset: CATEGORY_SKU_ATTRIBUTE.dataset
+            key_columns:
+              - attribute_name
+            name_column: attribute_name
+            sort_column: attribute_name
+
+          - unique_name: d_csah_category_attribute_value
+            label: Category Attribute Value
+            folder: Category Attributes
+            dataset: CATEGORY_SKU_ATTRIBUTE.dataset
+            key_columns:
+              - attribute_value
+            name_column: attribute_value
+            sort_column: attribute_value
+
+  - unique_name: Brand
+    label: Brand
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_b_Brand
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_b_brand
+            label: Brand
+            folder: Global Attributes
+            dataset: BRAND_ATTRIBUTE.dataset
+            name_column: BRAND
+
+  - unique_name: Color
+    label: Color
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_c_color
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_c_color
+            label: Color
+            folder: Global Attributes
+            dataset: COLOR_ATTRIBUTE.dataset
+            name_column: COLOR
+            sort_column: COLOR
+
+  - unique_name: Key Item
+    label: Key Item
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_ki_key_item
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_ki_key_item
+            label: Key Item
+            folder: Global Attributes
+            dataset: KEY_ITEM_ATTRIBUTE.dataset
+            name_column: Key_Item
+            sort_column: Key_Item
+
+  - unique_name: Eco Actions
+    label: Eco Actions
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_ea_eco_actions
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_ea_eco_actions
+            label: Eco Actions
+            folder: Global Attributes
+            dataset: ECO_ACTIONS_ATTRIBUTE.dataset
+            name_column: ECO_ACTIONS
+            sort_column: ECO_ACTIONS
+
+  - unique_name: Price Band
+    label: Price Band
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_pb_price_band
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_pb_price_band
+            label: Price Band
+            folder: Global Attributes
+            dataset: PRICE_BAND_ATTRIBUTE.dataset
+            name_column: PRICE_BAND
+            sort_column: PRICE_BAND
+
+  - unique_name: Line Structure
+    label: Line Structure
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_ls_line_structure
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_ls_line_structure
+            label: Line Structure
+            folder: Global Attributes
+            dataset: LINE_STRUCTURE_ATTRIBUTE.dataset
+            name_column: LINE_STRUCTURE
+            sort_column: LINE_STRUCTURE
+
+  - unique_name: Smart Home
+    label: Smart Home
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_sh_smart_home
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_sh_smart_home
+            label: Smart Home
+            folder: Global Attributes
+            dataset: SMART_HOME_ATTRIBUTE.dataset
+            name_column: SMART_HOME
+            sort_column: SMART_HOME
+
+  - unique_name: Style
+    label: Style
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_s_style
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_s_style
+            label: Style
+            folder: Global Attributes
+            dataset: STYLE_ATTRIBUTE.dataset
+            name_column: STYLE
+            sort_column: STYLE
+
+  - unique_name: Subtype
+    label: Subtype
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_s_subtype
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_s_subtype
+            label: Subtype
+            folder: Global Attributes
+            dataset: SUBTYPE_ATTRIBUTE.dataset
+            name_column: SUBTYPE
+            sort_column: SUBTYPE
+
+  - unique_name: Mfg Brand Name
+    label: Mfg Brand Name
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_mbn_mfg_brand_name
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_mbn_mfg_brand_name
+            label: Mfg Brand Name
+            folder: Global Attributes
+            dataset: MFG_BRAND_NAME_ATTRIBUTE.dataset
+            name_column: MFG_BRAND_NAME
+            sort_column: MFG_BRAND_NAME
+
+  - unique_name: Merchandising 1
+    label: Merchandising 1
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_m1_merchandising_1
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_m1_merchandising_1
+            label: Merchandising 1
+            folder: Global Attributes
+            dataset: MERCHANDISING_1_ATTRIBUTE.dataset
+            name_column: MERCHANDISING_1
+            sort_column: MERCHANDISING_1
+
+  - unique_name: Merchandising 2
+    label: Merchandising 2
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_m2_merchandising_2
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_m2_merchandising_2
+            label: Merchandising 2
+            folder: Global Attributes
+            dataset: MERCHANDISING_2_ATTRIBUTE.dataset
+            name_column: MERCHANDISING_2
+            sort_column: MERCHANDISING_2
+
+  - unique_name: SIG
+    label: SIG
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_s_sig
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_s_sig
+            label: SIG
+            folder: Global Attributes
+            dataset: SIG_ATTRIBUTE.dataset
+            name_column: SIG
+            sort_column: SIG
+
+  - unique_name: Private Brand Flag
+    label: Private Brand Flag
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: h_pbf_private_brand_flag
+        is_hidden: true
+
+        aliases:
+
+          - unique_name: d_pbf_private_brand_flag
+            label: Private Brand Flag
+            folder: Global Attributes
+            dataset: PB_SKU_ATTRIBUTE.dataset
+            name_column: Private_Brand_Flag
+            sort_column: Private_Brand_Flag
+
+level_attributes:
+
+  - unique_name: h_b_Brand
+    label: Brand
+    is_unique_key: true
+    dataset: BRAND_ATTRIBUTE.dataset
+    key_columns:
+      - BRAND
+    name_column: BRAND
+
+  - unique_name: h_c_color
+    label: Color
+    is_unique_key: true
+    dataset: COLOR_ATTRIBUTE.dataset
+    key_columns:
+      - COLOR
+    name_column: COLOR
+
+  - unique_name: h_csah_category_sku_attribute
+    label: Category Sku Attribute
+    dataset: CATEGORY_SKU_ATTRIBUTE.dataset
+    key_columns:
+      - attribute_name
+      - attribute_value
+    name_column: attribute_value
+
+  - unique_name: h_ea_eco_actions
+    label: Eco Actions
+    is_unique_key: true
+    dataset: ECO_ACTIONS_ATTRIBUTE.dataset
+    key_columns:
+      - ECO_ACTIONS
+    name_column: ECO_ACTIONS
+
+  - unique_name: h_ki_key_item
+    label: Key Item
+    is_unique_key: true
+    dataset: KEY_ITEM_ATTRIBUTE.dataset
+    key_columns:
+      - Key_Item
+    name_column: Key_Item
+
+  - unique_name: h_ls_line_structure
+    label: Line Structure
+    is_unique_key: true
+    dataset: LINE_STRUCTURE_ATTRIBUTE.dataset
+    key_columns:
+      - LINE_STRUCTURE
+    name_column: LINE_STRUCTURE
+
+  - unique_name: h_m1_merchandising_1
+    label: Merchandising 1
+    is_unique_key: true
+    dataset: MERCHANDISING_1_ATTRIBUTE.dataset
+    key_columns:
+      - MERCHANDISING_1
+    name_column: MERCHANDISING_1
+
+  - unique_name: h_m2_merchandising_2
+    label: Merchandising 2
+    is_unique_key: true
+    dataset: MERCHANDISING_2_ATTRIBUTE.dataset
+    key_columns:
+      - MERCHANDISING_2
+    name_column: MERCHANDISING_2
+
+  - unique_name: h_mbn_mfg_brand_name
+    label: Mfg Brand Name
+    is_unique_key: true
+    dataset: MFG_BRAND_NAME_ATTRIBUTE.dataset
+    key_columns:
+      - MFG_BRAND_NAME
+    name_column: MFG_BRAND_NAME
+
+  - unique_name: h_pb_price_band
+    label: Price Band
+    is_unique_key: true
+    dataset: PRICE_BAND_ATTRIBUTE.dataset
+    key_columns:
+      - PRICE_BAND
+    name_column: PRICE_BAND
+
+  - unique_name: h_pbf_private_brand_flag
+    label: Private Brand Flag
+    is_unique_key: true
+    dataset: PB_SKU_ATTRIBUTE.dataset
+    key_columns:
+      - Private_Brand_Flag
+    name_column: Private_Brand_Flag
+
+  - unique_name: h_s_sig
+    label: SIG
+    is_unique_key: true
+    dataset: SIG_ATTRIBUTE.dataset
+    key_columns:
+      - SIG
+    name_column: SIG
+
+  - unique_name: h_s_style
+    label: Style
+    is_unique_key: true
+    dataset: STYLE_ATTRIBUTE.dataset
+    key_columns:
+      - STYLE
+    name_column: STYLE
+
+  - unique_name: h_s_subtype
+    label: Subtype
+    is_unique_key: true
+    dataset: SUBTYPE_ATTRIBUTE.dataset
+    key_columns:
+      - SUBTYPE
+    name_column: SUBTYPE
+
+  - unique_name: h_sh_smart_home
+    label: Smart Home
+    dataset: SMART_HOME_ATTRIBUTE.dataset
+    key_columns:
+      - SMART_HOME
+    name_column: SMART_HOME
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

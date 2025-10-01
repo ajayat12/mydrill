@@ -1,0 +1,5 @@
+unique_name: m_gmroi_v_fcst_percent
+object_type: metric_calc
+label: GMROI v Fcst (%)
+expression: "(iif([Measures].[m_gmroi_fcst]+0.00=0.00,null,(([Measures].[m_gmroi_v_fcst])/[Measures].[m_gmroi_fcst])))"
+format: 0.00%;(0.00%);0.00%;;

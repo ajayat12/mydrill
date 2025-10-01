@@ -1,0 +1,5 @@
+unique_name: m_str_available_oh_units_online_v_ly
+object_type: metric_calc
+label: Str Available OH Units (Online) v LY
+expression: "IIF(IsEmpty([Measures].[m_str_available_oh_units_online]) OR ISEmpty([Measures].[m_str_available_oh_units_online_ly]),NULL,[Measures].[m_str_available_oh_units_online]-[Measures].[m_str_available_oh_units_online_ly])"
+format: "#,##0;(#,##0);#,##0;;"

@@ -1,0 +1,5 @@
+unique_name: m_consecutive_out_of_stock_days
+object_type: metric_calc
+label: Consecutive Out of Stock Days
+expression: "IIF([MEASURES].[m_out_of_stock]+ 0.00=0.00,NULL,[MEASURES].[m_consc_smoos_days]/[MEASURES].[m_out_of_stock])"
+format: "#,##0;(#,##0);#,##0;;"

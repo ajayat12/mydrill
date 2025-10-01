@@ -1,0 +1,17 @@
+unique_name: SKU_Status.dataset
+object_type: dataset
+label: SKU_Status
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_SKU_STATUS
+
+columns:
+  - name: DSPL_MER_STAT_CD
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MER_STAT_CD
+    data_type: long
+  - name: MER_STAT_DESC
+    data_type: string
+  - name: STAT_DESC
+    data_type: string

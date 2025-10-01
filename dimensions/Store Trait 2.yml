@@ -1,0 +1,106 @@
+unique_name: Store Trait 2
+object_type: dimension
+label: Store Trait 2
+type: standard
+
+hierarchies:
+
+  - unique_name: Store Trait 2 Hierarchy
+    label: Store Trait 2 Hierarchy
+
+    levels:
+
+      - unique_name: h_st2h_store_trait_2_type
+
+        secondary_attributes:
+
+          - unique_name: d_st2h_store_trait_2_type
+            label: Store Trait 2 Type
+            folder: More Fields
+            dataset: Store Trait2.dataset
+            key_columns:
+              - TRT_CLASS_TYP_CD
+            name_column: STORE_TRAIT_CLASS_TYPE
+            sort_column: STORE_TRAIT_CLASS_TYPE
+
+      - unique_name: h_st2h_store_trait_2_txmy
+
+        secondary_attributes:
+
+          - unique_name: d_st2h_store_trait_2_txmy
+            label: Store Trait 2 Txmy
+            folder: More Fields
+            dataset: Store Trait2.dataset
+            key_columns:
+              - TRT_TXMY_ID
+            name_column: TRT_TXMY_NM
+            sort_column: TRT_TXMY_NM
+
+      - unique_name: h_st2h_store_trait_2_group
+
+        secondary_attributes:
+
+          - unique_name: d_st2h_store_trait_2_group
+            label: Store Trait 2 Group
+            folder: More Fields
+            dataset: Store Trait2.dataset
+            key_columns:
+              - TRT_GRP_ID
+            name_column: STORE_TRAIT_GROUP
+            sort_column: STORE_TRAIT_GROUP
+
+      - unique_name: h_st2h_store_trait_2_name
+
+        secondary_attributes:
+
+          - unique_name: d_st2h_store_trait_2_comment
+            label: Store Trait 2 Comment
+            folder: More Fields
+            dataset: Store Trait2.dataset
+            key_columns:
+              - TRT_TXMY_CMT_TXT
+            name_column: TRT_TXMY_CMT_TXT
+            sort_column: TRT_TXMY_CMT_TXT
+
+          - unique_name: d_st2h_store_trait_2_name
+            label: Store Trait 2 Name
+            folder: More Fields
+            dataset: Store Trait2.dataset
+            key_columns:
+              - STORE_TRAIT_ID
+            name_column: STORE_TRAIT_NAME
+            sort_column: STORE_TRAIT_NAME
+
+level_attributes:
+
+  - unique_name: h_st2h_store_trait_2_group
+    label: Store Trait 2 Group
+    dataset: Store Trait2.dataset
+    key_columns:
+      - TRT_GRP_ID
+    name_column: STORE_TRAIT_GROUP
+
+  - unique_name: h_st2h_store_trait_2_name
+    label: Store Trait 2 Name
+    dataset: Store Trait2.dataset
+    key_columns:
+      - STORE_TRAIT_ID
+    name_column: STORE_TRAIT_NAME
+
+  - unique_name: h_st2h_store_trait_2_txmy
+    label: Store Trait 2 Txmy
+    dataset: Store Trait2.dataset
+    key_columns:
+      - TRT_TXMY_ID
+    name_column: TRT_TXMY_NM
+
+  - unique_name: h_st2h_store_trait_2_type
+    label: Store Trait 2 Type
+    dataset: Store Trait2.dataset
+    key_columns:
+      - TRT_CLASS_TYP_CD
+    name_column: STORE_TRAIT_CLASS_TYPE
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

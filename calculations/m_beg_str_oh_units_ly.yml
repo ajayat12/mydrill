@@ -1,0 +1,6 @@
+unique_name: m_beg_str_oh_units_ly
+object_type: metric_calc
+label: Beg Str OH Units LY
+expression: "([Measures].[m_beg_str_oh_units_ly_dly])/*+ [Measures].[m_beg_str_oh_units_ly_wkly])*/\n\
+  \t"
+format: "#,##0;(#,##0);0;;"

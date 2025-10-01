@@ -1,0 +1,6 @@
+unique_name: m_total_oh_units_v_ly_bps_company
+object_type: metric_calc
+label: Total OH Units v LY (BPS) (Company)
+expression: "IIF([Measures].[m_total_oh_units_v_ly_percent_company]+ 0.00 = 0.00,\
+  \ Null, ([Measures].[m_total_oh_units_v_ly_percent_company] * 10000))"
+format: "#,##0;(#,##0);0;;"

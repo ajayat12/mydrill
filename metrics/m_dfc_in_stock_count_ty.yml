@@ -1,0 +1,9 @@
+unique_name: m_dfc_in_stock_count_ty
+object_type: metric
+label: DFC IN STOCK COUNT TY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_DFC_IN_STOCK_COUNT

@@ -1,0 +1,5 @@
+unique_name: m_total_end_inv_cost_amount_v_ly_company
+object_type: metric_calc
+label: Total End Inv Cost $ v LY (Company)
+expression: "[Measures].[m_total_end_inv_cost_amount_company] - [Measures].[m_total_end_inv_cost_amount_ly_company]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

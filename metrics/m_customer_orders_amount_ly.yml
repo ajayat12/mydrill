@@ -1,0 +1,8 @@
+unique_name: m_customer_orders_amount_ly
+object_type: metric
+label: Customer Orders $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_TOT_CUST_ORD_RETL_AMT

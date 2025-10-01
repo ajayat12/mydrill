@@ -1,0 +1,9 @@
+unique_name: m_out_of_stock_ly_dly
+object_type: metric
+label: Out of Stock LY dly
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STR_SKU_INV_IPR_D.dataset
+column: LY_SIMPL_OOS_IND

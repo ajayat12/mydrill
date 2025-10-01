@@ -1,0 +1,8 @@
+unique_name: m_apspw_total_oh_amount_ly_company
+object_type: metric_calc
+label: APSPW Total OH $ LY (Company)
+expression: |-
+  iif([Measures].[m_store_weeks_ly]+ 0.00=0.00,null,
+  [Measures].[m_total_oh_amount_ly_company]/[Measures].[m_store_weeks_ly])
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

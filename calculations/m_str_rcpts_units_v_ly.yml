@@ -1,0 +1,6 @@
+unique_name: m_str_rcpts_units_v_ly
+object_type: metric_calc
+label: Str Rcpts Units v LY
+expression: "IIF(ISEMPTY([Measures].[m_str_rcpts_units]) or ISEMPTY([Measures].[m_str_rcpts_units_ly])\
+  \ , null , ([Measures].[m_str_rcpts_units] - [Measures].[m_str_rcpts_units_ly]))"
+format: "#,##0;(#,##0);0;;"

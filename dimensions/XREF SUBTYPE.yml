@@ -1,0 +1,45 @@
+unique_name: XREF SUBTYPE
+object_type: dimension
+label: XREF SUBTYPE
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF SUBTYPE Hierarchy
+    label: XREF SUBTYPE Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF SUBTYPE Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF SUBTYPE Level
+    label: XREF SUBTYPE Level
+    dataset: XREF_SUBTYPE.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFSUBTYPE_SKUAttribute
+    from:
+      hierarchy: XREF SUBTYPE Hierarchy
+      level: XREF SUBTYPE Level
+      dataset: XREF_SUBTYPE.dataset
+      join_columns:
+        - SUBTYPE
+    to:
+      dimension: SKU Attribute
+      level: h_s_subtype
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

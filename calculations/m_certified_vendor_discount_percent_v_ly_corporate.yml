@@ -1,0 +1,5 @@
+unique_name: m_certified_vendor_discount_percent_v_ly_corporate
+object_type: metric_calc
+label: Certified Vendor Discount % v LY (Corporate)
+expression: "([Measures].[m_certified_vendor_discount_percent_corporate]-[Measures].[m_certified_vendor_discount_percent_ly_corporate])"
+format: 0.00%;(0.00%);0.00%;;

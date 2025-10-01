@@ -1,0 +1,5 @@
+unique_name: m_dc_available_oh_units_v_ly
+object_type: metric_calc
+label: DC Available OH Units v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_available_oh_units]) OR ISEmpty([Measures].[m_dc_available_oh_units_ly]),NULL,[Measures].[m_dc_available_oh_units]-[Measures].[m_dc_available_oh_units_ly])"
+format: "#,##0;(#,##0);#,##0;;"

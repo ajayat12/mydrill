@@ -1,0 +1,5 @@
+unique_name: m_turns
+object_type: metric_calc
+label: Turns
+expression: "IIF([Measures].[m_avg_inv_at_cost_amount] + 0.00 = 0.00, null, [Measures].[m_ann_cogs_amount]/[Measures].[m_avg_inv_at_cost_amount])"
+format: "#,##0.00;(#,##0.00);0.00;;"

@@ -1,0 +1,6 @@
+unique_name: m_coop_amount
+object_type: metric_calc
+label: COOP $
+expression: "[Measures].[m_coop_amount_dly]+[Measures].[m_coop_amount_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

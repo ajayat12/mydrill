@@ -1,0 +1,5 @@
+unique_name: m_mkup_/_mkdn_percent_by_type_/_reason
+object_type: metric_calc
+label: MKUP / MKDN % (by Type / Reason)
+expression: "iif([Measures].[m_sales_amount_mkdn]+0.00= 0.00,null,[Measures].[m_ty_net_mumd_amount]/[Measures].[m_sales_amount_mkdn])"
+format: 0.00%;(0.00%);0.00%;;

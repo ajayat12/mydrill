@@ -1,0 +1,45 @@
+unique_name: XREF Private Brand Flag
+object_type: dimension
+label: XREF Private Brand Flag
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF Private Brand Flag Hierarchy
+    label: XREF Private Brand Flag Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF Private Brand Flag Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF Private Brand Flag Level
+    label: XREF Private Brand Flag Level
+    dataset: XREF_PB_SKU.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFPrivateBrandFlag_SKUAttribute
+    from:
+      hierarchy: XREF Private Brand Flag Hierarchy
+      level: XREF Private Brand Flag Level
+      dataset: XREF_PB_SKU.dataset
+      join_columns:
+        - PB_SKU
+    to:
+      dimension: SKU Attribute
+      level: h_pbf_private_brand_flag
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

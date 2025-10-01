@@ -1,0 +1,53 @@
+unique_name: DC Service Type
+object_type: dimension
+label: DC Service Type
+type: standard
+
+hierarchies:
+
+  - unique_name: DC Service Type Hierarchy
+    label: DC Service Type Hierarchy
+
+    levels:
+
+      - unique_name: h_dsth_dc_service_type
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_dsth_dc_service_type
+            label: DC Service Type
+            dataset: DC_SERVICE_TYPE.dataset
+            key_columns:
+              - DSVC_TYP_CD
+            name_column: D_TYP_CD
+            sort_column: D_TYP_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_dsth_dc_service_type_name
+            label: DC Service Type Name
+            dataset: DC_SERVICE_TYPE.dataset
+            key_columns:
+              - DSVC_TYP_CD
+            name_column: TYP_DESC
+            sort_column: TYP_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_dsth_dc_service_type
+    label: DC Service Type
+    dataset: DC_SERVICE_TYPE.dataset
+    key_columns:
+      - DSVC_TYP_CD
+    name_column: D_TYP_CD
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

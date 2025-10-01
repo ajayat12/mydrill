@@ -1,0 +1,12 @@
+unique_name: m_beg_dc_oh_units
+object_type: metric
+label: Beg DC OH Units
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - DC_INV_DLY.dataset_Time_Transformations
+dataset: DC_INV_DLY.dataset
+column: TY_BGN_DC_OH_QTY

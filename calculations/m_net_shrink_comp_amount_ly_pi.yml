@@ -1,0 +1,5 @@
+unique_name: m_net_shrink_comp_amount_ly_pi
+object_type: metric_calc
+label: Net Shrink Comp $ LY (PI)
+expression: "(-1*[MEASURES].[m_ly_shnk_amt])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,6 @@
+unique_name: m_total_sales_amount_v_ly
+object_type: metric_calc
+label: Total Sales $ v LY
+expression: |
+  IIF(ISEMPTY([MEASURES].[m_total_sales_amount]) OR ISEMPTY([MEASURES].[m_total_sales_amount_ly]),NULL,([MEASURES].[m_total_sales_amount] - [MEASURES].[m_total_sales_amount_ly]))
+format: "$#,##0.00;($#,##0.00);$0.00;;"

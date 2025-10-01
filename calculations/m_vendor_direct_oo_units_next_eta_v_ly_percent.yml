@@ -1,0 +1,5 @@
+unique_name: m_vendor_direct_oo_units_next_eta_v_ly_percent
+object_type: metric_calc
+label: Vendor Direct OO Units (Next ETA) v LY (%)
+expression: "IIF([Measures].[m_vendor_direct_oo_units_next_eta_ly]+0.00=0.00,NULL,([Measures].[m_vendor_direct_oo_units_next_eta_v_ly]/[Measures].[m_vendor_direct_oo_units_next_eta_ly]))"
+format: 0.00%;(0.00%);0.00%;;

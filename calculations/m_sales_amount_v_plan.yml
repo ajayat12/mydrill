@@ -1,0 +1,6 @@
+unique_name: m_sales_amount_v_plan
+object_type: metric_calc
+label: Sales $ v Plan
+expression: "IIF(ISEMPTY([MEASURES].[m_sales_amount]) OR ISEMPTY([MEASURES].[m_sales_amount_plan]),NULL,([MEASURES].[m_sales_amount]\
+  \  - [MEASURES].[m_sales_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

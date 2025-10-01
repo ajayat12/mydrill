@@ -1,0 +1,5 @@
+unique_name: m_shrink_amount_ly_pi
+object_type: metric_calc
+label: Shrink $ LY (PI)
+expression: "-1* [Measures].[m_ly_shnk_company_amt]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

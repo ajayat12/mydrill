@@ -1,0 +1,334 @@
+unique_name: m_unit_landed_cost_amount_ly
+object_type: metric_calc
+label: Unit Landed Cost $ LY
+expression: "CASE WHEN ([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Product].[Merchandising\
+  \ xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8 ) THEN \n    CASE WHEN\
+  \ ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER > 0 and [Location].[Location\
+  \ Hierarchy].CurrentMember.LEVEL_NUMBER < 4)  OR ([Location].[Operation Location\
+  \ Hierarchy].CurrentMember.LEVEL_NUMBER > 0 and [Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ < 4) THEN\n        CASE WHEN [Vendor].[Merch Vendor by Dept Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =2 THEN \n            CASE WHEN ([DC Service Type].[d_dsth_dc_service_type].CurrentMember.Level.name='d_dsth_dc_service_type'\
+  \ OR [DC Service Type].[d_dsth_dc_service_type_name].CurrentMember.Level.name='d_dsth_dc_service_type_name')\
+  \ THEN \n                CASE \n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"INVOICE COST\" THEN [Measures].[m_ly_fob_cost_amt_ghq]\
+  \ \n                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"VOLUME REBATE\" THEN [Measures].[m_ly_rebt_amt_ghq] \n                    \
+  \ WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CO-OP ADVERTISING\"\
+  \ THEN [Measures].[m_ly_coop_amt_ghq]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"CERTIFIED VENDOR DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_cert_trd_disc_amt_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DEFECTIVE ALLOWANCE DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_ly_df_allow_disc_amt_ghq]\n                 \
+  \    WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_frt_trd_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_iss_trd_disc_amt_ghq]\n  \
+  \                   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_misc_trd_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SPECIAL TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_splty_trm_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"OFFSHORE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_offsh_sub_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"RDC DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_agg_sub_disc_amt_ghq]\n     \
+  \                WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_scd_sub_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"TF DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_tf_sub_disc_amt_ghq]\n       \
+  \              WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_mtd_sub_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_frt_sub_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"PURCHASE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_purch_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DC EXPENSE\" THEN [Measures].[m_ly_dc_exp_amt_ghq]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC SHRINK\" THEN\
+  \ [Measures].[m_ly_dcsh_exp_amt_ghq]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_ly_frt_exp_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INTERNATIONAL FREIGHT EXPENSE\" THEN [Measures].[m_ly_frti_exp_amt_ghq]\n \
+  \                    WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"IMPORT G&A EXPENSE\" THEN [Measures].[m_ly_imga_exp_amt_ghq]\n            \
+  \         WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  MET EXPENSE\" THEN [Measures].[m_ly_issi_exp_amt_ghq]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY EXPENSE\"\
+  \ THEN [Measures].[m_ly_duty_exp_amt_ghq]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_ibx_disc_amt_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"NET COST\"     THEN [Measures].[m_ly_net_cost_amt_ghq]\n                  \
+  \   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET NET\
+  \ COST\" THEN [Measures].[m_ly_net_net_cost_amt_ghq]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"LANDED COST\"\
+  \  THEN [Measures].[m_ly_landed_cost_amt_ghq]\n                ELSE NULL\n     \
+  \           END\n            ELSE \n                CASE \n                    \
+  \ WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"INVOICE COST\"\
+  \ THEN [Measures].[m_ly_fob_cost_amt_mv_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"VOLUME REBATE\" THEN [Measures].[m_ly_rebt_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"CO-OP ADVERTISING\" THEN [Measures].[m_ly_coop_amt_mv_ghq]\n              \
+  \       WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CERTIFIED\
+  \ VENDOR DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_cert_trd_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DEFECTIVE ALLOWANCE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_df_allow_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_frt_trd_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_iss_trd_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_misc_trd_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SPECIAL TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_splty_trm_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"OFFSHORE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_offsh_sub_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"RDC DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_agg_sub_disc_amt_mv_ghq]\n  \
+  \                   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_scd_sub_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"TF DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_tf_sub_disc_amt_mv_ghq]\n    \
+  \                 WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_mtd_sub_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_frt_sub_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"PURCHASE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_purch_disc_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DC EXPENSE\" THEN [Measures].[m_ly_dc_exp_amt_mv_ghq]\n                   \
+  \  WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC SHRINK\"\
+  \ THEN [Measures].[m_ly_dcsh_exp_amt_mv_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_ly_frt_exp_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INTERNATIONAL FREIGHT EXPENSE\" THEN [Measures].[m_ly_frti_exp_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"IMPORT G&A EXPENSE\" THEN [Measures].[m_ly_imga_exp_amt_mv_ghq]\n         \
+  \            WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  MET EXPENSE\" THEN [Measures].[m_ly_issi_exp_amt_mv_ghq]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY EXPENSE\"\
+  \ THEN [Measures].[m_ly_duty_exp_amt_mv_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_ibx_disc_amt_mv_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET COST\"     THEN [Measures].[m_ly_net_cost_amt_mv_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"NET NET COST\" THEN [Measures].[m_ly_net_net_cost_amt_mv_ghq]\n           \
+  \          WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  LANDED COST\"  THEN [Measures].[m_ly_landed_cost_amt_mv_ghq]\n                ELSE\
+  \ NULL\n                END  \n            END\n        ELSE\n                CASE\
+  \ \n                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INVOICE COST\" THEN [Measures].[m_ly_fob_cost_amt_sku_ghq]\n              \
+  \       WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"VOLUME\
+  \ REBATE\" THEN [Measures].[m_ly_rebt_amt_sku_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CO-OP ADVERTISING\" THEN\
+  \ [Measures].[m_ly_coop_amt_sku_ghq]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"CERTIFIED VENDOR DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_cert_trd_disc_amt_sku_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DEFECTIVE ALLOWANCE DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_ly_df_allow_disc_amt_sku_ghq]\n             \
+  \        WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_frt_trd_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_iss_trd_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_misc_trd_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SPECIAL TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_splty_trm_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"OFFSHORE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_offsh_sub_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"RDC DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_agg_sub_disc_amt_sku_ghq]\n \
+  \                    WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_scd_sub_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"TF DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_tf_sub_disc_amt_sku_ghq]\n   \
+  \                  WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_mtd_sub_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_frt_sub_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"PURCHASE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_purch_disc_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DC EXPENSE\" THEN [Measures].[m_ly_dc_exp_amt_sku_ghq]\n                  \
+  \   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC SHRINK\"\
+  \ THEN [Measures].[m_ly_dcsh_exp_amt_sku_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_ly_frt_exp_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INTERNATIONAL FREIGHT EXPENSE\" THEN [Measures].[m_ly_frti_exp_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"IMPORT G&A EXPENSE\" THEN [Measures].[m_ly_imga_exp_amt_sku_ghq]\n        \
+  \             WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET EXPENSE\" THEN [Measures].[m_ly_issi_exp_amt_sku_ghq]\n               \
+  \      WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY\
+  \ EXPENSE\" THEN [Measures].[m_ly_duty_exp_amt_sku_ghq]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_ibx_disc_amt_sku_ghq]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET COST\"     THEN [Measures].[m_ly_net_cost_amt_sku_ghq]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"NET NET COST\" THEN [Measures].[m_ly_net_net_cost_amt_sku_ghq]\n          \
+  \           WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  LANDED COST\"  THEN [Measures].[m_ly_landed_cost_amt_sku_ghq]\n                \
+  \     ELSE NULL\n                END                \n        END  \n        WHEN\
+  \ ([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER = 6 ) THEN\n     \
+  \   CASE WHEN [Vendor].[Merch Vendor by Dept Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =2 THEN \n            CASE WHEN ([DC Service Type].[d_dsth_dc_service_type].CurrentMember.Name='d_dsth_dc_service_type'\
+  \ OR [DC Service Type].[d_dsth_dc_service_type_name].CurrentMember.Name='d_dsth_dc_service_type_name')\
+  \ THEN \n                CASE \n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"INVOICE COST\" THEN [Measures].[m_ly_fob_cost_amt_mkt]\
+  \ \n                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"VOLUME REBATE\" THEN [Measures].[m_ly_rebt_amt_mkt] \n                    \
+  \ WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CO-OP ADVERTISING\"\
+  \ THEN [Measures].[m_ly_coop_amt_mkt]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"CERTIFIED VENDOR DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_cert_trd_disc_amt_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DEFECTIVE ALLOWANCE DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_ly_df_allow_disc_amt_mkt]\n                 \
+  \    WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_frt_trd_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_iss_trd_disc_amt_mkt]\n  \
+  \                   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_misc_trd_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SPECIAL TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_splty_trm_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"OFFSHORE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_offsh_sub_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"RDC DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_agg_sub_disc_amt_mkt]\n     \
+  \                WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_scd_sub_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"TF DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_tf_sub_disc_amt_mkt]\n       \
+  \              WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_mtd_sub_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_frt_sub_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"PURCHASE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_purch_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DC EXPENSE\" THEN [Measures].[m_ly_dc_exp_amt_mkt]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC SHRINK\" THEN\
+  \ [Measures].[m_ly_dcsh_exp_amt_mkt]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_ly_frt_exp_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INTERNATIONAL FREIGHT EXPENSE\" THEN [Measures].[m_ly_frti_exp_amt_mkt]\n \
+  \                    WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"IMPORT G&A EXPENSE\" THEN [Measures].[m_ly_imga_exp_amt_mkt]\n            \
+  \         WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  MET EXPENSE\" THEN [Measures].[m_ly_issi_exp_amt_mkt]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY EXPENSE\"\
+  \ THEN [Measures].[m_ly_duty_exp_amt_mkt]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_ibx_disc_amt_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"NET COST\"     THEN [Measures].[m_ly_net_cost_amt_mkt]\n                  \
+  \   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET NET\
+  \ COST\" THEN [Measures].[m_ly_net_net_cost_amt_mkt]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"LANDED COST\"\
+  \  THEN [Measures].[m_ly_landed_cost_amt_mkt]\n                ELSE NULL\n     \
+  \           END\n            ELSE \n                CASE \n                    \
+  \ WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"INVOICE COST\"\
+  \ THEN [Measures].[m_ly_fob_cost_amt_mv_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"VOLUME REBATE\" THEN [Measures].[m_ly_rebt_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"CO-OP ADVERTISING\" THEN [Measures].[m_ly_coop_amt_mv_mkt]\n              \
+  \       WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CERTIFIED\
+  \ VENDOR DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_cert_trd_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DEFECTIVE ALLOWANCE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_df_allow_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_frt_trd_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_iss_trd_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_misc_trd_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SPECIAL TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_splty_trm_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"OFFSHORE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_offsh_sub_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"RDC DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_agg_sub_disc_amt_mv_mkt]\n  \
+  \                   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_scd_sub_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"TF DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_tf_sub_disc_amt_mv_mkt]\n    \
+  \                 WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_mtd_sub_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_frt_sub_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"PURCHASE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_purch_disc_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DC EXPENSE\" THEN [Measures].[m_ly_dc_exp_amt_mv_mkt]\n                   \
+  \  WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC SHRINK\"\
+  \ THEN [Measures].[m_ly_dcsh_exp_amt_mv_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_ly_frt_exp_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INTERNATIONAL FREIGHT EXPENSE\" THEN [Measures].[m_ly_frti_exp_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"IMPORT G&A EXPENSE\" THEN [Measures].[m_ly_imga_exp_amt_mv_mkt]\n         \
+  \            WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  MET EXPENSE\" THEN [Measures].[m_ly_issi_exp_amt_mv_mkt]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY EXPENSE\"\
+  \ THEN [Measures].[m_ly_duty_exp_amt_mv_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_ibx_disc_amt_mv_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET COST\"     THEN [Measures].[m_ly_net_cost_amt_mv_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"NET NET COST\" THEN [Measures].[m_ly_net_net_cost_amt_mv_mkt]\n           \
+  \          WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  LANDED COST\"  THEN [Measures].[m_ly_landed_cost_amt_mv_mkt]\n                ELSE\
+  \ NULL\n                END  \n            END\n        ELSE\n                CASE\
+  \ \n                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INVOICE COST\" THEN [Measures].[m_ly_fob_cost_amt_sku_mkt]\n              \
+  \       WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"VOLUME\
+  \ REBATE\" THEN [Measures].[m_ly_rebt_amt_sku_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"CO-OP ADVERTISING\" THEN\
+  \ [Measures].[m_ly_coop_amt_sku_mkt]\n                     WHEN [Economic Cost].[Economic\
+  \ Cost Hierarchy].CurrentMember.name =\"CERTIFIED VENDOR DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_cert_trd_disc_amt_sku_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DEFECTIVE ALLOWANCE DISCOUNT\
+  \ (CORPORATE)\" THEN [Measures].[m_ly_df_allow_disc_amt_sku_mkt]\n             \
+  \        WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT\
+  \ UNBUNDLING DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_frt_trd_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_iss_trd_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_misc_trd_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SPECIAL TERM DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_splty_trm_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"OFFSHORE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_offsh_sub_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"RDC DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_agg_sub_disc_amt_sku_mkt]\n \
+  \                    WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"SUPPLY CHAIN DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_scd_sub_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"TF DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_tf_sub_disc_amt_sku_mkt]\n   \
+  \                  WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MISC TRADE DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_mtd_sub_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"FREIGHT UNBUNDLING DISCOUNT (MKT/DC)\" THEN [Measures].[m_ly_frt_sub_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"PURCHASE DISCOUNT (CORPORATE)\" THEN [Measures].[m_ly_purch_disc_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"DC EXPENSE\" THEN [Measures].[m_ly_dc_exp_amt_sku_mkt]\n                  \
+  \   WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DC SHRINK\"\
+  \ THEN [Measures].[m_ly_dcsh_exp_amt_sku_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"FREIGHT EXPENSE\" THEN [Measures].[m_ly_frt_exp_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"INTERNATIONAL FREIGHT EXPENSE\" THEN [Measures].[m_ly_frti_exp_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"IMPORT G&A EXPENSE\" THEN [Measures].[m_ly_imga_exp_amt_sku_mkt]\n        \
+  \             WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"MET EXPENSE\" THEN [Measures].[m_ly_issi_exp_amt_sku_mkt]\n               \
+  \      WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"DUTY\
+  \ EXPENSE\" THEN [Measures].[m_ly_duty_exp_amt_sku_mkt]\n                     WHEN\
+  \ [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"IBX DISCOUNT (CORPORATE)\"\
+  \ THEN [Measures].[m_ly_ibx_disc_amt_sku_mkt]\n                     WHEN [Economic\
+  \ Cost].[Economic Cost Hierarchy].CurrentMember.name =\"NET COST\"     THEN [Measures].[m_ly_net_cost_amt_sku_mkt]\n\
+  \                     WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name\
+  \ =\"NET NET COST\" THEN [Measures].[m_ly_net_net_cost_amt_sku_mkt]\n          \
+  \           WHEN [Economic Cost].[Economic Cost Hierarchy].CurrentMember.name =\"\
+  LANDED COST\"  THEN [Measures].[m_ly_landed_cost_amt_sku_mkt]\n                \
+  \     ELSE NULL\n                END                \n        END\n    ELSE NULL\
+  \            \n    END  \nELSE  NULL\nEND"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

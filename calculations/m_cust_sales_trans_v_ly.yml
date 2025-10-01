@@ -1,0 +1,6 @@
+unique_name: m_cust_sales_trans_v_ly
+object_type: metric_calc
+label: Cust Sales Trans v LY
+expression: "IIF(ISEMPTY([MEASURES].[m_cust_sales_trans]) OR ISEMPTY([MEASURES].[m_cust_sales_trans_ly])\
+  \ ,NULL,([MEASURES].[m_cust_sales_trans] - [MEASURES].[m_cust_sales_trans_ly]))"
+format: "#,##0;(#,##0);;;"

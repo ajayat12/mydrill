@@ -1,0 +1,5 @@
+unique_name: m_end_str_inv_retail_amount_plan
+object_type: metric_calc
+label: End Str Inv Retail $ Plan
+expression: "[Measures].[m_end_Str_inv_retail_amount_plan_sw]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

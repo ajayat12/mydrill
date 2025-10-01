@@ -1,0 +1,8 @@
+unique_name: m_sales_amount_pi
+object_type: metric
+label: Sales $ (PI)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: PI_SHNK.dataset
+column: TY_SHNK_COMPANY_SLS

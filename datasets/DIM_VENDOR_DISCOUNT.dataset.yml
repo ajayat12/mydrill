@@ -1,0 +1,17 @@
+unique_name: DIM_VENDOR_DISCOUNT.dataset
+object_type: dataset
+label: DIM_VENDOR_DISCOUNT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_VENDOR_DISCOUNT
+
+columns:
+  - name: DISC_TYP_CD
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: S_TYP_DESC
+    data_type: string
+  - name: SUB_DISC_TYP_CD
+    data_type: long
+  - name: SUB_S_TYP_DESC
+    data_type: string

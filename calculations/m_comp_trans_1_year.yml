@@ -1,0 +1,5 @@
+unique_name: m_comp_trans_1_year
+object_type: metric_calc
+label: Comp Trans (1 Year)
+expression: "IIF([Measures].[m_comp_trans_1_year_h]=0, null , [Measures].[m_comp_trans_1_year_h])"
+format: "#,##0;(#,##0);;;"

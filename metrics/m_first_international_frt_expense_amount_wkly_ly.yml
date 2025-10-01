@@ -1,0 +1,9 @@
+unique_name: m_first_international_frt_expense_amount_wkly_ly
+object_type: metric
+label: First International Frt Expense $ wkly LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_LOC_MVRCT_W.dataset
+column: LY_INTL_EXPENSE

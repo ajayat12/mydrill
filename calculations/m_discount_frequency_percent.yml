@@ -1,0 +1,8 @@
+unique_name: m_discount_frequency_percent
+object_type: metric_calc
+label: Discount Frequency %
+expression: "IIF((IsEmpty([Measures].[m_discount_frequency_amount]) OR [Measures].[m_gross_tot_recpts_cost_amount]+0.00=0.00)\
+  \ ,null,CASE WHEN [Vendor Discount].[Vendor Discount Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ > 0 THEN ([Measures].[m_discount_frequency_amount]/[Measures].[m_gross_tot_recpts_cost_amount])\
+  \ ELSE null END)"
+format: 0.00%;(0.00%);0.00%;;

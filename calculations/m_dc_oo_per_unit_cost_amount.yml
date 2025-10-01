@@ -1,0 +1,10 @@
+unique_name: m_dc_oo_per_unit_cost_amount
+object_type: metric_calc
+label: DC OO Per Unit Cost $
+expression: "CASE WHEN [DC Location].[DC Hierarchy].CurrentMember.LEVEL_NUMBER =5\
+  \ THEN \n\tCASE WHEN [Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6\
+  \ or \n\t\t\t\t[Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6 or \n\t\
+  \t\t\t[Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8\
+  \  THEN \n[Measures].[m_dc_oo_per_unit_cost_amount_calc]\n\telse null \n\tend\n\
+  else null \nend"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

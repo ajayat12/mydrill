@@ -1,0 +1,6 @@
+unique_name: m_avg_markdown_percent
+object_type: metric_calc
+label: Avg Markdown %
+expression: "IIF([MEASURES].[m_high_extended_retail_amount_52_weeks]+0.00=0.00,NULL,(([MEASURES].[m_str_oh_amount_ice_aging])/\
+  \ [MEASURES].[m_high_extended_retail_amount_52_weeks]-1)*-1)"
+format: 0.00%;(0.00%);0.00%;;

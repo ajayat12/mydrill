@@ -1,0 +1,9 @@
+unique_name: m_sku_key_ly
+object_type: metric
+label: ' Sku Key LY'
+calculation_method: count non-null
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_BRCH_DLY.dataset
+column: LY_SKU_CNT

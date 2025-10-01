@@ -1,0 +1,13 @@
+unique_name: m_ty_landed_cost_amt_sku_ghq
+object_type: metric
+label: TY LANDED COST AMT SKU GHQ
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - GHQ_SKU_MV_DSVC_LNDCOST.dataset_Time_Transformations
+dataset: GHQ_SKU_MV_DSVC_LNDCOST.dataset
+column: TY_LANDED_COST_AMT_SKU

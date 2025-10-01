@@ -1,0 +1,8 @@
+unique_name: m_count_pi
+object_type: metric
+label: Count (PI)
+calculation_method: count distinct
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: PI_SHNK.dataset
+column: TY_COUNT_PI

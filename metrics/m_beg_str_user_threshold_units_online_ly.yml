@@ -1,0 +1,12 @@
+unique_name: m_beg_str_user_threshold_units_online_ly
+object_type: metric
+label: Beg Str User Threshold Units (Online) LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - DFDRILL_SKU_DTL_DLY.dataset_Time_Transformations
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_BOD_MIN_THRH_OH_QTY

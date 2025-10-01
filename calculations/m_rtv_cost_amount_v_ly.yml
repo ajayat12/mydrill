@@ -1,0 +1,6 @@
+unique_name: m_rtv_cost_amount_v_ly
+object_type: metric_calc
+label: RTV Cost $ v LY
+expression: "IIF(ISEMPTY([MEASURES].[m_rtv_cost_amount]) OR ISEMPTY([MEASURES].[m_rtv_cost_amount_ly]),NULL\
+  \ ,[MEASURES].[m_rtv_cost_amount]-[MEASURES].[m_rtv_cost_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

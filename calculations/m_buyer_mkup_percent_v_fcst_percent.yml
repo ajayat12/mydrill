@@ -1,0 +1,6 @@
+unique_name: m_buyer_mkup_percent_v_fcst_percent
+object_type: metric_calc
+label: Buyer MKUP % v Fcst (%)
+expression: "IIF([MEASURES].[m_buyer_mkup_percent_fcst]+0.00=0.00,NULL,([Measures].[m_buyer_mkup_percent]-[MEASURES].[m_buyer_mkup_percent_fcst])/[MEASURES].[m_buyer_mkup_percent_fcst])"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

@@ -1,0 +1,9 @@
+unique_name: m_gross_dc_recpts_cost_amount
+object_type: metric
+label: Gross DC Recpts Cost $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: SKU_DC_MVRCT_D.dataset
+column: TY_GROSS_COST_AMT

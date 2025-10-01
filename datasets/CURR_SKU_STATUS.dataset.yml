@@ -1,0 +1,23 @@
+unique_name: CURR_SKU_STATUS.dataset
+object_type: dataset
+label: CURR_SKU_STATUS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: CURR_SKU_STATUS
+
+columns:
+  - name: EXCE_FLAG
+    data_type: long
+  - name: EXCE_FLAG_DESC
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MKT_NBR
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STAT_CD
+    data_type: long
+  - name: SKU_STAT_CD_DESC
+    data_type: string

@@ -1,0 +1,5 @@
+unique_name: m_home_depot_direct_dlvry_expense_percent
+object_type: metric_calc
+label: Home Depot Direct Dlvry Expense %
+expression: "IIF([MEASURES].[m_total_sales_amount]+0.00=0.00,NULL,([MEASURES].[m_home_depot_direct_dlvry_expense_amount]/[MEASURES].[m_total_sales_amount]))"
+format: 0.00%;(0.00%);0.00%;;

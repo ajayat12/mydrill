@@ -1,0 +1,6 @@
+unique_name: m_amu_percent_plan
+object_type: metric_calc
+label: AMU % Plan
+expression: "IIF([Measures].[m_ty_y_pln_avselr_amount] + 0.00 = 0.00, null ,([Measures].[m_ty_y_pln_avselr_amount]\
+  \ - [Measures].[m_ty_y_pln_avselc_amount])/[Measures].[m_ty_y_pln_avselr_amount])"
+format: 0.00%;(0.00%);;;

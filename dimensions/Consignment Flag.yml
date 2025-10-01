@@ -1,0 +1,43 @@
+unique_name: Consignment Flag
+object_type: dimension
+label: Consignment Flag
+type: standard
+
+hierarchies:
+
+  - unique_name: Consignment Flag Hierarchy
+    label: Consignment Flag Hierarchy
+
+    levels:
+
+      - unique_name: h_cfh_consignment_flag
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_cfh_consignment_flag
+            label: Consignment Flag
+            dataset: DIM_CONSIGNMENT_FLAG.dataset
+            key_columns:
+              - CNSGMT_FLG
+            name_column: CNSGMT_FLG_DESC
+            sort_column: CNSGMT_FLG
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_cfh_consignment_flag
+    label: Consignment Flag
+    is_unique_key: true
+    dataset: DIM_CONSIGNMENT_FLAG.dataset
+    key_columns:
+      - CNSGMT_FLG
+    name_column: CNSGMT_FLG_DESC
+    sort_column: CNSGMT_FLG
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

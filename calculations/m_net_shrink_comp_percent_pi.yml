@@ -1,0 +1,5 @@
+unique_name: m_net_shrink_comp_percent_pi
+object_type: metric_calc
+label: Net Shrink Comp % (PI)
+expression: "IIF([MEASURES].[m_net_sales_comp_amount_lly_pi]+0.00=0.00,NULL ,([MEASURES].[m_net_shrink_comp_amount_lly_pi])/[MEASURES].[m_net_sales_comp_amount_lly_pi])"
+format: 0.00%;(0.00%);0.00%;;

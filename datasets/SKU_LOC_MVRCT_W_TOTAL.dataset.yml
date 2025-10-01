@@ -1,0 +1,33 @@
+unique_name: SKU_LOC_MVRCT_W_TOTAL.dataset
+object_type: dataset
+label: SKU_LOC_MVRCT_W_TOTAL
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SKU_LOC_MVRCT_W_TOTAL
+
+columns:
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LY_BASE_COST_AMT
+    data_type: double
+  - name: LY_BASE_RETL_AMT
+    data_type: double
+  - name: LY_COST_AMT
+    data_type: double
+  - name: LY_COST_AMT_CORE
+    data_type: double
+  - name: LY_RETL_AMT
+    data_type: double
+  - name: LY_RETL_AMT_CORE
+    data_type: double
+  - name: TY_BASE_COST_AMT
+    data_type: double
+  - name: TY_BASE_RETL_AMT
+    data_type: double
+  - name: TY_COST_AMT
+    data_type: double
+  - name: TY_COST_AMT_CORE
+    data_type: double
+  - name: TY_RETL_AMT
+    data_type: double
+  - name: TY_RETL_AMT_CORE
+    data_type: double

@@ -1,0 +1,8 @@
+unique_name: m_str_vol_lvl_cd
+object_type: metric
+label: Str Vol Lvl Cd
+calculation_method: maximum
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: STR_VOL_FLG.dataset
+column: STR_VOL_LVL_CD

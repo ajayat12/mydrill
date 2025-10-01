@@ -1,0 +1,43 @@
+unique_name: DC SKU BKINV.dataset
+object_type: dataset
+label: DC SKU BKINV
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DC_SKU_BKINV
+
+columns:
+  - name: ALL_DEPT_DESC
+    data_type: string
+  - name: DC_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: fscl_prd_end_dt
+    data_type: date
+  - name: GEO_HQ_PRTY_NBR
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: ly_bi_cost_amt
+    data_type: double
+  - name: ly_bi_retl_amt
+    data_type: double
+  - name: ly_ei_cost_amt
+    data_type: double
+  - name: ly_ei_retl_amt
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: ty_bi_cost_amt
+    data_type: double
+  - name: ty_bi_retl_amt
+    data_type: double
+  - name: ty_ei_cost_amt
+    data_type: double
+  - name: ty_ei_retl_amt
+    data_type: double

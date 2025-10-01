@@ -1,0 +1,5 @@
+unique_name: m_beg_dc_oh_amount_v_ly
+object_type: metric_calc
+label: Beg DC OH $ v LY
+expression: "IIF(ISEMPTY([Measures].[m_beg_dc_oh_amount]) OR ISEMPTY([Measures].[m_beg_dc_oh_amount_ly]),NULL,[Measures].[m_beg_dc_oh_amount]-[Measures].[m_beg_dc_oh_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

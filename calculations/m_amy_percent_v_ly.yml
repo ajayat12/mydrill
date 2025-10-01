@@ -1,0 +1,5 @@
+unique_name: m_amy_percent_v_ly
+object_type: metric_calc
+label: AMU % v LY
+expression: "[Measures].[m_amu_percent]-[Measures].[m_amu_percent_ly]"
+format: 0.00%;(0.00%);0.00%;;

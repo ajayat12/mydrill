@@ -1,0 +1,5 @@
+unique_name: m_gm_percent_fcst
+object_type: metric_calc
+label: GM % Fcst
+expression: "IIF([MEASURES].[m_sales_amount_fcst]+0.00=0.00,NULL,([Measures].[m_gm_amount_fcst]/[MEASURES].[m_sales_amount_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

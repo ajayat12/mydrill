@@ -1,0 +1,6 @@
+unique_name: m_count_v_ly_pi
+object_type: metric_calc
+label: Count v LY (PI)
+expression: "IIF(IsEmpty([MEASURES].[m_count_pi]) OR IsEmpty([MEASURES].[m_count_ly_pi]),NULL\
+  \ ,[MEASURES].[m_count_pi]-[MEASURES].[m_count_ly_pi])"
+format: "#,##0;(#,##0);#,##0;;"

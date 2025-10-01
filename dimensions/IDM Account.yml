@@ -1,0 +1,42 @@
+unique_name: IDM Account
+object_type: dimension
+label: IDM Account
+type: standard
+
+hierarchies:
+
+  - unique_name: IDM Account Hierarchy
+    label: IDM Account Hierarchy
+
+    levels:
+
+      - unique_name: h_iah_idm_account_level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_iah_idm_account_name
+            label: IDM Account Name
+            dataset: DIM_IDM_ACCOUNT.dataset
+            key_columns:
+              - IDM_VNDR_KEY
+            name_column: IDM_VNDR_ACCT_NM
+            sort_column: IDM_VNDR_ACCT_NM
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_iah_idm_account_level
+    label: IDM Account Level
+    dataset: DIM_IDM_ACCOUNT.dataset
+    key_columns:
+      - IDM_VNDR_KEY
+    name_column: IDM_VNDR_ACCT_NM
+    sort_column: IDM_VNDR_ACCT_NM
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

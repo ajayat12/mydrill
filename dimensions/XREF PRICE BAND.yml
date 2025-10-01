@@ -1,0 +1,45 @@
+unique_name: XREF PRICE BAND
+object_type: dimension
+label: XREF PRICE BAND
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF PRICE BAND Hierarchy
+    label: XREF PRICE BAND Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF PRICE BAND Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF PRICE BAND Level
+    label: XREF PRICE BAND Level
+    dataset: XREF_PRICE_BAND.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFPRICEBAND_SKUAttribute
+    from:
+      hierarchy: XREF PRICE BAND Hierarchy
+      level: XREF PRICE BAND Level
+      dataset: XREF_PRICE_BAND.dataset
+      join_columns:
+        - PRICE_BAND
+    to:
+      dimension: SKU Attribute
+      level: h_pb_price_band
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

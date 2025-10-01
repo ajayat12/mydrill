@@ -1,0 +1,9 @@
+unique_name: m_ty_cfel_sc_comp_sls_txn_cnt
+object_type: metric
+label: TY CFEL SC COMP SLS TXN CNT
+calculation_method: sum
+format: "#,##0;(#,##0);;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: PRODUCT_STR_DAY_TRANS.dataset
+column: TY_CFEL_SC_COMP_SLS_TXN_CNT

@@ -1,0 +1,5 @@
+unique_name: m_buyer_mkdn_amount_v_fcst
+object_type: metric_calc
+label: Buyer MKDN $ v Fcst
+expression: "IIF(IsEmpty([MEASURES].[m_buyer_mkdn_amount]) OR IsEmpty([MEASURES].[m_buyer_mkdn_amount_fcst]),NULL,([MEASURES].[m_buyer_mkdn_amount]-[MEASURES].[m_buyer_mkdn_amount_fcst]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

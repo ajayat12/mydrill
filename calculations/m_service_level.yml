@@ -1,0 +1,5 @@
+unique_name: m_service_level
+object_type: metric_calc
+label: Service Level
+expression: "IIF(IsEmpty([Measures].[m_total_online_views]),NULL,[Measures].[m_views_buyable]/[Measures].[m_total_online_views])"
+format: 0.00%;(0.00%);0.00%;;

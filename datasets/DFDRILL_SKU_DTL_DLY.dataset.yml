@@ -1,0 +1,259 @@
+unique_name: DFDRILL_SKU_DTL_DLY.dataset
+object_type: dataset
+label: DFDRILL_SKU_DTL_DLY
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DFDRILL_SKU_DTL_DLY
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: DEPT_NBR
+    data_type: long
+  - name: DF_IPR_REPLE_DIM_ID
+    data_type: long
+  - name: DFDRL_CHUB_AVAIL_DIM_ID
+    data_type: long
+  - name: DFDRL_CURR_BUYBL_ONLN_DIM_ID
+    data_type: long
+  - name: IDM_VNDR_ACCT_ID
+    data_type: long
+  - name: IDM_VNDR_ACCT_NM
+    data_type: string
+  - name: ITEM_SHP_METH_ID
+    data_type: long
+  - name: ITEM_SHP_METH_VAL
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_BOD_ALLOC_QTY
+    data_type: double
+  - name: LY_BOD_AVAIL_OH_QTY
+    data_type: double
+  - name: LY_BOD_BKORD_QTY
+    data_type: double
+  - name: LY_BOD_CURR_OH_QTY
+    data_type: double
+  - name: LY_BOD_MIN_THRH_OH_QTY
+    data_type: double
+  - name: LY_BOD_ONLN_RSVD_QTY
+    data_type: double
+  - name: LY_BOD_RSVD_ORD_QTY
+    data_type: double
+  - name: LY_BOD_SCH_INV_DMND_QTY
+    data_type: double
+  - name: LY_CHUB_COST_AMT
+    data_type: double
+  - name: LY_CHUB_NXT_EXPCTD_AVAIL_OH_QTY
+    data_type: double
+  - name: LY_CHUB_OH_COST_AMT
+    data_type: double
+  - name: LY_CHUB_OH_CURR_RETL_AMT
+    data_type: double
+  - name: LY_CHUB_OH_QTY
+    data_type: double
+  - name: LY_CURR_COST_AMT
+    data_type: double
+  - name: LY_CURR_RETL_AMT
+    data_type: double
+  - name: LY_CUST_BUYBL_DAY_PG_VIST_CNT
+    data_type: long
+  - name: LY_CUST_BUYBL_VIST_PCT
+    data_type: double
+  - name: LY_CUST_NOT_BUYBL_DAY_PG_VIST_CNT
+    data_type: long
+  - name: LY_CUST_ORD_CNT
+    data_type: long
+  - name: LY_CUST_ORD_UNT_QTY
+    data_type: double
+  - name: LY_DAYS_BUYABLE
+    data_type: long
+  - name: LY_DAYS_NOT_BUYABLE
+    data_type: long
+  - name: LY_DLY_ONLN_IN_STK_IND_CNT
+    data_type: long
+  - name: LY_DLY_ONLN_OOS_IND_CNT
+    data_type: long
+  - name: LY_DLY_REPLE_IND_CNT
+    data_type: long
+  - name: LY_DSTNCT_PG_VIST_CNT
+    data_type: long
+  - name: LY_EOD_ALLOC_QTY
+    data_type: double
+  - name: LY_EOD_AVAIL_OH_QTY
+    data_type: double
+  - name: LY_EOD_BKORD_QTY
+    data_type: double
+  - name: LY_EOD_CURR_OH_QTY
+    data_type: double
+  - name: LY_EOD_MIN_THRH_OH_QTY
+    data_type: double
+  - name: LY_EOD_ONLN_RSVD_QTY
+    data_type: double
+  - name: LY_EOD_RSVD_ORD_QTY
+    data_type: double
+  - name: LY_EOD_SCH_INV_DMND_QTY
+    data_type: double
+  - name: LY_LOST_SLS_AMT
+    data_type: double
+  - name: LY_LOST_SLS_QTY
+    data_type: double
+  - name: LY_ONLN_GRS_SLS_RETL_AMT
+    data_type: double
+  - name: LY_ONLN_GRS_SLS_UNT_QTY
+    data_type: double
+  - name: LY_ONLN_OH_CURR_COST_AMT
+    data_type: double
+  - name: LY_ONLN_OH_CURR_RETL_AMT
+    data_type: double
+  - name: LY_ONLN_OH_REG_RETL_AMT
+    data_type: double
+  - name: LY_POTNTL_SLS_AMT
+    data_type: double
+  - name: LY_POTNTL_SLS_QTY
+    data_type: double
+  - name: LY_R4W_FCST_SLS_AMT
+    data_type: double
+  - name: LY_R4W_FCST_SLS_QTY
+    data_type: double
+  - name: LY_R60D_AVG_ORD_QTY
+    data_type: double
+  - name: LY_R60D_CUST_BUYBL_ORD_CNT
+    data_type: long
+  - name: LY_R60D_CUST_BUYBL_PG_VIST_CNT
+    data_type: long
+  - name: LY_R60D_VIST_ORD_CONV_RT
+    data_type: double
+  - name: LY_R8W_AVG_FCST_SLS_QTY
+    data_type: double
+  - name: LY_R8W_FCST_SLS_AMT
+    data_type: double
+  - name: LY_REG_RETL_AMT
+    data_type: double
+  - name: LY_SKU_CNT
+    data_type: long
+  - name: LY_TOT_CUST_ORD_RETL_AMT
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OOS_DT
+    data_type: date
+  - name: PRI_ITEM_DIM_ID
+    data_type: long
+  - name: PRI_ITEM_KEY
+    data_type: long
+  - name: R13W_PRITEM_WK_DIM_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TY_BOD_ALLOC_QTY
+    data_type: double
+  - name: TY_BOD_AVAIL_OH_QTY
+    data_type: double
+  - name: TY_BOD_BKORD_QTY
+    data_type: double
+  - name: TY_BOD_CURR_OH_QTY
+    data_type: double
+  - name: TY_BOD_MIN_THRH_OH_QTY
+    data_type: double
+  - name: TY_BOD_ONLN_RSVD_QTY
+    data_type: double
+  - name: TY_BOD_RSVD_ORD_QTY
+    data_type: double
+  - name: TY_BOD_SCH_INV_DMND_QTY
+    data_type: double
+  - name: TY_CHUB_COST_AMT
+    data_type: double
+  - name: TY_CHUB_NXT_EXPCTD_AVAIL_OH_QTY
+    data_type: double
+  - name: TY_CHUB_OH_COST_AMT
+    data_type: double
+  - name: TY_CHUB_OH_CURR_RETL_AMT
+    data_type: double
+  - name: TY_CHUB_OH_QTY
+    data_type: double
+  - name: TY_CURR_COST_AMT
+    data_type: double
+  - name: TY_CURR_RETL_AMT
+    data_type: double
+  - name: TY_CUST_BUYBL_DAY_PG_VIST_CNT
+    data_type: long
+  - name: TY_CUST_BUYBL_VIST_PCT
+    data_type: double
+  - name: TY_CUST_NOT_BUYBL_DAY_PG_VIST_CNT
+    data_type: long
+  - name: TY_CUST_ORD_CNT
+    data_type: long
+  - name: TY_CUST_ORD_UNT_QTY
+    data_type: double
+  - name: TY_DAYS_BUYABLE
+    data_type: long
+  - name: TY_DAYS_NOT_BUYABLE
+    data_type: long
+  - name: TY_DLY_ONLN_IN_STK_IND_CNT
+    data_type: long
+  - name: TY_DLY_ONLN_OOS_IND_CNT
+    data_type: long
+  - name: TY_DLY_REPLE_IND_CNT
+    data_type: long
+  - name: TY_DSTNCT_PG_VIST_CNT
+    data_type: long
+  - name: TY_EOD_ALLOC_QTY
+    data_type: double
+  - name: TY_EOD_AVAIL_OH_QTY
+    data_type: double
+  - name: TY_EOD_BKORD_QTY
+    data_type: double
+  - name: TY_EOD_CURR_OH_QTY
+    data_type: double
+  - name: TY_EOD_MIN_THRH_OH_QTY
+    data_type: double
+  - name: TY_EOD_ONLN_RSVD_QTY
+    data_type: double
+  - name: TY_EOD_RSVD_ORD_QTY
+    data_type: double
+  - name: TY_EOD_SCH_INV_DMND_QTY
+    data_type: double
+  - name: TY_LOST_SLS_AMT
+    data_type: double
+  - name: TY_LOST_SLS_QTY
+    data_type: double
+  - name: TY_ONLN_GRS_SLS_RETL_AMT
+    data_type: double
+  - name: TY_ONLN_GRS_SLS_UNT_QTY
+    data_type: double
+  - name: TY_ONLN_OH_CURR_COST_AMT
+    data_type: double
+  - name: TY_ONLN_OH_CURR_RETL_AMT
+    data_type: double
+  - name: TY_ONLN_OH_REG_RETL_AMT
+    data_type: double
+  - name: TY_POTNTL_SLS_AMT
+    data_type: double
+  - name: TY_POTNTL_SLS_QTY
+    data_type: double
+  - name: TY_R4W_FCST_SLS_AMT
+    data_type: double
+  - name: TY_R4W_FCST_SLS_QTY
+    data_type: double
+  - name: TY_R60D_AVG_ORD_QTY
+    data_type: double
+  - name: TY_R60D_CUST_BUYBL_ORD_CNT
+    data_type: long
+  - name: TY_R60D_CUST_BUYBL_PG_VIST_CNT
+    data_type: long
+  - name: TY_R60D_VIST_ORD_CONV_RT
+    data_type: double
+  - name: TY_R8W_AVG_FCST_SLS_QTY
+    data_type: double
+  - name: TY_R8W_FCST_SLS_AMT
+    data_type: double
+  - name: TY_REG_RETL_AMT
+    data_type: double
+  - name: TY_SKU_CNT
+    data_type: long
+  - name: TY_TOT_CUST_ORD_RETL_AMT
+    data_type: double

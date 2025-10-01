@@ -1,0 +1,12 @@
+unique_name: m_beg_dc_inv_cost_amount_ly
+object_type: metric
+label: Beg DC Inv Cost $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - DC_SKU_BKINV.dataset_Time_Transformations
+dataset: DC SKU BKINV.dataset
+column: ly_bi_cost_amt

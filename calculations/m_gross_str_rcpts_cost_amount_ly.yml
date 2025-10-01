@@ -1,0 +1,6 @@
+unique_name: m_gross_str_rcpts_cost_amount_ly
+object_type: metric_calc
+label: Gross Str Rcpts Cost $ LY
+expression: "[Measures].[m_gross_str_rcpts_cost_amount_ly_dly] + [Measures].[m_gross_str_rcpts_cost_amount_ly_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true

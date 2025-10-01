@@ -1,0 +1,5 @@
+unique_name: m_deliver_from_store_exp_percent_v_ly
+object_type: metric_calc
+label: Deliver From Store Exp % v LY
+expression: "IIF(IsEmpty([MEASURES].[m_deliver_from_store_exp_percent]) OR IsEmpty([MEASURES].[m_deliver_from_store_exp_percent_ly]),NULL,[MEASURES].[m_deliver_from_store_exp_percent]-[MEASURES].[m_deliver_from_store_exp_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

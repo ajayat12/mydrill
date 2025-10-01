@@ -1,0 +1,7 @@
+unique_name: m_apspw_gm_amount_ly
+object_type: metric_calc
+label: APSPW GM $ LY
+expression: |-
+  iif([Measures].[m_store_weeks_ly]+0.00=0.00,null,
+  [Measures].[m_gm_amount_ly]/[Measures].[m_store_weeks_ly])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

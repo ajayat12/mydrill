@@ -1,0 +1,5 @@
+unique_name: m_views_non_buyable_v_ly_percent
+object_type: metric_calc
+label: Views Non Buyable v LY (%)
+expression: "IIF([Measures].[m_views_non_buyable_ly]+0.00=0.00,NULL,([Measures].[m_views_non_buyable_v_ly]/[Measures].[m_views_non_buyable_ly]))"
+format: 0.00%;(0.00%);0.00%;;

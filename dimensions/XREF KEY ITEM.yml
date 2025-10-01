@@ -1,0 +1,45 @@
+unique_name: XREF KEY ITEM
+object_type: dimension
+label: XREF KEY ITEM
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF KEY ITEM Hierarchy
+    label: XREF KEY ITEM Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF KEY ITEM Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF KEY ITEM Level
+    label: XREF KEY ITEM Level
+    dataset: XREF_KEY_ITEM.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFKEYITEM_SKUAttribute
+    from:
+      hierarchy: XREF KEY ITEM Hierarchy
+      level: XREF KEY ITEM Level
+      dataset: XREF_KEY_ITEM.dataset
+      join_columns:
+        - Key_Item
+    to:
+      dimension: SKU Attribute
+      level: h_ki_key_item
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

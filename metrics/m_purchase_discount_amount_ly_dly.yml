@@ -1,0 +1,9 @@
+unique_name: m_purchase_discount_amount_ly_dly
+object_type: metric
+label: Purchase Discount $ LY dly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_LOC_MVRCT_D.dataset
+column: LY_PURCH_COST_AMT

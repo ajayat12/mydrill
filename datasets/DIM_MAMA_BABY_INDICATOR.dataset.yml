@@ -1,0 +1,13 @@
+unique_name: DIM_MAMA_BABY_INDICATOR.dataset
+object_type: dataset
+label: DIM_MAMA_BABY_INDICATOR
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_MAMA_BABY_INDICATOR
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MB_DESC
+    data_type: string
+  - name: MB_ID
+    data_type: long

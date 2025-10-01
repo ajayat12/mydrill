@@ -1,0 +1,8 @@
+unique_name: m_total_invoice_cost_amount
+object_type: metric
+label: Total Invoice Cost $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_FOB_COST_AMT

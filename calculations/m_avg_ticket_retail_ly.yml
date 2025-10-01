@@ -1,0 +1,6 @@
+unique_name: m_avg_ticket_retail_ly
+object_type: metric_calc
+label: Avg Ticket Retail LY
+expression: |
+  IIF([MEASURES].[m_sales_trans_ly] + 0.00 = 0.00,NULL,[MEASURES].[m_sales_amount_ly]/ [MEASURES].[m_sales_trans_ly])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

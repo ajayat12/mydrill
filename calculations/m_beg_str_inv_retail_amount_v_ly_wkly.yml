@@ -1,0 +1,7 @@
+unique_name: m_beg_str_inv_retail_amount_v_ly_wkly
+object_type: metric_calc
+label: Beg Str Inv Retail $ v LY (Wkly)
+expression: "IIF(IsEmpty([Measures].[m_beg_str_inv_retail_amount_wkly]) OR IsEmpty([Measures].[m_beg_str_inv_retail_amount_ly_wkly]),\
+  \ NULL,\t\t\t\t\t\t\t\t\t\t[Measures].[m_beg_str_inv_retail_amount_wkly]-[Measures].[m_beg_str_inv_retail_amount_ly_wkly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

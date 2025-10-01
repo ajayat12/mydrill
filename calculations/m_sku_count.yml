@@ -1,0 +1,5 @@
+unique_name: m_sku_count
+object_type: metric_calc
+label: SKU Count
+expression: "[Measures].[m_ice_sku_count]"
+format: "#,##0;(#,##0);#,##0;;"

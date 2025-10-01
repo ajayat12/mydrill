@@ -1,0 +1,9 @@
+unique_name: SMART_HOME_ATTRIBUTE.dataset
+object_type: dataset
+label: SMART_HOME_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SMART_HOME
+
+columns:
+  - name: SMART_HOME
+    data_type: string

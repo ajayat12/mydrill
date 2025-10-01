@@ -1,0 +1,13 @@
+unique_name: m_ly_agg_sub_disc_amt_ghq
+object_type: metric
+label: LY AGG SUB DISC AMT GHQ
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - GHQ_SKU_MV_DSVC_LNDCOST.dataset_Time_Transformations
+dataset: GHQ_SKU_MV_DSVC_LNDCOST.dataset
+column: LY_AGG_SUB_DISC_AMT

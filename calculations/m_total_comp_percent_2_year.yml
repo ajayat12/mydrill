@@ -1,0 +1,6 @@
+unique_name: m_total_comp_percent_2_year
+object_type: metric_calc
+label: Total Comp % (2 Year)
+expression: "IIF([MEASURES].[m_total_comp_amount_base_2_year] + 0.00=0.00,NULL,([Measures].[m_total_comp_amount_v_lly_2_year])/\
+  \ ([MEASURES].[m_total_comp_amount_base_2_year]))"
+format: 0.00%;(0.00%);0.00%;;

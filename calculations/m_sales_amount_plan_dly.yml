@@ -1,0 +1,6 @@
+unique_name: m_sales_amount_plan_dly
+object_type: metric_calc
+label: Sales $ Plan Dly
+expression: "[MEASURES].[m_sales_plan_amount_sd]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

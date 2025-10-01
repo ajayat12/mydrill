@@ -1,0 +1,5 @@
+unique_name: m_buyer_mkdn_amount_plan
+object_type: metric_calc
+label: Buyer MKDN $ Plan
+expression: "[Measures].[m_ty_plan_bmkdn_amount_sw]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

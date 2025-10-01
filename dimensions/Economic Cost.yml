@@ -1,0 +1,72 @@
+unique_name: Economic Cost
+object_type: dimension
+label: Economic Cost
+type: standard
+
+hierarchies:
+
+  - unique_name: Economic Cost Hierarchy
+    label: Economic Cost Hierarchy
+
+    levels:
+
+      - unique_name: h_ech_cost
+
+        aliases:
+
+          - unique_name: d_ech_cost
+            label: Cost
+            folder: More Fields
+            dataset: DIM_ECONOMIC_COST.dataset
+            name_column: COST_DESC
+            sort_column: COST_KEY
+
+      - unique_name: h_ech_cost_component
+
+        aliases:
+
+          - unique_name: d_ech_cost_component
+            label: Cost Component
+            folder: More Fields
+            dataset: DIM_ECONOMIC_COST.dataset
+            name_column: COST_COMP_DESC
+            sort_column: COST_COMP_KEY
+
+      - unique_name: h_ech_all_cost
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: h_ech_all_cost
+    label: All Cost
+    dataset: DIM_ECONOMIC_COST.dataset
+    key_columns:
+      - ALL_COST_KEY
+    name_column: ALL_COST_KEY
+
+  - unique_name: h_ech_cost_component
+    label: Cost Component
+    dataset: DIM_ECONOMIC_COST.dataset
+    key_columns:
+      - COST_COMP_KEY
+    name_column: COST_COMP_DESC
+    sort_column: COST_COMP_KEY
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: h_ech_cost
+    label: Cost
+    dataset: DIM_ECONOMIC_COST.dataset
+    key_columns:
+      - COST_KEY
+    name_column: COST_DESC
+    sort_column: COST_KEY
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

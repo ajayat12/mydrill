@@ -1,0 +1,13 @@
+unique_name: m_ly_ibx_disc_amt_sku_mkt
+object_type: metric
+label: LY IBX DISC AMT SKU MKT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - MKT_MV_DSV_SKU_LNDCOST.dataset_Time_Transformations
+dataset: MKT_MV_DSV_SKU_LNDCOST.dataset
+column: LY_IBX_DISC_AMT_SKU

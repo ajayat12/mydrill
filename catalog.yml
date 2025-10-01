@@ -1,0 +1,79 @@
+unique_name: myDrill.catalog
+object_type: catalog
+label: myDrill_11332
+version: 1.1
+aggressive_agg_promotion: false
+build_speculative_aggs: false
+dataset_properties:
+  BRAND_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  CATEGORY_SKU_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  COLOR_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  ECO_ACTIONS_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  KEY_ITEM_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  LINE_STRUCTURE_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  MERCHANDISING_1_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  MERCHANDISING_2_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  MFG_BRAND_NAME_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  PB_SKU_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  PRICE_BAND_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  SIG_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  SMART_HOME_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  STYLE_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  SUBTYPE_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  Store Trait1.dataset:
+    allow_aggregates: false
+  Store Trait2.dataset:
+    allow_aggregates: false
+  Store Trait3.dataset:
+    allow_aggregates: false
+  XREF Store Train3.dataset:
+    allow_aggregates: false
+  XREF Store Trait2.dataset:
+    allow_aggregates: false
+  XREF_BRAND.dataset:
+    allow_aggregates: false
+  XREF_CATEGORY_SKU_ATTRIBUTE.dataset:
+    allow_aggregates: false
+  XREF_COLOR.dataset:
+    allow_aggregates: false
+  XREF_ECO_ACTIONS.dataset:
+    allow_aggregates: false
+  XREF_KEY_ITEM.dataset:
+    allow_aggregates: false
+  XREF_LINE_STRUCTURE.dataset:
+    allow_aggregates: false
+  XREF_MERCHANDISING_1.dataset:
+    allow_aggregates: false
+  XREF_MERCHANDISING_2.dataset:
+    allow_aggregates: false
+  XREF_MFG_BRAND_NAME.dataset:
+    allow_aggregates: false
+  XREF_PB_SKU.dataset:
+    allow_aggregates: false
+  XREF_PRICE_BAND.dataset:
+    allow_aggregates: false
+  XREF_SIG.dataset:
+    allow_aggregates: false
+  XREF_SMART_HOME.dataset:
+    allow_aggregates: false
+  XREF_STORE_TRAIT1.dataset:
+    allow_aggregates: false
+  XREF_STYLE.dataset:
+    allow_aggregates: false
+  XREF_SUBTYPE.dataset:
+    allow_aggregates: false

@@ -1,0 +1,6 @@
+unique_name: m_deferred_interest_amount_v_plan
+object_type: metric_calc
+label: Deferred Interest $ v Plan
+expression: "IIF(IsEmpty([MEASURES].[m_deferred_interest_amount]) OR IsEmpty([MEASURES].[m_deferred_interest_amount_plan]),NULL,([MEASURES].[m_deferred_interest_amount]\
+  \  - [MEASURES].[m_deferred_interest_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

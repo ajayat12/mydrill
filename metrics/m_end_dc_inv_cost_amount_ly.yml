@@ -1,0 +1,12 @@
+unique_name: m_end_dc_inv_cost_amount_ly
+object_type: metric
+label: End DC Inv Cost $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DC_SKU_BKINV.dataset_Time_Transformations
+dataset: DC SKU BKINV.dataset
+column: ly_ei_cost_amt

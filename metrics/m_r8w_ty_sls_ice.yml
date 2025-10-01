@@ -1,0 +1,9 @@
+unique_name: m_r8w_ty_sls_ice
+object_type: metric
+label: R8W TY SLS_ICE
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: ICE_AGING_FACT.dataset
+column: R8W_TY_SLS

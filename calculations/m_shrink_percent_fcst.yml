@@ -1,0 +1,5 @@
+unique_name: m_shrink_percent_fcst
+object_type: metric_calc
+label: Shrink % Fcst
+expression: "IIF([Measures].[m_sales_amount_fcst]+0.00=0.00,NULL,([Measures].[m_shrink_amount_fcst]/[Measures].[m_sales_amount_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

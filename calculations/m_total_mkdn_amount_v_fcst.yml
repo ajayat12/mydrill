@@ -1,0 +1,5 @@
+unique_name: m_total_mkdn_amount_v_fcst
+object_type: metric_calc
+label: Total MKDN $ v Fcst
+expression: "IIF(IsEmpty([Measures].[m_total_mkdn_amount]) OR IsEmpty([MEASURES].[m_buyer_mkdn_amount_fcst]+[MEASURES].[m_buyer_mkup_amount_fcst]+[MEASURES].[m_str_mkdn_amount_fcst]),NULL,[Measures].[m_total_mkdn_amount]-([MEASURES].[m_buyer_mkdn_amount_fcst]+[MEASURES].[m_buyer_mkup_amount_fcst]+[MEASURES].[m_str_mkdn_amount_fcst]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

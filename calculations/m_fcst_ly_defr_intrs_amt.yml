@@ -1,0 +1,6 @@
+unique_name: m_fcst_ly_defr_intrs_amt
+object_type: metric_calc
+label: FCST LY DEFR INTRS AMT
+expression: "[Measures].[m_fcst_ly_defr_intrs_amt_base]"
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true

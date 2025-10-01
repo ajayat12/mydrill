@@ -1,0 +1,10 @@
+unique_name: Customer_segmentation.dataset
+object_type: dataset
+label: Customer_segmentation
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+sql: select SEGMENTATION  from  `pr-mydrill-data-thd.mydrill2_data.DIM_SEGMENTATION`
+immutable: true
+
+columns:
+  - name: SEGMENTATION
+    data_type: string

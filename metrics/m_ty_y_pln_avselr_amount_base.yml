@@ -1,0 +1,9 @@
+unique_name: m_ty_y_pln_avselr_amount_base
+object_type: metric
+label: TY Y PLN AVSELR $ Base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: MONTHLY_PLAN.dataset
+column: ty_y_pln_avselr_amt

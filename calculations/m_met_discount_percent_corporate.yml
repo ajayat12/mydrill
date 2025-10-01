@@ -1,0 +1,5 @@
+unique_name: m_met_discount_percent_corporate
+object_type: metric_calc
+label: MET Discount % (Corporate)
+expression: "IIF([Measures].[m_invoice_cost_amount] + 0.00 = 0.00 , null, ([Measures].[m_met_discount_amount_corporate]/[Measures].[m_invoice_cost_amount]))"
+format: 0.00%;(0.00%);0.00%;;

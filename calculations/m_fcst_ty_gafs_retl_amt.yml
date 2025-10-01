@@ -1,0 +1,6 @@
+unique_name: m_fcst_ty_gafs_retl_amt
+object_type: metric_calc
+label: FCST TY GAFS RETL AMT
+expression: "[Measures].[m_fcst_ty_gafs_retl_amt_base]"
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true

@@ -1,0 +1,15 @@
+unique_name: XREF_LINE_STRUCTURE.dataset
+object_type: dataset
+label: XREF_LINE_STRUCTURE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: XREF_LINE_STRUCTURE
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LINE_STRUCTURE
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

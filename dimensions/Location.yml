@@ -1,0 +1,394 @@
+unique_name: Location
+object_type: dimension
+label: Location
+type: standard
+
+hierarchies:
+
+  - unique_name: Location Hierarchy
+    label: Merchandising Location Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_mlh_all_thd
+
+      - unique_name: h_mlh_lob
+
+      - unique_name: h_mlh_geography
+
+      - unique_name: h_mlh_division
+
+      - unique_name: h_mlh_buying_office
+
+        aliases:
+
+          - unique_name: d_mlh_buying_office
+            label: 'Buying Office '
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: BYO_NM
+            sort_column: BYO_NM
+
+          - unique_name: d_mlh_byo_name
+            label: BYO Name
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: S_BYO_NM
+            sort_column: S_BYO_NM
+
+          - unique_name: d_mlh_byo_nbr
+            label: BYO Nbr
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: BYO_NBR
+            sort_column: BYO_NBR
+
+      - unique_name: h_mlh_market
+
+        aliases:
+
+          - unique_name: d_mlh_market
+            label: 'Market '
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: MKT_NM
+            sort_column: MKT_NM
+
+          - unique_name: d_mlh_market_name
+            label: Market Name
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: S_MKT_NM
+            sort_column: S_MKT_NM
+
+          - unique_name: d_mlh_market_nbr
+            label: Market Nbr
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: MKT_NBR
+            sort_column: MKT_NBR
+
+      - unique_name: h_mlh_store
+
+      - unique_name: h_olh_relocated_from_store
+        is_hidden: true
+
+  - unique_name: Operation Location Hierarchy
+    label: Operational Location Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_olh_all_thd
+
+        aliases:
+
+          - unique_name: d_olh_all_thd
+            label: All THD
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: ALL_THD_DESC
+            sort_column: ALL_THD_DESC
+
+      - unique_name: h_olh_lob
+
+        aliases:
+
+          - unique_name: d_olh_lob
+            label: LOB
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: LOB_HQ_NM
+            sort_column: LOB_HQ_NM
+
+      - unique_name: h_olh_geography
+
+      - unique_name: h_olh_division
+
+        aliases:
+
+          - unique_name: d_olh_division
+            label: 'Division '
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: DIV_NM
+            sort_column: DIV_NM
+
+          - unique_name: d_olh_division_name
+            label: Division Name
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: S_DIV_NM
+            sort_column: S_DIV_NM
+
+          - unique_name: d_olh_division_nbr
+            label: Division Nbr
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: DIV_NBR
+            sort_column: DIV_NBR
+
+      - unique_name: h_olh_region
+
+        aliases:
+
+          - unique_name: d_olh_region
+            label: 'Region '
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: RGN_NM
+            sort_column: RGN_NM
+
+          - unique_name: d_olh_region_name
+            label: Region Name
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: S_RGN_NM
+            sort_column: S_RGN_NM
+
+          - unique_name: d_olh_region_nbr
+            label: Region Nbr
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: RGN_NBR
+            sort_column: RGN_NBR
+
+      - unique_name: h_olh_district
+
+        aliases:
+
+          - unique_name: d_olh_district
+            label: 'District '
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: DST_NM
+            sort_column: DST_NM
+
+          - unique_name: d_olh_district_name
+            label: District Name
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: S_DST_NM
+            sort_column: S_DST_NM
+
+          - unique_name: d_olh_district_nbr
+            label: District Nbr
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: DST_NBR
+            sort_column: DST_NBR
+
+      - unique_name: h_olh_store
+
+        secondary_attributes:
+
+          - unique_name: d_olh_latitude
+            label: Latitude
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - LAT_NBR
+            name_column: LAT_NBR
+            sort_column: LAT_NBR
+
+          - unique_name: d_olh_longitude
+            label: Longitude
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - LNG_NBR
+            name_column: LNG_NBR
+            sort_column: LNG_NBR
+
+          - unique_name: d_olh_str_addr__city
+            label: Str Addr - City
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - CITY_NM
+            name_column: CITY_NM
+            sort_column: CITY_NM
+
+          - unique_name: d_olh_str_addr__county
+            label: Str Addr - County
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - CNTY_NM
+            name_column: CNTY_NM
+            sort_column: CNTY_NM
+
+          - unique_name: d_olh_str_addr__postal_code
+            label: Str Addr - Postal Code
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - PSTL_CD
+            name_column: PSTL_CD
+            sort_column: PSTL_CD
+
+          - unique_name: d_olh_str_addr__state
+            label: Str Addr - State
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - ST_CD
+            name_column: ST_CD
+            sort_column: ST_CD
+
+          - unique_name: d_olh_str_addr__street
+            label: 'Str Addr - Street '
+            folder: More Fields
+            dataset: Location.dataset
+            key_columns:
+              - ADDR_LINE1_TXT
+            name_column: ADDR_LINE1_TXT
+            sort_column: ADDR_LINE1_TXT
+
+          - unique_name: d_olh_time_zone
+            label: Time Zone
+            is_hidden: true
+            dataset: Location.dataset
+            key_columns:
+              - GMT_ADJ_HRS
+            name_column: S_TM_RGN_DESC
+            sort_column: S_TM_RGN_DESC
+
+        aliases:
+
+          - unique_name: d_olh_store
+            label: 'Store '
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: STR_NM
+            sort_column: STR_NM
+
+          - unique_name: d_olh_store_name
+            label: Store Name
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: S_RELO_TO_STR_NM
+            sort_column: S_RELO_TO_STR_NM
+
+          - unique_name: d_olh_store_nbr
+            label: Store Nbr
+            folder: More Fields
+            dataset: Location.dataset
+            name_column: RELO_TO_STR_NBR
+            sort_column: RELO_TO_STR_NBR
+
+      - unique_name: h_olh_relocated_from_store
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: h_mlh_all_thd
+    label: All THD
+    dataset: Location.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: h_mlh_buying_office
+    label: Buying Office
+    dataset: Location.dataset
+    key_columns:
+      - BYO_NBR
+    name_column: BYO_NM
+
+  - unique_name: h_mlh_division
+    label: Division
+    dataset: Location.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+
+  - unique_name: h_mlh_geography
+    label: Geography
+    dataset: Location.dataset
+    key_columns:
+      - GEO_HQ_NBR
+    name_column: GEO_HQ_NM
+
+  - unique_name: h_mlh_lob
+    label: LOB
+    dataset: Location.dataset
+    key_columns:
+      - LOB_HQ_NM
+    name_column: LOB_HQ_NM
+
+  - unique_name: h_mlh_market
+    label: Market
+    dataset: Location.dataset
+    key_columns:
+      - MKT_NBR
+    name_column: MKT_NM
+
+  - unique_name: h_mlh_store
+    label: Store
+    dataset: Location.dataset
+    key_columns:
+      - RELO_TO_STR_NBR
+    name_column: STR_NM
+
+  - unique_name: h_olh_all_thd
+    label: All THD
+    dataset: Location.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: h_olh_district
+    label: District
+    dataset: Location.dataset
+    key_columns:
+      - DST_NBR
+    name_column: DST_NM
+
+  - unique_name: h_olh_division
+    label: Division
+    dataset: Location.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+
+  - unique_name: h_olh_geography
+    label: Geography
+    dataset: Location.dataset
+    key_columns:
+      - GEO_HQ_NBR
+    name_column: GEO_HQ_NM
+
+  - unique_name: h_olh_lob
+    label: LOB
+    dataset: Location.dataset
+    key_columns:
+      - LOB_HQ_NM
+    name_column: LOB_HQ_NM
+
+  - unique_name: h_olh_region
+    label: Region
+    dataset: Location.dataset
+    key_columns:
+      - RGN_NBR
+    name_column: RGN_NM
+
+  - unique_name: h_olh_relocated_from_store
+    label: Relocated From Store
+    is_unique_key: true
+    dataset: Location.dataset
+    key_columns:
+      - STR_NBR
+    name_column: STR_NM
+
+  - unique_name: h_olh_store
+    label: Store
+    dataset: Location.dataset
+    key_columns:
+      - RELO_TO_STR_NBR
+    name_column: STR_NM
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

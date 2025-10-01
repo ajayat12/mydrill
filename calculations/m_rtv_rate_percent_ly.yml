@@ -1,0 +1,5 @@
+unique_name: m_rtv_rate_percent_ly
+object_type: metric_calc
+label: RTV Rate % LY
+expression: "IIF([Measures].[m_gross_str_rcpts_cost_amount_ly]+0.00=0.00,NULL,([Measures].[m_rtv_cost_amount_ly]/[Measures].[m_gross_str_rcpts_cost_amount_ly]))"
+format: 0.00%;(0.00%);0.00%;;

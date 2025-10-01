@@ -1,0 +1,51 @@
+unique_name: Vendor Discount
+object_type: dimension
+label: Vendor Discount
+type: standard
+
+hierarchies:
+
+  - unique_name: Vendor Discount Hierarchy
+    label: Vendor Discount Hierarchy
+
+    levels:
+
+      - unique_name: h_vdh_vendor_discount_type
+
+        aliases:
+
+          - unique_name: d_aioh_vendor_discount_type
+            label: Vendor Discount Type
+            dataset: DIM_VENDOR_DISCOUNT.dataset
+            name_column: S_TYP_DESC
+            sort_column: S_TYP_DESC
+
+      - unique_name: h_vdh_vendor_subdiscount_type
+
+        aliases:
+
+          - unique_name: d_aioh_vendor_subdiscount_type
+            label: Vendor Sub-Discount Type
+            folder: More Fields
+            dataset: DIM_VENDOR_DISCOUNT.dataset
+            name_column: SUB_S_TYP_DESC
+
+level_attributes:
+
+  - unique_name: h_vdh_vendor_discount_type
+    label: Vendor Discount Type
+    dataset: DIM_VENDOR_DISCOUNT.dataset
+    key_columns:
+      - DISC_TYP_CD
+    name_column: S_TYP_DESC
+
+  - unique_name: h_vdh_vendor_subdiscount_type
+    label: Vendor Sub-Discount Type
+    dataset: DIM_VENDOR_DISCOUNT.dataset
+    key_columns:
+      - SUB_DISC_TYP_CD
+    name_column: SUB_S_TYP_DESC
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

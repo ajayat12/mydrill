@@ -1,0 +1,5 @@
+unique_name: m_mkup_/_mkdn_percent_v_ly_by_type_/_reason
+object_type: metric_calc
+label: MKUP / MKDN % v LY (by Type / Reason)
+expression: "[Measures].[m_mkup_/_mkdn_percent_by_type_/_reason]-[Measures].[m_mkup_/_mkdn_percent_ly_by_type_/_reason]"
+format: 0.00%;(0.00%);0.00%;;

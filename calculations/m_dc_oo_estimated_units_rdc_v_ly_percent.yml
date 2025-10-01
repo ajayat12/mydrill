@@ -1,0 +1,6 @@
+unique_name: m_dc_oo_estimated_units_rdc_v_ly_percent
+object_type: metric_calc
+label: DC OO Estimated Units (RDC) v LY (%)
+expression: "IIF([Measures].[m_dc_oo_estimated_units_rdc_ly]+0.00=0.00,NULL,([Measures].[m_dc_oo_estimated_units_rdc_v_ly]/[Measures].[m_dc_oo_estimated_units_rdc_ly]))"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

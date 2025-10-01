@@ -1,0 +1,5 @@
+unique_name: m_rdc_discount_percent_mkt/dc
+object_type: metric_calc
+label: RDC Discount % (Mkt/DC)
+expression: "IIF([Measures].[m_invoice_cost_amount] + 0.00 = 0.00 , null, ([Measures].[m_rdc_discount_amount_mkt/dc]/[Measures].[m_invoice_cost_amount]))"
+format: 0.00%;(0.00%);0.00%;;

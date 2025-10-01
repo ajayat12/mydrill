@@ -1,0 +1,143 @@
+unique_name: RTV Reason
+object_type: dimension
+label: RTV Reason
+type: standard
+
+hierarchies:
+
+  - unique_name: RTV Reason Hierarchy
+    label: RTV Reason Hierarchy
+
+    levels:
+
+      - unique_name: h_rrh_rtv_defective_indicator
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_rtv_defective_indicator
+            label: RTV Defective Indicator
+            dataset: DIM_RTV_REASON.dataset
+            key_columns:
+              - RTV_RSN_CTG_CD
+            name_column: RTV_RSN_CTG_DESC
+            sort_column: RTV_RSN_CTG_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+      - unique_name: h_rrh_rtv_reason
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_rtv_reason_code
+            label: RTV Reason Code
+            dataset: DIM_RTV_REASON.dataset
+            key_columns:
+              - RTV_RSN_CD
+            name_column: RTV_RSN_CD
+            sort_column: RTV_RSN_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+      - unique_name: h_rrh_rtv_reason_key
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_rtv_delete_reason
+            label: RTV Delete Reason
+            dataset: DIM_RTV_REASON.dataset
+            key_columns:
+              - RTV_DEL_RSN_CD
+            name_column: S_RTV_DEL_RSN_DESC
+            sort_column: RTV_DEL_RSN_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_rrh_rtv_reason
+            label: RTV Reason
+            dataset: DIM_RTV_REASON.dataset
+            key_columns:
+              - RTV_RSN_CD
+            name_column: RTV_RSN_DESC
+            sort_column: RTV_RSN_CD
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_rrh_rtv_reason_id
+            label: RTV Reason ID
+            is_hidden: true
+            dataset: DIM_RTV_REASON.dataset
+            key_columns:
+              - RTV_RSN_CD
+              - RTV_DEL_RSN_CD
+            name_column: S_RTV_RSN_DESC
+            sort_column: S_RTV_RSN_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_rrh_rtv_reason_name
+            label: RTV Reason Name
+            dataset: DIM_RTV_REASON.dataset
+            key_columns:
+              - RTV_RSN_CD
+            name_column: S_RTV_RSN_DESC
+            sort_column: S_RTV_RSN_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_rrh_rtv_defective_indicator
+    label: RTV Defective Indicator
+    dataset: DIM_RTV_REASON.dataset
+    key_columns:
+      - RTV_RSN_CTG_CD
+    name_column: RTV_RSN_CTG_DESC
+    sort_column: RTV_RSN_CTG_DESC
+
+  - unique_name: h_rrh_rtv_reason
+    label: RTV Reason
+    dataset: DIM_RTV_REASON.dataset
+    key_columns:
+      - RTV_RSN_CD
+    name_column: RTV_RSN_DESC
+    sort_column: RTV_RSN_CD
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: h_rrh_rtv_reason_key
+    label: RTV Reason key
+    dataset: DIM_RTV_REASON.dataset
+    key_columns:
+      - RTV_RSN_CD
+      - RTV_DEL_RSN_CD
+    name_column: RTV_RSN_DESC
+    sort_column: RTV_RSN_DESC
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

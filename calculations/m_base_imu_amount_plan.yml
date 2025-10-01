@@ -1,0 +1,5 @@
+unique_name: m_base_imu_amount_plan
+object_type: metric_calc
+label: Base IMU $ Plan
+expression: "[Measures].[m_base_str_rcpts_retail_amount_plan]-[Measures].[m_base_str_rcpts_cost_amount_plan]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_comp_sales_amount_v_fcst_percent
+object_type: metric_calc
+label: Comp Sales $ v Fcst (%)
+expression: "IIF([MEASURES].[m_comp_sales_amount_fcst]+0.00=0.00,NULL,([MEASURES].[m_comp_sales_amount_v_fcst])/[MEASURES].[m_comp_sales_amount_fcst])"
+format: 0.00%;(0.00%);0.00%;;

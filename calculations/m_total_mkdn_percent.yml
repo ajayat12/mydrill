@@ -1,0 +1,5 @@
+unique_name: m_total_mkdn_percent
+object_type: metric_calc
+label: Total MKDN %
+expression: "iif([Measures].[m_Sales_amount]+ 0.00 = 0.00,Null,([Measures].[m_total_mkdn_amount])/[Measures].[m_Sales_amount])"
+format: 0.00%;(0.00%);0.00%;;

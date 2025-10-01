@@ -1,0 +1,529 @@
+unique_name: PRODUCT_STR_DAY_TRANS.dataset
+object_type: dataset
+label: PRODUCT_STR_DAY_TRANS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: PRODUCT_STR_DAY_TRANS
+
+columns:
+  - name: ALLOC_STR_NBR
+    data_type: string
+  - name: CUST_FULFIL_EXP_LOC_KEY
+    data_type: long
+  - name: CUST_SALES_EXP_KEY
+    data_type: long
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LLY_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CFEL_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CFEL_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_CSE_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_ICR_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SFC_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LLY_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: LY_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_SC_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CFEL_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_SC_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CFEL_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_SC_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_CSE_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_SC_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_ICR_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SC_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_SC_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SFC_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: LY_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: SLS_DT
+    data_type: date
+  - name: STR_NBR
+    data_type: string
+  - name: SUB_CLASS_NBR
+    data_type: string
+  - name: SUB_SUB_FULFIL_CHNL_KEY
+    data_type: long
+  - name: TY_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SC_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CFEL_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SC_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CFEL_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SC_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_CSE_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SC_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_ICR_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SC_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_ALL_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_ALL_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_ALL_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_CLASS_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_CLASS_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_CLASS_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_CORE_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_CORE_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_CORE_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SC_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SC_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SC_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SFC_SVP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SUB_DEPT_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SUB_DEPT_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SUB_DEPT_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SVP_COMP_SLS_2YR_TXN_CNT
+    data_type: long
+  - name: TY_SVP_COMP_SLS_TXN_CNT
+    data_type: long
+  - name: TY_SVP_SLS_TXN_CNT
+    data_type: long

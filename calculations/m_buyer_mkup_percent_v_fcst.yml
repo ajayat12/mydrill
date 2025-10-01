@@ -1,0 +1,7 @@
+unique_name: m_buyer_mkup_percent_v_fcst
+object_type: metric_calc
+label: Buyer MKUP % v Fcst
+expression: "IIF(IsEmpty([MEASURES].[m_buyer_mkup_percent_fcst]) OR IsEmpty([Measures].[m_buyer_mkup_percent])\
+  \ ,NULL,([Measures].[m_buyer_mkup_percent]-[MEASURES].[m_buyer_mkup_percent_fcst]))\n\
+  \t\t\t\t\t\t\t\t\t"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

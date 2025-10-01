@@ -1,0 +1,8 @@
+unique_name: m_home_depot_direct_dlvry_expense_amount
+object_type: metric
+label: Home Depot Direct Dlvry Expense $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: COST_STATS.dataset
+column: TY_HDDL_AMT

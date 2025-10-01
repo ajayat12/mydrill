@@ -1,0 +1,9 @@
+unique_name: m_end_str_inv_cost_amount_ly_sum
+object_type: metric
+label: End Str Inv Cost $ LY Sum
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STR_SKU_MV_STATS_M.dataset
+column: LY_EI_COST_AMT

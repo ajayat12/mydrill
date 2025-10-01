@@ -1,0 +1,17 @@
+unique_name: DIM_REPLENISHMENT_METHOD.dataset
+object_type: dataset
+label: DIM_REPLENISHMENT_METHOD
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_REPLENISHMENT_METHOD
+
+columns:
+  - name: D_RMETH_CD
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RMETH_CD
+    data_type: long
+  - name: RMETH_DESC
+    data_type: string
+  - name: S_RMETH_DESC
+    data_type: string

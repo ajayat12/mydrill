@@ -1,0 +1,5 @@
+unique_name: m_in_stock_to_sales_percent
+object_type: metric_calc
+label: In Stock to Sales %
+expression: "IIF([MEASURES].[m_rt_sales_trgt_ty]+ 0.00=0.00 ,NULL,([MEASURES].[m_captured_rt_sales_ty])/[MEASURES].[m_rt_sales_trgt_ty])"
+format: 0.00%;(0.00%);0.00%;;

@@ -1,0 +1,5 @@
+unique_name: m_str_mkdn_percent_v_fcst
+object_type: metric_calc
+label: Str MKDN % v Fcst
+expression: "IIF(IsEmpty([Measures].[m_str_mkdn_percent]) OR IsEmpty([MEASURES].[m_str_mkdn_percent_fcst]),NULL,([Measures].[m_str_mkdn_percent]-[MEASURES].[m_str_mkdn_percent_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

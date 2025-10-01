@@ -1,0 +1,145 @@
+unique_name: Channel Summary
+object_type: dimension
+label: Channel Summary
+type: standard
+
+hierarchies:
+
+  - unique_name: Summary Channel Hierarchy
+    label: Summary Channel Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_sch_sales_summary_channel
+
+        aliases:
+
+          - unique_name: d_sch_sales_summary_channel
+            label: Sales Summary Channel
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            name_column: SLS_CHNL
+
+      - unique_name: h_sch_fulfillment_summary_channel
+
+        aliases:
+
+          - unique_name: d_sch_fulfillment_summary_channel
+            label: Fulfillment Summary Channel
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            name_column: FULFIL_CHNL
+            sort_column: FULFIL_CHNL_KEY
+
+      - unique_name: h_sch_fulfillment_summary_channel_detail
+
+        aliases:
+
+          - unique_name: d_sch_fulfillment_summary_channel_detail
+            label: Fulfillment Summary Channel Detail
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            name_column: SUB_FULFIL_CHNL
+            sort_column: SUB_FULFIL_CHNL_KEY
+
+      - unique_name: h_sch_fulfillment_summary_channel_subdetail
+
+        aliases:
+
+          - unique_name: d_sch_fulfillment_summary_channel_subdetail
+            label: Fulfillment Summary Channel SubDetail
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            name_column: SUB_SUB_FULFIL_CHNL
+            sort_column: SUB_SUB_FULFIL_CHNL_KEY
+
+      - unique_name: h_sch_summary_key
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_mxph_delivery_v_pickup
+            label: Delivery v Pickup
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            key_columns:
+              - DELIVERY_v_PICKUP_KEY
+            name_column: DELIVERY_v_PICKUP
+            sort_column: DELIVERY_v_PICKUP_KEY
+
+          - unique_name: d_mxph_house_v_vdf
+            label: House v VDF
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            key_columns:
+              - House_v_VDF_KEY
+            name_column: House_v_VDF
+            sort_column: House_v_VDF_KEY
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_mxph_scheduled_vs_nonscheduled
+            label: Scheduled vs Non-Scheduled
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            key_columns:
+              - NETWRK_STR_FULFIL_KEY
+            name_column: NETWRK_STR_FULFIL
+            sort_column: NETWRK_STR_FULFIL_KEY
+
+          - unique_name: d_mxph_total_online_indicator
+            label: Total Online Indicator
+            folder: More Fields
+            dataset: Channel Summary.dataset
+            key_columns:
+              - Online_Ind_KEY
+            name_column: Online_Ind
+            sort_column: Online_Ind_KEY
+
+level_attributes:
+
+  - unique_name: h_sch_fulfillment_summary_channel_detail
+    label: Fulfillment Summary Channel Detail
+    dataset: Channel Summary.dataset
+    key_columns:
+      - SUB_FULFIL_CHNL_KEY
+    name_column: SUB_FULFIL_CHNL
+    sort_column: SUB_FULFIL_CHNL_KEY
+
+  - unique_name: h_sch_fulfillment_summary_channel_subdetail
+    label: Fulfillment Summary Channel SubDetail
+    dataset: Channel Summary.dataset
+    key_columns:
+      - SUB_SUB_FULFIL_CHNL_KEY
+    name_column: SUB_SUB_FULFIL_CHNL
+    sort_column: SUB_SUB_FULFIL_CHNL_KEY
+
+  - unique_name: h_sch_fulfillment_summary_channel
+    label: Fulfillment Summary Channel
+    dataset: Channel Summary.dataset
+    key_columns:
+      - FULFIL_CHNL_KEY
+    name_column: FULFIL_CHNL
+    sort_column: FULFIL_CHNL_KEY
+
+  - unique_name: h_sch_sales_summary_channel
+    label: Sales Summary Channel
+    dataset: Channel Summary.dataset
+    key_columns:
+      - SLS_CHNL_KEY
+    name_column: SLS_CHNL
+
+  - unique_name: h_sch_summary_key
+    label: Summary Key
+    is_unique_key: true
+    dataset: Channel Summary.dataset
+    key_columns:
+      - summary_key
+    name_column: summary_key
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

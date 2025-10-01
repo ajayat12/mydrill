@@ -1,0 +1,5 @@
+unique_name: m_str_mkdn_amount_v_ly
+object_type: metric_calc
+label: Str MKDN $ v LY
+expression: "IIF(ISEMPTY([MEASURES].[m_str_mkdn_amount]) OR ISEMPTY([Measures].[m_str_mkdn_amount_ly]),NULL,([MEASURES].[m_str_mkdn_amount]-[Measures].[m_str_mkdn_amount_ly])) "
+format: "$#,##0.00;($#,##0.00);$0.00;;"

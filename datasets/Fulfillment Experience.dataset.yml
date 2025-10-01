@@ -1,0 +1,49 @@
+unique_name: Fulfillment Experience.dataset
+object_type: dataset
+label: Fulfillment Experience
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_FULFILLMENT_EXPERIENCE
+
+columns:
+  - name: CANCEL_FLG
+    data_type: string
+  - name: CANCEL_FLG_KEY
+    data_type: long
+  - name: CUST_DLVRY_EXP_TYP
+    data_type: string
+  - name: CUST_DLVRY_EXP_TYP_KEY
+    data_type: long
+  - name: CUST_FULFIL_EXP
+    data_type: string
+  - name: CUST_FULFIL_EXP_KEY
+    data_type: long
+  - name: CUST_FULFIL_EXP_LOC
+    data_type: string
+  - name: CUST_FULFIL_EXP_LOC_KEY
+    data_type: long
+  - name: CUST_FULFIL_EXP_LOC_KEY_DIST
+    data_type: long
+  - name: CUST_FULFIL_EXP_TYP
+    data_type: string
+  - name: CUST_FULFIL_EXP_TYP_KEY
+    data_type: long
+  - name: CUST_FULFIL_FROM_SITE_TYP
+    data_type: string
+  - name: CUST_FULFIL_FROM_SITE_TYP_KEY
+    data_type: long
+  - name: CUST_FULFIL_MTHD
+    data_type: string
+  - name: CUST_FULFIL_MTHD_KEY
+    data_type: long
+  - name: FUFL_MNT_ADD_ON
+    data_type: string
+  - name: FUFL_MNT_ADD_ON_KEY
+    data_type: long
+  - name: FUL_EXP_KEY
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MA_TYPE
+    data_type: string
+  - name: MA_TYPE_KEY
+    data_type: long

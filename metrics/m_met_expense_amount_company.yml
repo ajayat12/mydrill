@@ -1,0 +1,8 @@
+unique_name: m_met_expense_amount_company
+object_type: metric
+label: MET Expense $ (Company)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: UNIT_COVERAGE.dataset
+column: ISSI_EXP

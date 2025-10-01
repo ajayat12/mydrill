@@ -1,0 +1,28 @@
+unique_name: STR_VOL_FLG.dataset
+object_type: dataset
+label: STR_VOL_FLG
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: STR_VOL_FLG
+
+columns:
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: Str Vol M
+    data_type: long
+    sql: "0"
+  - name: STR_NBR
+    data_type: string
+  - name: STR_VOL_LVL_CD
+    data_type: string
+  - name: STRC_VOL_LVL_CD
+    data_type: string
+  - name: STRD_VOL_LVL_CD
+    data_type: string
+  - name: STRSC_VOL_LVL_CD
+    data_type: string

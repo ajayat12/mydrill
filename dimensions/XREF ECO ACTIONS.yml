@@ -1,0 +1,45 @@
+unique_name: XREF ECO ACTIONS
+object_type: dimension
+label: XREF ECO ACTIONS
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF ECO ACTIONS Hierarchy
+    label: XREF ECO ACTIONS Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF ECO ACTIONS Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF ECO ACTIONS Level
+    label: XREF ECO ACTIONS Level
+    dataset: XREF_ECO_ACTIONS.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFECOACTIONS_SKUAttribute
+    from:
+      hierarchy: XREF ECO ACTIONS Hierarchy
+      level: XREF ECO ACTIONS Level
+      dataset: XREF_ECO_ACTIONS.dataset
+      join_columns:
+        - Eco_Actions
+    to:
+      dimension: SKU Attribute
+      level: h_ea_eco_actions
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

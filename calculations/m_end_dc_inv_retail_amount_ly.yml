@@ -1,0 +1,5 @@
+unique_name: m_end_dc_inv_retail_amount_ly
+object_type: metric_calc
+label: End DC Inv Retail $ LY
+expression: "[Measures].[m_end_dc_inv_retail_ly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,23 @@
+unique_name: SKU_STR_COUNT.dataset
+object_type: dataset
+label: SKU_STR_COUNT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SKU_STR_COUNT
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: INV_SKU_COUNT
+    data_type: long
+  - name: INV_STR_COUNT
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SLS_SKU_COUNT
+    data_type: long
+  - name: SLS_STR_COUNT
+    data_type: string
+  - name: STR_NBR
+    data_type: string

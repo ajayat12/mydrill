@@ -1,0 +1,119 @@
+unique_name: Channel Sales Experience
+object_type: dimension
+label: Channel Sales Experience
+type: standard
+
+hierarchies:
+
+  - unique_name: Channel - Sales Experience Hierarchy
+    label: Channel - Sales Experience Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_cseh_customer_sales_experience
+
+        aliases:
+
+          - unique_name: d_cseh_customer_sales_experience
+            label: Customer Sales Experience
+            folder: More Fields
+            dataset: Sales Experience.dataset
+            name_column: CUST_SALES_EXP
+            sort_column: CUST_SALES_EXP_KEY
+
+      - unique_name: h_cseh_customer_sales_experience_location
+
+        secondary_attributes:
+
+          - unique_name: d_cseh_customer_sales_experience_location
+            label: Customer Sales Experience Location
+            folder: More Fields
+            dataset: Sales Experience.dataset
+            key_columns:
+              - CUST_SALES_EXP_LOC_KEY_DIST
+            name_column: CUST_SALES_EXP_LOC
+            sort_column: CUST_SALES_EXP_LOC_KEY_DIST
+
+      - unique_name: h_cseh_customer_sales_method
+
+        secondary_attributes:
+
+          - unique_name: d_cseh_customer_sales_method
+            label: Customer Sales Method
+            folder: More Fields
+            dataset: Sales Experience.dataset
+            key_columns:
+              - CUST_SALES_MTHD_KEY_DIST
+            name_column: CUST_SALES_MTHD
+            sort_column: CUST_SALES_MTHD_KEY_DIST
+
+      - unique_name: h_cseh_cust_exp_key
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_mxph_customer_return_experience
+            label: Customer Return Experience
+            folder: More Fields
+            dataset: Sales Experience.dataset
+            key_columns:
+              - CUST_RETURN_EXP_KEY
+            name_column: CUST_RETURN_EXP
+            sort_column: CUST_RETURN_EXP_KEY
+
+          - unique_name: d_mxph_ma_indicator
+            label: MA Indicator
+            folder: More Fields
+            dataset: Sales Experience.dataset
+            key_columns:
+              - MA_IND_KEY
+            name_column: MA_IND
+            sort_column: MA_IND_KEY
+
+          - unique_name: d_mxph_quote_center_flag
+            label: Quote Center Flag
+            folder: More Fields
+            dataset: Sales Experience.dataset
+            key_columns:
+              - QUOTE_CENTER_FLG_KEY
+            name_column: QUOTE_CENTER_FLG
+            sort_column: QUOTE_CENTER_FLG_KEY
+
+level_attributes:
+
+  - unique_name: h_cseh_cust_exp_key
+    label: Cust Exp Key
+    is_unique_key: true
+    dataset: Sales Experience.dataset
+    key_columns:
+      - CUST_EXP_KEY
+    name_column: CUST_EXP_KEY
+
+  - unique_name: h_cseh_customer_sales_experience
+    label: Customer Sales Experience
+    dataset: Sales Experience.dataset
+    key_columns:
+      - CUST_SALES_EXP_KEY
+    name_column: CUST_SALES_EXP
+    sort_column: CUST_SALES_EXP_KEY
+
+  - unique_name: h_cseh_customer_sales_experience_location
+    label: Customer Sales Experience Location
+    dataset: Sales Experience.dataset
+    key_columns:
+      - CUST_SALES_EXP_LOC_KEY
+    name_column: CUST_SALES_EXP_LOC
+    sort_column: CUST_SALES_EXP_LOC_KEY
+
+  - unique_name: h_cseh_customer_sales_method
+    label: Customer Sales Method
+    dataset: Sales Experience.dataset
+    key_columns:
+      - CUST_SALES_MTHD_KEY
+    name_column: CUST_SALES_MTHD
+    sort_column: CUST_SALES_MTHD_KEY
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

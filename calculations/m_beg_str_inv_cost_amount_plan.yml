@@ -1,0 +1,6 @@
+unique_name: m_beg_str_inv_cost_amount_plan
+object_type: metric_calc
+label: Beg Str Inv Cost $ Plan
+expression: "IIF([Measures].[m_beg_str_inv_cost_amount_plan_base] + 0.00 > -1 and\
+  \ [Measures].[m_beg_str_inv_cost_amount_plan_base] + 0.00 < 1 , null, [Measures].[m_beg_str_inv_cost_amount_plan_base])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

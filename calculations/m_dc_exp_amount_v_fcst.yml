@@ -1,0 +1,6 @@
+unique_name: m_dc_exp_amount_v_fcst
+object_type: metric_calc
+label: DC Exp $ v Fcst
+expression: "IIF(IsEmpty([MEASURES].[m_dc_expenses_amount]) OR IsEmpty([MEASURES].[m_dc_exp_amount_fcst]),\
+  \ NULL,[MEASURES].[m_dc_expenses_amount]-[MEASURES].[m_dc_exp_amount_fcst])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

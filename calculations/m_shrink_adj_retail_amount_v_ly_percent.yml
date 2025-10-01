@@ -1,0 +1,5 @@
+unique_name: m_shrink_adj_retail_amount_v_ly_percent
+object_type: metric_calc
+label: Shrink Adj Retail $ v LY (%)
+expression: "IIF([MEASURES].[m_shrink_adj_retail_amount_ly] = 0,NULL,([Measures].[m_shrink_adj_retail_amount_v_ly])/([MEASURES].[m_shrink_adj_retail_amount_ly]))"
+format: 0.00%;(0.00%);0.00%;;

@@ -1,0 +1,103 @@
+unique_name: Vendor Rebate and Ad-Coop Contracts
+object_type: dimension
+label: Vendor Rebate and Ad-Coop Contracts
+type: standard
+
+hierarchies:
+
+  - unique_name: Vendor Rebate and Ad-Coop Contracts Hierarchy
+    label: Vendor Rebate and Ad-Coop Contracts Hierarchy
+
+    levels:
+
+      - unique_name: h_vraach_vendor_rebate_and_adcoop_contracts_level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_vdh_current_tier_desc
+            label: Current Tier Desc
+            dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+            key_columns:
+              - CURR_TIER_DESC
+            name_column: CURR_TIER_DESC
+            sort_column: CURR_TIER_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_vdh_rebate_cntrc_id
+            label: Rebate Cntrc ID
+            is_hidden: true
+            dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+            key_columns:
+              - REBT_CNTRC_NBR_ID
+            name_column: REBT_CNTRC_NBR_ID
+            sort_column: REBT_CNTRC_NBR_ID
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_vdh_tier_nbr
+            label: Tier Nbr
+            dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+            key_columns:
+              - REBT_TIER_NBR
+            name_column: REBT_TIER_DESC
+            sort_column: REBT_TIER_NBR
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_vraach_contract_exception_indicator
+            label: Contract Exception Indicator
+            dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+            key_columns:
+              - EXCPT_IND
+            name_column: EXCPT_IND_DESC
+            sort_column: EXCPT_IND_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_vraach_contract_nbr
+            label: Contract Nbr
+            dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+            key_columns:
+              - REBT_CNTRC_NBR
+            name_column: CNCAT_CNTRC_TXT
+            sort_column: REBT_CNTRC_NBR
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_vraach_contract_type
+            label: Contract Type
+            dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+            key_columns:
+              - BUS_TYP_IND
+            name_column: BUS_TYP_IND
+            sort_column: BUS_TYP_IND
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_vraach_vendor_rebate_and_adcoop_contracts_level
+    label: Vendor Rebate and Ad-Coop Contracts Level
+    dataset: DIM_VENDOR_REBATE_AND_AD_COOP_CONTRACTS.dataset
+    key_columns:
+      - REBT_CNTRC_NBR_ID
+    name_column: REBT_CNTRC_NBR_ID
+    sort_column: REBT_CNTRC_NBR_ID
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

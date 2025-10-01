@@ -1,0 +1,6 @@
+unique_name: m_shipping_revenue_comp_percent_1_year
+object_type: metric_calc
+label: Shipping Revenue Comp % (1 Year)
+expression: |
+  IIF([MEASURES].[m_shipping_revenue_comp_amount_base_1_year]+ 0.00 = 0.00,NULL ,([MEASURES].[m_shipping_revenue_comp_amount_1_year]-[MEASURES].[m_shipping_revenue_comp_amount_base_1_year])/[MEASURES].[m_shipping_revenue_comp_amount_base_1_year])
+format: 0.00%;(0.00%);0.00%;;

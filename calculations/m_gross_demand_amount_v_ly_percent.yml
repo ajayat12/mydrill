@@ -1,0 +1,5 @@
+unique_name: m_gross_demand_amount_v_ly_percent
+object_type: metric_calc
+label: Gross Demand $ v LY (%)
+expression: "IIF([MEASURES].[m_gross_demand_amount_ly]+0.00=0.00,NULL ,([MEASURES].[m_gross_demand_amount_v_ly])/[MEASURES].[m_gross_demand_amount_ly])"
+format: 0.00%;(0.00%);0.00%;;

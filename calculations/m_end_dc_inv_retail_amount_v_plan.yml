@@ -1,0 +1,6 @@
+unique_name: m_end_dc_inv_retail_amount_v_plan
+object_type: metric_calc
+label: End DC Inv Retail $ v Plan
+expression: "IIF(IsEmpty([Measures].[m_end_dc_inv_retail_amount]) OR IsEmpty([Measures].[m_end_dc_inv_retail_amount_plan]),\
+  \ null, ([Measures].[m_end_dc_inv_retail_amount]-[Measures].[m_end_dc_inv_retail_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

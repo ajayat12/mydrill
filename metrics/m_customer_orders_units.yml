@@ -1,0 +1,8 @@
+unique_name: m_customer_orders_units
+object_type: metric
+label: Customer Orders Units
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_CUST_ORD_UNT_QTY

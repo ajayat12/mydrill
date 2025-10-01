@@ -1,0 +1,7 @@
+unique_name: m_end_str_inv_cost_amount_plan_sum
+object_type: metric_calc
+label: End Str Inv Cost $ Plan Sum
+expression: "IIF([Measures].[m_end_str_inv_cost_amount_plan_sum_base] + 0.00 > -1\
+  \ and [Measures].[m_end_str_inv_cost_amount_plan_sum_base] + 0.00 < 1, null, [Measures].[m_end_str_inv_cost_amount_plan_sum_base])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

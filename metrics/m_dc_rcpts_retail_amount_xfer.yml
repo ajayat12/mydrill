@@ -1,0 +1,9 @@
+unique_name: m_dc_rcpts_retail_amount_xfer
+object_type: metric
+label: DC Rcpts Retail $ (xfer)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_DC_MVRCT_D.dataset
+column: TY_RETL_AMT_TSFR

@@ -1,0 +1,8 @@
+unique_name: m_retail_gm_amount_ly
+object_type: metric_calc
+label: Retail GM $ LY
+expression: "CASE \n  WHEN [Time Transformations].[d_tth_time_calculations].CurrentMember.Level.name=\"\
+  d_tth_time_calculations\"\n  THEN [Measures].[m_retail_gm_calc_ly]  ELSE [Measures].[m_retail_gm_amount_ly_base]\n\
+  END"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

@@ -1,0 +1,5 @@
+unique_name: m_comp_sales_amount_fcst_ly
+object_type: metric_calc
+label: Comp Sales $ Fcst LY
+expression: "[Measures].[m_comp_sales_amount_fcst_ly_base]"
+format: "$#,##0.00;($#,##0.00);$0.00;"

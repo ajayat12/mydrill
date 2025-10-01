@@ -1,0 +1,8 @@
+unique_name: m_total_unsellable_merchandise_expense_amount_ly
+object_type: metric
+label: Total Unsellable Merchandise Expense $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_DMG_RTV_MKDN_AMT_LY

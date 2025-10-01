@@ -1,0 +1,5 @@
+unique_name: m_online_replen_count_v_ly
+object_type: metric_calc
+label: Online Replen Count v LY
+expression: "IIF(IsEmpty([Measures].[m_online_replen_count]) OR ISEmpty([Measures].[m_online_replen_count_ly]),NULL,[Measures].[m_online_replen_count]-[Measures].[m_online_replen_count_ly])"
+format: "#,##0;(#,##0);#,##0;;"

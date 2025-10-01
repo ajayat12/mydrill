@@ -1,0 +1,41 @@
+unique_name: GHQC_DC_PLN_W.dataset
+object_type: dataset
+label: GHQC_DC_PLN_W
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: GHQC_DC_PLN_W
+
+columns:
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: fscl_wk_end_dt
+    data_type: date
+  - name: GEO_HQ_NBR
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: ly_mpln_ei_cost_amt
+    data_type: double
+  - name: ly_pln_bi_cost_amt
+    data_type: double
+  - name: ly_pln_bi_retl_amt
+    data_type: double
+  - name: ly_pln_ei_cost_amt
+    data_type: double
+  - name: ly_pln_ei_retl_amt
+    data_type: double
+  - name: MER_CLASS_NBR
+    data_type: long
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: ty_mpln_ei_cost_amt
+    data_type: double
+  - name: ty_pln_bi_cost_amt
+    data_type: double
+  - name: ty_pln_bi_retl_amt
+    data_type: double
+  - name: ty_pln_ei_cost_amt
+    data_type: double
+  - name: ty_pln_ei_retl_amt
+    data_type: double

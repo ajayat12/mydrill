@@ -1,0 +1,5 @@
+unique_name: m_total_mkdn_percent_v_ly
+object_type: metric_calc
+label: Total MKDN % v LY
+expression: "iif(ISEMPTY([Measures].[m_total_mkdn_percent]) or ISEMPTY([Measures].[m_total_mkdn_percent_ly]),Null,[Measures].[m_total_mkdn_percent]-[Measures].[m_total_mkdn_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

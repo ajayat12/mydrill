@@ -1,0 +1,5 @@
+unique_name: m_shrink_reserve_percent_v_ly_bps
+object_type: metric_calc
+label: Shrink Reserve % v LY (BPS)
+expression: "IIF((IsEmpty([MEASURES].[m_shrink_reserve_percent]) OR IsEmpty([MEASURES].[m_shrink_reserve_percent_ly])),NULL,([Measures].[m_shrink_reserve_percent]-[Measures].[m_shrink_reserve_percent_ly])*10000)"
+format: "#,##0;(#,##0);#,##0;;"

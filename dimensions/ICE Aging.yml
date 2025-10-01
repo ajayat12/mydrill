@@ -1,0 +1,46 @@
+unique_name: ICE Aging
+object_type: dimension
+label: ICE Aging
+type: standard
+
+hierarchies:
+
+  - unique_name: ICE Aging Hierarchy
+    label: ICE Aging Hierarchy
+
+    levels:
+
+      - unique_name: h_iah_ice_aging
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_iah_ice_age_group
+            label: ICE Age Group
+            dataset: DIM_ICE_AGING.dataset
+            key_columns:
+              - AGING_BUCKET
+            name_column: AGING_BUCKET
+            sort_column: AGING_ID
+
+          - unique_name: d_iah_ice_status
+            label: ICE Status
+            dataset: DIM_ICE_AGING.dataset
+            key_columns:
+              - ICE_CD
+            name_column: ICE_CD
+            sort_column: ICE_ID
+
+level_attributes:
+
+  - unique_name: h_iah_ice_aging
+    label: ICE Aging
+    is_unique_key: true
+    dataset: DIM_ICE_AGING.dataset
+    key_columns:
+      - ICE_KEY
+    name_column: ICE_KEY
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

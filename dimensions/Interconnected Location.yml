@@ -1,0 +1,386 @@
+unique_name: Interconnected Location
+object_type: dimension
+label: Interconnected Location
+type: standard
+
+hierarchies:
+
+  - unique_name: Interconnected Operational Location Hierarchy
+    label: Interconnected Operational Location Hierarchy
+
+    levels:
+
+      - unique_name: h_iolh_icr_all_thd
+
+        aliases:
+
+          - unique_name: d_iolh_icr_all_thd
+            label: ICR All THD
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: ALL_THD_DESC
+            sort_column: ALL_THD_DESC
+
+      - unique_name: h_iolh_icr_lob
+
+        aliases:
+
+          - unique_name: d_iolh_icr_lob
+            label: ICR LOB
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: LOB_HQ_NM
+            sort_column: LOB_HQ_NM
+
+      - unique_name: h_iolh_icr_geography
+
+      - unique_name: h_iolh_icr_division
+
+        aliases:
+
+          - unique_name: d_iolh_icr_division_name
+            label: ICR Division Name
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: S_DIV_NM
+            sort_column: S_DIV_NM
+
+          - unique_name: d_iolh_icr_division_nbr
+            label: ICR Division Nbr
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: DIV_NBR
+            sort_column: DIV_NBR
+
+          - unique_name: d_iolh_icr_division
+            label: ICR Division
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: DIV_NM
+            sort_column: DIV_NM
+
+      - unique_name: h_iolh_icr_region
+
+        aliases:
+
+          - unique_name: d_iolh_icr_region
+            label: ICR Region
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: RGN_NM
+            sort_column: RGN_NM
+
+          - unique_name: d_iolh_icr_region_name
+            label: ICR Region Name
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: S_RGN_NM
+            sort_column: S_RGN_NM
+
+          - unique_name: d_iolh_region_nbr
+            label: ICR Region Nbr
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: RGN_NBR
+            sort_column: RGN_NBR
+
+      - unique_name: h_iolh_icr_district
+
+        aliases:
+
+          - unique_name: d_iolh_icr_district
+            label: ICR District
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: DST_NM
+            sort_column: DST_NM
+
+          - unique_name: d_iolh_icr_district_name
+            label: ICR District Name
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: S_DST_NM
+            sort_column: S_DST_NM
+
+          - unique_name: d_iolh_icr_district_nbr
+            label: ICR District Nbr
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: DST_NBR
+            sort_column: DST_NBR
+
+      - unique_name: h_iolh_icr_store
+
+        secondary_attributes:
+
+          - unique_name: d_iolh_icr_latitude
+            label: ICR Latitude
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - LAT_NBR
+            name_column: LAT_NBR
+            sort_column: LAT_NBR
+
+          - unique_name: d_iolh_icr_longitude
+            label: ICR Longitude
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - LNG_NBR
+            name_column: LNG_NBR
+            sort_column: LNG_NBR
+
+          - unique_name: d_iolh_icr_str_addr__city
+            label: ICR Str Addr - City
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - CITY_NM
+            name_column: CITY_NM
+            sort_column: CITY_NM
+
+          - unique_name: d_iolh_icr_str_addr__county
+            label: ICR Str Addr - County
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - CNTY_NM
+            name_column: CNTY_NM
+            sort_column: CNTY_NM
+
+          - unique_name: d_iolh_icr_str_addr__postal_code
+            label: ICR Str Addr - Postal Code
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - PSTL_CD
+            name_column: PSTL_CD
+            sort_column: PSTL_CD
+
+          - unique_name: d_iolh_icr_str_addr__state
+            label: ICR Str Addr - State
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - ST_CD
+            name_column: ST_CD
+            sort_column: ST_CD
+
+          - unique_name: d_iolh_icr_str_addr__street
+            label: ICR Str Addr - Street
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            key_columns:
+              - ADDR_LINE1_TXT
+            name_column: ADDR_LINE1_TXT
+            sort_column: ADDR_LINE1_TXT
+
+        aliases:
+
+          - unique_name: d_iolh_icr_store_name
+            label: ICR Store Name
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: S_RELO_TO_STR_NM
+            sort_column: S_RELO_TO_STR_NM
+
+          - unique_name: d_iolh_icr_store_nbr
+            label: ICR Store Nbr
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: RELO_TO_STR_NBR
+            sort_column: RELO_TO_STR_NBR
+
+          - unique_name: d_iolh_icr_store
+            label: ICR Store
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: STR_NM
+            sort_column: STR_NM
+
+      - unique_name: h_iolh_icr_relocated_from_store
+        is_hidden: true
+
+  - unique_name: Interconnected Merchandising Location Hierarchy
+    label: Interconnected Merchandising Location Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_imlh_icr_all_thd
+
+      - unique_name: h_imlh_icr_lob
+
+      - unique_name: h_imlh_icr_geography
+
+      - unique_name: h_imlh_icr_division
+
+      - unique_name: h_imlh_icr_buying_office
+
+        aliases:
+
+          - unique_name: d_imlh_icr_buying_office
+            label: ICR Buying Office
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: BYO_NM
+            sort_column: BYO_NM
+
+          - unique_name: d_imlh_icr_byo_name
+            label: ICR BYO Name
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: S_BYO_NM
+            sort_column: S_BYO_NM
+
+          - unique_name: d_imlh_icr_byo_nbr
+            label: ICR BYO Nbr
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: BYO_NBR
+            sort_column: BYO_NBR
+
+      - unique_name: h_imlh_icr_market
+
+        aliases:
+
+          - unique_name: d_imlh_icr_market
+            label: ICR Market
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: MKT_NM
+            sort_column: MKT_NM
+
+          - unique_name: d_imlh_icr_market_name
+            label: ICR Market Name
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: S_MKT_NM
+            sort_column: S_MKT_NM
+
+          - unique_name: d_imlh_icr_market_nbr
+            label: ICR Market Nbr
+            folder: More Fields
+            dataset: INTERCONNECTED_LOCATION.dataset
+            name_column: MKT_NBR
+            sort_column: MKT_NBR
+
+      - unique_name: h_imlh_icr_store
+
+      - unique_name: h_iolh_icr_relocated_from_store
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: h_imlh_icr_all_thd
+    label: ICR All THD
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: h_imlh_icr_buying_office
+    label: ICR Buying Office
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - BYO_NBR
+    name_column: BYO_NM
+    sort_column: BYO_NBR
+
+  - unique_name: h_imlh_icr_division
+    label: ICR Division
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+    sort_column: DIV_NBR
+
+  - unique_name: h_imlh_icr_geography
+    label: ICR Geography
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - GEO_HQ_NBR
+    name_column: GEO_HQ_NM
+
+  - unique_name: h_imlh_icr_lob
+    label: ICR LOB
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - LOB_HQ_NM
+    name_column: LOB_HQ_NM
+
+  - unique_name: h_imlh_icr_market
+    label: ICR Market
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - MKT_NBR
+    name_column: MKT_NM
+
+  - unique_name: h_imlh_icr_store
+    label: ICR Store
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - RELO_TO_STR_NBR
+    name_column: STR_NM
+
+  - unique_name: h_iolh_icr_all_thd
+    label: ICR All THD
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: h_iolh_icr_district
+    label: ICR District
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - DST_NBR
+    name_column: DST_NM
+
+  - unique_name: h_iolh_icr_division
+    label: ICR Division
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+
+  - unique_name: h_iolh_icr_geography
+    label: ICR Geography
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - GEO_HQ_NBR
+    name_column: GEO_HQ_NM
+
+  - unique_name: h_iolh_icr_lob
+    label: ICR LOB
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - LOB_HQ_NM
+    name_column: LOB_HQ_NM
+
+  - unique_name: h_iolh_icr_region
+    label: ICR Region
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - RGN_NBR
+    name_column: RGN_NM
+
+  - unique_name: h_iolh_icr_relocated_from_store
+    label: ICR Relocated From Store
+    is_unique_key: true
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - STR_NBR
+    name_column: STR_NM
+
+  - unique_name: h_iolh_icr_store
+    label: ICR Store
+    dataset: INTERCONNECTED_LOCATION.dataset
+    key_columns:
+      - RELO_TO_STR_NBR
+    name_column: STR_NM
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,8 @@
+unique_name: m_comp_units_base_1_year
+object_type: metric
+label: Comp Units Base (1 Year)
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: LY_COMP_SLS_UNITS

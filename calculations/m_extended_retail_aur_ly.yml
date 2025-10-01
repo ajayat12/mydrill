@@ -1,0 +1,5 @@
+unique_name: m_extended_retail_aur_ly
+object_type: metric_calc
+label: Extended Retail AUR LY
+expression: "IIF([Measures].[m_sales_units_ly] + 0.00 = 0.00, null, ([Measures].[m_extended_retail_amount_ly]/[Measures].[m_sales_units_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

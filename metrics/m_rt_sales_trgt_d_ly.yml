@@ -1,0 +1,9 @@
+unique_name: m_rt_sales_trgt_d_ly
+object_type: metric
+label: RT_SALES_TRGT_D LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STR_SKU_INV_IPR_D.dataset
+column: LY_RT_SALES_TRGT

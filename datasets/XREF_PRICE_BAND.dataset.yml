@@ -1,0 +1,15 @@
+unique_name: XREF_PRICE_BAND.dataset
+object_type: dataset
+label: XREF_PRICE_BAND
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: XREF_PRICE_BAND
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: PRICE_BAND
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

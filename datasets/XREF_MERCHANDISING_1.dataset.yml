@@ -1,0 +1,15 @@
+unique_name: XREF_MERCHANDISING_1.dataset
+object_type: dataset
+label: XREF_MERCHANDISING_1
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: XREF_MERCHANDISING_1
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MERCHANDISING_1
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

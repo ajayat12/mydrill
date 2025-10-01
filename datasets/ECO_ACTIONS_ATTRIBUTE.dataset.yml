@@ -1,0 +1,9 @@
+unique_name: ECO_ACTIONS_ATTRIBUTE.dataset
+object_type: dataset
+label: ECO_ACTIONS_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: ECO_ACTIONS
+
+columns:
+  - name: ECO_ACTIONS
+    data_type: string

@@ -1,0 +1,6 @@
+unique_name: m_first_imu_percent_v_ly
+object_type: metric_calc
+label: First IMU % v LY
+expression: "IIF(ISEMPTY([Measures].[m_first_imu_percent]) or ISEMPTY([Measures].[m_first_imu_percent_ly]),\
+  \ null ,([Measures].[m_first_imu_percent]-[Measures].[m_first_imu_percent_ly]))"
+format: 0.00%;(0.00%);0.00%;;

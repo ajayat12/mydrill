@@ -1,0 +1,9 @@
+unique_name: COLOR_ATTRIBUTE.dataset
+object_type: dataset
+label: COLOR_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: COLOR
+
+columns:
+  - name: COLOR
+    data_type: string

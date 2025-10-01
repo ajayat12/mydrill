@@ -1,0 +1,37 @@
+unique_name: Supply Chain
+object_type: dimension
+label: Supply Chain
+type: standard
+
+hierarchies:
+
+  - unique_name: Supply Chain Hierarchy
+    label: Supply Chain Hierarchy
+
+    levels:
+
+      - unique_name: h_scl_supply_chain
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_inventory_source
+            label: Inventory Source
+            dataset: DIM_SUPPLY_CHAIN.dataset
+            key_columns:
+              - ITEM_SHP_FR_DIM_ID
+            name_column: ITEM_SHP_FR_VAL
+            sort_column: ITEM_SHP_FR_DIM_ID
+
+level_attributes:
+
+  - unique_name: h_scl_supply_chain
+    label: Supply Chain
+    dataset: DIM_SUPPLY_CHAIN.dataset
+    key_columns:
+      - ITEM_SHP_FR_DIM_ID
+    name_column: ITEM_SHP_FR_VAL
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

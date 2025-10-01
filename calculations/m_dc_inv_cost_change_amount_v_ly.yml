@@ -1,0 +1,5 @@
+unique_name: m_dc_inv_cost_change_amount_v_ly
+object_type: metric_calc
+label: DC Inv Cost Change $ v LY
+expression: "IIF(ISEMPTY([MEASURES].[m_dc_inv_cost_change_amount]) OR ISEMPTY([MEASURES].[m_dc_inv_cost_change_amount_ly]),NULL,([MEASURES].[m_dc_inv_cost_change_amount]-[MEASURES].[m_dc_inv_cost_change_amount_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

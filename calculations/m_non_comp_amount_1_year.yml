@@ -1,0 +1,5 @@
+unique_name: m_non_comp_amount_1_year
+object_type: metric_calc
+label: Non Comp $ (1 Year)
+expression: "[Measures].[m_unaudited_sales_amount]-[Measures].[m_comp_amount_1_year]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

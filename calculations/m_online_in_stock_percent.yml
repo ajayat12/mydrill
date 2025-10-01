@@ -1,0 +1,5 @@
+unique_name: m_online_in_stock_percent
+object_type: metric_calc
+label: Online In Stock %
+expression: "[Measures].[m_online_in_stock_item_days]/[Measures].[m_sku_nbr_dtl]"
+format: 0.00%;(0.00%);0.00%;;

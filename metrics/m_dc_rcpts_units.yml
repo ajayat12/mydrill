@@ -1,0 +1,8 @@
+unique_name: m_dc_rcpts_units
+object_type: metric
+label: DC Rcpts Units
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+unrelated_dimensions_handling: empty
+dataset: SKU_DC_MVRCT_D.dataset
+column: TY_RCVD_UNT_CNT

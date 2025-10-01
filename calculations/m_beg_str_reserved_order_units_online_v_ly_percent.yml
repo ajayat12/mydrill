@@ -1,0 +1,5 @@
+unique_name: m_beg_str_reserved_order_units_online_v_ly_percent
+object_type: metric_calc
+label: Beg Str Reserved Order Units (Online) v LY (%)
+expression: "IIF([Measures].[m_beg_str_reserved_order_units_online_ly]+0.00=0.00,NULL,([Measures].[m_beg_str_reserved_order_units_online_v_ly]/[Measures].[m_beg_str_reserved_order_units_online_ly]))"
+format: 0.00%;(0.00%);0.00%;;

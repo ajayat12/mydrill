@@ -1,0 +1,5 @@
+unique_name: m_buyable_conversion_rate_60_days_v_ly_bps
+object_type: metric_calc
+label: Buyable Conversion Rate (60 Days) v LY (BPS)
+expression: "IIF(IsEmpty([Measures].[m_buyable_conversion_rate_60_days]) OR ISEmpty([Measures].[m_buyable_conversion_rate_60_days_ly]),NULL,([Measures].[m_buyable_conversion_rate_60_days]-[Measures].[m_buyable_conversion_rate_60_days_ly])*10000)"
+format: "#,##0;(#,##0);#,##0;;"

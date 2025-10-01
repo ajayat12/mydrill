@@ -1,0 +1,8 @@
+unique_name: str vol strd
+object_type: metric_calc
+label: str vol strd
+expression: |-
+  IIF([Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=3,
+              [Measures].[m_strd_vol_lvl_cd],
+              NULL)
+is_hidden: true

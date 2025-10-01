@@ -1,0 +1,13 @@
+unique_name: RCTGRP_RECPT_TYP.dataset
+object_type: dataset
+label: RCTGRP_RECPT_TYP
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: RCTGRP_RECPT_TYP
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RECPT_GRP_TYP_CD
+    data_type: long
+  - name: RECPT_TYP_CD
+    data_type: string

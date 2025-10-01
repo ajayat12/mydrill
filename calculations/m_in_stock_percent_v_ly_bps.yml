@@ -1,0 +1,5 @@
+unique_name: m_in_stock_percent_v_ly_bps
+object_type: metric_calc
+label: In Stock % v LY (BPS)
+expression: "IIF((IsEmpty([MEASURES].[m_in_stock_percent]) OR IsEmpty([MEASURES].[m_in_stock_percent_ly])),NULL,([Measures].[m_in_stock_percent]-[Measures].[m_in_stock_percent_ly])*10000)"
+format: "#,##0;(#,##0);#,##0;;"

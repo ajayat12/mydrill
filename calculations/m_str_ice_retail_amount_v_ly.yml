@@ -1,0 +1,5 @@
+unique_name: m_str_ice_retail_amount_v_ly
+object_type: metric_calc
+label: Str ICE Retail $ v LY
+expression: "IIF(IsEmpty([MEASURES].[m_str_ice_retail_amount]) OR IsEmpty([MEASURES].[m_str_ice_retail_amount_ly]),NULL,[MEASURES].[m_str_ice_retail_amount]-[MEASURES].[m_str_ice_retail_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

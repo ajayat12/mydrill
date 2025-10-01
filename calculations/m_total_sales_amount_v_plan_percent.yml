@@ -1,0 +1,6 @@
+unique_name: m_total_sales_amount_v_plan_percent
+object_type: metric_calc
+label: Total Sales $ v Plan (%)
+expression: "IIF([MEASURES].[m_total_sales_amount_plan] +0.00=0.00,NULL,([MEASURES].[m_total_sales_amount_v_plan])\
+  \ / ([MEASURES].[m_total_sales_amount_plan]))"
+format: 0.00%;(0.00%);0.00%;;

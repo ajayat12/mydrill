@@ -1,0 +1,7 @@
+unique_name: m_out_of_stock
+object_type: metric_calc
+label: Out of Stock
+expression: "CASE WHEN [Time].[Time Hierarchy].CurrentMember.LEVEL_NUMBER=6 or [Time].[d_th_day_name].CurrentMember.Name\
+  \ = \"Day Name\" THEN [Measures].[m_out_of_stock_dly] ELSE [Measures].[m_out_of_stock_wkly]\
+  \ END"
+format: "#,##0;(#,##0);0;;"

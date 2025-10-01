@@ -1,0 +1,6 @@
+unique_name: m_total_comp_amount_v_ly_1_year
+object_type: metric_calc
+label: Total Comp $ v LY (1 Year)
+expression: |
+  IIF(ISEMPTY([MEASURES].[m_total_comp_amount_1_year]) OR ISEMPTY([MEASURES].[m_total_comp_amount_base_1_year]),NULL,([MEASURES].[m_total_comp_amount_1_year] - [MEASURES].[m_total_comp_amount_base_1_year]))
+format: "$#,##0.00;($#,##0.00);$0.00;;"

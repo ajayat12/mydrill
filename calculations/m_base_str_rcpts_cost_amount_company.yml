@@ -1,0 +1,6 @@
+unique_name: m_base_str_rcpts_cost_amount_company
+object_type: metric_calc
+label: Base Str Rcpts Cost $ (Company)
+expression: "[Measures].[m_base_str_rcpts_cost_amount_company_dly] + [Measures].[m_base_str_rcpts_cost_amount_company_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

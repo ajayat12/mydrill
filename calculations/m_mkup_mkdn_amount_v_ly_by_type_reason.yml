@@ -1,0 +1,5 @@
+unique_name: m_mkup_/_mkdn_amount_v_ly_by_type_/_reason
+object_type: metric_calc
+label: MKUP / MKDN $ v LY (by Type / Reason)
+expression: "[Measures].[m_mkup_/_mkdn_amount_by_type_/_reason]-[Measures].[m_mkup_/_mkdn_amount_ly_by_type_/_reason]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

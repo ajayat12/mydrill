@@ -1,0 +1,41 @@
+unique_name: XREF_RCTGRP_RECPT_TYP
+object_type: dimension
+label: XREF_RCTGRP_RECPT_TYP
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF_RCTGRP_RECPT_TYP Hierarchy
+    label: XREF_RCTGRP_RECPT_TYP Hierarchy
+
+    levels:
+
+      - unique_name: h_xh_rctgrp_recpt_typ
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: h_xh_rctgrp_recpt_typ
+    label: RCTGRP_RECPT_TYP
+    dataset: RCTGRP_RECPT_TYP.dataset
+    key_columns:
+      - RECPT_TYP_CD
+    name_column: RECPT_TYP_CD
+
+relationships:
+
+  - unique_name: XREF_RCTGRP_RECPT_TYP_ReceiptGroup
+    from:
+      hierarchy: XREF_RCTGRP_RECPT_TYP Hierarchy
+      level: h_xh_rctgrp_recpt_typ
+      dataset: RCTGRP_RECPT_TYP.dataset
+      join_columns:
+        - RECPT_GRP_TYP_CD
+    to:
+      dimension: Receipt Group
+      level: h_rg_receipt_group
+    type: embedded
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,9 @@
+unique_name: m_ly_sfc_sub_dept_sls_txn_cnt
+object_type: metric
+label: LY SFC SUB DEPT SLS TXN CNT
+calculation_method: sum
+format: "#,##0;(#,##0);;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: PRODUCT_STR_DAY_TRANS.dataset
+column: LY_SFC_SUB_DEPT_SLS_TXN_CNT

@@ -1,0 +1,5 @@
+unique_name: m_shrink_percent_v_ly
+object_type: metric_calc
+label: Shrink % v LY
+expression: "[Measures].[m_shrink_percent]-[Measures].[m_shrink_percent_ly]"
+format: 0.00%;(0.00%);0.00%;;

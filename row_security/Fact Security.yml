@@ -1,0 +1,13 @@
+unique_name: Fact Security
+label: Fact Security
+object_type: row_security
+dataset: FACT_MAPPING.dataset
+filter_key_column: ID
+use_filter_key: true
+ids_column: GROUP_NM
+id_type: group
+scope: fact
+secure_totals: true
+modeler_metadata:
+  version: "0"
+  modified: "false"

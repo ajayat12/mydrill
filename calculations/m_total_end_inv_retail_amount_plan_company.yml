@@ -1,0 +1,5 @@
+unique_name: m_total_end_inv_retail_amount_plan_company
+object_type: metric_calc
+label: Total End Inv Retail $ Plan (Company)
+expression: "[Measures].[m_end_str_inv_retail_amount_plan] + [Measures].[m_end_dc_inv_retail_amount_plan]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

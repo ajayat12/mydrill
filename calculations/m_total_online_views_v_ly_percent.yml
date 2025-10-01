@@ -1,0 +1,5 @@
+unique_name: m_total_online_views_v_ly_percent
+object_type: metric_calc
+label: Total Online Views v LY (%)
+expression: "IIF([Measures].[m_total_online_views_ly]+0.00=0.00,NULL,([Measures].[m_total_online_views_v_ly]/[Measures].[m_total_online_views_ly]))"
+format: 0.00%;(0.00%);0.00%;;

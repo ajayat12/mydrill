@@ -1,0 +1,43 @@
+unique_name: Replenishment Indicator
+object_type: dimension
+label: Replenishment Indicator
+type: standard
+
+hierarchies:
+
+  - unique_name: Replenishment Indicator Hierarchy
+    label: Replenishment Indicator Hierarchy
+
+    levels:
+
+      - unique_name: h_rih_replenishment_indicator
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_rih_replenishment_indicator
+            label: Replenishment Indicator
+            dataset: DIM_REPLENISHMENT_INDICATOR.dataset
+            key_columns:
+              - REPL_ID
+            name_column: REPL_FLG_DESC
+            sort_column: REPL_ID
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_rih_replenishment_indicator
+    label: Replenishment Indicator
+    is_unique_key: true
+    dataset: DIM_REPLENISHMENT_INDICATOR.dataset
+    key_columns:
+      - REPL_ID
+    name_column: REPL_FLG_DESC
+    sort_column: REPL_ID
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

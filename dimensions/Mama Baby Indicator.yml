@@ -1,0 +1,42 @@
+unique_name: Mama Baby Indicator
+object_type: dimension
+label: Mama Baby Indicator
+type: standard
+
+hierarchies:
+
+  - unique_name: Mama Baby Indicator Hierarchy
+    label: Mama Baby Indicator Hierarchy
+
+    levels:
+
+      - unique_name: h_mbih_mama_baby_indicator
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_mbih_mama_baby_indicator
+            label: Mama Baby Indicator
+            dataset: DIM_MAMA_BABY_INDICATOR.dataset
+            key_columns:
+              - MB_ID
+            name_column: MB_DESC
+            sort_column: MB_ID
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_mbih_mama_baby_indicator
+    label: Mama Baby Indicator
+    is_unique_key: true
+    dataset: DIM_MAMA_BABY_INDICATOR.dataset
+    key_columns:
+      - MB_ID
+    name_column: MB_DESC
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

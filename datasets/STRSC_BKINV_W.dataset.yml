@@ -1,0 +1,39 @@
+unique_name: STRSC_BKINV_W.dataset
+object_type: dataset
+label: STRSC_BKINV_W
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: STRSC_BKINV_W
+
+columns:
+  - name: EXT_SUB_CLASS_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_MTHBEG_OH_RETL_AMT
+    data_type: double
+  - name: LY_MTHEND_OH_RETL_AMT
+    data_type: double
+  - name: LY_WKBEG_OH_RETL_AMT
+    data_type: double
+  - name: LY_WKEND_OH_RETL_AMT
+    data_type: double
+  - name: MER_CLASS_NBR
+    data_type: long
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: MER_SUB_CLASS_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_MTHBEG_OH_RETL_AMT
+    data_type: double
+  - name: TY_MTHEND_OH_RETL_AMT
+    data_type: double
+  - name: TY_WKBEG_OH_RETL_AMT
+    data_type: double
+  - name: TY_WKEND_OH_RETL_AMT
+    data_type: double

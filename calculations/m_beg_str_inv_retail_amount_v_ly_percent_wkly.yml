@@ -1,0 +1,6 @@
+unique_name: m_beg_str_inv_retail_amount_v_ly_percent_wkly
+object_type: metric_calc
+label: Beg Str Inv Retail $ v LY (%) (Wkly)
+expression: "iif([Measures].[m_beg_str_inv_retail_amount_ly_wkly] + 0.00 = 0.00,null,(([Measures].[m_beg_str_inv_retail_amount_v_ly_wkly])/[Measures].[m_beg_str_inv_retail_amount_ly_wkly]))"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

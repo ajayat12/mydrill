@@ -1,0 +1,5 @@
+unique_name: m_landed_cost_amount
+object_type: metric_calc
+label: Landed Cost $
+expression: "IIF([Measures].[m_total_sales_qty]+0.00 = 0.00, null,[Measures].[m_total_landed_cost_amount]/[Measures].[m_total_sales_qty])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,43 @@
+unique_name: DEMD_SLS.dataset
+object_type: dataset
+label: DEMD_SLS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DEMD_SLS
+
+columns:
+  - name: DEPT_NBR
+    data_type: long
+  - name: FULFL_STR_NBR
+    data_type: string
+  - name: FULL_FILL_CHNL
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_GROSS_DEMAND_SALES
+    data_type: double
+  - name: LY_SHFT_GROSS_DEMAND_SALES
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PORT_STRGY_ID
+    data_type: long
+  - name: PRO_CHNL
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STAT_CD
+    data_type: long
+  - name: SLTRN_DT
+    data_type: date
+  - name: STORE_CHNL
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TY_GROSS_DEMAND_SALES
+    data_type: double
+  - name: UPC_CD
+    data_type: string

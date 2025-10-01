@@ -1,0 +1,5 @@
+unique_name: m_comp_avg_unit_retail_base_2_year
+object_type: metric_calc
+label: Comp Avg Unit Retail Base (2 Year)
+expression: "IIF([MEASURES].[m_comp_units_base_2_year] + 0.00 = 0.00,NULL,[MEASURES].[m_comp_amount_base_2_year]/[MEASURES].[m_comp_units_base_2_year])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

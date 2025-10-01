@@ -1,0 +1,7 @@
+unique_name: m_avg_imu_percent
+object_type: metric_calc
+label: Avg IMU %
+expression: "IIF([Measures].[m_imu_percent] + 0.00 = 0.00 , null, ([Measures].[m_imu_percent]\
+  \ - [Measures].[m_imu_percent_core])/[Measures].[m_imu_percent_core])"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

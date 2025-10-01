@@ -1,0 +1,12 @@
+unique_name: m_str_backordered_units_online
+object_type: metric
+label: Str Backordered Units (Online)
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_SKU_DTL_DLY.dataset_Time_Transformations
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_EOD_BKORD_QTY

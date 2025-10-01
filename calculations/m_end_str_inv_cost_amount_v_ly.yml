@@ -1,0 +1,5 @@
+unique_name: m_end_str_inv_cost_amount_v_ly
+object_type: metric_calc
+label: End Str Inv Cost $ v LY
+expression: "IIF(IsEmpty([Measures].[m_end_str_inv_cost_amount]) OR IsEmpty([Measures].[m_end_str_inv_cost_amount_ly]),NULL,([Measures].[m_end_str_inv_cost_amount]-[Measures].[m_end_str_inv_cost_amount_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

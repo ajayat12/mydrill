@@ -1,0 +1,8 @@
+unique_name: m_annual_rebate_contract_forecast_amount_company
+object_type: metric
+label: Annual Rebate Contract Forecast $ (Company)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: repeat
+dataset: REBATE.dataset
+column: TRGT_FCST_AMT

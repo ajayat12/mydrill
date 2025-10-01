@@ -1,0 +1,5 @@
+unique_name: m_gmroi_v_ly_bps
+object_type: metric_calc
+label: GMROI v LY (BPS)
+expression: "[Measures].[m_gmroi]-[Measures].[m_gmroi_ly]"
+format: "#,##0;(#,##0);0;;"

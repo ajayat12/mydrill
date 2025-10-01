@@ -1,0 +1,6 @@
+unique_name: m_comp_avg_ticket_retail_percent_2_year
+object_type: metric_calc
+label: Comp Avg Ticket Retail % (2 Year)
+expression: "IIF([MEASURES].[m_comp_avg_ticket_retail_base_2_year]+ 0.00=0.00,NULL,(([MEASURES].[m_comp_avg_ticket_retail_v_lly_2_year])\
+  \ / [MEASURES].[m_comp_avg_ticket_retail_base_2_year]))"
+format: 0.00%;(0.00%);0.00%;;

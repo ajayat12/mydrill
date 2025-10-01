@@ -1,0 +1,8 @@
+unique_name: m_total_deferred_interest_expense_amount_ly
+object_type: metric
+label: Total Deferred Interest Expense $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_DEFR_INTRS_AMT_LY

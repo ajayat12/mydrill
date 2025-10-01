@@ -1,0 +1,9 @@
+unique_name: m_gm_amount_plan_base
+object_type: metric
+label: GM $ Plan base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: MONTHLY_PLAN.dataset
+column: ty_pln_gm_amt

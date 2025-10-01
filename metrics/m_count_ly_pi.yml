@@ -1,0 +1,8 @@
+unique_name: m_count_ly_pi
+object_type: metric
+label: Count LY (PI)
+calculation_method: count distinct
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: PI_SHNK.dataset
+column: LY_COUNT_PI

@@ -1,0 +1,9 @@
+unique_name: m_comp_plan_amount_2_year_sd
+object_type: metric
+label: Comp Plan $ (2 Year) SD
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: WEEKLY_DAILY_SLS_PLAN.dataset
+column: TY_PLN_COMP_AMT_2YR

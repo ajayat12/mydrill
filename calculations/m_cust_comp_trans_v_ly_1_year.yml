@@ -1,0 +1,6 @@
+unique_name: m_cust_comp_trans_v_ly_1_year
+object_type: metric_calc
+label: Cust Comp Trans v LY (1 Year)
+expression: "IIF(ISEMPTY([MEASURES].[m_cust_comp_trans_1_year]) OR ISEMPTY([MEASURES].[m_cust_comp_trans_base_1_year])\
+  \ ,NULL,([MEASURES].[m_cust_comp_trans_1_year] - [MEASURES].[m_cust_comp_trans_base_1_year]))"
+format: "#,##0;(#,##0);;;"

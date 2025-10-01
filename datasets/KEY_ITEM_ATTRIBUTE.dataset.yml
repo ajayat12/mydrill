@@ -1,0 +1,9 @@
+unique_name: KEY_ITEM_ATTRIBUTE.dataset
+object_type: dataset
+label: KEY_ITEM_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: KEY_ITEM
+
+columns:
+  - name: Key_Item
+    data_type: string

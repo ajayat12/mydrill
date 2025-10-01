@@ -1,0 +1,7 @@
+unique_name: m_total_coop_advertising_amount
+object_type: metric
+label: 'Total Co-op Advertising $ '
+calculation_method: sum
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_COOP_AMT

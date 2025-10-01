@@ -1,0 +1,5 @@
+unique_name: m_total_sales_amount_plan
+object_type: metric_calc
+label: Total Sales $ Plan
+expression: "([Measures].[m_sales_amount_plan]+[Measures].[m_shipping_revenue_amount_plan])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

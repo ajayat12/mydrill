@@ -1,0 +1,8 @@
+unique_name: m_total_vendor_direct_delivery_expense_amount
+object_type: metric
+label: Total Vendor Direct Delivery Expense $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_VDF_DLVRY_EXP_AMT

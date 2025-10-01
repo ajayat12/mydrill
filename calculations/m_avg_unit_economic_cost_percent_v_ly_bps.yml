@@ -1,0 +1,5 @@
+unique_name: m_avg_unit_economic_cost_percent_v_ly_bps
+object_type: metric_calc
+label: Avg Unit Economic Cost % v LY (BPS)
+expression: "([Measures].[m_avg_unit_economic_cost_percent]-[Measures].[m_avg_unit_economic_cost_percent_ly])*10000"
+format: "#,##0;(#,##0);0;;"

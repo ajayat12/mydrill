@@ -1,0 +1,9 @@
+unique_name: m_ty_net_mumd_amount
+object_type: metric
+label: TY NET MUMD $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_STR_MUMDC_D.dataset
+column: TY_NET_MUMD_AMT

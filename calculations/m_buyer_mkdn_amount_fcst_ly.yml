@@ -1,0 +1,6 @@
+unique_name: m_buyer_mkdn_amount_fcst_ly
+object_type: metric_calc
+label: Buyer MKDN $ Fcst LY
+expression: "[Measures].[m_buyer_mkdn_amount_fcst_ly_base]"
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true

@@ -1,0 +1,6 @@
+unique_name: m_purchase_discount_percent_v_ly
+object_type: metric_calc
+label: Purchase Discount % v LY
+expression: "IIF(IsEmpty([Measures].[m_purchase_discount_percent]) OR IsEmpty([Measures].[m_purchase_discount_percent_ly]),\
+  \ null, ([Measures].[m_purchase_discount_percent]- [Measures].[m_purchase_discount_percent_ly]))"
+format: 0.00%;(0.00%);0.00%;;

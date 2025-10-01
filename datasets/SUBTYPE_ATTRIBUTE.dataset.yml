@@ -1,0 +1,9 @@
+unique_name: SUBTYPE_ATTRIBUTE.dataset
+object_type: dataset
+label: SUBTYPE_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: SUBTYPE
+
+columns:
+  - name: SUBTYPE
+    data_type: string

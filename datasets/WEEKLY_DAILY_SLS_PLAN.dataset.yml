@@ -1,0 +1,43 @@
+unique_name: WEEKLY_DAILY_SLS_PLAN.dataset
+object_type: dataset
+label: WEEKLY_DAILY_SLS_PLAN
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: WEEKLY_DAILY_SLS_PLAN
+
+columns:
+  - name: ALLOC_STR_NBR
+    data_type: string
+  - name: CAL_DT
+    data_type: date
+  - name: CLASS_NBR
+    data_type: long
+  - name: DEPT_NBR
+    data_type: long
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: HD_CHNL_NBR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_PLN_COMP_AMT_2YR
+    data_type: double
+  - name: LY_PLN_SHPG_RVNU_AMT
+    data_type: double
+  - name: LY_SLS_PLN_AMT
+    data_type: double
+  - name: LY_SLS_PLN_COMP_AMT
+    data_type: double
+  - name: STR_NBR
+    data_type: string
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_PLN_COMP_AMT_2YR
+    data_type: double
+  - name: TY_PLN_SHPG_RVNU_AMT
+    data_type: double
+  - name: TY_SLS_PLN_AMT
+    data_type: double
+  - name: TY_SLS_PLN_COMP_AMT
+    data_type: double

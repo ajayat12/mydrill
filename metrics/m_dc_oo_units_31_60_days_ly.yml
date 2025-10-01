@@ -1,0 +1,12 @@
+unique_name: m_dc_oo_units_31_60_days_ly
+object_type: metric
+label: DC OO Units (31-60 Days) LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations
+dataset: DFDRILL_BRCH_DLY.dataset
+column: LY_DFC_ETA_R30D2_OPEN_PO_QTY

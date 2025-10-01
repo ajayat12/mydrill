@@ -1,0 +1,5 @@
+unique_name: m_purchase_discount_amount
+object_type: metric_calc
+label: Purchase Discount $
+expression: "[Measures].[m_purchase_discount_amount_dly]+[Measures].[m_purchase_discount_amount_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,9 @@
+unique_name: m_disc_pct_mkt_disc
+object_type: metric
+label: Disc Pct MKT Disc
+calculation_method: maximum
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: MVNDR_MKT_DISC.dataset
+column: disc_pct

@@ -1,0 +1,251 @@
+unique_name: STRSK_ECNMC_DLY.dataset
+object_type: dataset
+label: STRSK_ECNMC_DLY
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: STRSK_ECNMC_DLY
+
+columns:
+  - name: ALL_COST_KEY
+    data_type: long
+  - name: CAL_DT
+    data_type: date
+  - name: CUST_EXP_KEY
+    data_type: long
+  - name: CUST_FULFILL_FROM_DC
+    data_type: string
+  - name: CUST_FULFILL_FROM_DEPT
+    data_type: long
+  - name: CUST_FULFILL_FROM_STORE
+    data_type: string
+  - name: CUST_FULFILL_FROM_VENDOR
+    data_type: long
+  - name: CUST_SALES_EXP
+    data_type: string
+  - name: CUST_SALES_FROM_SITE
+    data_type: string
+  - name: DIV_ID
+    data_type: string
+  - name: FUL_EXP_KEY
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MA_IND
+    data_type: string
+  - name: MVNDR_DEPT_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: QUOTE_CENTER_FLG
+    data_type: string
+  - name: SECURITY_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STORE_CHNL
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: SUMMARY_KEY
+    data_type: long
+  - name: SVP_ID
+    data_type: string
+  - name: TOT_AGG_SUB_DISC_AMT
+    data_type: double
+  - name: TOT_AGG_SUB_DISC_AMT_LY
+    data_type: double
+  - name: TOT_CERT_VNDR_CORP_DISC_AMT
+    data_type: double
+  - name: TOT_CERT_VNDR_CORP_DISC_AMT_LY
+    data_type: double
+  - name: TOT_COOP_AMT
+    data_type: double
+  - name: TOT_COOP_AMT_LY
+    data_type: double
+  - name: TOT_COST_TO_SERVE_AMT
+    data_type: double
+  - name: TOT_COST_TO_SERVE_AMT_LY
+    data_type: double
+  - name: TOT_DC_EXP_AMT
+    data_type: double
+  - name: TOT_DC_EXP_AMT_LY
+    data_type: double
+  - name: TOT_DCSH_EXP_AMT
+    data_type: double
+  - name: TOT_DCSH_EXP_AMT_LY
+    data_type: double
+  - name: TOT_DEFR_INTRS_AMT
+    data_type: double
+  - name: TOT_DEFR_INTRS_AMT_LY
+    data_type: double
+  - name: TOT_DF_ALLOW_CORP_DISC_AMT
+    data_type: double
+  - name: TOT_DF_ALLOW_CORP_DISC_AMT_LY
+    data_type: double
+  - name: TOT_DFS_EXP_AMT
+    data_type: double
+  - name: TOT_DFS_EXP_AMT_LY
+    data_type: double
+  - name: TOT_DLVRY_EXP_AMT
+    data_type: double
+  - name: TOT_DLVRY_EXP_AMT_LY
+    data_type: double
+  - name: TOT_DMG_RTV_MKDN_AMT
+    data_type: double
+  - name: TOT_DMG_RTV_MKDN_AMT_LY
+    data_type: double
+  - name: TOT_DUTY_EXP_AMT
+    data_type: double
+  - name: TOT_DUTY_EXP_AMT_LY
+    data_type: double
+  - name: TOT_ECNMC_COST_AMT
+    data_type: double
+  - name: TOT_ECNMC_COST_AMT_LY
+    data_type: double
+  - name: TOT_ECONOMIC_COST_AMT_CALC
+    data_type: double
+  - name: TOT_ECONOMIC_COST_AMT_LY_CALC
+    data_type: double
+  - name: TOT_FIXD_DC_EXP_AMT
+    data_type: double
+  - name: TOT_FIXD_DC_EXP_AMT_LY
+    data_type: double
+  - name: TOT_FOB_COST_AMT
+    data_type: double
+  - name: TOT_FOB_COST_AMT_LY
+    data_type: double
+  - name: TOT_FRT_EXP_AMT
+    data_type: double
+  - name: TOT_FRT_EXP_AMT_LY
+    data_type: double
+  - name: TOT_FRT_SUB_DISC_AMT
+    data_type: double
+  - name: TOT_FRT_SUB_DISC_AMT_LY
+    data_type: double
+  - name: TOT_FRT_UNBND_CORP_DISC_AMT
+    data_type: double
+  - name: TOT_FRT_UNBND_CORP_DISC_AMT_LY
+    data_type: double
+  - name: TOT_FRTI_EXP_AMT
+    data_type: double
+  - name: TOT_FRTI_EXP_AMT_LY
+    data_type: double
+  - name: TOT_GRILL_ASSEMBLY_COST_AMT
+    data_type: double
+  - name: TOT_GRILL_ASSEMBLY_COST_AMT_LY
+    data_type: double
+  - name: TOT_HOUSE_DLVRY_EXP_AMT
+    data_type: double
+  - name: TOT_HOUSE_DLVRY_EXP_AMT_LY
+    data_type: double
+  - name: TOT_IBX_CORP_DISC_AMT
+    data_type: double
+  - name: TOT_IBX_CORP_DISC_AMT_LY
+    data_type: double
+  - name: TOT_IMGA_EXP_AMT
+    data_type: double
+  - name: TOT_IMGA_EXP_AMT_LY
+    data_type: double
+  - name: TOT_ISSI_EXP_AMT
+    data_type: double
+  - name: TOT_ISSI_EXP_AMT_LY
+    data_type: double
+  - name: TOT_LANDED_COST_AMT_CALC
+    data_type: double
+  - name: TOT_LANDED_COST_AMT_LY_CALC
+    data_type: double
+  - name: TOT_LND_COST_AMT
+    data_type: double
+  - name: TOT_LND_COST_AMT_LY
+    data_type: double
+  - name: TOT_MET_CORP_DISC_AMT
+    data_type: double
+  - name: TOT_MET_CORP_DISC_AMT_LY
+    data_type: double
+  - name: TOT_MISC_TRD_CORP_DISC_AMT
+    data_type: double
+  - name: TOT_MISC_TRD_CORP_DISC_AMT_LY
+    data_type: double
+  - name: TOT_MISS_CHRG_AMT
+    data_type: double
+  - name: TOT_MISS_CHRG_AMT_LY
+    data_type: double
+  - name: TOT_MISS_CR_AMT
+    data_type: double
+  - name: TOT_MISS_CR_AMT_LY
+    data_type: double
+  - name: TOT_MTD_SUB_DISC_AMT
+    data_type: double
+  - name: TOT_MTD_SUB_DISC_AMT_LY
+    data_type: double
+  - name: TOT_NET_COST_AMT
+    data_type: double
+  - name: TOT_NET_COST_AMT_CALC
+    data_type: double
+  - name: TOT_NET_COST_AMT_LY
+    data_type: double
+  - name: TOT_NET_COST_AMT_LY_CALC
+    data_type: double
+  - name: TOT_NET_NET_COST_AMT
+    data_type: double
+  - name: TOT_NET_NET_COST_AMT_CALC
+    data_type: double
+  - name: TOT_NET_NET_COST_AMT_LY
+    data_type: double
+  - name: TOT_NET_NET_COST_AMT_LY_CALC
+    data_type: double
+  - name: TOT_OFFSH_SUB_DISC_AMT
+    data_type: double
+  - name: TOT_OFFSH_SUB_DISC_AMT_LY
+    data_type: double
+  - name: TOT_PROD_COST_AMT
+    data_type: double
+  - name: TOT_PROD_COST_AMT_LY
+    data_type: double
+  - name: TOT_PRODUCT_COST_AMT_CALC
+    data_type: double
+  - name: TOT_PRODUCT_COST_AMT_LY_CALC
+    data_type: double
+  - name: TOT_PURCH_DISC_AMT
+    data_type: double
+  - name: TOT_PURCH_DISC_AMT_LY
+    data_type: double
+  - name: TOT_REBT_AMT
+    data_type: double
+  - name: TOT_REBT_AMT_LY
+    data_type: double
+  - name: TOT_SCD_SUB_DISC_AMT
+    data_type: double
+  - name: TOT_SCD_SUB_DISC_AMT_LY
+    data_type: double
+  - name: TOT_SHNK_COST_AMT
+    data_type: double
+  - name: TOT_SHNK_COST_AMT_LY
+    data_type: double
+  - name: TOT_SPLTY_TRM_DISC_AMT
+    data_type: double
+  - name: TOT_SPLTY_TRM_DISC_AMT_LY
+    data_type: double
+  - name: TOT_TF_SUB_DISC_AMT
+    data_type: double
+  - name: TOT_TF_SUB_DISC_AMT_LY
+    data_type: double
+  - name: TOT_TINT_COLORANT_COST_AMT
+    data_type: double
+  - name: TOT_TINT_COLORANT_COST_AMT_LY
+    data_type: double
+  - name: TOT_UNT_SLS
+    data_type: double
+  - name: TOT_UNT_SLS_LY
+    data_type: double
+  - name: TOT_VDF_DLVRY_EXP_AMT
+    data_type: double
+  - name: TOT_VDF_DLVRY_EXP_AMT_LY
+    data_type: double
+  - name: TOT_VRBL_DC_EXP_AMT
+    data_type: double
+  - name: TOT_VRBL_DC_EXP_AMT_LY
+    data_type: double

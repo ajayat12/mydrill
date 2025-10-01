@@ -1,0 +1,6 @@
+unique_name: m_rebate_amount_v_fcst
+object_type: metric_calc
+label: Rebate $ v Fcst
+expression: "IIF(IsEmpty([Measures].[m_rebate_str_rcpts_cost_amount]) OR IsEmpty([Measures].[m_rebate_amount_fcst]),\
+  \ NULL, [Measures].[m_rebate_str_rcpts_cost_amount]-[Measures].[m_rebate_amount_fcst])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

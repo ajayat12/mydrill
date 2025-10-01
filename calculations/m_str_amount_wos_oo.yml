@@ -1,0 +1,5 @@
+unique_name: m_str_amount_wos_oo
+object_type: metric_calc
+label: Str $ WOS OO
+expression: "IIF([MEASURES].[m_avg_sales_amount_8_weeks]+0.00=0.00,NULL,[Measures].[m_str_oo_amount]/[MEASURES].[m_avg_sales_amount_8_weeks])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

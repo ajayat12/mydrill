@@ -1,0 +1,8 @@
+unique_name: m_rebate_annualized_purchases_amount
+object_type: metric
+label: Rebate Annualized Purchases $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: repeat
+dataset: REBATE.dataset
+column: ANN_EX_RECPT_AMT

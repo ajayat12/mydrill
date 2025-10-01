@@ -1,0 +1,5 @@
+unique_name: m_sales_amt_v_last_inv_percent_pi
+object_type: metric_calc
+label: Sales $ v Last Inv (%) (PI)
+expression: "IIF([MEASURES].[m_sales_amount_lly_pi]+0.00=0.00,NULL ,([MEASURES].[m_sales_amount_v_last_inv_pi])/[MEASURES].[m_sales_amount_lly_pi])"
+format: 0.00%;(0.00%);0.00%;;

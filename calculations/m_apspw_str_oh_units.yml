@@ -1,0 +1,7 @@
+unique_name: m_apspw_str_oh_units
+object_type: metric_calc
+label: APSPW Str OH Units
+expression: |-
+  iif([Measures].[m_store_weeks]+ 0.00 = 0.00,null,
+  [Measures].[m_str_oh_units]/[Measures].[m_store_weeks])
+format: "#,##0.00;(#,##0.00);#,##0.00;;"

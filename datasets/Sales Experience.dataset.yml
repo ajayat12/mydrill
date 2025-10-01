@@ -1,0 +1,47 @@
+unique_name: Sales Experience.dataset
+object_type: dataset
+label: Sales Experience
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_SALES_EXPERIENCE
+
+columns:
+  - name: CUST_EXP_KEY
+    data_type: long
+  - name: CUST_RETURN_EXP
+    data_type: string
+  - name: CUST_RETURN_EXP_KEY
+    data_type: long
+  - name: CUST_SALES_EXP
+    data_type: string
+  - name: CUST_SALES_EXP_KEY
+    data_type: long
+  - name: CUST_SALES_EXP_LOC
+    data_type: string
+  - name: CUST_SALES_EXP_LOC_KEY
+    data_type: long
+  - name: CUST_SALES_EXP_LOC_KEY_DIST
+    data_type: long
+  - name: CUST_SALES_MTHD
+    data_type: string
+  - name: CUST_SALES_MTHD_KEY
+    data_type: long
+  - name: CUST_SALES_MTHD_KEY_DIST
+    data_type: long
+  - name: CUST_SALES_TYPE
+    data_type: string
+  - name: CUST_SALES_TYPE_KEY
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MA_IND
+    data_type: string
+  - name: MA_IND_KEY
+    data_type: long
+  - name: MA_INDICATOR
+    data_type: string
+  - name: MA_INDICATOR_KEY
+    data_type: long
+  - name: QUOTE_CENTER_FLG
+    data_type: string
+  - name: QUOTE_CENTER_FLG_KEY
+    data_type: long

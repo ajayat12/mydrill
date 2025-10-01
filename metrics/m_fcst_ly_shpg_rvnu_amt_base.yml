@@ -1,0 +1,9 @@
+unique_name: m_fcst_ly_shpg_rvnu_amt_base
+object_type: metric
+label: FCST LY SHPG RVNU AMT_base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: MONTHLY_FCST.dataset
+column: LY_FCST_ACT_SHPG_RVNU_AMT

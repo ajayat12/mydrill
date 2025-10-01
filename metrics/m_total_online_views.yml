@@ -1,0 +1,8 @@
+unique_name: m_total_online_views
+object_type: metric
+label: Total Online Views
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_DSTNCT_PG_VIST_CNT

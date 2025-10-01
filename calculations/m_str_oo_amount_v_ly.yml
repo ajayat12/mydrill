@@ -1,0 +1,5 @@
+unique_name: m_str_oo_amount_v_ly
+object_type: metric_calc
+label: Str OO $ v LY
+expression: "IIF(IsEmpty([Measures].[m_str_oo_amount]) OR IsEmpty([Measures].[m_str_oo_amount_ly]),NULL,([Measures].[m_str_oo_amount]-[Measures].[m_str_oo_amount_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;"

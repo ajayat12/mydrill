@@ -1,0 +1,9 @@
+unique_name: m_ice_oh_amt
+object_type: metric
+label: ICE OH AMT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: ICE_AGING_FACT.dataset
+column: STR_OH_RETL_AMT

@@ -1,0 +1,6 @@
+unique_name: m_fcst_ly_str_bi_cost_amt
+object_type: metric_calc
+label: FCST LY STR BI COST AMT
+expression: "[Measures].[m_fcst_ly_str_bi_cost_amt_base]"
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true

@@ -1,0 +1,9 @@
+unique_name: m_dtl_ext_cost_amt_ly
+object_type: metric
+label: DTL EXT COST AMT LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: COST_STATS.dataset
+column: ly_dtl_ext_cost_amt

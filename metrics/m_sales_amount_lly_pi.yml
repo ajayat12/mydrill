@@ -1,0 +1,9 @@
+unique_name: m_sales_amount_lly_pi
+object_type: metric
+label: Sales $ LLY (PI)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: PI_SHNK.dataset
+column: LLY_SHNK_COMPANY_SLS

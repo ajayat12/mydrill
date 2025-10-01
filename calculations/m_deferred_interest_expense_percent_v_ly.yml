@@ -1,0 +1,5 @@
+unique_name: m_deferred_interest_expense_percent_v_ly
+object_type: metric_calc
+label: Deferred Interest Expense % v LY
+expression: "([Measures].[m_deferred_interest_expense_percent]-[Measures].[m_deferred_interest_expense_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

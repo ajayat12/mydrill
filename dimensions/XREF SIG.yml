@@ -1,0 +1,45 @@
+unique_name: XREF SIG
+object_type: dimension
+label: XREF SIG
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF SIG Hierarchy
+    label: XREF SIG Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF SIG Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF SIG Level
+    label: XREF SIG Level
+    dataset: XREF_SIG.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFSIG_SKUAttribute
+    from:
+      hierarchy: XREF SIG Hierarchy
+      level: XREF SIG Level
+      dataset: XREF_SIG.dataset
+      join_columns:
+        - SIG
+    to:
+      dimension: SKU Attribute
+      level: h_s_sig
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

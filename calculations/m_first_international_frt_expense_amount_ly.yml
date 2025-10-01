@@ -1,0 +1,5 @@
+unique_name: m_first_international_frt_expense_amount_ly
+object_type: metric_calc
+label: First International Frt Expense $ LY
+expression: "[Measures].[m_first_international_frt_expense_amount_dly_ly] + [Measures].[m_first_international_frt_expense_amount_wkly_ly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

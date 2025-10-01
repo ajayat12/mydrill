@@ -1,0 +1,8 @@
+unique_name: m_online_in_stock_item_days
+object_type: metric
+label: Online In Stock Item Days
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_DLY_ONLN_IN_STK_IND_CNT

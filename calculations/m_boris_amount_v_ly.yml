@@ -1,0 +1,6 @@
+unique_name: m_boris_amount_v_ly
+object_type: metric_calc
+label: BORIS $ v LY
+expression: |
+  IIF(ISEMPTY([MEASURES].[m_boris_amount]) OR ISEMPTY([MEASURES].[m_boris_amount_ly]),NULL,([MEASURES].[m_boris_amount] - [MEASURES].[m_boris_amount_ly]))
+format: "$#,##0.00;($#,##0.00);$0.00;;"

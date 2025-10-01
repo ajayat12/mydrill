@@ -1,0 +1,9 @@
+unique_name: LINE_STRUCTURE_ATTRIBUTE.dataset
+object_type: dataset
+label: LINE_STRUCTURE_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: LINE_STRUCTURE
+
+columns:
+  - name: LINE_STRUCTURE
+    data_type: string

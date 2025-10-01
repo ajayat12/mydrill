@@ -1,0 +1,6 @@
+unique_name: m_total_misc_credits_amount_v_ly
+object_type: metric_calc
+label: Total Misc Credits $ v LY
+expression: "IIF(IsEmpty([Measures].[m_total_misc_credits_amount]) OR IsEmpty([Measures].[m_total_misc_credits_amount_ly])\
+  \ , null, ([Measures].[m_total_misc_credits_amount]-[Measures].[m_total_misc_credits_amount_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

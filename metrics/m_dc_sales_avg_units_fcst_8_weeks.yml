@@ -1,0 +1,12 @@
+unique_name: m_dc_sales_avg_units_fcst_8_weeks
+object_type: metric
+label: DC Sales Avg Units Fcst (8 Weeks)
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_R8W_AVG_FCST_SLS_QTY

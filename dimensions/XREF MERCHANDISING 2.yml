@@ -1,0 +1,45 @@
+unique_name: XREF MERCHANDISING 2
+object_type: dimension
+label: XREF MERCHANDISING 2
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF MERCHANDISING 2 Hierarchy
+    label: XREF MERCHANDISING 2 Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF MERCHANDISING 2 Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF MERCHANDISING 2 Level
+    label: XREF MERCHANDISING 2 Level
+    dataset: XREF_MERCHANDISING_2.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFMERCHANDISING2_SKUAttribute
+    from:
+      hierarchy: XREF MERCHANDISING 2 Hierarchy
+      level: XREF MERCHANDISING 2 Level
+      dataset: XREF_MERCHANDISING_2.dataset
+      join_columns:
+        - MERCHANDISING_2
+    to:
+      dimension: SKU Attribute
+      level: h_m2_merchandising_2
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

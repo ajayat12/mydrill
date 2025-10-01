@@ -1,0 +1,8 @@
+unique_name: m_sales_units_ly
+object_type: metric
+label: Sales Units LY
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: LY_UNT_SLS

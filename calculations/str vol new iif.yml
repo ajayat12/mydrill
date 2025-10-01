@@ -1,0 +1,10 @@
+unique_name: str vol new iif
+object_type: metric_calc
+label: str vol new iif
+expression: "IIF([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER=7\n  \
+  \  OR [Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER=7,\n\
+  \    IIF(IsEmpty([Measures].[str vol sc]),\n    IIF(IsEmpty([Measures].[str vol\
+  \ str]),\n    IIF(IsEmpty([Measures].[str vol strc]),\n    IIF(IsEmpty([Measures].[str\
+  \ vol strd]),null,[Measures].[str vol strd]),[Measures].[str vol strc]),[Measures].[str\
+  \ vol str]),[Measures].[str vol sc])    \n    ,null)"
+is_hidden: true

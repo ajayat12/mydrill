@@ -1,0 +1,7 @@
+unique_name: m_retail_gmroi
+object_type: metric_calc
+label: Retail GMROI
+expression: "IIF([Measures].[m_avg_inv_at_cost_amount] +0.00 = 0.00, null, [Measures].[m_ann_retail_gm_amount]/[Measures].[m_avg_inv_at_cost_amount])\
+  \ * 100"
+format: "#,##0.00;(#,##0.00);0.00;;"
+is_hidden: true

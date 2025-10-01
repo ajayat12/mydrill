@@ -1,0 +1,5 @@
+unique_name: m_purchase_discount_percent_ly
+object_type: metric_calc
+label: Purchase Discount % LY
+expression: "IIF([Measures].[m_sales_amount_ly] + 0.00 = 0.00, null, ([Measures].[m_purchase_discount_amount_ly]/[Measures].[m_sales_amount_ly]))"
+format: 0.00%;(0.00%);0.00%;;

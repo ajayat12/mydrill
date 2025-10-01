@@ -1,0 +1,19 @@
+unique_name: m_vendor_discount_percent
+object_type: metric_calc
+label: Vendor Discount %
+expression: "CASE WHEN [Vendor Discount].[Vendor Discount Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ > 0  THEN \n    CASE WHEN [Vendor Discount].[Vendor Discount Hierarchy].CurrentMember.MEMBER_NAME\
+  \ = \"AGGREGATE ORDER DISCOUNT\" OR \n              [Vendor Discount].[Vendor Discount\
+  \ Hierarchy].CurrentMember.MEMBER_NAME = \"FREIGHT UNBUNDLING DISCOUNT\"  OR \n\
+  \              [Vendor Discount].[Vendor Discount Hierarchy].CurrentMember.MEMBER_NAME\
+  \ = \"OFFSHORE DISCOUNT\" OR \n              [Vendor Discount].[Vendor Discount\
+  \ Hierarchy].CurrentMember.MEMBER_NAME = \"MISCELLANEOUS DISCOUNT\" OR \n      \
+  \        [Vendor Discount].[Vendor Discount Hierarchy].CurrentMember.MEMBER_NAME\
+  \ = \"TRANSIT FACILITY DISCOUNT\" OR \n              [Vendor Discount].[Vendor Discount\
+  \ Hierarchy].CurrentMember.MEMBER_NAME = \"SUPPLY CHAIN DISCOUNT\"\n        THEN\
+  \ \n            CASE WHEN [Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ = 6 THEN [Measures].[m_disc_pct_mkt_disc]\n                 WHEN [DC Location].[DC\
+  \ Hierarchy].CurrentMember.LEVEL_NUMBER = 5 THEN [Measures].[m_disc_pct_dc_disc]\n\
+  \            ELSE [Measures].[m_disc_pct_mkt_dc]\n            END\n    ELSE [Measures].[m_disc_pct_disc]\n\
+  \    END\nELSE null\nEND"
+format: 0.00%;(0.00%);0.00%;;

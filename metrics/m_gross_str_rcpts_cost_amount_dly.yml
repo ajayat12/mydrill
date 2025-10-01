@@ -1,0 +1,9 @@
+unique_name: m_gross_str_rcpts_cost_amount_dly
+object_type: metric
+label: Gross Str Rcpts Cost $ Dly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: SKU_LOC_MVRCT_D.dataset
+column: TY_GROSS_COST_AMT

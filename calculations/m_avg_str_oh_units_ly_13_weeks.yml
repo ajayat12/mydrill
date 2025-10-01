@@ -1,0 +1,5 @@
+unique_name: m_avg_str_oh_units_ly_13_weeks
+object_type: metric_calc
+label: Avg Str OH Units LY (13 Weeks)
+expression: "[MEASURES].[m_str_oh_units_ly_13_weeks]/13"
+format: "#,##0;(#,##0);#,##0;;"

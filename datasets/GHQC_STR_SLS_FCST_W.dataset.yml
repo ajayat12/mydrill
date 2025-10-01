@@ -1,0 +1,31 @@
+unique_name: GHQC_STR_SLS_FCST_W.dataset
+object_type: dataset
+label: GHQC_STR_SLS_FCST_W
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: GHQC_STR_SLS_FCST_W
+
+columns:
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: GEO_HQ_NBR
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_FCST_SLS_AMT
+    data_type: double
+  - name: LY_FCST_SLS_COMP_AMT
+    data_type: double
+  - name: MER_CLASS_NBR
+    data_type: long
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: SECURITY_ID
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_FCST_SLS_AMT
+    data_type: double
+  - name: TY_FCST_SLS_COMP_AMT
+    data_type: double

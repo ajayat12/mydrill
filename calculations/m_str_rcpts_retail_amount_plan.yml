@@ -1,0 +1,5 @@
+unique_name: m_str_rcpts_retail_amount_plan
+object_type: metric_calc
+label: Str Rcpts Retail $ Plan
+expression: "[Measures].[m_str_rcpts_retail_amount_plan_SW]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

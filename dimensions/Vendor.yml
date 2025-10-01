@@ -1,0 +1,147 @@
+unique_name: Vendor
+object_type: dimension
+label: Vendor
+type: standard
+
+hierarchies:
+
+  - unique_name: Payment Vendor Hierarchy
+    label: Payment Vendor Hierarchy
+
+    levels:
+
+      - unique_name: h_pvh_payment_vendor
+
+        aliases:
+
+          - unique_name: d_pvh_payment_vendor_name
+            label: Payment Vendor Name
+            folder: More Fields
+            dataset: DIM_VENDOR.dataset
+            name_column: PVNDR_NM
+            sort_column: PVNDR_NM
+
+          - unique_name: d_pvh_payment_vendor_nbr
+            label: Payment Vendor Nbr
+            folder: More Fields
+            dataset: DIM_VENDOR.dataset
+            name_column: PVNDR_NBR
+            sort_column: PVNDR_NBR
+
+          - unique_name: d_pvh_payment_vendor
+            label: Payment Vendor
+            folder: More Fields
+            dataset: DIM_VENDOR.dataset
+            name_column: PVNDR_NM_NBR
+            sort_column: PVNDR_NBR
+
+      - unique_name: h_mvbdh_merch_vendor
+
+        secondary_attributes:
+
+          - unique_name: d_mvbdh_import_type
+            label: Import Type
+            folder: More Fields
+            associated_hierarchy: Merch Vendor by Dept Hierarchy
+            dataset: DIM_VENDOR.dataset
+            key_columns:
+              - IMP_FLG
+            name_column: IMP_FLG_DESC
+            sort_column: IMP_FLG_DESC
+
+          - unique_name: d_mvbdh_new_store_pay_terms
+            label: New Store Pay Terms
+            is_hidden: true
+            associated_hierarchy: Merch Vendor by Dept Hierarchy
+            dataset: DIM_VENDOR.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: NEW_STR_PAY_TRM_TYP_DESC
+            sort_column: NEW_STR_PAY_TRM_TYP_DESC
+
+          - unique_name: d_mvbdh_pay_terms
+            label: Pay Terms
+            folder: More Fields
+            associated_hierarchy: Merch Vendor by Dept Hierarchy
+            dataset: DIM_VENDOR.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: PAY_TRM_TYP_DESC
+            sort_column: PAY_TRM_TYP_DESC
+
+        aliases:
+
+          - unique_name: d_mvbdh_merch_vendor_name
+            label: Merch Vendor Name
+            folder: More Fields
+            associated_hierarchy: Merch Vendor by Dept Hierarchy
+            dataset: DIM_VENDOR.dataset
+            name_column: MVNDR_NM
+            sort_column: MVNDR_NM
+
+          - unique_name: d_mvbdh_merch_vendor_nbr
+            label: Merch Vendor Nbr
+            folder: More Fields
+            associated_hierarchy: Merch Vendor by Dept Hierarchy
+            dataset: DIM_VENDOR.dataset
+            name_column: MVNDR_NBR
+            sort_column: MVNDR_NBR
+
+          - unique_name: d_mvbdh_merch_vendor
+            label: 'Merch Vendor '
+            folder: More Fields
+            associated_hierarchy: Merch Vendor by Dept Hierarchy
+            dataset: DIM_VENDOR.dataset
+            name_column: MVNDR_NM_NBR
+            sort_column: MVNDR_NBR
+
+  - unique_name: Merch Vendor by Dept Hierarchy
+    label: Merch Vendor by Dept Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_mvbdh_dept
+
+        aliases:
+
+          - unique_name: d_mvbdh_dept
+            label: 'Dept '
+            folder: More Fields
+            dataset: DIM_VENDOR.dataset
+            name_column: DEPT_NM
+            sort_column: DEPT_NM
+
+      - unique_name: h_mvbdh_merch_vendor
+
+level_attributes:
+
+  - unique_name: h_mvbdh_dept
+    label: Dept
+    dataset: DIM_VENDOR.dataset
+    key_columns:
+      - DEPT_NBR
+    name_column: DEPT_NM
+    sort_column: DEPT_NM
+
+  - unique_name: h_mvbdh_merch_vendor
+    label: Merch Vendor
+    is_unique_key: true
+    dataset: DIM_VENDOR.dataset
+    key_columns:
+      - MVNDR_NBR
+      - DEPT_NBR
+    name_column: MVNDR_NM_NBR
+    sort_column: MVNDR_NBR
+
+  - unique_name: h_pvh_payment_vendor
+    label: 'Payment Vendor '
+    dataset: DIM_VENDOR.dataset
+    key_columns:
+      - PVNDR_NBR
+    name_column: PVNDR_NM_NBR
+    sort_column: PVNDR_NBR
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,6 @@
+unique_name: m_ann_gm_amount_plan
+object_type: metric_calc
+label: Ann GM $ Plan
+expression: "([Measures].[m_gm_amount_plan] * [Measures].[m_ty_yr_wk_cnt])/[Measures].[m_ty_prd_wk_cnt]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

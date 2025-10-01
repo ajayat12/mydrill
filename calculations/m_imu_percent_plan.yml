@@ -1,0 +1,6 @@
+unique_name: m_imu_percent_plan
+object_type: metric_calc
+label: IMU % Plan
+expression: "IIF([Measures].[m_str_rcpts_retail_amount_plan]+0.00 = 0.00, null, (1\
+  \ - ([Measures].[m_str_rcpts_cost_amount_plan]/[Measures].[m_str_rcpts_retail_amount_plan])))"
+format: 0.00%;(0.00%);0.00%;;

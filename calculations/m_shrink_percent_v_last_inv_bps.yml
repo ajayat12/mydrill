@@ -1,0 +1,5 @@
+unique_name: m_shrink_percent_v_last_inv_bps
+object_type: metric_calc
+label: Shrink % v Last Inv (BPS) (PI)
+expression: "([MEASURES].[m_shrink_percent_pi]-[MEASURES].[m_shrink_percent_lly_pi])*10000"
+format: "#,##0;(#,##0);#,##0;;"

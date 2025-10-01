@@ -1,0 +1,6 @@
+unique_name: m_turns_fcst
+object_type: metric_calc
+label: Turns Fcst
+expression: "IIF([Measures].[m_ty_avg_inventory_cost_amount_fcst_sum]+0.00=0.00 or\
+  \ [Measures].[m_ty_ann_cogs_amount_fcst]+0.00=0.00,null,([Measures].[m_ty_ann_cogs_amount_fcst]/[Measures].[m_ty_avg_inventory_cost_amount_fcst_sum]))"
+format: "#,##0.00;(#,##0.00);0.00;;"

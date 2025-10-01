@@ -1,0 +1,9 @@
+unique_name: m_cust_comp_trans_2_year_h
+object_type: metric
+label: Cust Comp Trans (2 Year)_h
+calculation_method: count distinct
+format: "#,##0;(#,##0);;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: TY_COMP_SLS_2YR_TXN_KEY

@@ -1,0 +1,42 @@
+unique_name: Unit of Measure
+object_type: dimension
+label: Unit of Measure
+type: standard
+
+hierarchies:
+
+  - unique_name: Unit of Measure Hierarchy
+    label: Unit of Measure Hierarchy
+
+    levels:
+
+      - unique_name: h_uomh_unit_of_measure_level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_uomh_uom_desc
+            label: UOM Desc
+            dataset: DIM_UOM.dataset
+            key_columns:
+              - UOM_DESC
+            name_column: UOM_DESC
+            sort_column: UOM_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_uomh_unit_of_measure_level
+    label: Unit of Measure Level
+    is_unique_key: true
+    dataset: DIM_UOM.dataset
+    key_columns:
+      - UOM_CD
+    name_column: UOM_DESC
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

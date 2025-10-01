@@ -1,0 +1,57 @@
+unique_name: ICE_AGING_FACT.dataset
+object_type: dataset
+label: ICE_AGING_FACT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: ICE_AGING_FACT
+
+columns:
+  - name: AVG_LAST_RETAIL_CHNG_DATE
+    data_type: date
+  - name: Clr_Bucket
+    data_type: long
+  - name: Clr_DaysOld
+    data_type: long
+  - name: curr_retl_amt
+    data_type: double
+  - name: DaysOld
+    data_type: long
+  - name: dept_nbr
+    data_type: long
+  - name: EXT_OH_RETL_AMT_DAYS
+    data_type: double
+  - name: fscl_wk_end_dt
+    data_type: date
+  - name: High_Retl_52
+    data_type: double
+  - name: high_retl_amt
+    data_type: double
+  - name: last_upd_ts
+    data_type: datetime
+  - name: mvndr_nbr
+    data_type: long
+  - name: oh_qty
+    data_type: double
+  - name: Online_chnl
+    data_type: long
+  - name: pro_chnl
+    data_type: long
+  - name: Query_Ref_Date
+    data_type: date
+  - name: R8W_NET_SLS_QTY
+    data_type: double
+  - name: R8W_TY_SLS
+    data_type: double
+  - name: SKU_Count
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: Store_chnl
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: STR_OH_RETL_AMT
+    data_type: double
+  - name: TRNSFM_DT
+    data_type: date

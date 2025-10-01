@@ -1,0 +1,8 @@
+unique_name: m_shipping_revenue_amount_ly
+object_type: metric
+label: Shipping Revenue $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: LY_SHIP_AMT

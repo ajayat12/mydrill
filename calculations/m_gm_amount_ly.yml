@@ -1,0 +1,12 @@
+unique_name: m_gm_amount_ly
+object_type: metric_calc
+label: GM $ LY
+expression: "CASE \n  WHEN [Time Transformations].[d_tth_time_calculations].CurrentMember.MEMBER_NAME\
+  \ ='QTLM' OR\n       [Time Transformations].[d_tth_time_calculations].CurrentMember.MEMBER_NAME\
+  \ ='HTLM' OR\n       [Time Transformations].[d_tth_time_calculations].CurrentMember.MEMBER_NAME\
+  \ ='YTLM' OR\n       [Time Transformations].[d_tth_time_calculations].CurrentMember.MEMBER_NAME\
+  \ ='R3' OR\n       [Time Transformations].[d_tth_time_calculations].CurrentMember.MEMBER_NAME\
+  \ ='R6' OR\n       [Time Transformations].[d_tth_time_calculations].CurrentMember.MEMBER_NAME\
+  \ ='R12'\n  THEN [Measures].[m_gm_calc_ly]  ELSE [Measures].[m_gm_amount_ly_base]\n\
+  END"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

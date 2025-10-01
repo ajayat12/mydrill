@@ -1,0 +1,497 @@
+unique_name: Product
+object_type: dimension
+label: Product
+type: standard
+
+hierarchies:
+
+  - unique_name: Product Hierarchy
+    label: Finance Product Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_fph_all_thd
+
+        aliases:
+
+          - unique_name: d_fph_all_thd
+            label: All THD
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: ALL_THD
+            sort_column: ALL_THD
+
+      - unique_name: h_fph_core_dept_ind
+
+      - unique_name: h_fph_dept
+
+        aliases:
+
+          - unique_name: d_fph_dept_name
+            label: Dept Name
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: DEPT_NM
+            sort_column: DEPT_NM
+
+          - unique_name: d_mxph_dept_nbr
+            label: Dept Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: DEPT_NBR
+            sort_column: DEPT_NBR
+
+          - unique_name: d_mxph_dept
+            label: Dept
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: DEPT
+            sort_column: DEPT_NBR
+
+      - unique_name: h_fph_class
+
+        aliases:
+
+          - unique_name: d_fph_class_name
+            label: Class Name
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: CLASS_NAME
+            sort_column: CLASS_NAME
+
+          - unique_name: d_mxph_class
+            label: Class
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: CLASS
+            sort_column: CLASS
+
+          - unique_name: d_mxph_class_nbr
+            label: Class Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: CLASS_NBR
+            sort_column: CLASS_NBR
+
+      - unique_name: h_fph_subclass
+
+        aliases:
+
+          - unique_name: d_fph_subclass_name
+            label: SubClass Name
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SUBCLASS_NAME
+            sort_column: SUBCLASS_NAME
+
+          - unique_name: d_mxph_subclass_nbr
+            label: SubClass Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SUB_CLASS_NBR
+            sort_column: SUB_CLASS_NBR
+
+          - unique_name: d_mxph_subclass
+            label: SubClass
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SUBCLASS
+            sort_column: SUBCLASS
+
+      - unique_name: h_fph_sku
+
+        secondary_attributes:
+
+          - unique_name: d_sch_rel_sku_indicator
+            label: Rel SKU Indicator
+            dataset: Product.dataset
+            key_columns:
+              - REL_FLG
+            name_column: REL_FLG
+            sort_column: REL_FLG
+
+          - unique_name: d_sch_rel_sku
+            label: Rel SKU
+            dataset: Product.dataset
+            key_columns:
+              - REL_SKU_NBR
+            name_column: REL_SKU
+            sort_column: REL_SKU_NBR
+
+          - unique_name: d_sch_sku_create_date
+            label: SKU Create Date
+            is_hidden: true
+            dataset: Product.dataset
+            key_columns:
+              - SKU_CRT_DT
+            name_column: SKU_CRT_DT
+            sort_column: SKU_CRT_DT
+
+          - unique_name: d_sch_sku_type
+            label: SKU Type
+            dataset: Product.dataset
+            key_columns:
+              - SKU_TYP_DESC
+            name_column: SKU_TYP_DESC
+            sort_column: SKU_TYP_DESC
+
+          - unique_name: d_sch_top_sku_decile
+            label: Top SKU Decile
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - DECILE_RANK_GROUP
+            name_column: DECILE_RANK_GROUP_NM
+            sort_column: DECILE_RANK_GROUP
+
+          - unique_name: d_sch_top_sku_rank
+            label: Top SKU Rank
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - SKU_RNK
+            name_column: SKU_RNK_NM
+            sort_column: SKU_RNK
+
+        aliases:
+
+          - unique_name: d_fph_sku_name
+            label: SKU Name
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SKU_DESC
+            sort_column: SKU_DESC
+
+          - unique_name: d_fph_sku_nbr
+            label: SKU Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SKU_NBR
+            sort_column: SKU_NBR
+
+          - unique_name: d_mxph_sku
+            label: SKU
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SKU
+            sort_column: SKU_NBR
+
+      - unique_name: h_mxph_upc
+
+        secondary_attributes:
+
+          - unique_name: d_mxph_upc
+            label: UPC
+            folder: More Fields
+            associated_hierarchy: Product Hierarchy
+            dataset: Product.dataset
+            key_columns:
+              - UPC_CD
+            name_column: UPC_CD
+            sort_column: UPC_CD
+
+          - unique_name: d_mxph_upc_name
+            label: UPC Name
+            is_hidden: true
+            associated_hierarchy: Product Hierarchy
+            dataset: Product.dataset
+            key_columns:
+              - UPC_CD
+            name_column: UPC_DESC
+            sort_column: UPC_DESC
+
+  - unique_name: Merchandising Product Hierarchy
+    label: Merchandising Product Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_mph_all_thd
+
+      - unique_name: h_mph_svp
+
+        aliases:
+
+          - unique_name: d_mph_svp
+            label: SVP
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: SVP
+            sort_column: SVP
+
+      - unique_name: h_mph_merch_dept
+
+        aliases:
+
+          - unique_name: d_mxph_merch_dept
+            label: Merch Dept
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: MER_DEPT_DESC
+            sort_column: MER_DEPT_DESC
+
+          - unique_name: d_mxph_merch_dept_name
+            label: Merch Dept Name
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: S_MER_DEPT_DESC
+
+          - unique_name: d_mxph_merch_dept_nbr
+            label: Merch Dept Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            name_column: MER_DEPT_NBR
+
+      - unique_name: h_mph_class
+
+      - unique_name: h_mph_sub_class
+
+      - unique_name: h_mph_sku
+
+      - unique_name: h_mxph_upc
+
+  - unique_name: Merchandising xtended Product Hierarchy
+    label: Merchandising xtended Product Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_mxph_all_thd
+
+      - unique_name: h_mxph_svp
+
+      - unique_name: h_mxph_merch_dept
+
+      - unique_name: h_mxph_class
+
+      - unique_name: h_mxph_category
+
+        secondary_attributes:
+
+          - unique_name: d_mxph_category_name
+            label: Category Name
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - CTG_NBR
+            name_column: CTG_DESC
+            sort_column: CTG_DESC
+
+          - unique_name: d_mxph_category_nbr
+            label: Category Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - CTG_NBR
+            name_column: CTG_NBR
+            sort_column: CTG_NBR
+
+          - unique_name: d_mxph_category
+            label: Category
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - CTG_NBR
+            name_column: CATEGORY
+            sort_column: CATEGORY
+
+      - unique_name: h_mxph_subclass
+
+      - unique_name: h_mxph_subsubclass
+
+        secondary_attributes:
+
+          - unique_name: d_mxph_subsubclass_name
+            label: Sub-SubClass Name
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - SUB_SC_NBR
+            name_column: SUB_SC_DESC
+            sort_column: SUB_SC_DESC
+
+          - unique_name: d_mxph_subsubclass_nbr
+            label: Sub-SubClass Nbr
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - SUB_SC_NBR
+            name_column: SUB_SC_NBR
+            sort_column: SUB_SC_NBR
+
+          - unique_name: d_mxph_subsubclass
+            label: Sub-SubClass
+            folder: More Fields
+            dataset: Product.dataset
+            key_columns:
+              - SUB_SC_NBR
+            name_column: SUB_SUBCLASS
+            sort_column: SUB_SUBCLASS
+
+      - unique_name: h_mxph_sku
+
+      - unique_name: h_mxph_upc
+
+level_attributes:
+
+  - unique_name: h_fph_all_thd
+    label: All THD
+    dataset: Product.dataset
+    key_columns:
+      - ALL_THD
+    name_column: ALL_THD
+
+  - unique_name: h_fph_class
+    label: Class
+    dataset: Product.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS
+
+  - unique_name: h_fph_core_dept_ind
+    label: Core Dept Ind
+    dataset: Product.dataset
+    key_columns:
+      - CORE_DEPT_IND
+    name_column: CORE_DEPT_IND
+
+  - unique_name: h_fph_dept
+    label: Dept
+    dataset: Product.dataset
+    key_columns:
+      - DEPT_NBR
+    name_column: DEPT
+
+  - unique_name: h_fph_sku
+    label: SKU
+    dataset: Product.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU
+    sort_column: SKU_NBR
+
+  - unique_name: h_fph_subclass
+    label: SubClass
+    dataset: Product.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SUBCLASS
+
+  - unique_name: h_mph_all_thd
+    label: All THD
+    dataset: Product.dataset
+    key_columns:
+      - ALL_THD
+    name_column: ALL_THD
+
+  - unique_name: h_mph_class
+    label: Class
+    dataset: Product.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS
+
+  - unique_name: h_mph_merch_dept
+    label: Merch Dept
+    dataset: Product.dataset
+    key_columns:
+      - MER_DEPT_NBR
+    name_column: MER_DEPT_DESC
+
+  - unique_name: h_mph_sku
+    label: SKU
+    dataset: Product.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU
+    sort_column: SKU_NBR
+
+  - unique_name: h_mph_sub_class
+    label: SubClass
+    dataset: Product.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SUBCLASS
+
+  - unique_name: h_mph_svp
+    label: SVP
+    dataset: Product.dataset
+    key_columns:
+      - SVP
+    name_column: SVP
+
+  - unique_name: h_mxph_all_thd
+    label: All THD
+    dataset: Product.dataset
+    key_columns:
+      - ALL_THD
+    name_column: ALL_THD
+
+  - unique_name: h_mxph_category
+    label: Category
+    dataset: Product.dataset
+    key_columns:
+      - CTG_NBR
+    name_column: CATEGORY
+
+  - unique_name: h_mxph_class
+    label: Class
+    dataset: Product.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS
+
+  - unique_name: h_mxph_merch_dept
+    label: Merch Dept
+    dataset: Product.dataset
+    key_columns:
+      - MER_DEPT_NBR
+    name_column: MER_DEPT_DESC
+    sort_column: MER_DEPT_NBR
+
+  - unique_name: h_mxph_sku
+    label: SKU
+    dataset: Product.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU
+    sort_column: SKU_NBR
+
+  - unique_name: h_mxph_subclass
+    label: SubClass
+    dataset: Product.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SUBCLASS
+
+  - unique_name: h_mxph_subsubclass
+    label: Sub-SubClass
+    dataset: Product.dataset
+    key_columns:
+      - SUB_SC_NBR
+    name_column: SUB_SUBCLASS
+
+  - unique_name: h_mxph_svp
+    label: SVP
+    dataset: Product.dataset
+    key_columns:
+      - SVP
+    name_column: SVP
+
+  - unique_name: h_mxph_upc
+    label: UPC
+    is_unique_key: true
+    dataset: Product.dataset
+    key_columns:
+      - UPC_CD
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: UPC_CD
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

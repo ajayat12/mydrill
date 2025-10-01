@@ -1,0 +1,6 @@
+unique_name: m_shipping_revenue_amount_plan_dly
+object_type: metric_calc
+label: Shipping Revenue $ Plan Dly
+expression: "[MEASURES].[m_shipping_revenue_amount_plan_sd]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

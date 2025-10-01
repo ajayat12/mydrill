@@ -1,0 +1,6 @@
+unique_name: m_ty_avg_inventory_cost_amount_fcst
+object_type: metric_calc
+label: TY Avg Inventory Cost $ Fcst
+expression: "([Measures].[m_fcst_ty_dc_bi_cost_amt] +[Measures].[m_fcst_ty_dc_ei_cost_amt]+[Measures].[m_fcst_ty_str_bi_cost_amt]+[Measures].[m_fcst_ty_str_ei_cost_amt])/([Measures].[m_ty_prd_cnt]+1)"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

@@ -1,0 +1,199 @@
+unique_name: Time
+object_type: dimension
+label: Time
+type: standard
+
+hierarchies:
+
+  - unique_name: Time Hierarchy
+    label: Time Hierarchy
+
+    levels:
+
+      - unique_name: h_th_year
+
+        aliases:
+
+          - unique_name: d_th_year
+            label: Year
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_YR
+            sort_column: FSCL_YR
+
+      - unique_name: h_th_half
+
+        aliases:
+
+          - unique_name: d_th_half
+            label: 'Half '
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_HY_DESC
+            sort_column: FSCL_HY_END_DT
+
+          - unique_name: d_th_half_nbr
+            label: Half Nbr
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_HY_NBR_DESC
+            sort_column: FSCL_HY_END_DT
+
+      - unique_name: h_th_quarter
+
+        aliases:
+
+          - unique_name: d_th_quarter_nbr
+            label: Quarter Nbr
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_QTR_NBR_DESC
+            sort_column: FSCL_QTR_END_DT
+
+          - unique_name: d_th_quarter
+            label: Quarter
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_QTR_DESC
+            sort_column: FSCL_QTR_END_DT
+
+      - unique_name: h_th_month
+
+        secondary_attributes:
+
+          - unique_name: d_th_month_name
+            label: Month Name
+            folder: More Fields
+            dataset: TIME.dataset
+            key_columns:
+              - FSCL_MTH_NM
+            name_column: FSCL_MTH_NM
+            sort_column: FSCL_MTH_NM
+
+        aliases:
+
+          - unique_name: d_th_month
+            label: Month
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_PRD_DESC
+            sort_column: FSCL_PRD_END_DT
+
+      - unique_name: h_th_week
+
+        secondary_attributes:
+
+          - unique_name: d_th_week_nbr
+            label: Week Nbr
+            folder: More Fields
+            dataset: TIME.dataset
+            key_columns:
+              - FSCL_WK_NBR
+            name_column: FSCL_WK_NBR_DESC
+            sort_column: FSCL_WK_NBR_DESC
+
+          - unique_name: d_week_sorting
+            label: Week Sorting
+            is_hidden: true
+            dataset: TIME.dataset
+            key_columns:
+              - WEEK_SORTING
+            name_column: WEEK_SORTING
+            sort_column: WEEK_SORTING
+
+        aliases:
+
+          - unique_name: d_th_week
+            label: Week
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: FSCL_WK_DESC
+            sort_column: WEEK_SORTING
+
+      - unique_name: h_th_day
+
+        secondary_attributes:
+
+          - unique_name: d_th_day_name
+            label: Day Name
+            folder: More Fields
+            dataset: TIME.dataset
+            key_columns:
+              - DAY_OF_WK_NBR
+            name_column: FSCL_WK_DAY_DESC
+            sort_column: DAY_OF_WK_NBR
+
+        aliases:
+
+          - unique_name: d_th_day
+            label: Day
+            format: M/d/yyyy
+            folder: More Fields
+            dataset: TIME.dataset
+            name_column: CAL_DT
+            sort_column: CAL_DT
+
+      - unique_name: h_th_day_hide
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: h_th_day
+    label: Day
+    format: M/d/yyyy
+    is_unique_key: true
+    dataset: TIME.dataset
+    key_columns:
+      - CAL_DT
+    name_column: CAL_DT
+
+  - unique_name: h_th_day_hide
+    label: Day_hide
+    is_unique_key: true
+    dataset: TIME.dataset
+    key_columns:
+      - CAL_DT
+    name_column: CAL_DT
+
+  - unique_name: h_th_half
+    label: Half
+    dataset: TIME.dataset
+    key_columns:
+      - FSCL_HY_END_DT
+    name_column: FSCL_HY_DESC
+    sort_column: FSCL_HY_END_DT
+
+  - unique_name: h_th_month
+    label: Month
+    dataset: TIME.dataset
+    key_columns:
+      - FSCL_PRD_END_DT
+    name_column: FSCL_PRD_DESC
+    sort_column: FSCL_PRD_END_DT
+
+  - unique_name: h_th_quarter
+    label: Quarter
+    dataset: TIME.dataset
+    key_columns:
+      - FSCL_QTR_END_DT
+    name_column: FSCL_QTR_DESC
+    sort_column: FSCL_QTR_END_DT
+
+  - unique_name: h_th_week
+    label: Week
+    dataset: TIME.dataset
+    key_columns:
+      - FSCL_WK_END_DT
+    name_column: FSCL_WK_DESC
+    sort_column: FSCL_WK_END_DT
+
+  - unique_name: h_th_year
+    label: Year
+    dataset: TIME.dataset
+    key_columns:
+      - FSCL_YR
+    name_column: FSCL_YR
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

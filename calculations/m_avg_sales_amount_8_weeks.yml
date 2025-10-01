@@ -1,0 +1,6 @@
+unique_name: m_avg_sales_amount_8_weeks
+object_type: metric_calc
+label: Avg Sales $ (8 weeks)
+expression: "[MEASURES].[m_sales_amount_8_weeks]/8"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

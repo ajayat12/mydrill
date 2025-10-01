@@ -1,0 +1,8 @@
+unique_name: m_deferred_interest_amount_ly
+object_type: metric
+label: Deferred Interest $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: COST_STATS.dataset
+column: LY_DFIN_AMT

@@ -1,0 +1,10 @@
+unique_name: m_avg_inv_cost_amount_plan
+object_type: metric_calc
+label: Avg Inv Cost $ Plan
+expression: "CASE WHEN [Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER\
+  \ =0 then ([Measures].[m_beg_str_inv_cost_amount_plan] + [Measures].[m_end_str_inv_cost_amount_plan_sum])/([Measures].[m_ty_prd_cnt]+1)\
+  \  ELSE ([Measures].[m_beg_dc_inv_cost_amount_plan] + [Measures].[m_end_dc_inv_cost_amount_plan_sum]\
+  \ + [Measures].[m_beg_str_inv_cost_amount_plan] + [Measures].[m_end_str_inv_cost_amount_plan_sum])/([Measures].[m_ty_prd_cnt]+1)\
+  \ END"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

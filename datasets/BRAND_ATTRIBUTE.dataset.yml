@@ -1,0 +1,9 @@
+unique_name: BRAND_ATTRIBUTE.dataset
+object_type: dataset
+label: BRAND_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: BRAND
+
+columns:
+  - name: BRAND
+    data_type: string

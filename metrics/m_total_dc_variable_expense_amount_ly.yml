@@ -1,0 +1,8 @@
+unique_name: m_total_dc_variable_expense_amount_ly
+object_type: metric
+label: Total DC Variable Expense $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_VRBL_DC_EXP_AMT_LY

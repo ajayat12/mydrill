@@ -1,0 +1,8 @@
+unique_name: m_sales_potential_units_ly
+object_type: metric
+label: Sales Potential Units LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_POTNTL_SLS_QTY

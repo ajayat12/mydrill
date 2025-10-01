@@ -1,0 +1,5 @@
+unique_name: m_home_depot_direct_delivery_expense_amount
+object_type: metric_calc
+label: Home Depot Direct Delivery Expense $
+expression: "IIF([Measures].[m_total_sales_qty]+0.00 = 0.00, null,[Measures].[m_total_home_depot_direct_delivery_expense_amount]/[Measures].[m_total_sales_qty])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

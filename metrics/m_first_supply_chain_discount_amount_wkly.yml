@@ -1,0 +1,9 @@
+unique_name: m_first_supply_chain_discount_amount_wkly
+object_type: metric
+label: First Supply Chain Discount $ wkly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_LOC_MVRCT_W.dataset
+column: TY_SC_DISCOUNT

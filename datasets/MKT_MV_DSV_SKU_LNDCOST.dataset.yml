@@ -1,0 +1,381 @@
+unique_name: MKT_MV_DSV_SKU_LNDCOST.dataset
+object_type: dataset
+label: MKT_MV_DSV_SKU_LNDCOST
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: MKT_MV_DSV_SKU_LNDCOST
+
+columns:
+  - name: ALL_COST_KEY
+    data_type: long
+  - name: DEPT_NBR
+    data_type: long
+  - name: DSVC_TYP_CD
+    data_type: long
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_AD_RETL_AMT
+    data_type: double
+  - name: LY_AD_RETL_AMT_MV
+    data_type: double
+  - name: LY_AD_RETL_AMT_SKU
+    data_type: double
+  - name: LY_AGG_SUB_DISC_AMT
+    data_type: double
+  - name: LY_AGG_SUB_DISC_AMT_MV
+    data_type: double
+  - name: LY_AGG_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: LY_CERT_TRD_DISC_AMT
+    data_type: double
+  - name: LY_CERT_TRD_DISC_AMT_MV
+    data_type: double
+  - name: LY_CERT_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: LY_COOP_AMT
+    data_type: double
+  - name: LY_COOP_AMT_MV
+    data_type: double
+  - name: LY_COOP_AMT_SKU
+    data_type: double
+  - name: LY_DC_EXP_AMT
+    data_type: double
+  - name: LY_DC_EXP_AMT_MV
+    data_type: double
+  - name: LY_DC_EXP_AMT_SKU
+    data_type: double
+  - name: LY_DCSH_EXP_AMT
+    data_type: double
+  - name: LY_DCSH_EXP_AMT_MV
+    data_type: double
+  - name: LY_DCSH_EXP_AMT_SKU
+    data_type: double
+  - name: LY_DF_ALLOW_DISC_AMT
+    data_type: double
+  - name: LY_DF_ALLOW_DISC_AMT_MV
+    data_type: double
+  - name: LY_DF_ALLOW_DISC_AMT_SKU
+    data_type: double
+  - name: LY_DUTY_EXP_AMT
+    data_type: double
+  - name: LY_DUTY_EXP_AMT_MV
+    data_type: double
+  - name: LY_DUTY_EXP_AMT_SKU
+    data_type: double
+  - name: LY_FOB_COST
+    data_type: double
+  - name: LY_FOB_COST_MV
+    data_type: double
+  - name: LY_FOB_COST_SKU
+    data_type: double
+  - name: LY_FRT_EXP_AMT
+    data_type: double
+  - name: LY_FRT_EXP_AMT_MV
+    data_type: double
+  - name: LY_FRT_EXP_AMT_SKU
+    data_type: double
+  - name: LY_FRT_SUB_DISC_AMT
+    data_type: double
+  - name: LY_FRT_SUB_DISC_AMT_MV
+    data_type: double
+  - name: LY_FRT_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: LY_FRT_TRD_DISC_AMT
+    data_type: double
+  - name: LY_FRT_TRD_DISC_AMT_MV
+    data_type: double
+  - name: LY_FRT_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: LY_FRTI_EXP_AMT
+    data_type: double
+  - name: LY_FRTI_EXP_AMT_MV
+    data_type: double
+  - name: LY_FRTI_EXP_AMT_SKU
+    data_type: double
+  - name: LY_IBX_DISC_AMT
+    data_type: double
+  - name: LY_IBX_DISC_AMT_MV
+    data_type: double
+  - name: LY_IBX_DISC_AMT_SKU
+    data_type: double
+  - name: LY_IMGA_EXP_AMT
+    data_type: double
+  - name: LY_IMGA_EXP_AMT_MV
+    data_type: double
+  - name: LY_IMGA_EXP_AMT_SKU
+    data_type: double
+  - name: LY_ISS_TRD_DISC_AMT
+    data_type: double
+  - name: LY_ISS_TRD_DISC_AMT_MV
+    data_type: double
+  - name: LY_ISS_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: LY_ISSI_EXP_AMT
+    data_type: double
+  - name: LY_ISSI_EXP_AMT_MV
+    data_type: double
+  - name: LY_ISSI_EXP_AMT_SKU
+    data_type: double
+  - name: LY_LANDED_COST_AMT
+    data_type: double
+  - name: LY_LANDED_COST_AMT_MV
+    data_type: double
+  - name: LY_LANDED_COST_AMT_SKU
+    data_type: double
+  - name: LY_MISC_TRD_DISC_AMT
+    data_type: double
+  - name: LY_MISC_TRD_DISC_AMT_MV
+    data_type: double
+  - name: LY_MISC_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: LY_MTD_SUB_DISC_AMT
+    data_type: double
+  - name: LY_MTD_SUB_DISC_AMT_MV
+    data_type: double
+  - name: LY_MTD_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: LY_NET_COST_AMT
+    data_type: double
+  - name: LY_NET_COST_AMT_MV
+    data_type: double
+  - name: LY_NET_COST_AMT_SKU
+    data_type: double
+  - name: LY_NET_NET_COST_AMT
+    data_type: double
+  - name: LY_NET_NET_COST_AMT_MV
+    data_type: double
+  - name: LY_NET_NET_COST_AMT_SKU
+    data_type: double
+  - name: LY_OFFSH_SUB_DISC_AMT
+    data_type: double
+  - name: LY_OFFSH_SUB_DISC_AMT_MV
+    data_type: double
+  - name: LY_OFFSH_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: LY_PURCH_DISC_AMT
+    data_type: double
+  - name: LY_PURCH_DISC_AMT_MV
+    data_type: double
+  - name: LY_PURCH_DISC_AMT_SKU
+    data_type: double
+  - name: LY_REBT_AMT
+    data_type: double
+  - name: LY_REBT_AMT_MV
+    data_type: double
+  - name: LY_REBT_AMT_SKU
+    data_type: double
+  - name: LY_RETL_AMT
+    data_type: double
+  - name: LY_RETL_AMT_MV
+    data_type: double
+  - name: LY_RETL_AMT_SKU
+    data_type: double
+  - name: LY_SCD_SUB_DISC_AMT
+    data_type: double
+  - name: LY_SCD_SUB_DISC_AMT_MV
+    data_type: double
+  - name: LY_SCD_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: LY_SPLTY_TRM_DISC_AMT
+    data_type: double
+  - name: LY_SPLTY_TRM_DISC_AMT_MV
+    data_type: double
+  - name: LY_SPLTY_TRM_DISC_AMT_SKU
+    data_type: double
+  - name: LY_TF_SUB_DISC_AMT
+    data_type: double
+  - name: LY_TF_SUB_DISC_AMT_MV
+    data_type: double
+  - name: LY_TF_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: MKT_NBR
+    data_type: string
+  - name: MKT_SKU_FLG
+    data_type: long
+  - name: MKT_SKU_MV_FLG
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: SECURITY_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_AD_RETL_AMT
+    data_type: double
+  - name: TY_AD_RETL_AMT_MV
+    data_type: double
+  - name: TY_AD_RETL_AMT_SKU
+    data_type: double
+  - name: TY_AGG_SUB_DISC_AMT
+    data_type: double
+  - name: TY_AGG_SUB_DISC_AMT_MV
+    data_type: double
+  - name: TY_AGG_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: TY_CERT_TRD_DISC_AMT
+    data_type: double
+  - name: TY_CERT_TRD_DISC_AMT_MV
+    data_type: double
+  - name: TY_CERT_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: TY_COOP_AMT
+    data_type: double
+  - name: TY_COOP_AMT_MV
+    data_type: double
+  - name: TY_COOP_AMT_SKU
+    data_type: double
+  - name: TY_DC_EXP_AMT
+    data_type: double
+  - name: TY_DC_EXP_AMT_MV
+    data_type: double
+  - name: TY_DC_EXP_AMT_SKU
+    data_type: double
+  - name: TY_DCSH_EXP_AMT
+    data_type: double
+  - name: TY_DCSH_EXP_AMT_MV
+    data_type: double
+  - name: TY_DCSH_EXP_AMT_SKU
+    data_type: double
+  - name: TY_DF_ALLOW_DISC_AMT
+    data_type: double
+  - name: TY_DF_ALLOW_DISC_AMT_MV
+    data_type: double
+  - name: TY_DF_ALLOW_DISC_AMT_SKU
+    data_type: double
+  - name: TY_DUTY_EXP_AMT
+    data_type: double
+  - name: TY_DUTY_EXP_AMT_MV
+    data_type: double
+  - name: TY_DUTY_EXP_AMT_SKU
+    data_type: double
+  - name: TY_FOB_COST
+    data_type: double
+  - name: TY_FOB_COST_MV
+    data_type: double
+  - name: TY_FOB_COST_SKU
+    data_type: double
+  - name: TY_FRT_EXP_AMT
+    data_type: double
+  - name: TY_FRT_EXP_AMT_MV
+    data_type: double
+  - name: TY_FRT_EXP_AMT_SKU
+    data_type: double
+  - name: TY_FRT_SUB_DISC_AMT
+    data_type: double
+  - name: TY_FRT_SUB_DISC_AMT_MV
+    data_type: double
+  - name: TY_FRT_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: TY_FRT_TRD_DISC_AMT
+    data_type: double
+  - name: TY_FRT_TRD_DISC_AMT_MV
+    data_type: double
+  - name: TY_FRT_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: TY_FRTI_EXP_AMT
+    data_type: double
+  - name: TY_FRTI_EXP_AMT_MV
+    data_type: double
+  - name: TY_FRTI_EXP_AMT_SKU
+    data_type: double
+  - name: TY_IBX_DISC_AMT
+    data_type: double
+  - name: TY_IBX_DISC_AMT_MV
+    data_type: double
+  - name: TY_IBX_DISC_AMT_SKU
+    data_type: double
+  - name: TY_IMGA_EXP_AMT
+    data_type: double
+  - name: TY_IMGA_EXP_AMT_MV
+    data_type: double
+  - name: TY_IMGA_EXP_AMT_SKU
+    data_type: double
+  - name: TY_ISS_TRD_DISC_AMT
+    data_type: double
+  - name: TY_ISS_TRD_DISC_AMT_MV
+    data_type: double
+  - name: TY_ISS_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: TY_ISSI_EXP_AMT
+    data_type: double
+  - name: TY_ISSI_EXP_AMT_MV
+    data_type: double
+  - name: TY_ISSI_EXP_AMT_SKU
+    data_type: double
+  - name: TY_LANDED_COST_AMT
+    data_type: double
+  - name: TY_LANDED_COST_AMT_MV
+    data_type: double
+  - name: TY_LANDED_COST_AMT_SKU
+    data_type: double
+  - name: TY_MISC_TRD_DISC_AMT
+    data_type: double
+  - name: TY_MISC_TRD_DISC_AMT_MV
+    data_type: double
+  - name: TY_MISC_TRD_DISC_AMT_SKU
+    data_type: double
+  - name: TY_MTD_SUB_DISC_AMT
+    data_type: double
+  - name: TY_MTD_SUB_DISC_AMT_MV
+    data_type: double
+  - name: TY_MTD_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: TY_NET_COST_AMT
+    data_type: double
+  - name: TY_NET_COST_AMT_MV
+    data_type: double
+  - name: TY_NET_COST_AMT_SKU
+    data_type: double
+  - name: TY_NET_NET_COST_AMT
+    data_type: double
+  - name: TY_NET_NET_COST_AMT_MV
+    data_type: double
+  - name: TY_NET_NET_COST_AMT_SKU
+    data_type: double
+  - name: TY_OFFSH_SUB_DISC_AMT
+    data_type: double
+  - name: TY_OFFSH_SUB_DISC_AMT_MV
+    data_type: double
+  - name: TY_OFFSH_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: TY_PURCH_DISC_AMT
+    data_type: double
+  - name: TY_PURCH_DISC_AMT_MV
+    data_type: double
+  - name: TY_PURCH_DISC_AMT_SKU
+    data_type: double
+  - name: TY_REBT_AMT
+    data_type: double
+  - name: TY_REBT_AMT_MV
+    data_type: double
+  - name: TY_REBT_AMT_SKU
+    data_type: double
+  - name: TY_RETL_AMT
+    data_type: double
+  - name: TY_RETL_AMT_MV
+    data_type: double
+  - name: TY_RETL_AMT_SKU
+    data_type: double
+  - name: TY_SCD_SUB_DISC_AMT
+    data_type: double
+  - name: TY_SCD_SUB_DISC_AMT_MV
+    data_type: double
+  - name: TY_SCD_SUB_DISC_AMT_SKU
+    data_type: double
+  - name: TY_SPLTY_TRM_DISC_AMT
+    data_type: double
+  - name: TY_SPLTY_TRM_DISC_AMT_MV
+    data_type: double
+  - name: TY_SPLTY_TRM_DISC_AMT_SKU
+    data_type: double
+  - name: TY_TF_SUB_DISC_AMT
+    data_type: double
+  - name: TY_TF_SUB_DISC_AMT_MV
+    data_type: double
+  - name: TY_TF_SUB_DISC_AMT_SKU
+    data_type: double

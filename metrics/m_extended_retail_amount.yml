@@ -1,0 +1,8 @@
+unique_name: m_extended_retail_amount
+object_type: metric
+label: Extended Retail $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: TY_GROSS_SLS

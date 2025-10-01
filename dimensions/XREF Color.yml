@@ -1,0 +1,45 @@
+unique_name: XREF Color
+object_type: dimension
+label: XREF Color
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF Color Hierarchy
+    label: XREF Color Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF Color Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF Color Level
+    label: XREF Color Level
+    dataset: XREF_COLOR.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFColor_SKUAttribute
+    from:
+      hierarchy: XREF Color Hierarchy
+      level: XREF Color Level
+      dataset: XREF_COLOR.dataset
+      join_columns:
+        - COLOR
+    to:
+      dimension: SKU Attribute
+      level: h_c_color
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

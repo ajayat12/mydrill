@@ -1,0 +1,81 @@
+unique_name: MONTHLY_FCST.dataset
+object_type: dataset
+label: MONTHLY_FCST
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: MONTHLY_FCST
+
+columns:
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: GEO_HQ_NBR
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_FCST_ACT_ANN_GM_AMT
+    data_type: double
+  - name: LY_FCST_ACT_COGS_AMT
+    data_type: double
+  - name: LY_FCST_ACT_DC_BI_COST_AMT
+    data_type: double
+  - name: LY_FCST_ACT_DC_EI_COST_AMT
+    data_type: double
+  - name: LY_FCST_ACT_DEFR_INTRS_AMT
+    data_type: double
+  - name: LY_FCST_ACT_GAFS_COST_AMT
+    data_type: double
+  - name: LY_FCST_ACT_GAFS_RETL_AMT
+    data_type: double
+  - name: LY_FCST_ACT_GM_AMT
+    data_type: double
+  - name: LY_FCST_ACT_PURCH_DISC_RETL_AMT
+    data_type: double
+  - name: LY_FCST_ACT_SHNK_AMT
+    data_type: double
+  - name: LY_FCST_ACT_SHPG_RVNU_AMT
+    data_type: double
+  - name: LY_FCST_ACT_STR_BI_COST_AMT
+    data_type: double
+  - name: LY_FCST_ACT_STR_EI_COST_AMT
+    data_type: double
+  - name: LY_FCST_ACT_VNDR_DIR_FRT_EXP_AMT
+    data_type: double
+  - name: LY_FCST_ACT_YOW_FRT_EXP_AMT
+    data_type: double
+  - name: SECURITY_ID
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_FCST_ACT_ANN_GM_AMT
+    data_type: double
+  - name: TY_FCST_ACT_COGS_AMT
+    data_type: double
+  - name: TY_FCST_ACT_DC_BI_COST_AMT
+    data_type: double
+  - name: TY_FCST_ACT_DC_EI_COST_AMT
+    data_type: double
+  - name: TY_FCST_ACT_DEFR_INTRS_AMT
+    data_type: double
+  - name: TY_FCST_ACT_GAFS_COST_AMT
+    data_type: double
+  - name: TY_FCST_ACT_GAFS_RETL_AMT
+    data_type: double
+  - name: TY_FCST_ACT_GM_AMT
+    data_type: double
+  - name: TY_FCST_ACT_GM_AMT_CALC
+    data_type: double
+  - name: TY_FCST_ACT_PURCH_DISC_RETL_AMT
+    data_type: double
+  - name: TY_FCST_ACT_SHNK_AMT
+    data_type: double
+  - name: TY_FCST_ACT_SHPG_RVNU_AMT
+    data_type: double
+  - name: TY_FCST_ACT_STR_BI_COST_AMT
+    data_type: double
+  - name: TY_FCST_ACT_STR_EI_COST_AMT
+    data_type: double
+  - name: TY_FCST_ACT_VNDR_DIR_FRT_EXP_AMT
+    data_type: double
+  - name: TY_FCST_ACT_YOW_FRT_EXP_AMT
+    data_type: double

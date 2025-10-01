@@ -1,0 +1,9 @@
+unique_name: str vol strc
+object_type: metric_calc
+label: str vol strc
+expression: |2-
+    IIF([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=4
+            OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=4
+            OR [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=4,
+            [Measures].[m_strc_vol_lvl_cd],null)
+is_hidden: true

@@ -1,0 +1,5 @@
+unique_name: m_coop_advertising_percent_v_ly
+object_type: metric_calc
+label: Co-op Advertising % v LY
+expression: "([Measures].[m_coop_advertising_percent]-[Measures].[m_coop_advertising_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

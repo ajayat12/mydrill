@@ -1,0 +1,8 @@
+unique_name: m_household_count_approx
+object_type: metric
+label: Household Count Approx
+calculation_method: estimated count distinct
+format: "#,##0;(#,##0);;;"
+unrelated_dimensions_handling: empty
+dataset: Sales.dataset
+column: TY_HH_ID_KEY

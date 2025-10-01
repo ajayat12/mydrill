@@ -1,0 +1,6 @@
+unique_name: m_comp_amount_v_lly_2_year
+object_type: metric_calc
+label: Comp $ v LLY (2 Year)
+expression: "IIF(ISEMPTY([MEASURES].[m_comp_amount_2_year]) OR ISEMPTY([MEASURES].[m_comp_amount_base_2_year]),NULL,([MEASURES].[m_comp_amount_2_year]\
+  \ - [MEASURES].[m_comp_amount_base_2_year]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,99 @@
+unique_name: Product.dataset
+object_type: dataset
+label: Product
+connection_id: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+table: PRODUCT
+
+columns:
+  - name: ALL_THD
+    data_type: string
+  - name: CATEGORY
+    data_type: string
+  - name: CLASS
+    data_type: string
+  - name: CLASS_CD
+    data_type: long
+  - name: CLASS_NAME
+    data_type: string
+  - name: CLASS_NBR
+    data_type: string
+  - name: CORE_DEPT_IND
+    data_type: string
+  - name: CTG_DESC
+    data_type: string
+  - name: CTG_NBR
+    data_type: string
+  - name: DECILE_RANK_GROUP
+    data_type: long
+  - name: DECILE_RANK_GROUP_NM
+    data_type: string
+  - name: DEPT
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MER_DEPT_DESC
+    data_type: string
+  - name: MER_DEPT_NBR
+    data_type: string
+  - name: PRCL_TRUCK_IND
+    data_type: string
+  - name: REL_FLG
+    data_type: string
+  - name: REL_SKU
+    data_type: string
+  - name: REL_SKU_NBR
+    data_type: long
+  - name: RPT_DSPL_SKU_NBR
+    data_type: string
+  - name: RPT_SKU_DESC
+    data_type: string
+  - name: S_MER_DEPT_DESC
+    data_type: string
+  - name: SHP_TYP_CD_DESC
+    data_type: string
+  - name: SHR_ITEM_FLG
+    data_type: string
+  - name: SKU
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_RNK
+    data_type: long
+  - name: SKU_RNK_NM
+    data_type: string
+  - name: SKU_TYP_CD
+    data_type: string
+  - name: SKU_TYP_DESC
+    data_type: string
+  - name: SO_SKU_NBR
+    data_type: long
+  - name: STK_SKU_NBR
+    data_type: long
+  - name: SUB_CLASS_CD
+    data_type: long
+  - name: SUB_CLASS_NBR
+    data_type: string
+  - name: SUB_SC_DESC
+    data_type: string
+  - name: SUB_SC_NBR
+    data_type: string
+  - name: SUB_SUBCLASS
+    data_type: string
+  - name: SUBCLASS
+    data_type: string
+  - name: SUBCLASS_NAME
+    data_type: string
+  - name: SVP
+    data_type: string
+  - name: UPC_CD
+    data_type: string
+  - name: UPC_DESC
+    data_type: string

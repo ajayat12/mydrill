@@ -1,0 +1,12 @@
+unique_name: m_dc_oh_amount
+object_type: metric
+label: DC OH $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DC_INV_DLY.dataset_Time
+dataset: DC_INV_DLY.dataset
+column: TY_DC_OH_RETL_AMT

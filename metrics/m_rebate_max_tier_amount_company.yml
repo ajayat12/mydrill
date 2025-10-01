@@ -1,0 +1,8 @@
+unique_name: m_rebate_max_tier_amount_company
+object_type: metric
+label: Rebate Max Tier $ (Company)
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: repeat
+dataset: REBATE.dataset
+column: REBT_MAX_TIER_AMT

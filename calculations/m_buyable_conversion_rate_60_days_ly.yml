@@ -1,0 +1,6 @@
+unique_name: m_buyable_conversion_rate_60_days_ly
+object_type: metric_calc
+label: Buyable Conversion Rate (60 Days) LY
+expression: "IIF(IsEmpty([Measures].[m_r60d_cust_buybl_pg_vist_cnt_ly]) or [Measures].[m_r60d_cust_buybl_pg_vist_cnt_ly]+0.00=\
+  \ 0.00,NULL,[Measures].[m_r60d_cust_buybl_ord_cnt_ly]/[Measures].[m_r60d_cust_buybl_pg_vist_cnt_ly])"
+format: 0.00%;(0.00%);0.00%;;

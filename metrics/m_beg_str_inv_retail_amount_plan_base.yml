@@ -1,0 +1,13 @@
+unique_name: m_beg_str_inv_retail_amount_plan_base
+object_type: metric
+label: Beg Str Inv Retail $ Plan Base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - MONTHLY_PLAN.dataset_Time_Transformations
+dataset: MONTHLY_PLAN.dataset
+column: ty_pln_bi_retl_amt

@@ -1,0 +1,8 @@
+unique_name: m_shrink_amount
+object_type: metric
+label: Shrink $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRC_INV_STATS.dataset
+column: TY_SHNK_AMT

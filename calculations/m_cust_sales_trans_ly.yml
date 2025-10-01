@@ -1,0 +1,6 @@
+unique_name: m_cust_sales_trans_ly
+object_type: metric_calc
+label: Cust Sales Trans LY
+expression: "IIF([Measures].[m_cust_sales_trans_ly_h] =0 , null , [Measures].[m_cust_sales_trans_ly_h]\
+  \ )"
+format: "#,##0;(#,##0);;;"

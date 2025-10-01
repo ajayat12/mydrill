@@ -1,0 +1,6 @@
+unique_name: m_comp_sales_amount_v_fcst
+object_type: metric_calc
+label: Comp Sales $ v Fcst
+expression: "IIF(IsEmpty([MEASURES].[m_comp_amount_1_year]) OR IsEmpty([MEASURES].[m_comp_sales_amount_fcst]),\
+  \ NULL,([MEASURES].[m_comp_amount_1_year]-[MEASURES].[m_comp_sales_amount_fcst]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

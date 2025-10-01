@@ -1,0 +1,66 @@
+unique_name: Service Level
+object_type: dimension
+label: Service Level
+type: standard
+
+hierarchies:
+
+  - unique_name: Service Level Hierarchy
+    label: Service Level Hierarchy
+
+    levels:
+
+      - unique_name: h_slh_service_level_level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_slh_pri_item_key
+            label: PRI ITEM KEY
+            is_hidden: true
+            dataset: DIM_SERVICE_LEVEL.dataset
+            key_columns:
+              - PRI_ITEM_KEY
+            name_column: PRI_ITEM_KEY
+            sort_column: PRI_ITEM_KEY
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_slh_priority_flag
+            label: Priority Flag
+            dataset: DIM_SERVICE_LEVEL.dataset
+            key_columns:
+              - PRI_ITEM_DIM_ID
+            name_column: PRI_ITEM_DIM
+            sort_column: PRI_ITEM_DIM_ID
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_slh_r13_weeks_priority
+            label: R13 Weeks Priority
+            dataset: DIM_SERVICE_LEVEL.dataset
+            key_columns:
+              - R13W_PRITEM_WK_DIM_ID
+            name_column: R13W_PRITEM_WK_DIM_ID
+            sort_column: R13W_PRITEM_WK_DIM_ID
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_slh_service_level_level
+    label: Service Level Level
+    dataset: DIM_SERVICE_LEVEL.dataset
+    key_columns:
+      - PRI_ITEM_KEY
+    name_column: PRI_ITEM_KEY
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

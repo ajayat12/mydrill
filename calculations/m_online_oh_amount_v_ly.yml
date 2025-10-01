@@ -1,0 +1,5 @@
+unique_name: m_online_oh_amount_v_ly
+object_type: metric_calc
+label: Online OH $ v LY
+expression: "IIF(IsEmpty([Measures].[m_online_oh_amount]) OR ISEmpty([Measures].[m_online_oh_amount_ly]),NULL,[Measures].[m_online_oh_amount]-[Measures].[m_online_oh_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

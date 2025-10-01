@@ -1,0 +1,45 @@
+unique_name: XREF SMART HOME
+object_type: dimension
+label: XREF SMART HOME
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF SMART HOME Hierarchy
+    label: XREF SMART HOME Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: SMART HOME Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: SMART HOME Level
+    label: SMART HOME Level
+    dataset: XREF_SMART_HOME.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFSMARTHOME_SKUAttribute
+    from:
+      hierarchy: XREF SMART HOME Hierarchy
+      level: SMART HOME Level
+      dataset: XREF_SMART_HOME.dataset
+      join_columns:
+        - Smart_Home
+    to:
+      dimension: SKU Attribute
+      level: h_sh_smart_home
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

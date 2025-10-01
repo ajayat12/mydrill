@@ -1,0 +1,5 @@
+unique_name: m_turns_v_fcst_percent
+object_type: metric_calc
+label: Turns v Fcst (%)
+expression: "IIF([Measures].[m_turns_fcst]+0.00=0.00,null,(([Measures].[m_turns_v_fcst])/[Measures].[m_turns_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

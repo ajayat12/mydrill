@@ -1,0 +1,6 @@
+unique_name: m_gross_demand_amount_v_ly_shifted
+object_type: metric_calc
+label: Gross Demand $ v LY (shifted)
+expression: "IIF(IsEmpty([MEASURES].[m_gross_demand_amount]) OR IsEmpty([MEASURES].[m_gross_demand_amount_ly_shifted]),NULL\
+  \ ,[MEASURES].[m_gross_demand_amount]-[MEASURES].[m_gross_demand_amount_ly_shifted])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_deliver_from_store_exp_amount_v_ly
+object_type: metric_calc
+label: Deliver From Store Exp $ v LY
+expression: "IIF(IsEmpty([MEASURES].[m_deliver_from_store_exp_amount]) OR IsEmpty([MEASURES].[m_deliver_from_store_exp_amount_ly]),NULL,[MEASURES].[m_deliver_from_store_exp_amount]-[MEASURES].[m_deliver_from_store_exp_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

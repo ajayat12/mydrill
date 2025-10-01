@@ -1,0 +1,6 @@
+unique_name: m_avg_units_per_trans_ly
+object_type: metric_calc
+label: Avg Units per Trans LY
+expression: |
+  IIF([MEASURES].[m_sales_trans_ly] + 0.00 = 0.00,NULL,([MEASURES].[m_Sales_Units_LY] / [MEASURES].[m_sales_trans_ly]))
+format: "#,###,###,##0.00;(#,###,###,##0.00)"

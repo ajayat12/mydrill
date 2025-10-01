@@ -1,0 +1,8 @@
+unique_name: m_customer_orders_count_ly
+object_type: metric
+label: Customer Orders Count LY
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_CUST_ORD_CNT

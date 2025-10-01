@@ -1,0 +1,8 @@
+unique_name: m_rtv_units
+object_type: metric
+label: RTV Units
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+unrelated_dimensions_handling: empty
+dataset: CRTV SKU EVNT.dataset
+column: TY_SKU_QTY

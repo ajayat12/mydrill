@@ -1,0 +1,6 @@
+unique_name: m_end_str_inv_retail_amount_v_fcst
+object_type: metric_calc
+label: End Str Inv Retail $ v Fcst
+expression: "IIF(IsEmpty([MEASURES].[m_ty_ending_store_oh_amount]) OR IsEmpty([MEASURES].[m_end_str_inv_retail_amount_fcst]),\
+  \ NULL,([MEASURES].[m_ty_ending_store_oh_amount]-[MEASURES].[m_end_str_inv_retail_amount_fcst]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

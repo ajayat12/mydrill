@@ -1,0 +1,5 @@
+unique_name: m_turns_v_fcst_bps
+object_type: metric_calc
+label: Turns v Fcst (BPS)
+expression: "([Measures].[m_turns_v_fcst])*100"
+format: "#,##0;(#,##0);#,##0;;"

@@ -1,0 +1,6 @@
+unique_name: m_ty_ann_cogs_amount_fcst
+object_type: metric_calc
+label: TY ANN COGS $ Fcst
+expression: "([Measures].[m_fcst_ty_cogs_amt]*[Measures].[m_ty_yr_wk_cnt])/[Measures].[m_ty_prd_wk_cnt]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

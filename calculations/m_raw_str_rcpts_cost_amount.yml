@@ -1,0 +1,6 @@
+unique_name: m_raw_str_rcpts_cost_amount
+object_type: metric_calc
+label: Raw Str Rcpts Cost $
+expression: "[Measures].[m_raw_str_rcpts_cost_amount_dly] + [Measures].[m_raw_str_rcpts_cost_amount_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

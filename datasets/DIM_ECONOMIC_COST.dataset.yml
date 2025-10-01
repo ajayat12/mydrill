@@ -1,0 +1,19 @@
+unique_name: DIM_ECONOMIC_COST.dataset
+object_type: dataset
+label: DIM_ECONOMIC_COST
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_ECONOMIC_COST
+
+columns:
+  - name: ALL_COST_KEY
+    data_type: long
+  - name: COST_COMP_DESC
+    data_type: string
+  - name: COST_COMP_KEY
+    data_type: long
+  - name: COST_DESC
+    data_type: string
+  - name: COST_KEY
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime

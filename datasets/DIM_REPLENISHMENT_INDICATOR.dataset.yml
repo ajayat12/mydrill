@@ -1,0 +1,15 @@
+unique_name: DIM_REPLENISHMENT_INDICATOR.dataset
+object_type: dataset
+label: DIM_REPLENISHMENT_INDICATOR
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_REPLENISHMENT_INDICATOR
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: REPL_FLG
+    data_type: string
+  - name: REPL_FLG_DESC
+    data_type: string
+  - name: REPL_ID
+    data_type: long

@@ -1,0 +1,8 @@
+unique_name: m_sales_amount_pen_percent_ops_location
+object_type: metric_calc
+label: Sales $ Pen % (Ops Location)
+expression: "IIF(([Location].[Operation Location Hierarchy].CurrentMember.parent,\
+  \ [Measures].[m_sales_amount])+ 0.00=0.00,NULL,\n ([Location].[Operation Location\
+  \ Hierarchy].CurrentMember, [Measures].[m_sales_amount]) / \n ([Location].[Operation\
+  \ Location Hierarchy].CurrentMember.parent, [Measures].[m_sales_amount]))"
+format: 0.00%;(0.00%);0.00%;;

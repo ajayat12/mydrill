@@ -1,0 +1,6 @@
+unique_name: m_amu_percent_v_plan
+object_type: metric_calc
+label: AMU % v Plan
+expression: "IIF(IsEmpty([Measures].[m_amu_percent]) OR IsEmpty([Measures].[m_amu_percent_plan]),NULL,[Measures].[m_amu_percent]-\
+  \ [Measures].[m_amu_percent_plan])"
+format: 0.00%;(0.00%);0.00%;;

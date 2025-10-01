@@ -1,0 +1,5 @@
+unique_name: m_dc_oo_units_v_ly
+object_type: metric_calc
+label: DC OO Units v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_oo_units]) OR ISEmpty([Measures].[m_dc_oo_units_ly]),NULL,[Measures].[m_dc_oo_units]-[Measures].[m_dc_oo_units_ly])"
+format: "#,##0;(#,##0);#,##0;;"

@@ -1,0 +1,6 @@
+unique_name: m_shrink_percent_lly_pi
+object_type: metric_calc
+label: Shrink % LLY (PI)
+expression: "IIF([MEASURES].[m_sales_amount_lly_pi]+0.00=0.00,NULL ,([MEASURES].[m_shrink_amount_lly_pi])/[MEASURES].[m_sales_amount_lly_pi])"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

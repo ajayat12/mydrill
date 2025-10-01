@@ -1,0 +1,11 @@
+unique_name: DIM_ASSORTMENT_INDICATOR_ONLINE.dataset
+object_type: dataset
+label: DIM_ASSORTMENT_INDICATOR_ONLINE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_ASSORTMENT_INDICATOR_ONLINE
+
+columns:
+  - name: ASSORTMENT
+    data_type: string
+  - name: ID
+    data_type: long

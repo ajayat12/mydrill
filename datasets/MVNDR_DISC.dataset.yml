@@ -1,0 +1,23 @@
+unique_name: MVNDR_DISC.dataset
+object_type: dataset
+label: MVNDR_DISC
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: MVNDR_DISC
+
+columns:
+  - name: disc_amt
+    data_type: double
+  - name: disc_pct
+    data_type: double
+  - name: dsvc_typ_cd
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: rnk
+    data_type: long
+  - name: sub_disc_typ_cd
+    data_type: long

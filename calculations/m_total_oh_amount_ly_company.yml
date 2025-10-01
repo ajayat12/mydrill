@@ -1,0 +1,5 @@
+unique_name: m_total_oh_amount_ly_company
+object_type: metric_calc
+label: Total OH $ LY (Company)
+expression: "([Measures].[m_str_oh_amount_ly]+[Measures].[m_dc_oh_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_sales_trans_v_ly_percent
+object_type: metric_calc
+label: Sales Trans v LY (%)
+expression: "IIF([MEASURES].[m_sales_trans_ly] + 0.00 = 0.00,NULL,([MEASURES].[m_sales_trans_v_ly])/[MEASURES].[m_sales_trans_ly])"
+format: 0.00%;(0.00%);;;

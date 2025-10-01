@@ -1,0 +1,6 @@
+unique_name: m_misc_trade_discount_amount_v_ly_mkt/dc
+object_type: metric_calc
+label: Misc Trade Discount $ v LY (Mkt/DC)
+expression: "IIF(IsEmpty([Measures].[m_misc_trade_discount_amount_mkt/dc]) OR IsEmpty([Measures].[m_misc_trade_discount_amount_ly_mkt/dc])\
+  \ , null, ([Measures].[m_misc_trade_discount_amount_mkt/dc]-[Measures].[m_misc_trade_discount_amount_ly_mkt/dc]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

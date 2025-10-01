@@ -1,0 +1,13 @@
+unique_name: m_beg_str_inv_retail_amount_fcst_base
+object_type: metric
+label: Beg Str Inv Retail $ Fcst_base
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - GHQC_STR_INV_FCST_W.dataset_Time_Transformations
+dataset: GHQC_STR_INV_FCST_W.dataset
+column: TY_BGN_FCST_STR_INV_AMT

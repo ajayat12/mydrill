@@ -1,0 +1,6 @@
+unique_name: m_str_rcpts_retail_amount_core
+object_type: metric_calc
+label: Str Rcpts Retail $ (Core)
+expression: "[Measures].[m_str_rcpts_retail_amount_core_dly] +[Measures].[m_str_rcpts_retail_amount_core_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true

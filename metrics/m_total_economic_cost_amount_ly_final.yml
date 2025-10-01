@@ -1,0 +1,9 @@
+unique_name: m_total_economic_cost_amount_ly_final
+object_type: metric
+label: Total Economic Cost $ LY final
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_ECNMC_COST_AMT_LY

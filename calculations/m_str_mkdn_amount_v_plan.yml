@@ -1,0 +1,5 @@
+unique_name: m_str_mkdn_amount_v_plan
+object_type: metric_calc
+label: Str MKDN $ v Plan
+expression: "IIF(IsEmpty([Measures].[m_str_mkdn_amount]) OR IsEmpty([Measures].[m_str_mkdn_amount_plan]),NULL,([Measures].[m_str_mkdn_amount]-[Measures].[m_str_mkdn_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

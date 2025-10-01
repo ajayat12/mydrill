@@ -1,0 +1,5 @@
+unique_name: m_dc_oo_units_61_90_days_v_ly_percent
+object_type: metric_calc
+label: DC OO Units (61-90 Days) v LY (%)
+expression: "IIF([Measures].[m_dc_oo_units_61_90_days_ly]+0.00=0.00,NULL,([Measures].[m_dc_oo_units_61_90_days_v_ly]/[Measures].[m_dc_oo_units_61_90_days_ly]))"
+format: 0.00%;(0.00%);0.00%;;

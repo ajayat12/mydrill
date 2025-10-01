@@ -1,0 +1,77 @@
+unique_name: PI_SHNK.dataset
+object_type: dataset
+label: PI_SHNK
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: PI_SHNK
+
+columns:
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LLY_PURE_SHNK_AMT
+    data_type: double
+  - name: LLY_PURE_SHNK_SLS
+    data_type: double
+  - name: LLY_PURE_SWELL_AMT
+    data_type: double
+  - name: LLY_PURE_SWELL_SLS
+    data_type: double
+  - name: LLY_SHNK_AMT
+    data_type: double
+  - name: LLY_SHNK_COMPANY_AMT
+    data_type: double
+  - name: LLY_SHNK_COMPANY_SLS
+    data_type: double
+  - name: LLY_SHNK_SLS
+    data_type: double
+  - name: LY_COUNT_PI
+    data_type: string
+  - name: LY_PURE_SHNK_AMT
+    data_type: double
+  - name: LY_PURE_SHNK_SLS
+    data_type: double
+  - name: LY_PURE_SWELL_AMT
+    data_type: double
+  - name: LY_PURE_SWELL_SLS
+    data_type: double
+  - name: LY_SHNK_AMT
+    data_type: double
+  - name: LY_SHNK_COMPANY_AMT
+    data_type: double
+  - name: LY_SHNK_COMPANY_SLS
+    data_type: double
+  - name: LY_SHNK_SLS
+    data_type: double
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PRO_CHNL
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STORE_CHNL
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_COUNT_PI
+    data_type: string
+  - name: TY_PURE_SHNK_AMT
+    data_type: double
+  - name: TY_PURE_SHNK_SLS
+    data_type: double
+  - name: TY_PURE_SWELL_AMT
+    data_type: double
+  - name: TY_PURE_SWELL_SLS
+    data_type: double
+  - name: TY_SHNK_AMT
+    data_type: double
+  - name: TY_SHNK_COMPANY_AMT
+    data_type: double
+  - name: TY_SHNK_COMPANY_SLS
+    data_type: double
+  - name: TY_SHNK_SLS
+    data_type: double

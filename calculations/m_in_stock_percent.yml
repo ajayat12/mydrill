@@ -1,0 +1,5 @@
+unique_name: m_in_stock_percent
+object_type: metric_calc
+label: In Stock %
+expression: "IIF([MEASURES].[m_replen_count]+ 0.00=0.00,NULL,(1-([MEASURES].[m_out_of_stock]/[MEASURES].[m_replen_count])))"
+format: 0.00%;(0.00%);0.00%;;

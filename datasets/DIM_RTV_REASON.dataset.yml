@@ -1,0 +1,25 @@
+unique_name: DIM_RTV_REASON.dataset
+object_type: dataset
+label: DIM_RTV_REASON
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_RTV_REASON
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RTV_DEL_RSN_CD
+    data_type: long
+  - name: RTV_DEL_RSN_DESC
+    data_type: string
+  - name: RTV_RSN_CD
+    data_type: long
+  - name: RTV_RSN_CTG_CD
+    data_type: long
+  - name: RTV_RSN_CTG_DESC
+    data_type: string
+  - name: RTV_RSN_DESC
+    data_type: string
+  - name: S_RTV_DEL_RSN_DESC
+    data_type: string
+  - name: S_RTV_RSN_DESC
+    data_type: string

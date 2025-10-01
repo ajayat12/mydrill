@@ -1,0 +1,5 @@
+unique_name: m_turns_v_plan_bps
+object_type: metric_calc
+label: Turns v Plan (BPS)
+expression: "([Measures].[m_turns_v_plan]) *100"
+format: "#,##0.00;(#,##0.00);#,##0.00;;"

@@ -1,0 +1,5 @@
+unique_name: m_total_end_inv_retail_amount_wkly_company
+object_type: metric_calc
+label: Total End Inv Retail $ (Wkly) (Company)
+expression: "[Measures].[m_end_str_inv_retail_amount_wkly] + [Measures].[m_end_dc_inv_retail_amount_wkly]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

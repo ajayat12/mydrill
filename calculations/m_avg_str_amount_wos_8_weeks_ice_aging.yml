@@ -1,0 +1,5 @@
+unique_name: m_avg_str_amount_wos_8_weeks_ice_aging
+object_type: metric_calc
+label: Avg Str $ WOS (8 Weeks) (ICE Aging)
+expression: "IIF([MEASURES].[m_rolling_sales_amount_8_weeks_ice_aging]+0.00=0.00,NULL,[Measures].[m_str_oh_amount_ice_aging]/[MEASURES].[m_rolling_sales_amount_8_weeks_ice_aging]*8)"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

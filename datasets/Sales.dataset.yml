@@ -1,0 +1,333 @@
+unique_name: Sales.dataset
+object_type: dataset
+label: Sales
+connection_id: lpc2683f-gbq-pr-mydrill-data_mydrill2_data.connection
+table: SALES
+
+columns:
+  - name: ALLOC_STR_NBR
+    data_type: string
+  - name: BORIS_IND
+    data_type: boolean
+  - name: CAL_DT
+    data_type: date
+  - name: COMP_SHIP_AMT_2YR
+    data_type: double
+  - name: COMP_SHIP_QTY_2YR
+    data_type: double
+  - name: COMP_SLS_AMT_2YR
+    data_type: double
+  - name: COMP_SLS_UNITS_2YR
+    data_type: double
+  - name: CUST_EXP_KEY
+    data_type: long
+  - name: CUST_FULFILL_FROM_DC
+    data_type: string
+  - name: CUST_FULFILL_FROM_DEPT
+    data_type: long
+  - name: CUST_FULFILL_FROM_STORE
+    data_type: string
+  - name: CUST_FULFILL_FROM_VENDOR
+    data_type: long
+  - name: CUST_HH_ID
+    data_type: string
+  - name: CUST_HH_ID_KEY
+    data_type: long
+  - name: CUST_ID
+    data_type: long
+  - name: CUST_SALES_EXP
+    data_type: string
+  - name: CUST_SALES_FROM_SITE
+    data_type: string
+  - name: DAY_OF_WK_NBR
+    data_type: long
+  - name: EXPR_TYPE
+    data_type: long
+  - name: EXTN_HOST_ORDER_REF
+    data_type: string
+  - name: FSCL_HY_DESC
+    data_type: string
+  - name: FSCL_HY_END_DT
+    data_type: date
+  - name: FSCL_HY_NBR
+    data_type: string
+  - name: FSCL_HY_NBR_DESC
+    data_type: string
+  - name: FSCL_MTH_NM
+    data_type: string
+  - name: FSCL_PRD_DESC
+    data_type: string
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: FSCL_PRD_KEY_VAL
+    data_type: long
+  - name: FSCL_PRD_KEY_VAL_DESC
+    data_type: string
+  - name: FSCL_PRD_NBR
+    data_type: long
+  - name: FSCL_QTR_DESC
+    data_type: string
+  - name: FSCL_QTR_END_DT
+    data_type: date
+  - name: FSCL_QTR_NBR
+    data_type: long
+  - name: FSCL_QTR_NBR_DESC
+    data_type: string
+  - name: FSCL_WK_DAY_ABBR
+    data_type: string
+  - name: FSCL_WK_DAY_DESC
+    data_type: string
+  - name: FSCL_WK_DESC
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: FSCL_WK_NBR
+    data_type: long
+  - name: FSCL_WK_NBR_DESC
+    data_type: string
+  - name: FSCL_YR
+    data_type: long
+  - name: FSCL_YR_END_DT
+    data_type: date
+  - name: FSCL_YR_WK_KEY_VAL
+    data_type: long
+  - name: FSCL_YR_WK_KEY_VAL_DESC
+    data_type: string
+  - name: FUL_EXP_KEY
+    data_type: long
+  - name: FULL_FILL_CHNL
+    data_type: long
+  - name: HH_ID
+    data_type: string
+  - name: HH_SEGMENT_ID
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LLY_COMP_SHIP_2YR
+    data_type: double
+  - name: LLY_COMP_SHIP_QTY_2YR
+    data_type: double
+  - name: LLY_COMP_SLS_2YR
+    data_type: double
+  - name: LLY_COMP_SLS_2YR_TXN
+    data_type: string
+  - name: LLY_COMP_SLS_2YR_TXN_KEY
+    data_type: long
+  - name: LLY_COMP_SLS_UNITS_2YR
+    data_type: double
+  - name: LY_BORIS_AMT
+    data_type: double
+  - name: LY_COGS_AMT
+    data_type: double
+  - name: LY_COGS_AMT_CALC
+    data_type: double
+  - name: LY_COMP_SHIP_AMT
+    data_type: double
+  - name: LY_COMP_SHIP_QTY
+    data_type: double
+  - name: LY_COMP_SLS_AMT
+    data_type: double
+  - name: LY_COMP_SLS_TXN
+    data_type: string
+  - name: LY_COMP_SLS_TXN_KEY
+    data_type: long
+  - name: LY_COMP_SLS_UNITS
+    data_type: double
+  - name: LY_DISC_AMT
+    data_type: double
+  - name: LY_GM_AMT
+    data_type: double
+  - name: LY_GM_AMT_CALC
+    data_type: double
+  - name: LY_GROSS_DISC_AMT
+    data_type: double
+  - name: LY_GROSS_RTN_SALES_AMT
+    data_type: double
+  - name: LY_GROSS_RTN_UNT_QTY
+    data_type: double
+  - name: LY_GROSS_SALES_AMT
+    data_type: double
+  - name: LY_GROSS_SLS
+    data_type: double
+  - name: LY_GROSS_UNT_QTY
+    data_type: double
+  - name: LY_NET_CTNT_QTY
+    data_type: double
+  - name: LY_RETAIL_COGS_AMT
+    data_type: double
+  - name: LY_RETAIL_COGS_AMT_CALC
+    data_type: double
+  - name: LY_RETAIL_GM_AMT
+    data_type: double
+  - name: LY_RETAIL_GM_AMT_CALC
+    data_type: double
+  - name: LY_SELL_UOM_UNITS
+    data_type: double
+  - name: LY_SHIP_AMT
+    data_type: double
+  - name: LY_SHIP_QTY
+    data_type: double
+  - name: LY_SL_UOM_QTY
+    data_type: long
+  - name: LY_SLS_AMT
+    data_type: double
+  - name: LY_SLS_STR
+    data_type: string
+  - name: LY_SLS_TXN
+    data_type: string
+  - name: LY_SLS_TXN_KEY
+    data_type: long
+  - name: LY_UNAUDIT_SLS_AMT
+    data_type: double
+  - name: LY_UNT_SLS
+    data_type: double
+  - name: MA_IND
+    data_type: string
+  - name: MB_ID
+    data_type: long
+  - name: MB_IND_DESC
+    data_type: string
+  - name: MVNDR_DEPT_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: NET_CTNT_UOM_CD
+    data_type: string
+  - name: OMS_ID
+    data_type: string
+  - name: OMS_ITEM_ID
+    data_type: long
+  - name: ONLINE_ASSORT
+    data_type: long
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: PRO_TRANS_PAR_FLG
+    data_type: string
+  - name: PRO_XTRA_IND
+    data_type: string
+  - name: PX_AUTHENTICATION_FLG
+    data_type: string
+  - name: PX_LOYALTY_FLG
+    data_type: string
+  - name: REPL_ID
+    data_type: long
+  - name: REPL_IND_DESC
+    data_type: string
+  - name: RMETH_CD
+    data_type: long
+  - name: RMTHD_DESC
+    data_type: string
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STAT_CD
+    data_type: long
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: SLS_DT
+    data_type: date
+  - name: SPEND_LEVEL
+    data_type: string
+  - name: SPEND_LEVEL_DTL
+    data_type: string
+  - name: STORE_ASSORT
+    data_type: long
+  - name: STR_COUNT
+    data_type: string
+  - name: STR_NBR
+    data_type: string
+  - name: SUMMARY_KEY
+    data_type: long
+  - name: TIME_ADJ_DAY_ID
+    data_type: long
+  - name: TIME_ADJ_WEEK_ID
+    data_type: long
+  - name: TIME_DAY_ADJ_DESC
+    data_type: string
+  - name: TIME_WEEK_ADJ_DESC
+    data_type: string
+  - name: TY_BORIS_AMT
+    data_type: double
+  - name: TY_COGS_AMT
+    data_type: double
+  - name: TY_COGS_AMT_CALC
+    data_type: double
+  - name: TY_COMP_SHIP_AMT
+    data_type: double
+  - name: TY_COMP_SHIP_QTY
+    data_type: double
+  - name: TY_COMP_SLS_2YR_TXN
+    data_type: string
+  - name: TY_COMP_SLS_2YR_TXN_KEY
+    data_type: long
+  - name: TY_COMP_SLS_AMT
+    data_type: double
+  - name: TY_COMP_SLS_TXN
+    data_type: string
+  - name: TY_COMP_SLS_TXN_KEY
+    data_type: long
+  - name: TY_COMP_SLS_UNITS
+    data_type: double
+  - name: TY_CUST_HH_ID_KEY
+    data_type: long
+  - name: TY_CUST_ID_KEY
+    data_type: long
+  - name: TY_DISC_AMT
+    data_type: double
+  - name: TY_GM_AMT
+    data_type: double
+  - name: TY_GM_AMT_CALC
+    data_type: double
+  - name: TY_GROSS_DISC_AMT
+    data_type: double
+  - name: TY_GROSS_RTN_SALES_AMT
+    data_type: double
+  - name: TY_GROSS_RTN_UNT_QTY
+    data_type: double
+  - name: TY_GROSS_SALES_AMT
+    data_type: double
+  - name: TY_GROSS_SLS
+    data_type: double
+  - name: TY_GROSS_UNT_QTY
+    data_type: double
+  - name: TY_HH_ID_KEY
+    data_type: long
+  - name: TY_NET_CTNT_QTY
+    data_type: double
+  - name: TY_RETAIL_COGS_AMT
+    data_type: double
+  - name: TY_RETAIL_COGS_AMT_CALC
+    data_type: double
+  - name: TY_RETAIL_GM_AMT
+    data_type: double
+  - name: TY_RETAIL_GM_AMT_CALC
+    data_type: double
+  - name: TY_SELL_UOM_UNITS
+    data_type: double
+  - name: TY_SHIP_AMT
+    data_type: double
+  - name: TY_SHIP_QTY
+    data_type: double
+  - name: TY_SL_UOM_QTY
+    data_type: long
+  - name: TY_SLS_AMT
+    data_type: double
+  - name: TY_SLS_STR
+    data_type: string
+  - name: TY_SLS_TXN
+    data_type: string
+  - name: TY_SLS_TXN_KEY
+    data_type: long
+  - name: TY_UNAUDIT_SLS_AMT
+    data_type: double
+  - name: TY_UNT_SLS
+    data_type: double
+  - name: UPC_CD
+    data_type: string
+  - name: WEEK_SORTING
+    data_type: date

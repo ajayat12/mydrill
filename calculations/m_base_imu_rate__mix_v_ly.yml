@@ -1,0 +1,6 @@
+unique_name: m_base_imu_rate__mix_v_ly
+object_type: metric_calc
+label: Base IMU (Rate + Mix) v LY
+expression: "[Measures].[m_base_imu_mix_v_ly] + [Measures].[m_base_imu_rate_v_ly]"
+format: "#,##0.00;(#,##0.00);0.00;;"
+is_hidden: true

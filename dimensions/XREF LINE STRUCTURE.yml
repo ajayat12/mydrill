@@ -1,0 +1,45 @@
+unique_name: XREF LINE STRUCTURE
+object_type: dimension
+label: XREF LINE STRUCTURE
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF LINE STRUCTURE Hierarchy
+    label: XREF LINE STRUCTURE Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF LINE STRUCTURE Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF LINE STRUCTURE Level
+    label: XREF LINE STRUCTURE Level
+    dataset: XREF_LINE_STRUCTURE.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFLINESTRUCTURE_SKUAttribute
+    from:
+      hierarchy: XREF LINE STRUCTURE Hierarchy
+      level: XREF LINE STRUCTURE Level
+      dataset: XREF_LINE_STRUCTURE.dataset
+      join_columns:
+        - LINE_STRUCTURE
+    to:
+      dimension: SKU Attribute
+      level: h_ls_line_structure
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

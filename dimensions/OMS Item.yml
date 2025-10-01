@@ -1,0 +1,336 @@
+unique_name: OMS Item
+object_type: dimension
+label: OMS Item
+type: standard
+
+hierarchies:
+
+  - unique_name: OMS Item Finance Hierarchy
+    label: OMS Item Finance Hierarchy
+
+    levels:
+
+      - unique_name: h_oifh_oms_all_thd
+
+        aliases:
+
+          - unique_name: d_oifh_oms_all_thd
+            label: OMS All THD
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: ALL_DEPT_DESC
+            sort_column: ALL_DEPT_DESC
+
+      - unique_name: h_oifh_oms_core_dept_ind
+
+      - unique_name: h_oifh_oms_dept
+
+        aliases:
+
+          - unique_name: d_oifh_oms_dept
+            label: OMS Dept
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: DEPT_NM
+            sort_column: DEPT_NM
+
+          - unique_name: d_oifh_oms_dept_name
+            label: OMS Dept Name
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: S_DEPT_NM
+            sort_column: S_DEPT_NM
+
+          - unique_name: d_oifh_oms_dept_nbr
+            label: OMS Dept Nbr
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: DEPT_NBR
+            sort_column: DEPT_NBR
+
+      - unique_name: h_oifh_oms_class
+
+        aliases:
+
+          - unique_name: d_oifh_oms_class
+            label: OMS Class
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: CLASS_DESC
+            sort_column: CLASS_DESC
+
+          - unique_name: d_oifh_oms_class_name
+            label: OMS Class Name
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: S_CLASS_DESC
+            sort_column: S_CLASS_DESC
+
+          - unique_name: d_oifh_oms_class_nbr
+            label: OMS Class Nbr
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: CASS_NBR
+            sort_column: CASS_NBR
+
+      - unique_name: h_oifh_oms_subclass
+
+        aliases:
+
+          - unique_name: d_oifh_oms_subclass_name
+            label: OMS SubClass Name
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: S_SC_DESC
+            sort_column: S_SC_DESC
+
+          - unique_name: d_oifh_oms_subclass_nbr
+            label: OMS SubClass Nbr
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: SUB_CLASS_NBR
+            sort_column: SUB_CLASS_NBR
+
+          - unique_name: d_oifh_oms_subclass
+            label: OMS SubClass
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: SC_DESC
+            sort_column: SC_DESC
+
+      - unique_name: h_oifh_oms_sku
+
+        aliases:
+
+          - unique_name: d_oifh_oms_sku
+            label: OMS SKU
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: SKU_DESC
+            sort_column: SKU_DESC
+
+          - unique_name: d_oifh_oms_sku_name
+            label: OMS SKU Name
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: S_SKU_DESC
+            sort_column: S_SKU_DESC
+
+          - unique_name: d_oifh_oms_sku_nbr
+            label: OMS SKU Nbr
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: SKU_NBR
+            sort_column: SKU_NBR
+
+      - unique_name: h_oifh_oms_id
+
+        aliases:
+
+          - unique_name: d_oifh_oms_id
+            label: OMS ID
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: OMS_DESC
+            sort_column: OMS_DESC
+
+          - unique_name: d_oifh_oms_name
+            label: OMS Name
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: S_OMS_DESC
+            sort_column: S_OMS_DESC
+
+          - unique_name: d_oifh_oms_nbr
+            label: OMS Nbr
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: OMS_ID
+            sort_column: OMS_ID
+
+      - unique_name: h_oifh_oms_upc
+
+        aliases:
+
+          - unique_name: d_oifh_oms_upc
+            label: OMS UPC
+            folder: More Fields
+            associated_hierarchy: OMS Item Finance Hierarchy
+            dataset: OMS.dataset
+            name_column: OMS_UPC_DESC
+            sort_column: OMS_UPC_DESC
+
+  - unique_name: OMS Item Merchandising Hierarchy
+    label: OMS Item Merchandising Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_oimh_oms_all_thd
+
+      - unique_name: h_oimh_oms_svp
+
+        aliases:
+
+          - unique_name: d_oimh_oms_svp
+            label: OMS SVP
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: SVP_DESC
+            sort_column: SVP_DESC
+
+      - unique_name: oimh_oms_merch_dept
+
+        aliases:
+
+          - unique_name: d_oimh_oms_merch_dept
+            label: OMS Merch Dept
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: GRP_DESC
+            sort_column: GRP_DESC
+
+          - unique_name: d_oimh_oms_merch_dept_nbr
+            label: OMS Merch Dept Nbr
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: CLASS_CTG_GRP_CD
+            sort_column: CLASS_CTG_GRP_CD
+
+          - unique_name: d_oms_merch_dept_name
+            label: OMS Merch Dept Name
+            folder: More Fields
+            dataset: OMS.dataset
+            name_column: S_GRP_DESC
+            sort_column: S_GRP_DESC
+
+      - unique_name: h_oimh_oms_class
+
+      - unique_name: h_oimh_oms_subclass
+
+      - unique_name: h_oimh_oms_sku
+
+      - unique_name: h_oimh_oms_id
+
+      - unique_name: h_oifh_oms_upc
+
+level_attributes:
+
+  - unique_name: h_oifh_oms_all_thd
+    label: OMS All THD
+    dataset: OMS.dataset
+    key_columns:
+      - ALL_DEPT_DESC
+    name_column: ALL_DEPT_DESC
+
+  - unique_name: h_oifh_oms_class
+    label: OMS Class
+    dataset: OMS.dataset
+    key_columns:
+      - CASS_NBR
+    name_column: CLASS_DESC
+
+  - unique_name: h_oifh_oms_core_dept_ind
+    label: OMS Core Dept Ind
+    dataset: OMS.dataset
+    key_columns:
+      - CORE_DEPT_DESC
+    name_column: CORE_DEPT_DESC
+
+  - unique_name: h_oifh_oms_dept
+    label: OMS Dept
+    dataset: OMS.dataset
+    key_columns:
+      - DEPT_NBR
+    name_column: DEPT_NM
+
+  - unique_name: h_oifh_oms_id
+    label: OMS ID
+    dataset: OMS.dataset
+    key_columns:
+      - OMS_ID
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: OMS_DESC
+
+  - unique_name: h_oifh_oms_sku
+    label: OMS SKU
+    dataset: OMS.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+  - unique_name: h_oifh_oms_subclass
+    label: OMS SubClass
+    dataset: OMS.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SC_DESC
+
+  - unique_name: h_oifh_oms_upc
+    label: OMS UPC
+    is_unique_key: true
+    dataset: OMS.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+      - OMS_ITEM_ID
+      - OMS_UPC_CD
+    name_column: OMS_UPC_CD
+
+  - unique_name: h_oimh_oms_all_thd
+    label: OMS All THD
+    dataset: OMS.dataset
+    key_columns:
+      - ALL_DEPT_DESC
+    name_column: ALL_DEPT_DESC
+
+  - unique_name: h_oimh_oms_class
+    label: OMS Class
+    dataset: OMS.dataset
+    key_columns:
+      - CASS_NBR
+    name_column: CLASS_DESC
+
+  - unique_name: h_oimh_oms_id
+    label: OMS ID
+    dataset: OMS.dataset
+    key_columns:
+      - OMS_ID
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: OMS_DESC
+
+  - unique_name: h_oimh_oms_sku
+    label: OMS SKU
+    dataset: OMS.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_DESC
+    name_column: SKU_NBR
+
+  - unique_name: h_oimh_oms_subclass
+    label: OMS SubClass
+    dataset: OMS.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SC_DESC
+
+  - unique_name: h_oimh_oms_svp
+    label: OMS SVP
+    dataset: OMS.dataset
+    key_columns:
+      - SVP_DESC
+    name_column: SVP_DESC
+
+  - unique_name: oimh_oms_merch_dept
+    label: OMS Merch Dept
+    dataset: OMS.dataset
+    key_columns:
+      - CLASS_CTG_GRP_CD
+    name_column: GRP_DESC
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

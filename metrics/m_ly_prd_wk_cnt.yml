@@ -1,0 +1,9 @@
+unique_name: m_ly_prd_wk_cnt
+object_type: metric
+label: LY PRD WK CNT
+calculation_method: sum
+format: "#,##0;(#,##0);;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: FSCL_PRD.dataset
+column: PRD_WK_CNT_LY

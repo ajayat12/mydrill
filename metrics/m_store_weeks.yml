@@ -1,0 +1,8 @@
+unique_name: m_store_weeks
+object_type: metric
+label: Store Weeks
+calculation_method: sum
+format: "#,##0;(#,##0);0;;"
+unrelated_dimensions_handling: empty
+dataset: STR_PER_WK_SLS.dataset
+column: TY_STR_CNT

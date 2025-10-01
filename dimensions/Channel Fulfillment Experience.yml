@@ -1,0 +1,132 @@
+unique_name: Channel Fulfillment Experience
+object_type: dimension
+label: Channel Fulfillment Experience
+type: standard
+
+hierarchies:
+
+  - unique_name: Channel - Fulfillment Experience Hierarchy
+    label: Channel - Fulfillment Experience Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_cfeh_customer_Fulfillment_experience
+
+        aliases:
+
+          - unique_name: d_cfeh_customer_fulfillment_experience
+            label: Customer Fulfillment Experience
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            name_column: CUST_FULFIL_EXP
+            sort_column: CUST_FULFIL_EXP_KEY
+
+      - unique_name: h_cfeh_customer_fulfillment_experience_location
+
+      - unique_name: h_cfeh_ful_exp_key
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_cfeh_customer_fulfillment_experience_location
+            label: Customer Fulfillment Experience Location
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - CUST_FULFIL_EXP_LOC_KEY_DIST
+            name_column: CUST_FULFIL_EXP_LOC
+            sort_column: CUST_FULFIL_EXP_LOC_KEY_DIST
+
+          - unique_name: d_mxph_cancel_flag
+            label: Cancel Flag
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - CANCEL_FLG_KEY
+            name_column: CANCEL_FLG
+            sort_column: CANCEL_FLG_KEY
+
+          - unique_name: d_mxph_customer_delivery_experience_type
+            label: Customer Delivery Experience Type
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - CUST_DLVRY_EXP_TYP_KEY
+            name_column: CUST_DLVRY_EXP_TYP
+            sort_column: CUST_DLVRY_EXP_TYP_KEY
+
+          - unique_name: d_mxph_customer_fulfillment_experience_location_type
+            label: Customer Fulfillment Experience Location Type
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - CUST_FULFIL_EXP_TYP_KEY
+            name_column: CUST_FULFIL_EXP_TYP
+            sort_column: CUST_FULFIL_EXP_TYP_KEY
+
+          - unique_name: d_mxph_fulfillment_add_on_type
+            label: Fulfillment Add On Type
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - FUFL_MNT_ADD_ON_KEY
+            name_column: FUFL_MNT_ADD_ON
+            sort_column: FUFL_MNT_ADD_ON_KEY
+
+          - unique_name: d_mxph_fulfillment_location_type
+            label: Fulfillment Location Type
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - CUST_FULFIL_FROM_SITE_TYP_KEY
+            name_column: CUST_FULFIL_FROM_SITE_TYP
+            sort_column: CUST_FULFIL_FROM_SITE_TYP_KEY
+
+          - unique_name: d_mxph_fulfillment_method
+            label: Fulfillment Method
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - CUST_FULFIL_MTHD_KEY
+            name_column: CUST_FULFIL_MTHD
+            sort_column: CUST_FULFIL_MTHD_KEY
+
+          - unique_name: d_mxph_ma_network
+            label: MA Network
+            folder: More Fields
+            dataset: Fulfillment Experience.dataset
+            key_columns:
+              - MA_TYPE_KEY
+            name_column: MA_TYPE
+            sort_column: MA_TYPE_KEY
+
+level_attributes:
+
+  - unique_name: h_cfeh_customer_fulfillment_experience_location
+    label: Customer Fulfillment Experience Location
+    dataset: Fulfillment Experience.dataset
+    key_columns:
+      - CUST_FULFIL_EXP_LOC_KEY
+    name_column: CUST_FULFIL_EXP_LOC
+    sort_column: CUST_FULFIL_EXP_LOC_KEY
+
+  - unique_name: h_cfeh_customer_Fulfillment_experience
+    label: Customer Fulfillment Experience
+    dataset: Fulfillment Experience.dataset
+    key_columns:
+      - CUST_FULFIL_EXP_KEY
+    name_column: CUST_FULFIL_EXP
+    sort_column: CUST_FULFIL_EXP_KEY
+
+  - unique_name: h_cfeh_ful_exp_key
+    label: Ful Exp Key
+    is_unique_key: true
+    dataset: Fulfillment Experience.dataset
+    key_columns:
+      - FUL_EXP_KEY
+    name_column: FUL_EXP_KEY
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

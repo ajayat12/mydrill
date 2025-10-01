@@ -1,0 +1,23 @@
+unique_name: Str vol iif
+object_type: metric_calc
+label: Str vol iif
+expression: |2-
+    IIF([Location].[Location Hierarchy].CurrentMember.LEVEL_NUMBER=7
+      OR [Location].[Operation Location Hierarchy].CurrentMember.LEVEL_NUMBER=7,
+      IIF([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=6
+        OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=6
+        OR [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=8,
+        [Measures].[m_str_vol_lvl_cd],
+        IIF([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=5
+          OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=5
+          OR [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=6,
+          [Measures].[m_strsc_vol_lvl_cd],
+          IIF([Product].[Merchandising Product Hierarchy].CurrentMember.LEVEL_NUMBER=4
+            OR [Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=4
+            OR [Product].[Merchandising xtended Product Hierarchy].CurrentMember.LEVEL_NUMBER=4,
+            [Measures].[m_strc_vol_lvl_cd],
+            IIF([Product].[Product Hierarchy].CurrentMember.LEVEL_NUMBER=3,
+              [Measures].[m_strd_vol_lvl_cd],
+              NULL)))),
+      NULL)
+is_hidden: true

@@ -1,0 +1,6 @@
+unique_name: m_extended_retail_aur_v_ly
+object_type: metric_calc
+label: Extended Retail AUR v LY
+expression: "IIF(IsEmpty([Measures].[m_extended_retail_aur]) OR IsEmpty([Measures].[m_extended_retail_aur_ly]),\
+  \ null, ([Measures].[m_extended_retail_aur]-[Measures].[m_extended_retail_aur_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,13 @@
+unique_name: m_shelf_retail_wk_amount_ly
+object_type: metric
+label: Shelf Retail Wk $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - STR_INV_DLY_W.dataset_Time_Transformations
+dataset: STR_INV_DLY_W.dataset
+column: LY_SHELF_RETAIL_AMT

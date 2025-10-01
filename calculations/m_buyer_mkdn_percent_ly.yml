@@ -1,0 +1,5 @@
+unique_name: m_buyer_mkdn_percent_ly
+object_type: metric_calc
+label: Buyer MKDN % LY
+expression: "IIF([Measures].[m_sales_amount_LY] + 0.00 = 0.00,NULL,[Measures].[m_buyer_mkdn_amount_ly]/[Measures].[m_sales_amount_LY])"
+format: 0.00%;(0.00%);0.00%;;

@@ -1,0 +1,15 @@
+unique_name: DIM_RECEIPT_GROUP.dataset
+object_type: dataset
+label: DIM_RECEIPT_GROUP
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_RECEIPT_GROUP
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RECPT_GRP_TYP_CD
+    data_type: long
+  - name: RECPT_GRP_TYP_DESC
+    data_type: string
+  - name: S_TYP_DESC
+    data_type: string

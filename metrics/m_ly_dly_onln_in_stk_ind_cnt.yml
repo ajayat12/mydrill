@@ -1,0 +1,9 @@
+unique_name: m_ly_dly_onln_in_stk_ind_cnt
+object_type: metric
+label: LY_DLY ONLN IN STK IND CNT
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: LY_DLY_ONLN_IN_STK_IND_CNT

@@ -1,0 +1,8 @@
+unique_name: m_store_count_with_inventory_ops_location
+object_type: metric
+label: Store Count With Inventory (Ops Location)
+calculation_method: count distinct
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: STR_INV_DLY_D.dataset
+column: TY_STR_COUNT

@@ -1,0 +1,12 @@
+unique_name: m_dc_oo_cost_amount
+object_type: metric
+label: DC OO Cost $
+calculation_method: sum
+format: "$#,##0.00;($ #,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_DFC_OO_COST_AMOUNT

@@ -1,0 +1,8 @@
+unique_name: m_curr_sku_status1
+object_type: metric
+label: Current SKU Status1
+calculation_method: maximum
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: CURR_SKU_STATUS.dataset
+column: SKU_STAT_CD_DESC

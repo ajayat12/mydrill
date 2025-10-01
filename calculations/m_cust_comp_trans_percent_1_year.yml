@@ -1,0 +1,5 @@
+unique_name: m_cust_comp_trans_percent_1_year
+object_type: metric_calc
+label: Cust Comp Trans % (1 Year)
+expression: "IIF([MEASURES].[m_cust_comp_trans_base_1_year]+ 0.00 = 0.00,NULL,([MEASURES].[m_cust_comp_trans_v_ly_1_year])/[MEASURES].[m_cust_comp_trans_base_1_year])"
+format: 0.00%;(0.00%);;;

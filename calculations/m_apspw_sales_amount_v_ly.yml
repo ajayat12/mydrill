@@ -1,0 +1,6 @@
+unique_name: m_apspw_sales_amount_v_ly
+object_type: metric_calc
+label: APSPW Sales $ v LY
+expression: "IIF(ISEMPTY([Measures].[m_apspw_sales_amount]) OR ISEMPTY([Measures].[m_apspw_sales_amount_ly]),NULL,[Measures].[m_apspw_sales_amount]\
+  \ - [Measures].[m_apspw_sales_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

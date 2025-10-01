@@ -1,0 +1,47 @@
+unique_name: CRTV SKU EVNT.dataset
+object_type: dataset
+label: CRTV SKU EVNT
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: CRTV_SKU_EVNT
+
+columns:
+  - name: CRTV_EVNT_DT
+    data_type: date
+  - name: DEPT_NBR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_COST_AMT
+    data_type: double
+  - name: LY_RETL_AMT
+    data_type: double
+  - name: LY_SKU_QTY
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: PORT_STRGY_ID
+    data_type: long
+  - name: PRO_CHNL
+    data_type: long
+  - name: RTV_DEL_RSN_CD
+    data_type: long
+  - name: RTV_RSN_CD
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STORE_CHNL
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TY_COST_AMT
+    data_type: double
+  - name: TY_RETL_AMT
+    data_type: double
+  - name: TY_SKU_QTY
+    data_type: long

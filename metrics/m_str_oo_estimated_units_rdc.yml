@@ -1,0 +1,12 @@
+unique_name: m_str_oo_estimated_units_rdc
+object_type: metric
+label: Str OO Estimated Units (RDC)
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - STR_INV_DLY_D.dataset_Time_Transformations
+dataset: STR_INV_DLY_D.dataset
+column: TY_EXPCTD_ALLOC_QTY

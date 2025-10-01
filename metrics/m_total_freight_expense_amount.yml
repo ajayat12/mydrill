@@ -1,0 +1,8 @@
+unique_name: m_total_freight_expense_amount
+object_type: metric
+label: Total Freight Expense $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: STRSK_ECNMC_DLY.dataset
+column: TOT_FRT_EXP_AMT

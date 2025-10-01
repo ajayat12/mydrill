@@ -1,0 +1,5 @@
+unique_name: m_base_imu_amount_v_plan_percent
+object_type: metric_calc
+label: Base IMU $ v Plan (%)
+expression: "IIF([Measures].[m_base_imu_amount_plan] + 0.00 = 0.00, null, ([Measures].[m_base_imu_amount]-[Measures].[m_base_imu_amount_plan])/[Measures].[m_base_imu_amount_plan])"
+format: 0.00%;(0.00%);0.00%;;

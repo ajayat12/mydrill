@@ -1,0 +1,5 @@
+unique_name: m_end_str_inv_retail_amount_v_fcst_percent
+object_type: metric_calc
+label: End Str Inv Retail $ v Fcst (%)
+expression: "IIF([MEASURES].[m_end_str_inv_retail_amount_fcst]+0.00=0.00,NULL,([MEASURES].[m_end_str_inv_retail_amount_v_fcst])/[MEASURES].[m_end_str_inv_retail_amount_fcst])\t"
+format: 0.00%;(0.00%);0.00%;;

@@ -1,0 +1,5 @@
+unique_name: m_str_oh_amount_ly_transitional
+object_type: metric_calc
+label: Str OH $ LY (Transitional)
+expression: "([Measures].[m_str_oh_amount_ly_transitional_dly]) /*+[Measures].[m_str_oh_amount_ly_transitional_wkly])*/"
+format: "$#,##0.00;($#,##0.00);$0.00;"

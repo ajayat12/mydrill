@@ -1,0 +1,12 @@
+unique_name: m_beg_dc_inv_retail_amount_plan
+object_type: metric
+label: Beg DC Inv Retail $ Plan
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - GHQC_DC_PLN_W.dataset_Time_Transformations
+dataset: GHQC_DC_PLN_W.dataset
+column: ty_pln_bi_retl_amt

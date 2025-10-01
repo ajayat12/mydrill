@@ -1,0 +1,6 @@
+unique_name: m_comp_percent_bps_2_year
+object_type: metric_calc
+label: Comp % BPS (2 Year)
+expression: "IIF([MEASURES].[m_comp_amount_base_2_year]+ 0.00=0.00,NULL,(([MEASURES].[m_comp_amount_v_lly_2_year])/\
+  \ [MEASURES].[m_comp_amount_base_2_year])*10000)"
+format: "#,##0;(#,##0);0;;"

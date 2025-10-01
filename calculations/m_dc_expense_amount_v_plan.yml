@@ -1,0 +1,6 @@
+unique_name: m_dc_expense_amount_v_plan
+object_type: metric_calc
+label: DC Expense $ v Plan
+expression: "IIF(IsEmpty([Measures].[m_dc_expenses_amount]) OR IsEmpty([Measures].[m_dc_expense_amount_plan]),\
+  \ null,([Measures].[m_dc_expenses_amount]-[Measures].[m_dc_expense_amount_plan]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

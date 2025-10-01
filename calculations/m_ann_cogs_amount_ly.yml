@@ -1,0 +1,5 @@
+unique_name: m_ann_cogs_amount_ly
+object_type: metric_calc
+label: Ann Cogs $ LY
+expression: "([Measures].[m_cogs_amount_ly] * [Measures].[m_ly_yr_wk_cnt])/[Measures].[m_ly_prd_wk_cnt]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

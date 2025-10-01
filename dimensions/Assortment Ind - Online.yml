@@ -1,0 +1,42 @@
+unique_name: Assortment Ind - Online
+object_type: dimension
+label: Assortment Ind - Online
+type: standard
+
+hierarchies:
+
+  - unique_name: Assortment Ind - Online Hierarchy
+    label: Assortment Ind - Online Hierarchy
+
+    levels:
+
+      - unique_name: h_aioh_assortment_ind__online
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_aioh_assortment_ind__online
+            label: Assortment Ind - Online
+            dataset: DIM_ASSORTMENT_INDICATOR_ONLINE.dataset
+            key_columns:
+              - ID
+            name_column: ASSORTMENT
+            sort_column: ASSORTMENT
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: h_aioh_assortment_ind__online
+    label: Assortment Ind - Online
+    is_unique_key: true
+    dataset: DIM_ASSORTMENT_INDICATOR_ONLINE.dataset
+    key_columns:
+      - ID
+    name_column: ASSORTMENT
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,5 @@
+unique_name: m_comp_plan_amount_1_year
+object_type: metric_calc
+label: Comp Plan $ (1 Year)
+expression: "[Measures].[m_comp_plan_amount_1_year_sd]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

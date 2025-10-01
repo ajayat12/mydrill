@@ -1,0 +1,5 @@
+unique_name: m_home_depot_direct_delivery_expense_percent_v_ly
+object_type: metric_calc
+label: Home Depot Direct Delivery Expense % v LY
+expression: "([Measures].[m_home_depot_direct_delivery_expense_percent]-[Measures].[m_home_depot_direct_delivery_expense_percent_ly])"
+format: 0.00%;(0.00%);0.00%;;

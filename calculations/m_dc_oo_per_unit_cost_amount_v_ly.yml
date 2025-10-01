@@ -1,0 +1,5 @@
+unique_name: m_dc_oo_per_unit_cost_amount_v_ly
+object_type: metric_calc
+label: DC OO Per Unit Cost $ v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_oo_per_unit_cost_amount]) OR ISEmpty([Measures].[m_dc_oo_per_unit_cost_amount_ly]),NULL,[Measures].[m_dc_oo_per_unit_cost_amount]-[Measures].[m_dc_oo_per_unit_cost_amount_ly])"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

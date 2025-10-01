@@ -1,0 +1,12 @@
+unique_name: m_beg_str_inv_cost_amount_ly
+object_type: metric
+label: Beg Str Inv Cost $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: first
+  relationships:
+    - STR_SKU_MV_STATS_M.dataset_Time_Transformations
+dataset: STR_SKU_MV_STATS_M.dataset
+column: LY_BI_COST_AMT

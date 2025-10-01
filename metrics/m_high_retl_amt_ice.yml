@@ -1,0 +1,9 @@
+unique_name: m_high_retl_amt_ice
+object_type: metric
+label: High Retl Amt_ICE
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: repeat
+dataset: ICE_AGING_FACT.dataset
+column: high_retl_amt

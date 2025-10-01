@@ -1,0 +1,5 @@
+unique_name: m_str_ice_retail_amount_ly
+object_type: metric_calc
+label: Str ICE Retail $ LY
+expression: "[Measures].[m_str_ice_retail_amount_ly_dly] /*+[Measures].[m_str_ice_retail_amount_ly_wkly]*/"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

@@ -1,0 +1,12 @@
+unique_name: m_vendor_direct_oo_units_next_eta
+object_type: metric
+label: Vendor Direct OO Units (Next ETA)
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_SKU_DTL_DLY.dataset_Time_Transformations
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_CHUB_NXT_EXPCTD_AVAIL_OH_QTY

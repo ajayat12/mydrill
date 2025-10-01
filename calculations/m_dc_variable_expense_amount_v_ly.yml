@@ -1,0 +1,6 @@
+unique_name: m_dc_variable_expense_amount_v_ly
+object_type: metric_calc
+label: DC Variable Expense $ v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_variable_expense_amount]) OR IsEmpty([Measures].[m_dc_variable_expense_amount_ly])\
+  \ , null, ([Measures].[m_dc_variable_expense_amount]-[Measures].[m_dc_variable_expense_amount_ly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

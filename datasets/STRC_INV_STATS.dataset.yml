@@ -1,0 +1,57 @@
+unique_name: STRC_INV_STATS.dataset
+object_type: dataset
+label: STRC_INV_STATS
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: STRC_INV_STATS
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_BI_RETL_AMT
+    data_type: double
+  - name: LY_EI_RETL_AMT
+    data_type: double
+  - name: LY_SHNK_AMT
+    data_type: double
+  - name: LY_SHNK_RSRV_AMT
+    data_type: double
+  - name: LY_SHNKR_ADJ_AMT
+    data_type: double
+  - name: MVNDR_DEPT_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ONLINE_CHNL
+    data_type: long
+  - name: PHY_INV_CYC_ID
+    data_type: long
+  - name: RMETH_CD
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STAT_CD
+    data_type: long
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: STORE_CHNL
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TY_BI_RETL_AMT
+    data_type: double
+  - name: TY_EI_RETL_AMT
+    data_type: double
+  - name: TY_SHNK_AMT
+    data_type: double
+  - name: TY_SHNK_RSRV_AMT
+    data_type: double
+  - name: TY_SHNKR_ADJ_AMT
+    data_type: double

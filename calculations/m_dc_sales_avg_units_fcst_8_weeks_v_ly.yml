@@ -1,0 +1,5 @@
+unique_name: m_dc_sales_avg_units_fcst_8_weeks_v_ly
+object_type: metric_calc
+label: DC Sales Avg Units Fcst (8 Weeks) v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_sales_avg_units_fcst_8_weeks]) OR ISEmpty([Measures].[m_dc_sales_avg_units_fcst_8_weeks_ly]),NULL,[Measures].[m_dc_sales_avg_units_fcst_8_weeks]-[Measures].[m_dc_sales_avg_units_fcst_8_weeks_ly])"
+format: "#,##0;(#,##0);#,##0;;"

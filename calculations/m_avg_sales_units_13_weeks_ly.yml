@@ -1,0 +1,6 @@
+unique_name: m_avg_sales_units_13_weeks_ly
+object_type: metric_calc
+label: Avg Sales Units (13 weeks) LY
+expression: "[MEASURES].[m_sales_units_13_weeks_ly]/13"
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true

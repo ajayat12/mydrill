@@ -1,0 +1,12 @@
+unique_name: m_dc_oo_units_61_90_days
+object_type: metric
+label: DC OO Units (61-90 Days)
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_DFC_ETA_R30D3_OPEN_PO_QTY

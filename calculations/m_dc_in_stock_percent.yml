@@ -1,0 +1,5 @@
+unique_name: m_dc_in_stock_percent
+object_type: metric_calc
+label: DC In Stock %
+expression: "([Measures].[m_dc_in_stock_count]/[Measures].[m_sku_key])"
+format: 0.00%;(0.00%);0.00%;;

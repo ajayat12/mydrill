@@ -1,0 +1,31 @@
+unique_name: Store Trait2.dataset
+object_type: dataset
+label: Store Trait2
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_STORE_TRAIT2
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: STORE_TRAIT_CLASS_TYPE
+    data_type: string
+  - name: STORE_TRAIT_COMMENT
+    data_type: string
+  - name: STORE_TRAIT_DESCRIPTION
+    data_type: string
+  - name: STORE_TRAIT_GROUP
+    data_type: string
+  - name: STORE_TRAIT_ID
+    data_type: long
+  - name: STORE_TRAIT_NAME
+    data_type: string
+  - name: TRT_CLASS_TYP_CD
+    data_type: long
+  - name: TRT_GRP_ID
+    data_type: long
+  - name: TRT_TXMY_CMT_TXT
+    data_type: string
+  - name: TRT_TXMY_ID
+    data_type: long
+  - name: TRT_TXMY_NM
+    data_type: string

@@ -1,0 +1,5 @@
+unique_name: m_shrink_amount_v_last_inv_percent_pi
+object_type: metric_calc
+label: Shrink $ v Last Inv (%) (PI)
+expression: "IIF([MEASURES].[m_shrink_amount_lly_pi]+0.00=0.00,NULL ,([MEASURES].[m_shrink_amount_v_last_inv_pi])/[MEASURES].[m_shrink_amount_lly_pi])"
+format: 0.00%;(0.00%);0.00%;;

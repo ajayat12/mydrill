@@ -1,0 +1,6 @@
+unique_name: m_total_sales_amount_ly
+object_type: metric_calc
+label: Total Sales $ LY
+expression: |
+  ([MEASURES].[m_sales_amount_ly]+[MEASURES].[m_shipping_revenue_amount_ly])
+format: "$#,##0.00;($#,##0.00);$0.00;;"

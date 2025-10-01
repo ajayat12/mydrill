@@ -1,0 +1,9 @@
+unique_name: m_ty_cse_dept_comp_sls_2yr_txn_cnt
+object_type: metric
+label: TY CSE DEPT COMP SLS 2YR TXN CNT
+calculation_method: sum
+format: "#,##0;(#,##0);;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: PRODUCT_STR_DAY_TRANS.dataset
+column: TY_CSE_DEPT_COMP_SLS_2YR_TXN_CNT

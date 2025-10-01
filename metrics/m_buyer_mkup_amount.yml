@@ -1,0 +1,8 @@
+unique_name: m_buyer_mkup_amount
+object_type: metric
+label: Buyer MKUP $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+dataset: SKU_STR_MUMDC_D.dataset
+column: TY_MKUP_AMT

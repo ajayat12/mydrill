@@ -1,0 +1,7 @@
+unique_name: m_buyer_mkdn_percent_v_plan_bps
+object_type: metric_calc
+label: Buyer MKDN % v Plan (BPS)
+expression: "IIF(IsEmpty([MEASURES].[m_buyer_mkdn_percent]) OR IsEmpty([MEASURES].[m_buyer_mkdn_percent_plan]),NULL,\n\
+  \t\t\t\t\t\t\t\t\t\t((iif([MEASURES].[m_sales_amount]+0.00=0.00,null,[MEASURES].[m_buyer_mkdn_amount]/[MEASURES].[m_sales_amount])\n\
+  \t\t\t\t\t\t\t\t\t\t-(iif([Measures].[m_sales_amount_plan]+0.00=0.00,null,[Measures].[m_buyer_mkdn_amount_plan]/[Measures].[m_sales_amount_plan])))*10000))"
+format: "#,##0;(#,##0);#,##0;;"

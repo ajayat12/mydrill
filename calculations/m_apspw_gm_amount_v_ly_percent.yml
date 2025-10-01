@@ -1,0 +1,7 @@
+unique_name: m_apspw_gm_amount_v_ly_percent
+object_type: metric_calc
+label: APSPW GM $ v LY (%)
+expression: |-
+  iif([Measures].[m_apspw_gm_amount_ly]+0.00=0.00,null,
+  ([Measures].[m_apspw_gm_amount] - [Measures].[m_apspw_gm_amount_ly])/[Measures].[m_apspw_gm_amount_ly])
+format: 0.00%;(0.00%);0.00%;;

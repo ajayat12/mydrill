@@ -1,0 +1,13 @@
+unique_name: m_ty_mtd_sub_disc_amt_mkt
+object_type: metric
+label: TY MTD SUB DISC AMT MKT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - MKT_MV_DSV_SKU_LNDCOST.dataset_Time_Transformations
+dataset: MKT_MV_DSV_SKU_LNDCOST.dataset
+column: TY_MTD_SUB_DISC_AMT

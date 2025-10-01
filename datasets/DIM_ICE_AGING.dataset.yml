@@ -1,0 +1,17 @@
+unique_name: DIM_ICE_AGING.dataset
+object_type: dataset
+label: DIM_ICE_AGING
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: DIM_ICE_AGING
+
+columns:
+  - name: AGING_BUCKET
+    data_type: string
+  - name: AGING_ID
+    data_type: long
+  - name: ICE_CD
+    data_type: string
+  - name: ICE_ID
+    data_type: long
+  - name: ICE_KEY
+    data_type: long

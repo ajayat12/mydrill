@@ -1,0 +1,5 @@
+unique_name: m_shrink_amount_fcst
+object_type: metric_calc
+label: Shrink $ Fcst
+expression: "[Measures].[m_shrink_amount_fcst_base]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

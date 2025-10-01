@@ -1,0 +1,6 @@
+unique_name: m_base_imu_rate_v_ly
+object_type: metric_calc
+label: Base IMU Rate v LY
+expression: "(([Measures].[m_base_imu_percent]-[Measures].[m_base_imu_percent_ly])*[Measures].[m_base_str_rcpts_retail_amount_pen_company])*10000"
+format: "#,##0.00;(#,##0.00);0.00;;"
+is_hidden: true

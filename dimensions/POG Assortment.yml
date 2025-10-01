@@ -1,0 +1,135 @@
+unique_name: POG Assortment
+object_type: dimension
+label: POG Assortment
+type: standard
+
+hierarchies:
+
+  - unique_name: POG Assortment Hierarchy
+    label: POG Assortment Hierarchy
+
+    levels:
+
+      - unique_name: h_pah_pog_assortment_category_name
+
+        secondary_attributes:
+
+          - unique_name: d_pah_pog_assortment_category_name
+            label: POG Assortment Category Name
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - POG_CTGRY_CD
+            name_column: S_POG_CTGRY_NM
+            sort_column: S_POG_CTGRY_NM
+
+          - unique_name: d_pah_pog_assortment_category_nbr
+            label: POG Assortment Category Nbr
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - POG_CTGRY_CD
+            name_column: POG_CTGRY_CD
+            sort_column: POG_CTGRY_CD
+
+          - unique_name: d_pah_pog_assortment_category
+            label: POG Assortment Category
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - POG_CTGRY_CD
+            name_column: POG_CTGRY_NM
+            sort_column: POG_CTGRY_CD
+
+      - unique_name: h_pah_pog_assortment_subcategory_name
+
+        secondary_attributes:
+
+          - unique_name: d_pah_pog_assortment_subcategory
+            label: POG Assortment Subcategory
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - POG_SUB_CTGRY
+            name_column: POG_SUB_CTGRY_NM
+            sort_column: POG_SUB_CTGRY
+
+          - unique_name: d_pah_pog_assortment_subcategory_name
+            label: POG Assortment Subcategory Name
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - POG_SUB_CTGRY
+            name_column: S_POG_SUB_CTGRY_NM
+            sort_column: S_POG_SUB_CTGRY_NM
+
+          - unique_name: d_pah_pog_assortment_subcategory_nbr
+            label: POG Assortment Subcategory Nbr
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - POG_SUB_CTGRY
+            name_column: POG_SUB_CTGRY
+            sort_column: POG_SUB_CTGRY
+
+      - unique_name: h_pah_pog_assortment
+
+        secondary_attributes:
+
+          - unique_name: d_pah_live_week
+            label: Live Week
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - LIVE_WEEK
+            name_column: LIVE_WEEK
+            sort_column: LIVE_WEEK
+
+          - unique_name: d_pah_number_of_bays
+            label: Number Of Bays
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - BAY_CNT
+            name_column: BAY_CNT
+            sort_column: BAY_CNT
+
+          - unique_name: d_pah_pog_assortment
+            label: POG Assortment
+            folder: More Fields
+            dataset: DIM_POG_ASSORTMENT.dataset
+            key_columns:
+              - PLANOGRAM_ID
+            name_column: POG_NAME
+            sort_column: PLANOGRAM_ID
+
+level_attributes:
+
+  - unique_name: h_pah_pog_assortment
+    label: POG Assortment
+    is_unique_key: true
+    dataset: DIM_POG_ASSORTMENT.dataset
+    key_columns:
+      - PLANOGRAM_ID
+    name_column: POG_NAME
+    sort_column: PLANOGRAM_ID
+
+  - unique_name: h_pah_pog_assortment_category_name
+    label: POG Assortment Category Name
+    dataset: DIM_POG_ASSORTMENT.dataset
+    key_columns:
+      - POG_CTGRY_CD
+    name_column: POG_CTGRY_NM
+    sort_column: POG_CTGRY_CD
+
+  - unique_name: h_pah_pog_assortment_subcategory_name
+    label: POG Assortment Subcategory Name
+    dataset: DIM_POG_ASSORTMENT.dataset
+    key_columns:
+      - POG_SUB_CTGRY
+    name_column: POG_SUB_CTGRY_NM
+    sort_column: POG_SUB_CTGRY
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,9 @@
+unique_name: PRICE_BAND_ATTRIBUTE.dataset
+object_type: dataset
+label: PRICE_BAND_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: PRICE_BAND
+
+columns:
+  - name: PRICE_BAND
+    data_type: string

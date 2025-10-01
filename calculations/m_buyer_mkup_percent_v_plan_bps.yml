@@ -1,0 +1,6 @@
+unique_name: m_buyer_mkup_percent_v_plan_bps
+object_type: metric_calc
+label: Buyer MKUP % v Plan (BPS)
+expression: "IIF(IsEmpty([Measures].[m_buyer_mkup_percent]) OR IsEmpty([Measures].[m_buyer_mkup_percent_plan]),NULL,(([Measures].[m_buyer_mkup_percent]\
+  \ - [Measures].[m_buyer_mkup_percent_plan]) * 10000))"
+format: "#,##0;(#,##0);#,##0;;"

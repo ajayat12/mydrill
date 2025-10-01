@@ -1,0 +1,6 @@
+unique_name: m_total_mkdn_amount_v_fcst_percent
+object_type: metric_calc
+label: Total MKDN $ v Fcst (%)
+expression: "IIF(([MEASURES].[m_buyer_mkdn_amount_fcst]+[MEASURES].[m_buyer_mkup_amount_fcst]+[MEASURES].[m_str_mkdn_amount_fcst])+0.00=0.00,NULL,\
+  \ ([MEASURES].[m_total_mkdn_amount_v_fcst])/([MEASURES].[m_buyer_mkdn_amount_fcst]+[MEASURES].[m_buyer_mkup_amount_fcst]+[MEASURES].[m_str_mkdn_amount_fcst]))"
+format: 0.00%;(0.00%);0.00%;;

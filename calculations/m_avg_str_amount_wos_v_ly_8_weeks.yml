@@ -1,0 +1,5 @@
+unique_name: m_avg_str_amount_wos_v_ly_8_weeks
+object_type: metric_calc
+label: Avg Str $ WOS v LY (8 Weeks)
+expression: "[Measures].[m_avg_str_amount_wos_8_weeks]-[Measures].[m_avg_str_amount_wos_ly_8_weeks]"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

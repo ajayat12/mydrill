@@ -1,0 +1,6 @@
+unique_name: m_coop_percent_v_fcst
+object_type: metric_calc
+label: COOP % v Fcst
+expression: "IIF(IsEmpty([MEASURES].[m_coop_percent]) OR IsEmpty([MEASURES].[m_coop_percent_fcst]),NULL,([MEASURES].[m_coop_percent]-[MEASURES].[m_coop_percent_fcst]))"
+format: 0.00%;(0.00%);0.00%;;
+is_hidden: true

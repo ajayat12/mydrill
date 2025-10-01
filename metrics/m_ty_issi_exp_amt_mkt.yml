@@ -1,0 +1,13 @@
+unique_name: m_ty_issi_exp_amt_mkt
+object_type: metric
+label: TY ISSI EXP AMT MKT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - MKT_MV_DSV_SKU_LNDCOST.dataset_Time_Transformations
+dataset: MKT_MV_DSV_SKU_LNDCOST.dataset
+column: TY_ISSI_EXP_AMT

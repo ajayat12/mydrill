@@ -1,0 +1,13 @@
+unique_name: m_str_oh_amount_ly_wkly
+object_type: metric
+label: Str OH $ LY Wkly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - STR_INV_DLY_W.dataset_Time_Transformations
+dataset: STR_INV_DLY_W.dataset
+column: LY_STR_OH_RETL_AMT

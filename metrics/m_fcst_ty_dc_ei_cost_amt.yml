@@ -1,0 +1,13 @@
+unique_name: m_fcst_ty_dc_ei_cost_amt
+object_type: metric
+label: FCST TY DC EI COST AMT
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - MONTHLY_FCST.dataset_Time_Transformations
+dataset: MONTHLY_FCST.dataset
+column: TY_FCST_ACT_DC_EI_COST_AMT

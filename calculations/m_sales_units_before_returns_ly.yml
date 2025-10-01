@@ -1,0 +1,6 @@
+unique_name: m_sales_units_before_returns_ly
+object_type: metric_calc
+label: Sales Units before Returns LY
+expression: "IIF(([Measures].[m_sales_units_ly] -[Measures].[m_return_units_ly])=0.0,NULL,([Measures].[m_sales_units_ly]\
+  \ -[Measures].[m_return_units_ly]))"
+format: "#,##0;(#,##0);0;;"

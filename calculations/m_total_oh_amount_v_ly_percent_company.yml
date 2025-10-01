@@ -1,0 +1,7 @@
+unique_name: m_total_oh_amount_v_ly_percent_company
+object_type: metric_calc
+label: Total OH $ v LY (%) (Company)
+expression: |-
+  iif([Measures].[m_total_oh_amount_ly_company] + 0.00 = 0.00,null,
+  ([Measures].[m_total_oh_amount_v_ly_company])/[Measures].[m_total_oh_amount_ly_company])
+format: 0.00%;(0.00%);0.00%;;

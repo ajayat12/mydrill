@@ -1,0 +1,12 @@
+unique_name: m_online_oh_amount
+object_type: metric
+label: Online OH $
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_SKU_DTL_DLY.dataset_Time_Transformations
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_ONLN_OH_CURR_RETL_AMT

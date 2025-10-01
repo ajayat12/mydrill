@@ -1,0 +1,6 @@
+unique_name: m_str_oo_units
+object_type: metric_calc
+label: Str OO Units
+expression: "([Measures].[m_str_oo_units_dly])/*+[Measures].[m_str_oo_units_wkly])*/\n\
+  \t"
+format: "#,##0;(#,##0);0;;"

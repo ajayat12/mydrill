@@ -1,0 +1,12 @@
+unique_name: m_dc_oh_cost_amount_ly
+object_type: metric
+label: DC OH Cost $ LY
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations
+dataset: DFDRILL_BRCH_DLY.dataset
+column: LY_DFC_OH_COST_AMOUNT

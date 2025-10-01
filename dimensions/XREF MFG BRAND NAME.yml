@@ -1,0 +1,45 @@
+unique_name: XREF MFG BRAND NAME
+object_type: dimension
+label: XREF MFG BRAND NAME
+type: standard
+
+hierarchies:
+
+  - unique_name: XREF MFG BRAND NAME Hierarchy
+    label: XREF MFG BRAND NAME Hierarchy
+    filter_empty: "yes"
+    folder: Global Attributes
+
+    levels:
+
+      - unique_name: XREF MFG BRAND NAME Level
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: XREF MFG BRAND NAME Level
+    label: XREF MFG BRAND NAME Level
+    dataset: XREF_MFG_BRAND_NAME.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_NBR
+
+relationships:
+
+  - unique_name: XREFMFGBRANDNAME_SKUAttribute
+    from:
+      hierarchy: XREF MFG BRAND NAME Hierarchy
+      level: XREF MFG BRAND NAME Level
+      dataset: XREF_MFG_BRAND_NAME.dataset
+      join_columns:
+        - MFG_Brand_Name
+    to:
+      dimension: SKU Attribute
+      level: h_mbn_mfg_brand_name
+    type: embedded
+    m2m: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

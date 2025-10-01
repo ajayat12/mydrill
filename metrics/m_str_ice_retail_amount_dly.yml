@@ -1,0 +1,9 @@
+unique_name: m_str_ice_retail_amount_dly
+object_type: metric
+label: Str ICE Retail $ Dly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STR_INV_DLY_D.dataset
+column: TY_STR_ICE_RETL_AMT

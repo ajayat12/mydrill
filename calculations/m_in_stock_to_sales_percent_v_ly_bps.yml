@@ -1,0 +1,5 @@
+unique_name: m_in_stock_to_sales_percent_v_ly_bps
+object_type: metric_calc
+label: In Stock to Sales % v LY (BPS)
+expression: "IIF([Measures].[m_in_stock_to_sales_percent_v_ly]+ 0.00 = 0.00,NULL,(([Measures].[m_in_stock_to_sales_percent_v_ly])*10000))"
+format: "#,##0;(#,##0);#,##0;;"

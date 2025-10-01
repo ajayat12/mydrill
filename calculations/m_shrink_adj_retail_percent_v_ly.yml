@@ -1,0 +1,5 @@
+unique_name: m_shrink_adj_retail_percent_v_ly
+object_type: metric_calc
+label: Shrink Adj Retail % v LY
+expression: "IIF((IsEmpty([MEASURES].[m_shrink_adj_retail_percent]) OR IsEmpty([MEASURES].[m_shrink_adj_retail_percent_ly])),NULL,([Measures].[m_shrink_adj_retail_percent]-[Measures].[m_shrink_adj_retail_percent_ly]))"
+format: 0.00%;(0.00%);0.00%;;

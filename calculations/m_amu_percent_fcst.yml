@@ -1,0 +1,6 @@
+unique_name: m_amu_percent_fcst
+object_type: metric_calc
+label: AMU % Fcst
+expression: "IIF([Measures].[m_fcst_ty_gafs_retl_amt]+0.00=0.00 or [Measures].[m_fcst_ty_gafs_cost_amt]+0.00=0.00\
+  \ , NULL,([Measures].[m_fcst_ty_gafs_retl_amt]-[Measures].[m_fcst_ty_gafs_cost_amt])/[Measures].[m_fcst_ty_gafs_retl_amt])"
+format: 0.00%;(0.00%);0.00%;;

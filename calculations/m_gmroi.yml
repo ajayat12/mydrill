@@ -1,0 +1,6 @@
+unique_name: m_gmroi
+object_type: metric_calc
+label: GMROI
+expression: "IIF([Measures].[m_avg_inv_at_cost_amount] +0.00 = 0.00, null, [Measures].[m_ann_gm_amount]/[Measures].[m_avg_inv_at_cost_amount])\
+  \ * 100"
+format: "#,##0.00;(#,##0.00);0.00;;"

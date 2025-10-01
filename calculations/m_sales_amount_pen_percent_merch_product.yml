@@ -1,0 +1,8 @@
+unique_name: m_sales_amount_pen_percent_merch_product
+object_type: metric_calc
+label: Sales $ Pen % (Merch Product)
+expression: |-
+  IIF(([Product].[Merchandising Product Hierarchy].CurrentMember.parent, [Measures].[m_sales_amount])+ 0.00=0.00,NULL,
+  ([Product].[Merchandising Product Hierarchy].CurrentMember, [Measures].[m_sales_amount]) /
+   ([Product].[Merchandising Product Hierarchy].CurrentMember.parent, [Measures].[m_sales_amount]))
+format: 0.00%;(0.00%);0.00%;;

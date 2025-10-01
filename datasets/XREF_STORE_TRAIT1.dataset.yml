@@ -1,0 +1,13 @@
+unique_name: XREF_STORE_TRAIT1.dataset
+object_type: dataset
+label: XREF_STORE_TRAIT1
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: FACT_XREF_STORE_TRAIT1
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: STR_NBR
+    data_type: string
+  - name: TRT_ID
+    data_type: long

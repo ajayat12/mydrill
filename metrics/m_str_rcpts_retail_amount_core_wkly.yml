@@ -1,0 +1,9 @@
+unique_name: m_str_rcpts_retail_amount_core_wkly
+object_type: metric
+label: Str Rcpts Retail $ (Core) Wkly
+calculation_method: sum
+format: "$#,##0.00;($#,##0.00);$0.00;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: SKU_LOC_MVRCT_W_CORE.dataset
+column: TY_RETL_AMT_CORE

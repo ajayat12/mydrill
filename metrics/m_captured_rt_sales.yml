@@ -1,0 +1,9 @@
+unique_name: m_captured_rt_sales
+object_type: metric
+label: CAPTURED RT SALES
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+is_hidden: true
+unrelated_dimensions_handling: empty
+dataset: STR_SKU_INV_IPR_D.dataset
+column: TY_CAPTURED_RT_SALES

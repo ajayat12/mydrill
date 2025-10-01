@@ -1,0 +1,8 @@
+unique_name: m_views_buyable
+object_type: metric
+label: Views Buyable
+calculation_method: sum
+format: "#,##0;(#,##0);#,##0;;"
+unrelated_dimensions_handling: empty
+dataset: DFDRILL_SKU_DTL_DLY.dataset
+column: TY_CUST_BUYBL_DAY_PG_VIST_CNT

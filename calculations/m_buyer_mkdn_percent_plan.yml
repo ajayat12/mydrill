@@ -1,0 +1,5 @@
+unique_name: m_buyer_mkdn_percent_plan
+object_type: metric_calc
+label: Buyer MKDN % Plan
+expression: "iif([Measures].[m_sales_amount_plan]+0.00=0.00,null,[Measures].[m_buyer_mkdn_amount_plan]/[Measures].[m_sales_amount_plan])"
+format: 0.00%;(0.00%);0.00%;;

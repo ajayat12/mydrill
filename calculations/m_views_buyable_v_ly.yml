@@ -1,0 +1,5 @@
+unique_name: m_views_buyable_v_ly
+object_type: metric_calc
+label: Views Buyable v LY
+expression: "IIF(IsEmpty([Measures].[m_views_buyable]) OR ISEmpty([Measures].[m_views_buyable_ly]),NULL,[Measures].[m_views_buyable]-[Measures].[m_views_buyable_ly])"
+format: "#,##0;(#,##0);#,##0;;"

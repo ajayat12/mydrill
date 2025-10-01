@@ -1,0 +1,5 @@
+unique_name: m_str_oo_amount
+object_type: metric_calc
+label: Str OO $
+expression: "([Measures].[m_str_oo_amount_dly])/*+[Measures].[m_str_oo_amount_wkly])*/"
+format: "$#,##0.00;($#,##0.00);$0.00;"

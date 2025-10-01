@@ -1,0 +1,9 @@
+unique_name: MERCHANDISING_2_ATTRIBUTE.dataset
+object_type: dataset
+label: MERCHANDISING_2_ATTRIBUTE
+connection_id: lpc2683f-gbq-pr-mydrill-data.connection
+table: MERCHANDISING_2
+
+columns:
+  - name: MERCHANDISING_2
+    data_type: string

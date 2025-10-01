@@ -1,0 +1,9 @@
+unique_name: m_str_rcpts_cost_amount_ly
+object_type: metric_calc
+label: Str Rcpts Cost $ LY
+expression: "CASE \n  WHEN [Receipt Group].[d_xh_receipt_group].CurrentMember.name\
+  \ = 'Purchases - Cost (First)' \n  THEN [Measures].[m_first_str_rcpts_cost_amount_ly]\
+  \ \n  WHEN [Receipt Group].[d_xh_receipt_group].CurrentMember.name = 'Purchases\
+  \ - Cost (Base)'\n  THEN [Measures].[m_base_str_rcpts_cost_amount_ly] \n  ELSE ([Measures].[m_str_rcpts_cost_amount_dly_ly]\
+  \ + [Measures].[m_str_rcpts_cost_amount_wkly_ly]) \nEND"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

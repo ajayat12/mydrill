@@ -1,0 +1,5 @@
+unique_name: m_dc_oo_units_1_30_days_v_ly
+object_type: metric_calc
+label: DC OO Units (1-30 Days) v LY
+expression: "IIF(IsEmpty([Measures].[m_dc_oo_units_1_30_days]) OR ISEmpty([Measures].[m_dc_oo_units_1_30_days_ly]),NULL,[Measures].[m_dc_oo_units_1_30_days]-[Measures].[m_dc_oo_units_1_30_days_ly])"
+format: "#,##0;(#,##0);#,##0;;"

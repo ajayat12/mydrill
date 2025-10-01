@@ -1,0 +1,5 @@
+unique_name: m_dc_inv_retail_change_amount
+object_type: metric_calc
+label: DC Inv Retail Change $
+expression: "IIF(IsEmpty([MEASURES].[m_beg_dc_inv_retail_amount_wkly]) OR IsEmpty([MEASURES].[m_end_dc_inv_retail_amount_wkly]),NULL,([Measures].[m_beg_dc_inv_retail_amount_wkly]-[Measures].[m_end_dc_inv_retail_amount_wkly]))"
+format: "$#,##0.00;($#,##0.00);$0.00;;"

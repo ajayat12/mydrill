@@ -1,0 +1,182 @@
+unique_name: DC Location
+object_type: dimension
+label: DC Location
+type: standard
+
+hierarchies:
+
+  - unique_name: DC Hierarchy
+    label: DC Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_dh_all_thd
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_all_thd
+            label: All THD
+            dataset: DIM_DC_LOCATION.dataset
+            key_columns:
+              - ALL_THD_DESC
+            name_column: ALL_THD_DESC
+            sort_column: ALL_THD_DESC
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+      - unique_name: h_dh_lob
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_lob
+            label: LOB
+            dataset: DIM_DC_LOCATION.dataset
+            key_columns:
+              - S_LOB_HQ_NM
+            name_column: S_LOB_HQ_NM
+            sort_column: S_LOB_HQ_NM
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+      - unique_name: h_dh_geography
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_geography
+            label: Geography
+            dataset: DIM_DC_LOCATION.dataset
+            key_columns:
+              - S_GEO_HQ_NM
+            name_column: S_GEO_HQ_NM
+            sort_column: S_GEO_HQ_NM
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+      - unique_name: h_dh_division
+
+        secondary_attributes:
+
+          - unique_name: d_rrh_division
+            label: Division
+            dataset: DIM_DC_LOCATION.dataset
+            key_columns:
+              - DIV_NBR
+            name_column: DIV_NM
+            sort_column: DIV_NBR
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+      - unique_name: h_dh_dc
+
+        secondary_attributes:
+
+          - unique_name: d_dh_dc_type
+            label: DC Type
+            dataset: DIM_DC_LOCATION.dataset
+            key_columns:
+              - DC_TYPE_CD
+            name_column: DC_TYPE
+            sort_column: DC_TYPE
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+        aliases:
+
+          - unique_name: d_dh_dc
+            label: DC
+            folder: More Fields
+            dataset: DIM_DC_LOCATION.dataset
+            name_column: DC_ORG_NM
+            sort_column: DC_ORG_NBR
+
+          - unique_name: d_dh_dc_name
+            label: DC Name
+            folder: More Fields
+            dataset: DIM_DC_LOCATION.dataset
+            name_column: DC_ORG_NM
+            sort_column: DC_ORG_NM
+
+          - unique_name: d_dh_dc_nbr
+            label: DC Nbr
+            folder: More Fields
+            dataset: DIM_DC_LOCATION.dataset
+            name_column: DC_ORG_NBR
+            sort_column: DC_ORG_NBR
+
+level_attributes:
+
+  - unique_name: h_dh_all_thd
+    label: All THD
+    dataset: DIM_DC_LOCATION.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+    sort_column: ALL_THD_DESC
+
+  - unique_name: h_dh_dc
+    label: DC
+    dataset: DIM_DC_LOCATION.dataset
+    key_columns:
+      - DC_ORG_NBR
+    name_column: DC_ORG_NM
+    sort_column: DC_ORG_NBR
+
+  - unique_name: h_dh_division
+    label: Division
+    dataset: DIM_DC_LOCATION.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+    sort_column: DIV_NM
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: h_dh_geography
+    label: Geography
+    dataset: DIM_DC_LOCATION.dataset
+    key_columns:
+      - S_GEO_HQ_NM
+    name_column: S_GEO_HQ_NM
+    sort_column: S_GEO_HQ_NM
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: h_dh_lob
+    label: LOB
+    dataset: DIM_DC_LOCATION.dataset
+    key_columns:
+      - S_LOB_HQ_NM
+    name_column: S_LOB_HQ_NM
+    sort_column: S_LOB_HQ_NM
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+modeler_metadata:
+  version: "0"
+  modified: "false"
